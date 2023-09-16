@@ -54,7 +54,6 @@
 	- in Extender tab > BApp Store - contains tons of extensions/mods & those are professional (we can't use them cuz we're in community version)
 	- Ques (do it by yourself)
 		1) Scroll down until you reach the 'Python Environment' section. Note, Burp requires the standalone edition of python. 
-			- 
 		2) Download the standalone version of jython from here: link -/ Suggest saving this or moving it to your documents folder
 		3) Return back to Burp & hit 'Select file' under the python environment subsection for jython standalone. Navigate to where you just downloaded this file and select it.
 		4) Burp is now set to go for installing extensions. switch to the BApp store sub-tab of extender & look through the various extensions offered
