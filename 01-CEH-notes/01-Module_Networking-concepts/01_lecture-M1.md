@@ -73,8 +73,8 @@
 ### What is MAN network ?
 - MAN is greater than LAN - in range wise
 - Eg : in MAN , more devices gets connected like 100-200 devices connected each other or connecting with different LAN networks  each other = a MAN network (means combining different LAN networks each other = a MAN network) 
-	- Pic 1 : <br> ![](01_lecture-0-M1.jpg)
-	- Pic 2: <br> ![](01_lecture-1-M1.jpg)
+	- Pic 1 : <br> <img src="../notes-pics/01-Module/01_lecture/01_lecture-0-M1.jpg" alt="Pic 1" width="400"/>
+	- Pic 2: <br> <img src="../notes-pics/01-Module/01_lecture/01_lecture-1-M1.jpg" alt="Pic 1" width="400"/>
 - it has bigger range than LAN network
 
 ### What is WAN network ?
