@@ -1,0 +1,155 @@
+#WsCubeTech-CEH-Quiz
+
+---
+
+- Q 1 : What is Ethical Hacking?<br>Options : 1) Hacking to steal sensitive information , 2) Hacking to identify vulnerabilities in a system , 3) Hacking to disrupt a system's functionality , 4) Hacking to cause damage to a system
+	- Ans : 2
+---
+- Q 2 : What is the main goal of ethical hacking?<br>Options : 1) To cause damage to a system , 2) To gain unauthorized access to a system , 3) To identify and fix security vulnerabilities , 4) To steal sensitive information
+	- Ans : 3
+---
+- Q 3 : What is the difference between ethical hacking and malicious hacking?<br>Options : 1) Ethical hacking is legal and sanctioned, while malicious hacking is illegal and unsanctioned , 2) Ethical hacking only involves finding vulnerabilities, while malicious hacking involves exploiting them , 3) Ethical hacking is done with the permission of the system owner, while malicious hacking is done without permission , 4) There is no difference between ethical hacking and malicious hacking
+	- Ans : 3
+---
+- Q 4 : Leaking your company data to the outside network without prior permission of senior authority is a crime.<br>Options : 1) TRUE , 2) FALSE , 3) none , 4) none
+	- Ans : 1
+---
+- Q 5 : ___ is the technique used in business organizations and firms to protect IT assets<br>Options : 1) Ethical hacking , 2) Unethical hacking , 3) Fixing bugs , 4) Internal data-breach
+	- Ans : 1
+---
+- Q 6 : The legal risks of ethical hacking include lawsuits due to of personal data.<br>Options : 1) stealing , 2) disclosure , 3) deleting , 4) hacking
+	- Ans : 2
+---
+- Q 7 : An ethical hacker must ensure that proprietary information of the firm does not get leaked.<br>Options : 1) TRUE , 2) FALSE , 3) none , 4) none
+	- Ans : 1
+---
+- Q 8 : After performing ____ the ethical hacker should never disclose client information to other parties. <br>Options : 1) hacking , 2)  cracking , 3) Penetration testing , 4) exploiting
+	- Ans : 3
+---
+- Q 9 : ___ is the branch of cyber security that deals with morality and provides different theories and a principleregarding the view-points about what is right and wrong.<br>Options : 1) Social ethics , 2) Ethics in cyber-security , 3) Corporate ethics , 4) Ethics in black hat hacking
+	- Ans : 4
+---
+- Q 10 : __________ helps to classify arguments and situations, better understand a cyber-crime and helps to determine appropriate actions.<br>Options : 1) Cyber-ethics , 2) Social ethics , 3) Cyber-bullying , 4) Corporate behaviour
+	- Ans : 1
+---
+- Q 11 : A penetration tester must identify and keep in mind the ___________ & ___________  requirements of a firm while evaluating the security postures.<br>Options : 1) privacy and security , 2) rules and regulations , 3) hacking techniques , 4) ethics to talk to seniors
+	- Ans : 1
+---
+- Q 12 : What is the ethics behind training how to hack a system?<br>Options : 1) To think like hackers and know how to defend such attacks , 2) To hack a system without the permission , 3) To hack a network that is vulnerable , 4) To corrupt software or service using malware
+	- Ans : 1
+---
+- Q 13 : Performing a shoulder surfing in order to check other’s password is ____________ ethical practice.<br>Options : 1) a good , 2) not so good , 3) very good social engineering practice , 4) a bad
+	- Ans : 4
+---
+- Q 14 : Identify the term which denotes that only authorized users are capable of accessing the information<br>Options : 1) Confidentiality , 2) Availability , 3) Integrity , 4) Non-repudiation
+	- Ans : 2
+---
+- Q 15 : State whether True or False: Data encryption is primarily used to ensure confidentiality<br>Options : 1) TRUE , 2) FALSE , 3) none , 4) none
+	- Ans : 1
+---
+- Q 16: Identify the Debian-based OS which has 2 virtual machines and focuses on preserving users’ data.<br>Options : 1) Ubuntu , 2) Fedora , 3) Whonix , 4) Kubuntu
+	-  Ans : 3
+---
+- Q 17 : Identify the oldest phone hacking technique used by hackers to make free calls.<br>Options : 1) Spamming , 2) Phreaking , 3) Cracking , 4) Phishing
+	- Ans : 2
+---
+- Q 18 : NO Q <br>Options : 1)  , 2)  , 3)  , 4) 
+	- Ans : 
+---
+- Q 19 : Identify the type of attack which uses a fraudulent server with a relay address.<br>Options : 1) MITM , 2) NTLM , 3) SMB , 4) NetBIOS
+	- Ans : 1
+---
+- Q 20: Identify the port used to connect to Active Directory in Windows 2000.<br>Options : 1) 139 , 2) 445 , 3) 80 , 4) 389
+	- Ans : 4
+---
+- Q 21: Choose among the following techniques, which are used to hide information inside a picture.<br>Options : 1) Image rendering , 2) Steganography , 3) Rootkits , 4) Bitmapping
+	- Ans : 2
+---
+- Q 22: Identify among the following which is used to avoid browser-based hacking.<br>Options : 1) Adware remover in browser , 2) Incognito mode in the browser , 3) Anti-malware in browser , 4) Remote browser access
+	- Ans : 4
+---
+- Q 23: EDR stands for _____? <br>Options : 1) Endless detection and response , 2) Endpoint detection and response , 3) Endless detection and recovery , 4) Endpoint detection and recovery
+	- Ans : 2
+---
+- Q 24: Which of the following is used for monitoring traffic and analyzing network flow?<br>Options : 1) Managed detection and response , 2) Cloud access security broker , 3) Network traffic analysis , 4) Network security firewall
+	- Ans : 3
+---
+- Q 25: In which category does compromising confidential information fall?<br>Options : 1) Threat , 2) Bug , 3) Attack , 4) Vulnerability
+	- Ans : 1
+---
+- Q 26: In which category does the lack access control policy fall?<br>Options : 1) Threat , 2) Bug , 3) Attack , 4) Vulnerability
+	- Ans : 4
+---
+- Q 27: Identify the class of computer threats.<br>Options : 1) Phishing , 2) DOS attack , 3) Soliciting , 4) Both Band C
+	- Ans : 2
+---
+- Q 28: Which software is mainly used to help users detect viruses and avoid them?<br>Options : 1) Antivirus , 2) Adware , 3) Malware , 4) None of the above
+	- Ans : 1
+---
+- Q 29: Identify the term which denotes the violation of principle if the computer is no more accessible.<br>Options : 1) Access control , 2) Availability , 3) Confidentiality , 4) All of the above
+	- Ans : 2
+---
+- Q 30: Which of the following tool is used in Wi-fi hacking?<br>Options : 1) Aircrack-ng , 2) Wireshark , 3) Norton , 4) None
+	- Ans : 1
+---
+- Q 31: Total types of scanning in cyber security is?<br>Options : 1) 1 , 2) 2 , 3) 3 , 4) 4
+	- Ans : 3
+---
+- Q 32: Identify the incorrect type of scanning?<br>Options : 1) SYN Stealth , 2) Null Scan , 3) Xmas tree Scan , 4) Cloud scan
+	- Ans : 4
+---
+- Q 33: Identify the first computer virus among the following.<br>Options : 1) Blaster , 2) Creeper , 3) Sasser , 4) Both b and c
+	- Ans : 2
+---
+- Q 34: Which of the following is considered an element of cyber security?<br>Options : 1) Network security , 2) Operational security , 3) Application security , 4) All of the above
+	- Ans : 4
+---
+- Q 35: Which protocol is mostly used in Wi-fi security?<br>Options : 1) WPS , 2) WPA , 3) WPA2 , 4) Both a and c
+	- Ans : 3
+---
+- Q 36: Full form of TCP/IP?<br>Options : 1) Transmission Control Protocol/ internet protocol , 2) Transform Control Protocol/ internet protocol , 3) Transaction Control protocol/ internet protocol , 4) Transmission Contribution protocol/ internet protocol
+	- Ans : 1
+---
+- Q 37: Why is response and tr3it time used?<br>Options : 1) To measure reliability , 2) To measure security , 3) To measure longevity , 4) To measure performance
+	- Ans : 3
+---
+- Q 38: What is transformed using cipher algorithms?<br>Options : 1) Scalar text , 2) Complex text , 3) Plain text , 4) None
+	- Ans : 3
+---
+- Q 39: Identify the malware which does not replicate or clone through an infection?<br>Options : 1) Trojan , 2) Worms , 3) Rootkits , 4) Virus
+	- Ans : 1
+---
+- Q 40: Choose the features which violate cyber security.<br>Options : 1) Exploit , 2) Attack , 3) Compliance , 4) None
+	- Ans : 2
+---
+- Q 41: Identify the legal form of hacking.<br>Options : 1) Cracking , 2) Non-ethical hacking , 3) Ethical hacking , 4) Hacktivism
+	- Ans : 3
+---
+- Q 42: Malware stands for?<br>Options : 1) Multipurpose software , 2) Malfunctioned software , 3) Malicious software , 4) Malfunctioning of security
+	- Ans : 3
+---
+- Q 43: Identify the least strong security encryption.<br>Options : 1) WPA2 , 2) WEP , 3) WPA3 , 4) WPA
+	- Ans : 2
+---
+- Q 44: Identify the security protocol which is not strong.<br>Options : 1) SMTP , 2) SSL , 3) SFTP , 4) HTTPS
+	- Ans : 1
+---
+- Q 45: Identify the mail tr3ferring methodology which isn’t secured.<br>Options : 1) SSMTP , 2) S/MIME , 3) POP3 , 4) Mail using PGP
+	- Ans : 3
+---
+- Q 46: Identify the private search engine.<br>Options : 1) Bing , 2) Duckduckgo , 3) Google , 4) Yahoo
+	- Ans : 2
+---
+- Q 47: The most common way to maintain data availability?<br>Options : 1) Data clustering , 2) Data Altering , 3) Data Backup , 4) Data Recovery
+	- Ans : 3
+---
+- Q 48: Identify the term among the following which is the first phase of ethical hacking.<br>Options : 1) Footprinting , 2) ARP Poisoning , 3) DNS Poisoning , 4) Enumeration
+	- Ans : 1
+---
+- Q 49: Why is the proxy server used by a hacker?<br>Options : 1) For obtaining remote access connection , 2) Hiding malicious activity on the network , 3) Create a ghost server on the network , 4) Create a stronger connection with the target
+	- Ans : 2
+---
+- Q 50: Identify the type of symmetric key algorithm which uses a streaming cipher to encrypt information.<br>Options : 1) SHA , 2) MD5 , 3) RC4 , 4) Blowfish
+	- Ans : 3
+
+---

@@ -1,0 +1,79 @@
+#WsCubeTech-CEH-Quiz
+
+---
+
+- Q 1 : Which of the following is a secure method of accessing a remote network?<br>Options : 1) ftp , 2) telnet , 3) vpn , 4) snmp
+	- Ans : 3
+---
+- Q 2 : What is the purpose of an SSL certificate in secure web communication?<br>Options : 1) to encrypt email messages , 2) To verify the authenticity of a website , 3) to prevent network attacks , 4) to manage IP addressing
+	- Ans : 2
+---
+- Q 3 : Which protocol is used for resolving IP addresses to MAC addresses?<br>Options : 1) ICMP , 2) ARP , 3) TCP , 4) UDP
+	- Ans : 2
+---
+- Q 4 : What is the purpose of a DNS cache?<br>Options : 1) To store encrypted network traffic , 2) to prevent unauthorized access to the network , 3) To improve the performance of DNS lookups , 4) To detect and remove viruses from network traffic
+	- Ans : 3
+---
+- Q 5 : Which of the following is a common method of securing wireless networks?<br>Options : 1) WEP , 2) FTP , 3) HTTP , 4) DNS
+	- Ans : 1 (Note : in google , WPA/WPA2/WPA3 is the answer)
+---
+- Q 6 : What is the purpose of a proxy server in network security?<br>Options : 1) To encrypt network traffic for secure communication , 2) To detect and respond to network-based attacks , 3) To improve network performance by caching web content , 4) To prevent unauthorized access to the network
+	- Ans : 4
+---
+- Q 7 : Which protocol is used for sending and receiving web pages over the internet?<br>Options : 1) FTP , 2) SMTP , 3) HTTP , 4) DNS
+	- Ans : 3
+---
+- Q 8 : What is the purpose of a DMZ (Demilitarized Zone) in network security?<br>Options : 1) To prevent unauthorized access to the network , 2) To separate a network into secure and non-secure zones , 3) To improve network performance and speed , 4) To translate IP addresses to domain names
+	- Ans : 2
+---
+- Q 9 : Which protocol is used for secure file transfer over the internet?<br>Options : 1) FTP , 2) SMTP , 3) SSH , 4) Telnet
+	- Ans : 1
+---
+- Q 10 : What is the purpose of a proxy server in web filtering?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To improve network performance by caching web content , 4) To detect and remove viruses from network traffic
+	- Ans : 3
+---
+- Q 11 : Which of the following is a common wireless encryption standard?<br>Options : 1) SSL , 2) WPA2 , 3) IPSec , 4) SNMP
+	- Ans : 2
+---
+- Q 12 : What is the purpose of a MAC filter in wireless network security?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To detect and respond to network-based attacks , 4) To improve network performance and speed
+	- Ans : 1
+---
+- Q 13 : What is the purpose of a VPN concentrator in a network infrastructure?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To improve network performance by caching web content , 4) To establish secure VPN connections between networks
+	- Ans : 4
+---
+- Q 14 : Which of the following is a common method of securing wireless networks that provides strong security?<br>Options : 1) WEP , 2) WPA2 , 3) FTP , 4) DNS
+	- Ans : 2
+---
+- Q 15 : What is the purpose of a firewall in network security?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To detect and respond to network-based attacks , 4) To improve network performance and speed
+	- Ans : 1
+---
+- Q 16: Which protocol is used for secure shell access to network devices?<br>Options : 1) FTP , 2) SMTP , 3) SSH , 4) Telnet
+	-  Ans : 3
+---
+- Q 17 : What is the purpose of a network intrusion detection system (NIDS)?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To detect and respond to network-based attacks , 4) To improve network performance and speed
+	- Ans : 3
+---
+- Q 18 : Which protocol is used for translating domain names into IP addresses?<br>Options : 1) FTP , 2) DNS , 3) HTTP , 4) SMTP
+	- Ans : 2
+---
+- Q 19 : What is the purpose of a network address translation (NAT) device?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To improve network performance and speed , 4) To allow multiple devices to share a single public IP address
+	- Ans : 4
+---
+- Q 20: Which of the following is a common method of securing wireless networks that is considered the most secure?<br>Options : 1) WEP , 2) WPA , 3) FTP , 4) DNS
+	- Ans : 2 (but WPA3 is the most recent and most secure wireless security protocol)
+---
+- Q 21: What is the purpose of a network firewall?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To improve network performance by caching web content , 4) To detect and remove viruses from network traffic
+	- Ans : 1
+---
+- Q 22: What is the purpose of a network intrusion prevention system (IPS)?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To detect and respond to network-based attacks , 4) To improve network performance and speed
+	- Ans : 3
+---
+- Q 23: Which of the following protocols operates at the Transport Layer of the OSI model?<br>Options : 1) TCP , 2) HTTP , 3) ICMP , 4) IP
+	- Ans : 1
+---
+- Q 24: Which networking device operates at the Data Link Layer of the OSI model?<br>Options : 1) Router , 2) Switch , 3) Hub , 4) Firewall
+	- Ans : 2
+---
+- Q 25: Which networking protocol is used for dynamically assigning IP addresses to devices on a network?<br>Options : 1) DNS , 2) DHCP , 3) SNMP , 4) ARP
+	- Ans : 2
+---

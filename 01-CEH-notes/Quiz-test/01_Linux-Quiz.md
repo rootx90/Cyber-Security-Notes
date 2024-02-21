@@ -1,0 +1,75 @@
+#WsCubeTech-CEH-Quiz
+
+---
+
+- Q 1 : What is Kali Linux primarily used for<br>Options : 1) Web Development , 2) Game Development , 3) Cybersecurity & penetration testing , 4) CentOS
+	- Ans : 3
+---
+- Q 2 : Kali Linux is based on which Linux distribution <br>Options : 1) Ubuntu , 2) Fedora , 3) Debian , 4) CentOS
+	- Ans : 3
+---	
+- Q 3 : Which package manager is commonly used in Kali Linux for installing and managing software <br>Options : 1) YUM , 2) APT , 3) RPM , 4) DPKG
+	- Ans : Advanced Package Tool (APT)
+---	
+- Q 4 : Which command is used to update the package list and upgrade installed packages in Kali Linux <br>Options : 1) apt-install , 2) apt-get-update , 3) update-apt , 4) upgrade-package
+	- Ans : 2) apt-get update 
+---	
+- Q 5 : Which file is used to configure repository sources in Kali Linux<br>Options : 1) /etc/apt/sources.list  , 2) /etc/repo.con , 3) /etc/sources.list.d/kali.list  , 4) /etc/apt/repo.sources
+	- Ans : 1
+---	
+- Q 6 : What is the default username in Kali Linux<br>Options : 1) admin , 2) root , 3) user , 4) kali
+	- Ans : 4
+---	
+- Q 7 : What does the command "apt-get upgrade" do in Kali Linux<br>Options : 1) Installs new packages , 2) Upgrades all installed packages , 3) Removes packages  , 4) Lists available packages
+	- Ans : 2
+---	
+- Q 8 : Which command is used to change the permissions of a file or directory in Kali Linux<br>Options : 1) chmod , 2) chown , 3) chgrp , 4) perm
+	- Ans : 1
+---	
+- Q 9 : Which directory in Kali Linux contains system-wide configuration files<br>Options : 1) /home , 2) /usr/local , 3) /etc , 4) /opt
+	- Ans : 3
+---	 
+- Q 10 : Which utility is used to change the MAC address of a network interface in Kali Linux<br>Options : 1) ifconfig  , 2) netstat  , 3) macchanger  , 4) iwconfig
+	- Ans : 3
+---	 
+- Q 11 : Which directory is the default location for storing user-specific scripts in Kali Linux<br>Options : 1) /opt , 2) /usr/local/bin , 3) /home/user/bin , 4) /etc/scripts
+	- Ans : 4
+---	 
+- Q 12 : default wordlist location in Kali Linux<br>Options : 1) /usr/share/wordlists , 2) /home/user/worldlists , 3) /usr/local/bin/worldlists , 4) /etc/apt/worldlits
+	- Ans : 1
+---	 
+- Q 13 : What is the purpose of the kali Linux "Metasploit" tool<br>Options : 1) Web application scanning , 2) Vulnerability assessment , 3) Exploiting security vulnerabilities , 4) Firewall configuration
+	- Ans : 3
+---	 
+- Q 14 : What is the purpose of the kali Linux tool "Burp Suite"<br>Options : 1) Port scanning  , 2) Web application testing , 3) Wireless network analysis , 4) Password cracking
+	- Ans : 2
+---	 
+- Q 15 : Which Kali Linux tool is used for scanning & identifying open ports on a target system? <br>Options : 1) wireshark , 2) metasploit , 3) Nikto , 4) Nmap
+	- Ans : Nmap
+---	 
+- Q 16 : What is the default Shell in kali Linux <br>Options : 1) Bash , 2) Zsh , 3) Csh , 4) Dash
+	- Ans : 2
+---	 
+- Q 17 : Which Command is used to install new software packages in kali Linux<br>Options : 1) apt-get search , 2) apt-get install , 3) apt-get upgrade , 4) apt-get remove
+	- Ans : 2
+---	 
+- Q 18 : What does the "man" command do in kali Linux<br>Options : 1) Play music , 2) Display the system's current time , 3) Display the manual pages for commands , 4) Scan for available Wi-Fi networks
+	- Ans : 3
+---	 
+- Q 19: What is the purpose of the "ifconfig" command in kali linux<br>Options : 1) View installed software packages , 2) Configure network interfaces , 3) List available USB devices , 4) Check CPU usage
+	- Ans : 2
+---	 
+- Q 20 : Which tool is used for social engineering attacks in kali linux<br>Options : 1) SET , 2) THC Hydra , 3) Medusa , 4) Nikto
+	- Ans : 1. SET (Social-Engineer Toolkit)
+---	 
+- Q 21 : file location to change Host name<br>Options : 1) /usr/local , 2) /etc/hostname , 3) /home/user/bin , 4) /etc/repo.con
+	- Ans : 2
+---	 
+- Q 22 : Which of the following command is used to change the working directory<br>Options : 1) changed , 2) chdr , 3) dr , 4) cd
+	- Ans : cd
+---	 
+- Q 23 : Which Linux command is used to know which directory you're in<br>Options : 1) know , 2) help , 3) cwd , 4) pwd
+	- Ans : pwd
+---	 
+- Q 24 : Which Linux command is used to go back from a folder to the folder before that<br>Options : 1) cd .. , 2) cd , 3) cd/ , 4) chdir
+	- Ans : 1

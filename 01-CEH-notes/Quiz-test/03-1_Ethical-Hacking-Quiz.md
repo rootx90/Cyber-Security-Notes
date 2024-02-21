@@ -1,0 +1,80 @@
+#WsCubeTech-CEH-Quiz
+
+---
+
+- Q 1 : Which one is not a part of computer networking definition?<br>Options : 1) Footprinting , 2) Communication , 3) Sharing Software  , 4) File Sharing
+	- Ans : 1
+---
+- Q 2 : What is the full form of ISP?<br>Options : 1) International Service Provider , 2) Internet Security Provider , 3) Internet Service Provider  , 4) Information Security Provider
+	- Ans : 3
+---
+- Q 3 : What is the full form of LAN?<br>Options : 1) Legal Address Network , 2) Local Address Network , 3) Local Area Network , 4) Lan Area Network
+	- Ans : 3
+---
+- Q 4 : What A Record stores in DNS?<br>Options : 1) Address of DNS , 2) IP of a Domain , 3) Application runs on Domain , 4) Name of Domain
+	- Ans : 2
+---
+- Q 5 : what does the user-agent header do?<br>Options : 1) Information of User Browser , 2) Information of User Browser , 3) Files supported by an request , 4) None of above
+	- Ans : 1
+---
+- Q 6 : What does Zone file Stores?<br>Options : 1) Records by DNS of Domain , 2) Area of Domain , 3) Information of User , 4) All of above
+	- Ans : 1
+---
+- Q 7 : What does home/ directory stores?<br>Options : 1) Personal Directories of Guest user , 2) Programs of all Commands , 3) Directories of Root , 4) None of the Above
+	- Ans : 1
+---
+- Q 8 : Which directory contains a lot of the files that the programs use to run. This directory is needed to control the operating system.<br>Options : 1) /bin , 2) /tmp , 3) /home , 4) None of above 
+	- Ans : 1
+---
+- Q 9 : Footprinting through Search Engines: Displays the web pages stored in the Google cache.<br>Options : 1) Cache , 2) link , 3) site , 4) allinurl
+	- Ans : 1
+---
+- Q 10 : Footprinting through Search Engines: Restricts a word to not to be in Output<br>Options : 1) - , 2) / , 3) // , 4) None of above
+	- Ans : 1
+---
+- Q 11 : Half open scan is also known as?<br>Options : 1) idle scan , 2) Null Scan , 3) Syn Scan , 4) UDP Scan
+	- Ans : 3
+---
+- Q 12 : How many states does an port can show while network scanning<br>Options : 1) 2 , 2) 5 , 3) 3 , 4) None of the Above
+	- Ans : 3
+---
+- Q 13 : Which Network scanning tool provides GUI env?<br>Options : 1) Zenmap , 2) Nmap , 3) Messcan , 4) None of above
+	- Ans : 1
+---
+- Q 14 : Nmap function for Ack Scan?<br>Options : 1) -sA , 2) -sT , 3) -A , 4) None of above
+	- Ans : 1
+---
+- Q 15 : Which of the following testing processes is the most intrusive?<br>Options : 1) Enumeration , 2) Null Scanning , 3) Numeration , 4) Port Scanning
+	- Ans : 1
+---
+- Q 16: A null session is enabled by default in all the following Windows versions except:<br>Options : 1) Windows 95 , 2) Windows 98 , 3) Windows Server 2008 , 4) Windows 2000
+	-  Ans : 3
+---
+- Q 17 : Which Tools is used for checking SMTP Enumeration?<br>Options : 1) Net Cat , 2) Discover , 3) Recon-ng , 4) None of the Above
+	- Ans : 1
+---
+- Q 18 : Which Protocol is more difficult for a Network administrator?<br>Options : 1) SNMP , 2) SMTP , 3) NFS , 4) All of the above
+	- Ans : 1
+---
+- Q 19 : Which one is an automated vulnerability scanning tool?<br>Options : 1) Nessus , 2) Metasploit , 3) Recon-ng , 4) None of above
+	- Ans : 1
+---
+- Q 20 : What is last 3 digits of Administration Account SID?<br>Options : 1) 301 , 2) 400 , 3) 500 , 4) None of the above
+	- Ans : 3
+---
+- Q 21 : How many stages does dynamic malware analysis have?<br>Options : 1) 2 , 2) 4 , 3) 8 , 4) 3
+	- Ans : 1
+---
+- Q 22 : Host Integrity Monitoring is a stage of which malware analysis method?<br>Options : 1) System Baselining , 2) Static Malware Analysis , 3) None of these , 4) Dynamic Malware Analysis
+	- Ans : 4
+---
+- Q 23 : What type of additional attack does ARP spoofing rely on?<br>Options : 1) DNS Poisoning , 2) replay , 3) MITB , 4) MAC spoofing
+	- Ans : 4
+---
+- Q 24 : What is the goal of social engineering?<br>Options : 1) sabotage a person's social media , 2) To catfish someone , 3) To build trust , 4) To gain vital personal information
+	- Ans : 4
+---
+- Q 25 : Tailgating is also termed as <br>Options : 1) Piggybacking , 2) Phishing , 3) Baiting , 4) Vishing
+	- Ans : 1
+
+---

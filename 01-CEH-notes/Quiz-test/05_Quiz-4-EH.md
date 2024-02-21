@@ -1,0 +1,79 @@
+#WsCubeTech-CEH-Quiz
+
+---
+
+- Q 1 : What must be produced in order to demonstrate security improvement over time?<br>Options : 1) Reports , 2) Testing tools , 3) Metrics , 4) Taxonomy of vulnerabilities
+	- Ans : 3
+---
+- Q 2 : What is the purpose of an SSL certificate in secure web communication?<br>Options : 1) To encrypt email messages , 2) To verify the authenticity of a website , 3) To prevent network attacks , 4) To manage IP addressing
+	- Ans : 2
+---
+- Q 3 : Which protocol is used for resolving IP addresses to MAC addresses?<br>Options : 1) ICMP , 2) ARP , 3) TCP , 4) UDP
+	- Ans : 2
+---
+- Q 4 : What is the purpose of a DNS cache?<br>Options : 1) To store encrypted network traffic , 2) To prevent unauthorized access to the network , 3) To improve the performance of DNS lookups , 4) To detect and remove viruses from network traffic
+	- Ans : 3
+---
+- Q 5 : Which of the following methods is used for passive reconnaissance information gathering?<br>Options : 1) Social engineering , 2) Network traffic sniffing , 3) Man in the middle attacks , 4) Publicly accessible sources
+	- Ans : 4
+---
+- Q 6 : What is the purpose of a proxy server in network security?<br>Options : 1) To encrypt network traffic for secure communication , 2) To detect and respond to network-based attacks , 3) To improve network performance by caching web content , 4) To prevent unauthorized access to the network
+	- Ans : 4
+---
+- Q 7 : Which Intrusion Detection System is the best applicable to analyze the system’s behavior for Desktop PC or Server?<br>Options : 1) HIDS , 2) NIDS , 3) Firewall , 4) Antivirus
+	- Ans : 1
+---
+- Q 8 : What is the purpose of a DMZ (Demilitarized Zone) in network security?<br>Options : 1) To prevent unauthorized access to the network , 2) To separate a network into secure and non-secure zones , 3) To improve network performance and speed , 4) To translate IP addresses to domain names
+	- Ans : 2
+---
+- Q 9 : Which of the following types of firewall inspects specific traffic such as `http:get` or post?<br>Options : 1) Packet filtering firewall , 2) Application-level firewall , 3) Circuit-level gateway firewall , 4) stateful Multilayer Inspection
+	- Ans : 2
+---
+- Q 10 : What is the purpose of a proxy server in web filtering?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To improve network performance by caching web content , 4) To detect and remove viruses from network traffic
+	- Ans : 3
+---
+- Q 11 : A pen-tester is attacking wireless networks using fake authentication and ARP request injection. <br>Which tools should be used by a pen-tester?<br>Options : 1) Aircrack-ng , 2) Airplay-ng , 3) Airman-ng , 4) Wireshark
+	- Ans : 2
+---
+- Q 12 : What is the purpose of a MAC filter in wireless network security?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To detect and respond to network-based attacks , 4) To improve network performance and speed
+	- Ans : 1
+---
+- Q 13 : What is the purpose of a VPN concentrator in a network infrastructure?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To improve network performance by caching web content , 4) To establish secure VPN connections between networks
+	- Ans : 4
+---
+- Q 14 : Vulnerability scanners are automated tools that are used to identify vulnerabilities and misconfigurations of hosts. <br>They also provide information regarding mitigating discovered vulnerabilities. Which of the following statements is incorrect?<br>Options : <br>1) Vulnerability scanners attempt to identify vulnerabilities in the hosts scanned <br>2) Vulnerability scanners can help identify out-of-date software versions, missing patches, or system upgrades <br>3) They can validate compliance with or deviations from the organization's security policy <br>4) Vulnerability scanners can identify weakness and automatically fix and patch the vulnerabilities without user intervention
+	- Ans : 2
+---
+- Q 15 : What is the purpose of a firewall in network security?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To detect and respond to network-based attacks , 4) To improve network performance and speed
+	- Ans : 1
+---
+- Q 16: You need to monitor all traffic on your local network for suspicious activity and receive notifications <br>when an attack is occurring. Which tool would allow you to accomplish this goal?<br>Options : 1) Host based IDS , 2) Proxy , 3) Network based IDS , 4) Firewall
+	-  Ans : 3
+---
+- Q 17 : What is the purpose of a network intrusion detection system (NIDS)?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To detect and respond to network-based attacks , 4) To improve network performance and speed
+	- Ans : 3
+---
+- Q 18 : A technician is resolving an issue where a computer is unable to connect to the Internet using a wireless access point. <br>The computer is able to transfer files locally to other machines, but cannot successfully reach the Internet. <br>When the technician examines the IP address and default gateway they are both on the 192.168.1.0/24. <br>Which of the following has occurred?<br>Options : 1) The gateway is not routing to a public IP address , 2) The computer is using an invalid IP address , 3) The gateway and the computer are not on the same network , 4) The computer is not using a private IP address.
+	- Ans : 1
+---
+- Q 19 : What is the purpose of a network address translation (NAT) device?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To improve network performance and speed , 4) To allow multiple devices to share a single public IP address
+	- Ans : 4
+---
+- Q 20: Which of the following is a common method of securing wireless networks that is considered the most secure?<br>Options : 1) WEP , 2) WPA , 3) FTP , 4) DNS
+	- Ans : 2
+---
+- Q 21: What is the purpose of a network firewall?<br>Options : 1) To prevent unauthorized access to the network , 2) To provide encryption for data transmission , 3) To improve network performance by caching web content , 4) To detect and remove viruses from network traffic
+	- Ans : 1
+---
+- Q 22: You are doing a pen test against an organization that has just recovered from a major cyber-attack. <br>The CISO and CIO want to completely and totally eliminate risk. What is one of the first things you should <br>explain to these individuals?<br>Options : <br>1) Explain that you cannot eliminate all risk but you will be able to reduce risk to acceptable levels <br>2) Explain to them that they need to buy more services <br>3) Tell him everything is going to a ok and collect that check! <br>4) Start the Wireshark application to sniff traffic
+	- Ans : 1
+---
+- Q 23: Which of the following protocols operates at the Transport Layer of the OSI model?<br>Options : 1) TCP , 2) HTTP , 3) ICMP , 4) IP
+	- Ans : 1
+---
+- Q 24: Which networking device operates at the Data Link Layer of the OSI model?<br>Options : 1) Router , 2) Switch , 3) Hub , 4) Firewall
+	- Ans : 2
+---
+- Q 25: Which networking protocol is used for dynamically assigning IP addresses to devices on a network?<br>Options : 1) DNS , 2) DHCP , 3) SNMP , 4) ARP
+	- Ans : 2
+---
