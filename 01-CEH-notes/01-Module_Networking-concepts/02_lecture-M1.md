@@ -26,14 +26,14 @@
 	- so a hardware has it's own address i.e a MAC address ✔
 
 ### versions of IP address : IPv4 VS IPv6
-- difference b/w IPv4 VS IPv6 <br>![](02_lecture-0-M1.jpg)
-- here `v` means version , what version of that IP address , so `v4` - 4th version of IP address<br>& same with IPv6 , & we'll not learn about older versions of IP cuz those are not in use in <br> modern world , so no need to do scanning on them
-- IPv4 - mostly used & IPv6 - currently not in use globally for a common user , <br>so currently IPv6 is in testing phase (for to check whether it's working fine or not)
-- explanation of difference b/w them ✅
+- difference b/w IPv4 VS IPv6 <br><img src="../notes-pics/01-Module/02_lecture/02_lecture-0-M1.jpg" alt="Pic 1" width="500"/>
+- in pic , `v` means version , what version of that IP address , <br>- so `v4` - 4th version of IP address & same with IPv6 , <br>- & we'll not learn about older versions of IP cuz those are not in use in modern world , so no need to do scanning on them
+- IPv4 - mostly used & IPv6 - currently not in use globally for a common user , <br>- so currently IPv6 is in testing phase (for to check whether it's working fine or not)
+- Explanation : difference b/w them ✅
 	- Address size : IPv6 has more storage to send & receive heavy data than IPv4
 	- Address format : 
 		- in IPv4 , using dot to write/show a IPv4 address known as Dotted Decimal Notation <br>in IPv6 , using semi-colon/double quotes to show a IPv6 address known as hexadecimal notation
-		- in IPv4 , total pairs are 4 only & in IPv6 - total 8 pairs
+		- in IPv4 , total pairs are 4 only & in IPv6 - total 8 pairs 
 		- so in IPv6 , first total 4 pairs are same as IPv4 acc. to information wise <br>but last total 4 pairs contains more information about a Device ✔
 	- Prefix Notation : 
 		- in IPv4 , let's say ur one of the router giving maximum limit for IP addresses <br>for connecting `24` devices  & u want to scan 24 IP addresses of each 24 devices <br>then we have 2 ways : 
@@ -52,8 +52,8 @@
 		- how in IPv6 , IP addresses are created ✅
 			-  IP addresses are created via taking numbers from `0 - 9`  & alphabets from `A - F OR a - f` 
 			- so these are 2 ranges due to which IP addresses are created in IPv6
-	- here in this above Pic of IPv6 is wrong , actually IPv6 
-		- looks like this <br>![](02_lecture-00-M1.jpg)
+	- in that above Pic of IPv6 is wrong , actually IPv6 
+		- looks like this <br><img src="../notes-pics/01-Module/02_lecture/02_lecture-00-M1.jpg" alt="Pic 1" width="500"/>
 		- so IPv6 , in one of the pair out of 5 - will contain double colon & rest pairs <br>will have single colon 
 		- The IPv6 addressing architecture allows you use the two-colon (::) notation <br>to **represent contiguous 16-bit fields of zeros**
 		- for more : <br>> [What is IPv6: Important Features and Uses](https://www.spiceworks.com/tech/networking/articles/what-is-ipv6/) <br>> [IPv6 Address Representation | NetworkAcademy.io](https://www.networkacademy.io/ccna/ipv6/ipv6-address-representation)
@@ -133,6 +133,7 @@
 
 ### End of the lecture (Doubts) : 
 - More about Public vs Private IP : [Public vs Private IP Address - PowerCertAnimatedVideos YT](https://www.youtube.com/watch?v=po8ZFG0Xc4Q&ab_channel=PowerCertAnimatedVideos) ✔
+- Q : how to identify which IPv6 format correct & which one is wrong <br>Ans : [parameters to identify which IPv6 correct & which is not](https://www.perplexity.ai/search/examples-of-IPv6-LBMiUVz6QKOshCVRaCIYow) ✔ OR [Ans 2](https://www.perplexity.ai/search/parameters-to-identify-p8kS_P_nQU26L.6h87TeUg)
 - 0) my doubt : in `whatsmyipv4` website ✔
 	- but my IPv4 address is not changing when i try to do via connecting with router & disconnecting+connecting with router <br>even after offing the router & on the router again
 	- but when i try to do it via SIM data network then it's working <br>that IP was Public Dynamic IP address ✔
