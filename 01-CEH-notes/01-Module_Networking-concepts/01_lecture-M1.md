@@ -4,14 +4,14 @@
 
 ### What we'll learn
 > Lecture Name : Intro to Networking
-> 1. what is network & networking 
-> 2. Responsible factors in networking process 
-> 3. Explanation of responsible factors in networking process 
-> 4. Types of Networks in networking 
-> 5. What is LAN 
-> 6. What is MAN 
-> 7. What is WAN 
-> 8. What is IP Address
+> 1. Theory : what is network & networking 
+> 2. Theory : Responsible factors in networking process 
+> 3. Theory : Explanation : responsible factors in networking process 
+> 4. Theory : Types of Networks in networking 
+> 5. Theory : What is LAN 
+> 6. Theory : What is MAN 
+> 7. Theory : What is WAN 
+> 8. Theory : What is IP Address
 
 ---
 
@@ -31,26 +31,24 @@
 7. Sharing Hardware
 8. Sharing Data
 
-### Explanation of responsible factors in networking process ?
-1. Communication :
+### Explanation : responsible factors in networking process
+1. Communication + Sharing of (software + file + info) :
 	- while in communication process , if sharing of (software + file + info + data) happening then it's called networking
 	- Eg : b/w 2 systems , they are sharing of (software + file + info + data) each other then called networking
-2. Rules regarding Networking :
-	1. Information Preservation :
-		- Eg : (Me) System "A" is sending/sharing a PDF to System 'B" (Kate) , so Kate will download that PDF & she will save in her "D-Drive". so preservation means Kate downloaded that PDF & saved in her "D-Drive"
-		- Eg : we're interacting in "Zoom" meeting class with sir then there's no preservation going on & sir is not sharing video recording of the class then this class where it gets preserve & if it's get preserve then how can i retrieve it. so retrieving related to "forensic stuff" , but here we didn't put any physical device to save the video. But Sir is preserving via OBS recording. so for preservation , we need something. so means whatever things are sharing - those things get preserved
-	2. Sharing Software
-		- Eg : Zoom to attend these course Classes
-	3. Security : 
-		- while sharing anything from (Me) System "A" to System 'B" (Kate) , security must
-		  cuz if (Me) System "A" sending/sharing a file to System 'B" (Kate) & the attacker/hacker interrupt in b/w while sharing or that attacker took it or forward something else (like virus via MITM) to System "B" (Kate) 
-		- so security of "Networking" also imp , so Security is also a part of Networking
-	4. Sharing Hardware
-		- in Networking , sharing of hardware also involved & which u can touch & see 
-		  Eg : keyboard , mouse , SSD , etc.
-		- Eg : u don't have data to use Wi-Fi , so u said to ur friend to on the "Hotspot" & u on the Wi-Fi but at the end , the Wi-Fi & the hotspot are hardware's , though both are connecting with each other with a frequency
-		- Eg : when u connect earphone with phone - that's also hardware ,  Bluetooth which u connect with other device - that Bluetooth also a inbuild hardware in ur phone's circuit
-		- Eg of LAN cable : via LAN cable , we can connect 2 systems each other & in router , connecting LAN cable also possible. So via LAN cable , sending/sharing the data. So u can connect WI-FI via LAN cable or wireless. so LAN cable is a hardware where date is sending & receiving data
+2. Information Preservation :
+   - Eg 1 : (Me) System "A" is sending/sharing a PDF to System 'B" (Kate) , <br>so Kate will download that PDF & she will save in her "D-Drive". <br>so preservation means Kate downloaded that PDF & saved in her "D-Drive"
+   - Eg 2 : we're interacting in "Zoom" meeting class with sir then there's no preservation going on <br>& sir is not sharing video recording of the class then this class where it gets preserve <br>& if it's get preserve then how can i retrieve it. so retrieving related to "forensic stuff" , <br>but here we didn't put any physical device to save the video. But Sir is preserving via OBS recording. <br>so for preservation , we need something. so means whatever things are sharing - those things get preserved
+3. Sharing Software :
+   - Eg : Zoom to attend these course Classes
+4. Security : 
+   - while sharing anything from (Me) System "A" to System 'B" (Kate) , security must there <br>
+    cuz if (Me) System "A" sending/sharing a file to System 'B" (Kate) & the attacker/hacker interrupt in b/w while sharing <br>or that attacker took it or forward something else (like virus via MITM) to System "B" (Kate) 
+   - so security of "Networking" v imp , so Security is also a part of Networking
+5. Sharing of (Hardware + data)
+   - Eg 1 : in Networking , sharing of hardware also involved & which u can touch & see (Eg : keyboard , mouse , SSD , etc.)
+   - Eg 2 : u don't have data to use Wi-Fi , so u said to ur friend to turn On the "Hotspot" & u ON ur Wi-Fi <br>& both are connecting with each other with a frequency <br>but at the end , both (the Wi-Fi & the hotspot) are hardwares
+   - Eg 3 : when u connect earphone with phone - that's also hardware , <br>Bluetooth which makes u to connect with other device - that Bluetooth also a inbuilt hardware in ur phone's circuit
+   - Eg 4 : via LAN cable , we can connect 2 systems with each other. So via LAN cable , data can be share. <br>So u can connect to wifi either via LAN cable or wireless connection. <br>So LAN cable (via which data is sent & received) is also a hardware - which considered as sharing of (hardware + data)
 
 ### Types of Networks in networking
 
@@ -64,25 +62,25 @@
 
 - there are many types of Networks but those are sub-types of these 3 & those are not useful to know cuz u'll feel confusion but these 3 are imp
 
-### What is LAN network ?
+### What is LAN network
 - it's a small network 
 - Eg : a router (is a medium to connect) is connected with 4-5 devices & these devices are communicating each other like in ur home 
 - LAN port & LAN cable are 2 different things
-- LAN network are 2 : wireless LAN network , wired LAN network ✔
+- 2 types of LAN network : wireless LAN network , wired LAN network
 
-### What is MAN network ?
+### What is MAN network
 - MAN is greater than LAN - in range wise
-- Eg : in MAN , more devices gets connected like 100-200 devices connected each other or connecting with different LAN networks  each other = a MAN network (means combining different LAN networks each other = a MAN network) 
+- Eg : in MAN , more devices gets connected like 100-200 devices connected each other or connecting with different <br>LAN networks each other = a MAN network (means combining different LAN networks each other = a MAN network) 
 	- Pic 1 : <br> <img src="../notes-pics/01-Module/01_lecture/01_lecture-0-M1.jpg" alt="Pic 1" width="400"/>
 	- Pic 2: <br> <img src="../notes-pics/01-Module/01_lecture/01_lecture-1-M1.jpg" alt="Pic 1" width="800"/>
-- it has bigger range than LAN network
+- it has bigger network range than LAN network
 
-### What is WAN network ?
-- Eg : each countries are connected with internet i.e WWW , so we're able to access google server (which means might be it's server on USA)
+### What is WAN network
+- Eg : each countries are connected with internet i.e WWW , <br>so we're able to access google server (which means might be it's server on USA)
 - in WAN , unlimited devices can be connected 
 - Eg of WAN network : global internet or WWW
 
-### What is IP address ?
+### What is IP address
 - IP - Internet Protocol Address
 - it's a unique address
 - this is a basic identify used in networking
