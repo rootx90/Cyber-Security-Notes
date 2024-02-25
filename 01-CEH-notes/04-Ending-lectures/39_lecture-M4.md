@@ -20,6 +20,7 @@
 	- [GitHub - brootware/awesome-cyber-security-university: 🎓](https://github.com/brootware/awesome-cyber-security-university)
 	- [Free CISSP Training Program | FRSecure](https://frsecure.com/cissp-mentor-program/)
 	- CEHv12 ECouncil : [EC Council CEH V12 Certified Ethical Hacker Course Free Download - Darkwiki](https://www.darkwiki.in/ec-council-ceh-v12-certified-ethical-hacker-course-free-download/)
+	- CEHv12 ECouncil Notes : https://reddit.com/r/CEH/comments/15qihpl/handy_cehv12_study_materials_on_github/?rdt=56108 <br>- https://github.com/Aftab700/CEH_Notes ⭐
 
 ---
 ### Homework

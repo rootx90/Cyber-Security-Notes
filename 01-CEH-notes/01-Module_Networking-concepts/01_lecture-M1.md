@@ -74,7 +74,7 @@
 - MAN is greater than LAN - in range wise
 - Eg : in MAN , more devices gets connected like 100-200 devices connected each other or connecting with different LAN networks  each other = a MAN network (means combining different LAN networks each other = a MAN network) 
 	- Pic 1 : <br> <img src="../notes-pics/01-Module/01_lecture/01_lecture-0-M1.jpg" alt="Pic 1" width="400"/>
-	- Pic 2: <br> <img src="../notes-pics/01-Module/01_lecture/01_lecture-1-M1.jpg" alt="Pic 1" width="900"/>
+	- Pic 2: <br> <img src="../notes-pics/01-Module/01_lecture/01_lecture-1-M1.jpg" alt="Pic 1" width="800"/>
 - it has bigger range than LAN network
 
 ### What is WAN network ?
@@ -188,61 +188,58 @@
 ### End of the lecture (doubts)
 - in next class , we'll see types of IP address & how he choose the IP address while hacking the system via an IP address , these are the things we need to know then only we can do hacking the system via an IP address
 - Doubts (mostly only direct solutions) : 
-	- 0) timeline 1:16:17 - 1:17:12 - Lecture 4 <br>when u did airplane mode ON , then IP address gets changed <br>but what if i off the airplane mode before searching google.com & again u ON <br>then IP address will get changed 
+	- Q : timeline 1:16:17 - 1:17:12 - Lecture 4 <br>when u did airplane mode ON , then IP address gets changed <br>but what if i off the airplane mode before searching google.com & again u ON <br>then IP address will get changed 
 		- Ques : so the new IP address that we got , so is again a new request will go from this New IP address 
 		- Ans : when u do airplane mode off then a packet will go first but with packet + more details also go <br>which will see in upcoming lectures <br>so once the packet reach to the google server , then google will see IP address got changed <br>so No new request will go again from the new IP address ✔ <br>- any packet request will go when u do a request 📃
-	- 1) once u learn the kali then u can use Parrot OS too <br>Kali & Parrot OS are both made on debian os based , so commands will be same but ubuntu & other OS are different each other mostly & window OS are based on GUI mostly , So once u learned the Kali then other OS are easier to use & understand
-	- 2) the practical demo u saw about How to hack a system via an IP address is just a tiny example , later on we'll see from scratch
+	- Q : once u learn the kali then u can use Parrot OS too <br>Kali & Parrot OS are both made on debian os based , so commands will be same but ubuntu & other OS are different each other mostly & window OS are based on GUI mostly , So once u learned the Kali then other OS are easier to use & understand
+	- Q : the practical demo u saw about How to hack a system via an IP address is just a tiny example , later on we'll see from scratch
 		- if u type `ipconfig /all` command on cmd & on internet - search for my ip address then in both situation - IP address will be different why ?
 		- cuz we need to understand types of IP address & we'll also understand why it's like that
-	- 3) to become better EH , then u have to practice a lot & revise
-	- 4) while doing that practical for hacking a system via an IP address , so here comes that we need to hide our actual IP address , so that no one can find us , otherwise our details also get revealed & mac address also contain details
-	- 5) Advice : in order understand , u have to clear ur base or make ur fundamentals strong
-	- 6) google has it's own server , so same as bank also has their own servers
-	- 7) LAN port & LAN network = both are different each other 📃
-	- 8) in that practical demo class of hacking a system via IP address that system , so we found the port also , so later on we'll learn about Ports in depth , cuz mostly attacks are depend on ports , also don't need to know every ports 📃
-	- 9) why we can't access IP address of google instead of typing name of google , this we'll see in upcoming lecture that actually behind the scene , how "google" name gets converted into IP address 
-	- 10) in Practical demo of IP address , when we access Port , a port was running a service i.e bindshell - so shell means terminal & bind means joining/connecting 2 different terminals together , but port 443 used for transferring & receiving the data securely , so Port no. 443 will never give access to join with a terminal , so when we know working of each PORT then we'll able to hack each port & Port no. 3 is HTTPs with SSL certificate 
-	- 11) we'll see about session hijacking
-	- 12) in this course , we'll not see the direct way like hacking social media , but u'll get complete understanding of hacking process
-	- 13) u can root the phone for kali via termux
-	- 14) to explain a topic , first clear the base then tell about the topic to that person
-	- 15) whenever u got a doubt , then first give 100% by urself but if u still not able to do after trying 2-3 times then ask , cuz due to this 2 things happen : 1) solving doubts gets much better 2) knowledge will increase , but directly going into doubt session & sir will clear ur doubt then u'll learn nothing 📃
-	- 16) in practical demo of hacking a system via IP address , so in next class , we'll see how to identify is this ur IP address or not & that IP address is not of Victim 📃
-	- 17) always make ur own notes instead of using or taking of someone's notes<br> cuz when u write ur own notes then u'll get doubts in ur mind which is helpful for u & making ur own notes will make ur base strong 📃
-	- 18) phishing attack , credit card got hacked ? if u give details of ur credit card on unknown website + give all OTP then ur details will get taken away & hacking server of a bank is not easy - cuz server of a bank contain different types of firewall & 99.9% difficult to reach there 📃
+	- Q : to become better EH , then u have to practice a lot & revise
+	- Q : while doing that practical for hacking a system via an IP address , so here comes that we need to hide our actual IP address , so that no one can find us , otherwise our details also get revealed & mac address also contain details
+	- Q : Advice : in order understand , u have to clear ur base or make ur fundamentals strong
+	- Q : google has it's own server , so same as bank also has their own servers
+	- Q : LAN port & LAN network = both are different each other 📃
+	- Q : in that practical demo class of hacking a system via IP address that system , so we found the port also , so later on we'll learn about Ports in depth , cuz mostly attacks are depend on ports , also don't need to know every ports 📃
+	- Q : why we can't access IP address of google instead of typing name of google , this we'll see in upcoming lecture that actually behind the scene , how "google" name gets converted into IP address 
+	- Q : in Practical demo of IP address , when we access Port , a port was running a service i.e bindshell - so shell means terminal & bind means joining/connecting 2 different terminals together , but port 443 used for transferring & receiving the data securely , so Port no. 443 will never give access to join with a terminal , so when we know working of each PORT then we'll able to hack each port & Port no. 3 is HTTPs with SSL certificate 
+	- Q : we'll see about session hijacking
+	- Q : in this course , we'll not see the direct way like hacking social media , but u'll get complete understanding of hacking process
+	- Q : u can root the phone for kali via termux
+	- Q : to explain a topic , first clear the base then tell about the topic to that person
+	- Q : whenever u got a doubt , then first give 100% by urself but if u still not able to do after trying 2-3 times then ask , cuz due to this 2 things happen : 1) solving doubts gets much better 2) knowledge will increase , but directly going into doubt session & sir will clear ur doubt then u'll learn nothing 📃
+	- Q : in practical demo of hacking a system via IP address , so in next class , we'll see how to identify is this ur IP address or not & that IP address is not of Victim 📃
+	- Q : always make ur own notes instead of using or taking of someone's notes<br> cuz when u write ur own notes then u'll get doubts in ur mind which is helpful for u & making ur own notes will make ur base strong 📃
+	- Q : phishing attack , credit card got hacked ? if u give details of ur credit card on unknown website + give all OTP then ur details will get taken away & hacking server of a bank is not easy - cuz server of a bank contain different types of firewall & 99.9% difficult to reach there 📃
 		- if u think that bank's server gets slow down then u can enter ? but that's not , for eg : when a server of google gets slow down then google redirect it's users on different server 📃
 		- but if any issue happen in bank's server then bank shut down it's server until it gets resolve , cuz if any hacker know about that server of a bank is in maintenance then the hacker will attack 📃
 		- & mostly bank server gets open for updates & while updating a bank's server then that bank's server gets connected with high speed internet for 2-4min for updating , so that much security the bank's servers kept
-	- 19) anything possible to hack like bitcoin or mining <br>in blockchain , technology is decentralized which means no body is controlling but centralized technology eg : facebook - controlling by mark zuckerberg , but in blockchain technology - there's no owner to control it , so it's handled + manage + secure via people who are using them like u , but in blockchain - data is not stored in one system - data is divided into multiple devices & to hack then u have to hack each system but to make a blockchain group , there's a "smart contract" being made which is same for everyone , so if "smart contract' being hacked then each system gets hacked & u can hack somebody's blockchain wallet but u have to do RND 📃
-	- 20) mining in blockchain - required bunch of best GPU in order to hack a mining & for mining , different OS comes , PC for mining will be different than ur normal PC & u can't stop that PC - cuz it should be run continuously for mining
-	- 21) importance of VMware , due to it - data can't be harmed cuz system of VMware is different than ur actual system - it's like using 2 different Laptops 📃
-	- 22) changing location via IP address of different countries possible via VPNs & proxies & how hackers are able to change the location - it depends on VPN or Proxies cuz like VPN has time limit to change the IP address & location
+	- Q : anything possible to hack like bitcoin or mining <br>in blockchain , technology is decentralized which means no body is controlling but centralized technology eg : facebook - controlling by mark zuckerberg , but in blockchain technology - there's no owner to control it , so it's handled + manage + secure via people who are using them like u , but in blockchain - data is not stored in one system - data is divided into multiple devices & to hack then u have to hack each system but to make a blockchain group , there's a "smart contract" being made which is same for everyone , so if "smart contract' being hacked then each system gets hacked & u can hack somebody's blockchain wallet but u have to do RND 📃
+	- Q : mining in blockchain - required bunch of best GPU in order to hack a mining & for mining , different OS comes , PC for mining will be different than ur normal PC & u can't stop that PC - cuz it should be run continuously for mining
+	- Q : importance of VMware , due to it - data can't be harmed cuz system of VMware is different than ur actual system - it's like using 2 different Laptops 📃
+	- Q : changing location via IP address of different countries possible via VPNs & proxies & how hackers are able to change the location - it depends on VPN or Proxies cuz like VPN has time limit to change the IP address & location
 		- How VPN works , like VPN give u an IP address & ur system has it's own IP address , so once ur system generate a packet request then that packet request goes to VPN & VPN will stop ur actual IP address & VPN will use it's own IP address to send that packet request to the internet or that server (which contain the resource of that packet request) & whatever reply comes , the VPN will send to ur actual IP address
 		- but currently u're think that due to VPN u're secure but VPN which u're using i.e made by a company
 		- & now rules are made for company who make VPN & proxies i.e will keep the record of the user cuz if VPN's IP address goes to the internet & any illegal activities happen then investing will happen
 		- & cyber Police will ask from the company that which person was using this IP address of VPN at assume current time is 10:24
-	- 23) Advice : nothing is secure on the internet 100% 📃
-	- 24) we'll make our on custom proxies not VPN - later on , cuz VPN is not secure but proxy is much secure to change the IP address - which we just saw in 22) 📃
-	- 25) how to be anonymous ? 
+	- Q : Advice : nothing is secure on the internet 100% 📃
+	- Q : we'll make our on custom proxies not VPN - later on , cuz VPN is not secure but proxy is much secure to change the IP address - which we just saw in 22) 📃
+	- Q : how to be anonymous ? 
 		- so by doing some settings , we can change our IP address & mac address
 		- can anybody trace me if we're using VPN & if we're using proxy then nobody can trace ? 
 		- but if we're using proxy then still chance that the hacker can trace but we'll see more better things which are not hackable
 		- one thing remember that if u're doing any wrong activity then nothing is secure but if u're doing good things then everything is secure
-	- 26) if u're learning something then in 2 ways can be used bad or good , but if u don't know whatever action/steps u're gonna take towards that bad thing & how that action can impactful at what percentage then don't take a action/steps towards that bad thing 📃
-	- 27) never do bad things even if someone give u big chunk of money
-	- 28) VPN & proxies are used for security purpose
-	- 29) cyber police don't do investing each VPN , they only check if they found a crime
-	- 30) u should know ur mistakes & limits , etc due to which u can fail , so never do that kindof work or make career in those stuff where u always fail
-	- 31) a VPN's companies , give same IP address which u were using at that time
-
----
-
-### End of the Lecture (Doubts) : 
-- timeline 47:38 - 1:10:27 Lecture 1 : two practical examples not done yet by myself ⭐
-	- but atleast write the tool & commands for references
-	- Those Steps are not explained in depth in order to implement practical so when u get the SSD then implement to check
-- Ques : how to access root folder of Kali <br> Ans : sudo -i <br>for More : [open root terminal in kali](https://www.wikihow.com/Open-the-Root-Terminal-in-Kali-Linux)
-- Q : How Does the Internet Work? <br>Ans : [How Does the Internet Work? - Glad You Asked S1 - YouTube](https://www.youtube.com/watch?v=TNQsmPf24go&ab_channel=Vox)
-- Q : What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi <br>Ans : [What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi - YouTube](https://www.youtube.com/watch?v=iKYHf22qVdM&ab_channel=Vox&ab_channel=TEDEd)
+	- Q : if u're learning something then in 2 ways can be used bad or good , but if u don't know whatever action/steps u're <br>gonna take towards that bad thing & how that action can impactful at what percentage <br>then don't take a action/steps towards that bad thing 📃
+	- Q : never do bad things even if someone give u big chunk of money
+	- Q : VPN & proxies are used for security purpose
+	- Q : cyber police don't do investing each VPN , they only check if they found a crime
+	- Q : u should know ur mistakes & limits , etc due to which u can fail , so never do that kindof work or make career in those stuff where u always fail
+	- Q : a VPN's companies , give same IP address which u were using at that time
+- Mine Doubts : 
+    - timeline 47:38 - 1:10:27 Lecture 1 : two practical examples not done yet by myself ⭐
+    	- but atleast write the tool & commands for references
+    	- Those Steps are not explained in depth in order to implement practical so when u get the SSD then implement to check
+    - Ques : how to access root folder of Kali <br> Ans : sudo -i <br>for More : [open root terminal in kali](https://www.wikihow.com/Open-the-Root-Terminal-in-Kali-Linux)
+    - Q : How Does the Internet Work? <br>Ans : [How Does the Internet Work? - Glad You Asked S1 - YouTube](https://www.youtube.com/watch?v=TNQsmPf24go&ab_channel=Vox)
+    - Q : What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi <br>Ans : [What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi - YouTube](https://www.youtube.com/watch?v=iKYHf22qVdM&ab_channel=Vox&ab_channel=TEDEd)
 
