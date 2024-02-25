@@ -2,7 +2,7 @@
 
 ---
 ### What we'll learn 
-- we'll connect all those knowledges what we have learned yet 
+- we'll connect all those knowledge what we have learned yet 
 > Lecture Name : how internet works
 	1.1) public vs private IP address & LAN vs WAN & localhost
 	1.2) source & destination
