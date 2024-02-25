@@ -110,6 +110,7 @@
 - now that packet details contain those information which is `GET /doc/text.html HTTP/1.1` <br>so understanding this packet we'll see in next lecture <br>currently just understand what's request & response
 ### End of the lecture (doubts)
 - timeline 30:40 - 30-50 : without SSL - a website is not secure
+- Q : about DNS : <br>https://blog.bytebytego.com/p/why-the-internet-is-both-robust-and
 - 1) about domain
 	- domain is made in less letter to make it small 
 	- & domain doesn't contain special characters & it's not made case sensitive <br>that's why in any way we want to search that website - we can

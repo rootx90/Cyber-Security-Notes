@@ -40,12 +40,3 @@
 40. [19-12-2023 - YouTube](https://www.youtube.com/watch?v=iZYQGJWqkCU) : More resources for courses like EC-council CEHv12 , etc
 41. 
 42. 
-43. 
-44. 
-45. 
-46. 
-47. 
-48. 
-49. 
-50. 
-51. 
