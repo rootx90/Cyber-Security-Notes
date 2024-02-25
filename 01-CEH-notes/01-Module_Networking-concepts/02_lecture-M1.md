@@ -12,10 +12,10 @@
 
 ### What is MAC address
 - Importance of it
-	- for network address , we use IP address but with only using network address, communication can't happen <br>cuz in our system - attach with many things which should contain address of those things (like wifi adapter)
-	- let's say what if someone connect ur "wifi adapter" with a network for crime & illegal things , <br>then there's no identity left cuz "wifi adapter" is a hardware <br>that's why it's very imp , so MAC address is for every hardware devices ✔
-	- Eg : wifi router has it's own unique MAC address , <br>but in network address, IP address used - cuz in network, communication happens via frequencies ✔
-	- Eg of hardwares which has a MAC address : bluetooth , etc
+	- for network address , we use IP address but with only using network address, communication can't happen <br>cuz in our system - there are many things attach to the system which should contain address of those things (like wifi adapter)
+	- let's say what if someone connect ur "wifi adapter" with a network to do crime & illegal things - then there's no identity left <br>cuz "wifi adapter" is a hardware - that's why it's very imp , so MAC address is unique & given to every hardware devices ✔
+	- Eg : a wifi-router has it's own unique MAC address , <br>but in network address, IP address used - cuz in network, communication happens via frequencies ✔
+	- Eg of hardwares which has a MAC address : bluetooth , wifi-router , monitor , etc
 - About it
 	- MAC address = aka hardware address
 	- it's a unique address for every hardware devices (like wifi-adapter)
