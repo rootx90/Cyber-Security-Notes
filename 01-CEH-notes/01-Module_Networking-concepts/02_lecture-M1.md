@@ -3,10 +3,10 @@
 ---
 ### What we'll learn 
 > Lecture Name : Type Of Networks
-> 1. What is MAC address
-> 2. versions of IP address : IPv4 VS IPv6
-> 3. Types of IP address + why types of IP address invented + rules for only private vs public IP
-> 4. all about MAC Address
+> 1. Theory : What is MAC address
+> 2. Theory : versions of IP address : IPv4 VS IPv6
+> 3. Theory : Types of IP address + why types of IP address invented + rules for only private vs public IP
+> 4. Theory : all about MAC Address
 
 ---
 
