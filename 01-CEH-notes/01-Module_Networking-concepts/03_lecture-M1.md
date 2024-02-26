@@ -4,11 +4,11 @@
 ### What we'll learn 
 - we'll connect all those knowledge what we have learned yet 
 > Lecture Name : how internet works
-> 1. Theory : How Internet Works <br>
-> 	1.1) public vs private IP address & LAN vs WAN & localhost <br>
-> 	1.2) source & destination <br>
-> 	1.3) ways to give/assign IP address to give to the system & features of router i.e DHCP vs ARP
-> 2. Theory : Example : how Internet works
+> 1) Theory : How Internet Works
+> 	 - public vs private IP address & LAN vs WAN & localhost
+> 	 - source & destination
+> 	 - ways to give/assign IP address to give to the system & features of router i.e DHCP vs ARP
+> 2) Theory : Example : how Internet works
 
 ---
 ### how internet works ?
