@@ -111,7 +111,8 @@ lecture (30-oct-2023) - all about ports & protocols (timestamp 4:17 - 6:55)
 - & u'r  system's IP is 4.4.4.4
 - Q : & u want to connect with sir then which IP will be shared 
 	- Pic <br><img src="../notes-pics/01-Module/03_lecture/03_lecture-10-M1.jpg" alt="Pic 1" width="600"/>
-	- i.e 3.3.3.3 - cuz it's a Public IP address of the router which is used in WAN network <br>& 192.168.1.20 <br>- is Private IP of the system of sir & this Private IP address doesn't go outside of the LAN network <br>- means this Private IP address limited around the router connection
+	- i.e 3.3.3.3
+	- Reason : cuz `3.3.3.3` it's a Public IP address of the router which is used in WAN network <br>& `192.168.1.20` is Private IP of the system of sir & this Private IP address doesn't go outside of the LAN network (means this Private IP address limited around the router connection)
 
 ### End of the lecture
 - Advice : timeline 7:01 - 7:38
