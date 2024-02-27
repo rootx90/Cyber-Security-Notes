@@ -126,7 +126,8 @@
 	- STEP 2 : click on "Get ur Ninite" button
 	- Ninite : is a good platform to download multiple softwares at once & less chance of virus to come
 ### End of the Lecture (Doubts) : 
-- More on : HTTP Request Header Packet : <br>https://code.tutsplus.com/http-headers-for-dummies--net-8039t
+- about HTTP Request Header Packet ✔ <br>Ans : https://code.tutsplus.com/http-headers-for-dummies--net-8039t
+- about OPTIONS method ✔ <br>Ans : [what's the usecase of OPTIONS method in HTTP request methods](https://www.perplexity.ai/search/whats-the-usecase-iNvGx1wARkCLqgBQ.vLg1w)
 - Q : someone did something via Kali Linux & he/she installed the kali in VMware in main system <br>so can we reach to his/her from VMware to main system
 	- Ans : Yes , cuz VMware installed in ur actual System , so if any info goes from VMware to browser 
 	- Q : browser is wide wide or LAN network ? <br>Ans : it's world wide , so here IP address will be Public
