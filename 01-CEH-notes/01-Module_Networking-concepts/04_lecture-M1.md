@@ -173,7 +173,7 @@
 	- About ARP
 		- Q : what is ARP in wifi-router <br>Q : in wifi-router , is ARP considered as a data packet or a protocol ? <br>Ans : <br>> [Ans 1](https://www.perplexity.ai/search/in-wifirouter-is-lLBms0eST8qOoPyZgmLS8Q?s=u)<br>> [Ans 2](https://www.perplexity.ai/search/what-is-ARP-P4OXAwQ3TOmfciz9etE9zw?s=u)
 		- Q : why wifi-router send ARP packet ? if wifi-router sends ARP packet then where that ARP packet goes ? <br>Ans : [why wifi-router send ARP packet ? if wifi-router sends ARP packet then where tha...](https://www.perplexity.ai/search/why-wifirouter-send-y_XMcDteQaCM3tfv.HGsFQ?s=u)
-		- Q : what happens when a router receives an arp request <br>Ans : [Ans](https://www.perplexity.ai/search/why-wifirouter-send-y_XMcDteQaCM3tfv.HGsFQ?s=u)
+		- Q : what happens when a router receives an ARP request <br>Ans : [Ans](https://www.perplexity.ai/search/why-wifirouter-send-y_XMcDteQaCM3tfv.HGsFQ?s=u)
 	- Q : how does a router determine the mac address of a device <br>Ans : [Ans](https://www.perplexity.ai/search/why-wifirouter-send-y_XMcDteQaCM3tfv.HGsFQ?s=u)
 - Q : Domain of a website - also connected with server of that website
 - Q : if ur ISP providing internet to u then whatever searches u're doing - are they able to read my searches data ? <br>Ans : No , even if they try then can't cuz packets are encrypted form
