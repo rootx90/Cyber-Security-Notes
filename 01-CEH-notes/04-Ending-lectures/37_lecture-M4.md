@@ -132,7 +132,7 @@
 
 ### Resources : 500 Books
 - Q : which one to read <br>Ans : read those books which u think that it's required + necessary acc. to ur knowledge level , leave the advance
-- Download Link : 
+- Download Link : https://drive.google.com/file/d/1xxZzXXK2YyKjcXEgnHUyfM8MC5W7Q4D0/view
 - Advice : <br>- acc. to u "what u don't know or u think that topic is weak" - then pic that book <br>- HackersPlayBook - is good <br>- if u getting understanding via books - then refer YTchannels related to that
 
 ---
