@@ -126,8 +126,12 @@
 	- STEP 2 : click on "Get ur Ninite" button
 	- Ninite : is a good platform to download multiple softwares at once & less chance of virus to come
 ### End of the Lecture (Doubts) : 
-- about HTTP Request Header Packet ✔ <br>Ans : https://code.tutsplus.com/http-headers-for-dummies--net-8039t
-- about OPTIONS method ✔ <br>Ans : [what's the usecase of OPTIONS method in HTTP request methods](https://www.perplexity.ai/search/whats-the-usecase-iNvGx1wARkCLqgBQ.vLg1w)
+- about HTTP Request Header Packet <br>Ans : https://code.tutsplus.com/http-headers-for-dummies--net-8039t
+- about OPTIONS method 
+    - Ans : [what's the usecase of OPTIONS method in HTTP request methods](https://www.perplexity.ai/search/whats-the-usecase-iNvGx1wARkCLqgBQ.vLg1w)
+    - 1st) The HTTP OPTIONS method is like asking a server, "Hey, what can I do with you?" <br>2) It helps the client know which operations (like GET, POST, DELETE) are allowed on a specific resource. <br>3) The server responds with a list of supported methods, so the client knows what it can ask the server to do. <br>4) It's a way for the client to understand how to interact with the server without actually changing anything on the server itself.
+- about CONNECT method
+    - Ans : <br>> https://www.youtube.com/watch?v=B0dRnG0GWJg&t=3s&ab_channel=RamNJava <br>> https://www.perplexity.ai/search/whats-the-usecase-kr1met5fRZ.1Z9hY4DfWEQ
 - Q : someone did something via Kali Linux & he/she installed the kali in VMware in main system <br>so can we reach to his/her from VMware to main system
 	- Ans : Yes , cuz VMware installed in ur actual System , so if any info goes from VMware to browser 
 	- Q : browser is wide wide or LAN network ? <br>Ans : it's world wide , so here IP address will be Public
