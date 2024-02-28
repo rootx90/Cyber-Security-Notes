@@ -11,13 +11,14 @@
 
 ### What is Linux
 - it's a OS (like in phone - android is running , in lapi - windows OS running)
-- free to use cuz - it's open source
+- free to use (cuz - it's open source)
 	- situation 1 for windows OS : a developer came & he made a OS & he don't want to allow anyone to use <br>windows OS freely , so he sold with every system & he earned a lot
 	- Situation 2 for linux OS : a developer came in world & he decided to make a OS which is free to for everyone <br>cuz there are many people who can't able to use the system - due to Windows OS is expensive
 	- open source means anyone can use it freely - means the source code of it is free to everyone <br>but windows OS source code is paid , so if someone try to seen it then can't standard
 - open source code to modify
 - Linux OS is based on linux kernel
 	- kernel : means it comes b/w software & hardware & it helps to build the insteraction/communication <br>b/w software & hardware
+- This OS is case-sensitive
 - made on sep-17-1991 & made by Linus Torvalds
 - community
 	- means Windows OS is controlled by Microsoft - but nobody owns the Linux OS
