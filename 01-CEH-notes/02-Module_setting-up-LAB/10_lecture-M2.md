@@ -72,6 +72,7 @@
 		- STEP 1 : 1st , we'll find info from the website <br>- search only "wscubetech" on google (not wscubetech.com) <br>- so acc. to our search , we'll get google map location of it , we can go to website <br>- STEP 1.1 : go to More > About Us page & scroll down - so mostly details are in "Contact Us" page <br>- in "Contact Us" page , address + mobile no. + email address are given <br>so these are the details which the company wants to tell/show
 		- `Advice ⭐` : in ethical hacking , never just look for info from just seeing above stuff (like <br>this company just show it's courses website cuz they want to show their website above in "search results" via SEO) <br>so always dig into deep for information gathering <br>- cuz I.G is a 1st vital step - so do it properly before doing any other steps (like scanning)
 		- STEP 2 : digging into deep of the website <br>- open it's linkedin , insta , upwork , interest , medium , twitter , etc websites related that website<br>- so open those websites which are not ranked & related to wscubetech & <br>try to get information gathering related to the website <br>- from Linkedin social , u'll see many info about like how many employees currently working , etc
+		- Mine thought : u can also use this tool for more info : https://www.zaubacorp.com/
 		- STEP 3 : & if a website asking for login - then don't login & u can close the website <br>if that website doesn't contain much info about the Victim's website <br>- if u do information gathering process on justdial about the website - then u'll get GST no. <br>- in rocketreach.co website , employees info showing of wscubetech <br><img src="../notes-pics/02-Module/10_lecture/10_lecture-6-M2.jpg" alt="" width="500"/>
 		- in crunchbase.com website related to victim's website , in technology tab - monthly visit showing <br><img src="../notes-pics/02-Module/10_lecture/10_lecture-7-M2.jpg" alt="" width="500"/>
 		- in zaubacorp.com , u'll get CIN no. , registration no. about that website
@@ -83,5 +84,5 @@
  
 ### End of the Lectures (Doubts) : 
 - Advice : No need to install anything , when time comes for that concept then we'll install 🧠
-- Advice : a person asked that we saw `.py` file , so why these programming languages file made <br>Don't distract urself & it'll go out of topic if we go deep into it , <br>> In this course , Programming languages didn't use , python will be used in Penetration testing
+- Advice : a person asked that we saw `.py` file , so why these programming languages file made <br>Don't distract urself & it'll go out of topic if we go deep into it<br>> In this course , Programming languages didn't use , python will be used in Penetration testing
 - Advice : don't understand what was TBomb , in Lecture 9 : we were just understanding <br>how to install a package/software via Linux command , don't try to understand "what TBomb do" <br>- avoid it otherwise u'll waste ur time
