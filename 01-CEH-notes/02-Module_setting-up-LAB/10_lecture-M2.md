@@ -7,6 +7,7 @@
 >    - apt update --fix-missing
 >    - apt install --fix-broken
 >    - 3 playstore in Kali Linux to install apps
+> 2) Information Gathering / Footprinting & Reconnaissance
 > - Homework
 
 ---
