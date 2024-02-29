@@ -119,16 +119,16 @@
 		- Story
 			- Q : can we access files & folders from a computer of any client <br>Ans : No , any client can access their own computer not others
 			- so a developer when make a website then that website contain files & folders <br>& they extract that website & kept files + folders on a server <br>Q : can we access/see files & folders of a website of a developer <br>Ans : no , cuz they are private
-			- only in one case possible via which we can access/see those files & folders <br>if that server has a problem in itself & that might be `Directory Traversal` ✔
+			- only in one case possible via which we can access/see those files & folders <br>if that server has a problem in itself & that might be `Directory/path Traversal` ✔
 			- so if any server has issue of `Director Traversal` - then files & folders of that server <br>we can see clearly & sometime `Director Traversal` aka `indexof:` ✔
 			- so we can't access/see files & folders of a server until we hack or has any vulnerabilities like `indexof:` ✔
 			- so any website has vulnerabilities issue of `indexof:` - then we can access/see files & folders 
 			- this issue is little dangerous & special way also
 		- Examples 
-			- Eg 1 : `indexof:facebook.com` <br>- so anything which is running connectivity of facebook but their server has vulnerability of `Directory Traversal` ✔ <br><img src="../notes-pics/02-Module/12_lecture/12_lecture-11-M2.jpg" alt="" width="500"/> <br>- files & folders <br><img src="../notes-pics/02-Module/12_lecture/12_lecture-12-M2.jpg" alt="" width="500"/>
+			- Eg 1 : `indexof:facebook.com` <br>- so anything which is running via connectivity of facebook but their server has vulnerability of `Directory Traversal` ✔ <br><img src="../notes-pics/02-Module/12_lecture/12_lecture-11-M2.jpg" alt="" width="500"/> <br>- files & folders <br><img src="../notes-pics/02-Module/12_lecture/12_lecture-12-M2.jpg" alt="" width="500"/>
 			- so due to `Directory Traversal` vulnerability in their server - that's why we can see files & folders
 			- Eg 2 : `indexof:aiims` 
-		- via this issue , we can find out more vulnerabilities in a website & can hack <br>cuz what if in those files & folders - there is imp files - then due to this a website become <br>more vulnerable ✔
+		- via this issue , we can find out more vulnerabilities in a website & can hack <br>cuz what if in those files & folders - there is imp files - then due to this a website become more vulnerable ✔
 
 ---
 ### Homework
@@ -137,5 +137,6 @@
 
 ---
 ### End of the Lectures (Doubts) : 
+- More on : Google Dorks/Operators : <br>> https://www.youtube.com/watch?v=u_gOnwWEXiA&ab_channel=NullByte <br>> https://www.youtube.com/watch?v=lESeJ3EViCo&ab_channel=Hak5 <br>> https://www.youtube.com/watch?v=hrVa_dhD-iA&ab_channel=NetworkChuck <br>> https://www.youtube.com/watch?v=xpzvlC6WNPU&ab_channel=An0nAli <br>> https://www.youtube.com/watch?v=QLhUYxgalKI&ab_channel=CyberStudies <br>> https://www.youtube.com/watch?v=GlIG37uZSjQ&ab_channel=Afshan-AFSHackersAcademy
 - Advice : clear ur doubts during lecture, cuz taking ur doubts at home is like baggage <br>if u're getting any doubt in ur mind during lecture then clear it right now <br>otherwise if u're not getting doubt during lecture then it's fine ✔
 - Advice - Q : can i get the PPT via which Sir Explain <br>Ans : those PPT are not useful cuz only points are written in those PPT <br>so make ur own self-notes , so these PPT are useless & in future , u'll get many books to read
