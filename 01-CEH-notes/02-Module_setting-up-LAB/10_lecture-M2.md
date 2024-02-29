@@ -45,14 +45,14 @@
 - Q : importance of information Gathering<br>Ans : Story
 	- let's a MNC company hired a Black Hat Hacker & company said him to hack a system <br>so that "black hat hacker" did all combinations of attack (which are related to Windows OS) whatever possible <br>But he didn't able to hack the system , so again company hired a "Ethical Hacker" <br>so this "Ethical Hacker" guy - his 1st step of hacking process - he gathered information <br>> For Eg : identify IP address running , which OS using , what are applications running on it with their versions , <br>Owner of the website , etc . So he did complete scanning <br>> so during scanning process , he got to know - that linux OS is running & in application - vftpd software <br>& it's version is 2.3.4 <br>> Now he did a search that - in this version of that application - what's the vulnerabilities . Then he got <br>a vulnerability in vftpd software & he exploited the system  <br>> then in few min/secs - he hacked the system - cuz he got to know which OS running on the system i.e linux
 	-  Conclusion : <br>- "Black Hat Hacker" : neither gather any information nor run any task & he was running windows OS related attacks <br>& the system was Linux . So he never able to hack that system <br>- That's why - before hacking , Information Gathering is v imp <br><img src="../notes-pics/02-Module/10_lecture/10_lecture-4-M2.jpg" alt="" width="500"/>
-1. on which stuff we do information gathering
+1. Q : on which stuff we do information gathering
 	1. person 
 	2. company
 	3. website/technology
 	- so these are 3 major stuff including "System" on which we do information gathering
 2. Q : what are the information which can help us to hack a Victim in "information Gathering" process
 	- Ans : information gathering of a person
-		- Eg : Name , mobile no. , email , age , social accounts (images , etc) ,  DOB , <br>address (Country , state , etc) , hobby + interest , friends/family , contacts , <br>Gender (it can be fake) , daily routines , Job/Business , education/Date , govt. docs (PAN , Aadhar, etc) , <br>bank accounts details (everything , loan - it use in social engineering) health issues , <br>person's background , phone + every technology gadgets
+		- Eg : Name , mobile no. , email , age , social accounts (images , etc) ,  DOB , <br>address (Country , state , etc) , hobby + interest , friends/family , contacts , <br>Gender (it can be fake) , daily routines , Job/Business , education/Date , govt. docs (PAN , Aadhar, etc) , <br>bank accounts details (everything , loan - it use in social engineering) health issues , <br>person's background , phone + 		every technology gadgets
 		- So these are the patterns related to the Victim
 		- so these details help to hack a person , How ? <br>Ans : we'll try each details to find out matching password
 	- information gathering of a company
@@ -67,6 +67,7 @@
 		1. search engines 
 			- Eg : Q : what's a difference b/w search engines & browsers <br>Ans : Google , Yahoo , duckduckgo , etc are a search engine & chrome is a browser
 			- Note : duckduckgo , Censys , Shodan , notevil  , etc - are related to Hackers search engines <br>u'll get many info on them <br>For More : <br>> [10 Best Hackers Search Engines in 2023 - GBHackers](https://gbhackers.com/10-best-hacker-friendly-search-engines-of-2023/) <br>> https://www.perplexity.ai/search/list-down-Top-6nx7lt5XR_.b71lZ4uUuLw
+    	- for other 2 sources - in 11th lecture
 	- firstly , we'll do information gathering via normal search engines - For Example : 
 		- STEP 1 : 1st , we'll find info from the website <br>- search only "wscubetech" on google (not wscubetech.com) <br>- so acc. to our search , we'll get google map location of it , we can go to website <br>- STEP 1.1 : go to More > About Us page & scroll down - so mostly details are in "Contact Us" page <br>- in "Contact Us" page , address + mobile no. + email address are given <br>so these are the details which the company wants to tell/show
 		- `Advice ⭐` : in ethical hacking , never just look for info from just seeing above stuff (like <br>this company just show it's courses website cuz they want to show their website above in "search results" via SEO) <br>so always dig into deep for information gathering <br>- cuz I.G is a 1st vital step - so do it properly before doing any other steps (like scanning)
