@@ -47,7 +47,7 @@
 2. ns1530.websitewelcome.com.
 - Nameserver organisation : whois.enom.com
 ---
-#### Domain Information
+#### Domain records
 - Domain: wscubetech.com
 - Registrar: PDR Ltd. d/b/a PublicDomainRegistry.com
 - Registered On: 2010-07-29
