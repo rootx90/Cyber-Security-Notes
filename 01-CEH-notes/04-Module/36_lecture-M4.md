@@ -3,7 +3,9 @@
 ---
 ### What we'll learn 
 > Lecture Name : Firewall Concept
-> 1) 
+> 1) Theory : what's firewall
+> 2) Theory : types of firewall
+> 3) Practical Work : 
 
 ---
 ### a
