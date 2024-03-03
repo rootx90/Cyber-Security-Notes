@@ -3,8 +3,8 @@
 ---
 ### What we'll learn 
 > Lecture Name : I.G using 3rd party Tools & Services
-> 1) till how many sources we saw in I.G
-> 2) 3rd source for I.G : 
+> 1) Theory : till how many sources we saw in I.G
+> 2) Practical work : 3rd source for I.G
 > 	1) using Third Party services/Tools for I.G
 > 	2) using websites for I.G
 > 	3) 3rd source : gathering "subdomain" for I.G

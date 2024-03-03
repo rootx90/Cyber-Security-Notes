@@ -3,12 +3,11 @@
 ---
 ### What we'll learn 
 > Lecture Name : More Linux Commands & Information Gathering
-> 1) More Linux Commands (these commands to remove errors)
+> 1) Practical Work : More Linux Commands (these commands to remove errors)
 >    - apt update --fix-missing
 >    - apt install --fix-broken
 >    - 3 playstore in Kali Linux to install apps
-> 2) Information Gathering / Footprinting & Reconnaissance
-> - Homework
+> 2) Theory + Practical Work : Information Gathering / Footprinting & Reconnaissance
 
 ---
 ### More Linux Commands

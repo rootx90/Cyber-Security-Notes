@@ -3,9 +3,10 @@
 ---
 ### What we'll learn 
 > Lecture Name : I.G (information gathering) using Search Engines & Google Dorks
-> 1) What we do in Information Gathering ?
-> 2) Types of Information Gathering (I.G) ? 
-> - HomeWork
+> 1) Theory : What we do in Information Gathering ?
+> 2) Theory : Types of I.G
+> 3) Theory : use/pros of Information Gathering
+> 4) Practical Work : Ways to do Information Gathering
 
 ---
 
@@ -30,6 +31,7 @@
 	- gathering information without interacting - means Victim didn't know that u're collecting Information <br>about her/him - like going social media of Victim , etc websites - to know about the victim
 - Q : u're getting information about that person from his/her Linkedin profile , so is it Active or Passive I.G<br>Ans : that's Active I.G , cuz when u view that person's Linkedin profile then Linkedin will <br>send the notification to that person about "This is a person who viewed ur profile" <br>- `imp Note ⭐` :  any information which make Victim aler/aware or Victim now knows about it <br>then it'll be Active I.G , not passive ✔
 - Q : Information Gathering Practical did on WsCubeTech , is it Active or Passive I.G <br>Ans : that was Passive I.G 99% <br>- Mine thought - for 1% was Active cuz u visited on linkedin & linkedin will notify to Victim who visited
+
 ### use/pros of Information Gathering
 > What're advantages when we do Information Gathering
 > ➞ Importance of Information Gathering Example : [10_lecture-M2](10_lecture-M2.md)

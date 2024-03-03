@@ -3,9 +3,9 @@
 ---
 ### What we'll learn 
 > Lecture Name : All About Linux
-> 1) What is Linux
-> 2) Cool features of Linux
-> 3) Basic File System of Linux
+> 1) Theory : What is Linux
+> 2) Theory : Cool features of Linux
+> 3) Theory : Basic File System of Linux
 
 ---
 

@@ -3,11 +3,11 @@
 ---
 ### What we'll learn 
 > Lecture Name : Intro to Network Scanning
-> 1) what is Network Scanning
-> 2) 5 Goals to achieve in the process of Network Scanning
+> 1) Theory : what is Network Scanning
+> 2) Theory : 5 Goals to achieve in the process of Network Scanning
 > 3) Practical Work : Network Scanning - Nmap tool
-> 4) Types of scan
-> 5) Practical Work : network scanning with nmap tool
+> 4) Theory : Types of scan
+> 5) Practical Work : network scanning with nmap tool 
 
 ---
 ### what is Network Scanning
@@ -84,7 +84,7 @@
 		- we use less "TCP scan" cuz it break the rules of firewall & "SYN scan" is much more effective <br>- cuz it gives the best result & it doesn't get block by firewall <br>- mostly we use SYN scan ✔
 		- means if we use "TCP scan" then TCP will send the request one by one to all port no. from 1 to 65535 for connection <br>then due to this firewall's rules get break & then firewall will block the IP address of that system itself <br>cuz at one time - only one port can be connected that's why we don't use "TCP scan" - so that's why we use "SYN scan" ✔
 
-### Practical of network scanning with nmap tool
+### Practical Work : network scanning with nmap tool
 - few starting steps written in - "How we're gonna do Network Scanning - Nmap tool"
 - Nmap's options are :-
 	- `-v` : means increase verbosity level & for to increase more verbosity level `-vv` <br>> verbosity : means whenever a tool is working then to showing working output of what that tool is doing <br>means don't run things behind the scene , just show the process step by step about what that tool is doing✔ <br>> so `-vv` : using double "v" will show more details of the working process of the tool
