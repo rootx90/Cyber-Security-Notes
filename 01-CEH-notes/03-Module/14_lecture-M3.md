@@ -5,9 +5,8 @@
 > Lecture Name : Intro to Network Scanning
 > 1) Theory : what is Network Scanning
 > 2) Theory : 5 Goals to achieve in the process of Network Scanning
-> 3) Practical Work : Network Scanning - Nmap tool
-> 4) Theory : Types of scan
-> 5) Practical Work : network scanning with nmap tool 
+> 3) Theory : Types of scan
+> 4) Practical Work : network scanning with nmap tool 
 
 ---
 ### what is Network Scanning
@@ -91,10 +90,11 @@
 - Practical Example of Nmap
 	- 1 STEP/goal : finding IP-address/Host of the device
 		- so "Nmap" tool will do network scanning via IP address <br>so first step i.e we need to see the IP address of a system <br>if we don't know IP address of a system then we couldn't able to scan
+		- STEP 1.0 : start kaliOS + metasploitable2(victim's system) <br>Note : if u close the victim's system - then IP address will not shown in KaliOS (attacker) <br>means victim's system is offline
 		- STEP 1.1 : Q : how to find out IP addresses of each system which are in range + which are online ✔<br>Ans : so we use a inbuilt tool i.e `netdiscover`
 		- `netdiscover` : command will scan all the IP addresses which are in range <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-6-M3.jpg" alt="" width="500"/>
 		- `imp Note ⭐` : in above Pic of `netdiscover` , starting 2 or 3 pairs will remain same & only last pair will change ✔
-		- Q : How to know which IP addresses are in range of our System's IP address ✔<br>Ans : to check IP address of ur system : `ifconfig` & `inet 192.168.224.138` <br>- so here range is 3rd pair i.e `224` is a range <br>- so if starting 3 pairs of all those IP addresses are same = of our starting 3 pairs of IP address `192.168.224` <br>then those IP addresses are in our IP address range & last pair will be different of those each IP address ✔
+		- Q : How to know which IP addresses are in range of our System's IP address ✔<br>Ans : to check IP address of ur system : `ifconfig` & `inet 192.168.224.138` <br>- so here range is 3rd pair i.e `224` is a range <br>- so if starting 3 pairs of all those IP addresses are same = of our starting 3 pairs of our System's IP address `192.168.224` <br>then those IP addresses are in our system's IP address range & last pair will be different of those each IP address ✔
 		- in `netdiscover` command , when those different IP addresses comes in `224` of our IP address's range <br>then `netdiscover` will starting scanning those different IP addresses like this ✔ <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-7-M3.jpg" alt="" width="500"/>
 		- so these networks/IP-addresses are shown which are in range of our IP address ✔
 		- Q : what is virtual & virtual machine ?<br>Ans : virtual machines are VMware , etc & kali linux installed inside of it called virtual OS
@@ -113,7 +113,7 @@
 	- 2 STEP/Goal : now we got victim's IP address , now check open ports
 		- STEP 2.1 : `nmap 192.168.224.128` , output : <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-10-M3.jpg" alt="" width="500"/>
 		- here showing "Host is up" - means Host is online <br>if Host is offline then we'll get "Host is down"
-		- in pic , in "state" column - open or close status showing , so the pic - showing which Ports are open
+		- in pic , in "state" column - open or close status showing , so the pic - showing which Ports are open & close ports
 	- 3 STEP/goal : services
 		- in pic : <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-10-M3.jpg" alt="" width="500"/>
 		- in service column , each services shown like which service is running on each port
@@ -121,14 +121,14 @@
 		- STEP 3.1 : in last - a "unknown service is showing <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-11-M3.jpg" alt="" width="500"/>
 		- Q : how many ports are in network ? ✔ <br>Ans : total ports are `65535` , <br>> so in above Pic - in "Not shown" section , nmap got "977" ports got closed <br>> so Ques come i.e if we add 977 closed ports & ports which are open <br>then those total ports will not be = 65535 <br>> which means nmap didn't scanned all the ports
 		- STEP 3.2 : now we'll do deep scanning via nmap's options i.e `-v` , run `nmap -v 192.168.224.128`
-			- output : earlier we were not getting details in STEP 3.1 - but we'll get extra details <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-12-M3.jpg" alt="" width="500"/> <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-13-M3.jpg" alt="" width="500"/>
+			- output : earlier we were not getting details in STEP 3.1 - but now we're got extra details <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-12-M3.jpg" alt="" width="500"/> <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-13-M3.jpg" alt="" width="500"/>
 			- like it runs "SYN Stealth Scan" , it scans 1000 ports & at the end - it also tell <br>- how many packets are sent i.e 1001 & received 1001
 			- Q : what & why are these packets which were sent & received by nmap <br>Ans : these packets were sent & received in order to build connection ✔ <br>- those packets when we were doing two-way or three-way handshake ✔
 		- now when "nmap" by-default "997" port is bringing then let's take help of nmap
 		- STEP 3.3 : run `nmap --help` : in order to find whether nmap has a specific option of scanning ports only
 			- so output : <img src="../notes-pics/03-Module/14_lecture/14_lecture-14-M3.jpg" alt="" width="500"/>
 			- so `-p` is a option for scanning only port related stuff & examples also mentioned <br>for scanning specific port no. & scanning range of ports 
-		- STEP 3.4 : from STEP 3.3 , scanning all the ports - run `nmap -v -p1-65535 192.168.224.128` <br>but if u want to scan all the ports & don't want to define range then <br>run `nmap -v -p- 192.168.224.128` ✔
+		- STEP 3.4 : from STEP 3.3 , scanning all the ports - run `nmap -v -p1-65535 192.168.224.128` <br>but if u want to scan all the ports & don't want to define range then run `nmap -v -p- 192.168.224.128` ✔
 			- output : <br><img src="../notes-pics/03-Module/14_lecture/14_lecture-15-M3.jpg" alt="" width="500"/>
 			- now it's scanning total ports 
 			- Q : what was the main moto for scanning all the ports ? <br>Ans : in order to know how many open ports - we'll get after this command ✔
@@ -152,7 +152,7 @@
 	- Advice for scanning : when we did scanning to get all these above information about a system <br>then when we close the terminal then all the information will go away ✔
 	- then we have to scan for the same thing again & again , so 
 	- STEPS to save the scanning details about the system <br>> STEP 1 : `sudo su` <br>> STEP 2 : `nmap -sS -v -p1-65535 192.168.224.128 -sV -O -oX kapil.xml` <br>- `-oX` : used to save - so small "o" for orange & capital "X"<br>- `kapil.xml` : is a file name
-	- `imp note ⭐` : we saved the file in "xml" format cuz machine can understand xml file format ✔<br>but human can't understand xml file format <br>Q : why we're saving the file in xml format only ✔<br>Ans : we'll see in enumeration lecture <br>- & mostly we'll deal with xml format file that's why
+	- `imp note ⭐` : we saved the file in "xml" format cuz machine can understand xml file format ✔<br>but human can't understand xml file format <br>Q : why we're saving the file in xml format only ✔<br>Ans : we'll see in enumeration lecture - & mostly we'll deal with xml format file that's why
 	- STEP 3 : `ls` & run `cat kapil.xml` to see the content <br>but we can't understand the xml language , only machine can understand <br>cuz humans can understand html format ✔
 	- so we'll convert xml file into html file <br>`imp note ⭐` : but we can't convert html file into xml file cuz errors will come <br>that's why , firstly we save the file as xml & then we'll convert a xml file into html file ✔
 	- STEP 4 : converting kapil.xml file into html format <br>> we have tool `xsltproc` - used to convert a file format into a different format ✔ <br>> STEP 4.1 : `xsltproc kapil.xml -o kapil.html` <br>- this command means : firstly name of the file comes which we want to convert & then <br>`-o` : means output & then in which format we want the file ✔
@@ -165,15 +165,15 @@
 
 ---
 ### End of the lecture (Doubts) :
-- Advice : to remember commands like `nmap -sS -v -p1-65535 192.168.224.128 -sV -O -oX kapil.xml` ✔
-	- here u can understand each stuff in this command - according to each goal/STEPS which we learned 
-	- so here linking method used in order to remember the information in brain <br>so for learning , try to link things which are related to each other in order to remember them properly
 - Q : define IDS <br>Ans : <br>> https://www.perplexity.ai/search/IDS-means-in-V3I2A5_jSaCEi.VnqiyB5w <br>> https://www.ibm.com/topics/intrusion-detection-system
 - Q : there are 2 systems "System A" & "System B" <br>- if System A sending request continuously via same port number to System B which is a unknown system <br>then is firewall block IP address of system A or System B <br>Ans : https://www.perplexity.ai/search/there-are-2-1RZyUtT7TkaMrj.PGS_uQQ
 - Q : why sometimes http , https called as service & sometimes as protocols <br>Ans : <br>> https://www.perplexity.ai/search/are-http-https-7JsC8v40Qq6RWvwMP3BHqA <br>> https://www.perplexity.ai/search/are-http-https-9Jg21Y0DQCy8D6h4t_CJCw
 - u don't have to run this command : `nmap -sS -v -p1-65535 192.168.224.128 -sV -O -oX kapil.xml` <br>in one go , Advice : run the command by using each options step by step for understand ✔
 - we'll see later how to hack the system outside the vmware , but practice this one which we saw
 	- Advice : hack the systems virtually , cuz going outside might the problem for u
+- Advice : to remember commands like `nmap -sS -v -p1-65535 192.168.224.128 -sV -O -oX kapil.xml` ✔
+	- here u can understand each stuff in this command - according to each goal/STEPS which we learned 
+	- so here linking method used in order to remember the information in brain <br>so for learning , try to link things which are related to each other in order to remember them properly
 - Advice : firstly sir taught the practical stuff about the topic & then he is showing PPT <br>earlier he didn't showed the PPT & now when he is showing PPT - i am not able to understand more clearly ✔
 - Mine Doubt : 
 	- sir said : so "TCP" - can be scanned easily on 1 or 2 Ports , if TCP makes scanning on Port no. `65535` <br>then firewall will block

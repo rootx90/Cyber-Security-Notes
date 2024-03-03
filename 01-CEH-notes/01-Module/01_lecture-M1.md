@@ -176,6 +176,7 @@
 - in next class , we'll see types of IP address & how he choose the IP address while hacking the system via an IP address , these are the things we need to know then only we can do hacking the system via an IP address
 - Q : in nmap , what `-sT` means <br>Ans : [about -sT](https://www.perplexity.ai/search/size-of-the-24nKpjvKQD6dTDAcE2l.uw) 
 - Q : what happen if u hack someone else device without telling that person <br>Ans : timeline (34:54 - 35:59) <br>Advice : never do a attack if u don't have ur complete control in that attack
+- Q : define MAC address <br>Ans : Hardware/H address OR physical address
 - Doubts (mostly only direct solutions) : 
 	- Q : timeline 1:16:17 - 1:17:12 - Lecture 4 <br>when u did airplane mode ON , then IP address gets changed but what if i off the airplane mode before searching google.com <br>& again u ON then IP address will get changed 
 		- Ques : so the new IP address that we got , so is again a new request will go from this New IP address 

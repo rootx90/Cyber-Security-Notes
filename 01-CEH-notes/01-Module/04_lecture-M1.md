@@ -177,6 +177,7 @@
 	- Q : how does a router determine the mac address of a device <br>Ans : [Ans](https://www.perplexity.ai/search/why-wifirouter-send-y_XMcDteQaCM3tfv.HGsFQ?s=u)
 - Q : Domain of a website - also connected with server of that website
 - Q : if ur ISP providing internet to u then whatever searches u're doing - are they able to read my searches data ? <br>Ans : No , even if they try then can't cuz packets are encrypted form
+- Q : which protocol mostly used to make establish connection between 2 systems <br>like when a client system talk to any server in this world <br>- is that protocol TCP or something else <br>Ans : https://www.perplexity.ai/search/which-protocol-mostly-5k70SkXzRqG0ZSFeYFgKJA
 - Advice : u don't have to read anything apart from these stuff whatever u're learning <br>& devendra sir making base strong , so u don't need to read anything extra 📃<br>- 1) make notes <br>- 2) practice <br>- 3) repeat the lecture again for more clarity on concepts cuz if u do this then no doubts left
 - without Port , no data can be transferred , so Ports is everywhere
 - when u search on the internet which is not allowed then ur IP address will be trace by govt. <br>but generally companies & govt. don't have time to read each person's search query <br>& packets sending/receive in encrypted form only - so only that person can see packets request <br>who can can encrypt & decrypt
