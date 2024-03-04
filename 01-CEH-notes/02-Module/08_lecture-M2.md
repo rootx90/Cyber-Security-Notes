@@ -71,10 +71,8 @@ Q : what's the special thing about Linux which is used in ethical hacking
 			- like this <br><img src="../notes-pics/02-Module/08_lecture/08_lecture-1-M2.jpg" alt="Pic 1" width="500"/>
 			- & like when we do `CTRL + Z` to undo the changes & close the PPT file <br>then this temp file of PPT will be removed
 			- so when u're editing a file then a temp file (means copy file) will be created <br>& let's say u made a mistake in actual file & when u do undo the changes then <Q : how u're able to do undo <br>Ans : that's due to the temp file of that actual file , that's why the temp file created
-	- `/usr/bin` : contains applications which are installed by users
-		Q : explain the path ? <br>Ans : in root location , there is a user folder i.e `usr` & inside `usr` folder - there's a bin folder
-	- `/usr/share` : contains Application support & data files
-		Q : Application support & data files - means ? <br>Ans : it means whatever the application are inside in a Linux OS , there are sometimes <br>of these applications which are not daily but sometimes those files required <br>so these files save in `/usr/share`
+	- `/usr/bin` : contains applications which are installed by users <br>Q : explain the path ? <br>Ans : in root location , there is a user folder i.e `usr` & inside `usr` folder - there's a bin folder
+	- `/usr/share` : contains Application support & data files <br>Q : Application support & data files - means ? <br>Ans : it means whatever the application are inside in a Linux OS , there are sometimes <br>of these applications which are not daily but sometimes those files required <br>so these files save in `/usr/share`
 		- Eg : open ur chrome browser , there are many features & settings , so do u use them daily <br>but u use them when those features or settings are required
 		- so same with applications contains files , so those files sometimes required for applications✔
 	- `/home` : contains all the users - just like we saw "users" folder in windows OS
