@@ -16,12 +16,13 @@
 - & we'll hack the system i.e Metasploitable2 <br>- so login inside this system - login & password is msfadmin <br>- & again login as superuser via using "msfadmin" for login & password <br>otherwise we can't able to run commands like `mkdir` , etc
 
 ### Practical work : FTP connection 
->We'll see establishing connection with Victim's system via FTP service/protocol <br>cuz FTP service/protocol (of Victim's system) - has a vulnerability i.e Anonymous Access 
+> We'll see establishing connection with Victim's system via FTP service/protocol <br>cuz FTP service/protocol (of Victim's system) - has a vulnerability i.e Anonymous Access 
 - Q : which was the 1st port which we scanned via both type of Enumeration <br>Ans : i.e Port no. 21 i.e FTP service
 - Advice : u don't have to know every protocols & what each protocol do <br>- when u go further u'll learn things along with concepts ✔
 - let's see the report i.e Saurabhmanual.html - cuz it contains advance information of FTP service <br>STEP 1 : `firefox Saurabhmanual.html` <br>output : report is showing some credentials + Anonymous FTP login allowed <br><img src="../notes-pics/03-Module/16_lecture/16_lecture-0-M3.jpg" alt="" width="500"/>
 - STEP 2 : let's do Anonymous login via FTP service
 	- Anonymous login : means anyone person can login on that system
+	- STEP 2.0 : start KaliOS + metasploitable2
 	- STEP 2.1 : `sudo su`
 	- STEP 2.2 : we have a tool i.e netcat
 		- netcat : used to make direct connection/communication b/w two different systems <br>& it also used for other work which we'll see later <br>cuz currently - we want to establish communication b/w two different systems ✔
@@ -61,9 +62,9 @@
 	- STEP 3.1 : if we try to do `ls` , `ifconfig` , `help` - then no output/reply coming
 	- so it means "netcat" tool not able to work properly for Telnet service/protcol <br>- means "netcat" tool is not for making remote connection with a system <br>- this tool can make a connection with FTP , but it can't work with Telnet for remote access of a system
 	- so we'll not use netcat
-	- Q : why we'll not use "netcat" tool ✔ <br>Ans : cuz it's making a connection , but we don't want to make connection with a system<br>- we need remote access via Telnet service/protocol - but "netcat" tool not meant to use of this <br>- also we'll not use `nmap` tool cuz it's used for network scanning , not for getting remote access of a system 
+	- Q : now why we'll not use "netcat" tool ✔ <br>Ans : cuz it's making a connection , but we don't want to make connection with a system<br>- we need remote access via Telnet service/protocol - but "netcat" tool not meant to use of this <br>- also we'll not use `nmap` tool cuz it's used for network scanning , not for getting remote access of a system 
 - so Telnet is a service/protocol which gives remote connection & <br>Telnet is on every system to get the remote connection of that system ✔
-- STEP 4 : so let's use `telnet` tool to connection for Tenet service/protocol : `telnet -v 192..168.224.128 23`
+- STEP 4 : so let's use `telnet` tool to build connection for Tenet service/protocol : `telnet -v 192..168.224.128 23`
 	- output : error cuz "telnet" tool doesn't support `-v` option , so remove it ✔
 	- STEP 4.1 : so `telnet 192..168.224.128 23` , output : we'll get complete remote connection of that victim's system <br><img src="../notes-pics/03-Module/16_lecture/16_lecture-10-M3.jpg" alt="" width="500"/>
 	- & Victim will not get any idea what we're doing on his/her system i.e "Metasploitable2"
@@ -80,11 +81,11 @@
 	- so use this system only for testing hacking stuff
 - STEP 5 : now do `exit` , so we used tools i.e `netcat` & `telnet`
 	- now let's use more powerful tool i.e `msfconsole` ✔ <br>- it is v good tool & contains many exploits , etc
-	- STEP 5.1 : run `msfconsole` & hit enter , output : <br>- it'll give intro about itself <br><img src="../notes-pics/06-16_lecture-12-M3.jpgM3.jpg" alt="" width=| 500]]
+	- STEP 5.1 : run `msfconsole` & hit enter , output : <br>- it'll give intro about itself <br><img src="../notes-pics/03-Module/16_lecture/16_lecture-12-M3.jpg" alt="" width="500"/>
 	- it's showing version of itself & things which are useful for us in it i.e exploits , auxiliary , payloads ✔<br>- these are not useful & not gonna helpful for us to learn - post , encoders , nops , evasion
 	- files of all these tools i.e exploits , auxiliary , payloads are inside a database (i.e postgresql) of `msfconsole` tool ✔ <br>so we need to connect with that database
 	- STEP 5.2 : before connecting with that database , checking whether that database is connected or not <br>- run command `db_status` , output : "postgresql selected, no connection"
-	- STEP 5.3 : before running command `msfconsole` tool , run the command `msfdb init` to connect the database <br>- Note : & when run `msfdb init` - then don't run this command again cuz ur database will be connected permanently ✔ <br>- means if run the "msfconsole" tool then run "msfdb init" inside msfconsole tool  <br>but if "msfdb init" doesn't work inside - then run `exit` from msfconsole & run "msfdb init" <br>then u can run "msfconsole" tool - & same with `service postgresql start` command of STEP 5.4
+	- STEP 5.3 : before running command `msfconsole` tool , run the command `msfdb init` to connect the database <br>- Note : & when run `msfdb init` - then don't run this command again cuz ur database will be connected permanently ✔ <br>until u don't exit from terminal <br>- means if run the "msfconsole" tool then run "msfdb init" inside msfconsole tool  <br>but if "msfdb init" doesn't work inside - then run `exit` from msfconsole & run "msfdb init" <br>then u can run "msfconsole" tool - & same with `service postgresql start` command of STEP 5.4
 	- `msfdb init` : means start/initiate the database of ms
 	- STEP 5.4 : after running `msfconsole` , we have to run the command always i.e `service postgresql start` ✔
 	- `service postgresql start` : means start the service of the postgresql database ✔
@@ -92,23 +93,23 @@
 	- STEP 5.5 : `db_status` , output : "Connected to msf. Connection Type: postgresql" <br>- so the database is connected 
 
 ### What are exploits , auxiliary , payloads of "msfconsole" tool
-- What are Auxiliaries ?
+- What are Auxiliaries ? ✔ 
 	- Auxiliaries are scripts of Metasploit i.e `msfconsole` tool
-	- Eg : in previous lecture , we used scripts (i.e Manual & Automation Enumeration Scans) in `nmap` tool <br>- so these 2 scripts command are of `nmap` tool & both brings extra information<br>- Q : what are these two type of scripts doing ? <br>Ans : they are bringing advance/extra information about of the Victim's System
-	- so `msfconsole` tool gave the name of those scripts as Auxiliaries ✔ <br>so these are working as scripts
-	- so in "msfconsole" tool , Auxiliaries (which are scripts) brings extra/advance information ✔ <br>just like both Enumeration Scan does
-- What are Exploits ?
-	- Exploits used to hack the system for short-term <br>- Eg 1 : we used `netcat` tool to hack the system , so if any internet issue comes then connection will get lost <br>- Exploits hack the system for short-term <br>- Eg 2 : let's say we have the Victim's system but if Victim's system switched off <br>then automatically connection gets lost , then again system can't be connected ✔
-	- so Exploits will hack the system instantly & work instantly <br>`Note ✅` : but if connection gets lost from that system then can't establish the connection again with that system ✔
-- What are payloads ?
+	- Eg : in previous lecture , we used scripts (i.e Manual & Automation Enumeration Scans) in `nmap` tool <br>- so these 2 scripts command are of `nmap` tool & both brings extra information<br>Q : what are these two type of scripts doing ? <br>Ans : they are bringing advance/extra information about of the Victim's System
+	- so `msfconsole` tool gave the name of those scripts as Auxiliaries <br>so these are working as scripts
+	- so in "msfconsole" tool , Auxiliaries (which are scripts) brings extra/advance information <br>just like both Enumeration Scan does
+- What are Exploits ? ✔
+	- Exploits used to hack the system for short-term <br>- Eg 1 : we used `netcat` tool to hack the system , so if any internet issue comes then connection will get lost <br>- Exploits hack the system for short-term <br>- Eg 2 : let's say we have the Victim's system but if Victim's system switched off <br>then automatically connection gets lost , then again system can't be connected 
+	- so Exploits will hack the system instantly & work instantly <br>`Note ✅` : but if connection gets lost from that system then can't establish the connection again with that system
+- What are payloads ? ✔
 	- Payloads are used for long-term hacking the system
-	- they get installed inside the system & start running in background/back-end of the system ✔
-	- `Note ✅` : we can make the connection multiple times with that same system if connection gets lost ✔
+	- they get installed inside the system & start running in background/back-end of the system 
+	- `Note ✅` : we can make the connection multiple times with that same system if connection gets lost
 	- so just define IP & post no. of that system in these payloads & these payloads will give connection of that system
-- Conclusion of Auxiliaries , Exploits & payloads ✔
+- Conclusion of Auxiliaries , Exploits & payloads
 	- Payloads : for long-term hacking 
-	- Auxiliaries : work as scripts
 	- Exploits : for short-term hacking 
+	- Auxiliaries : work as scripts (to bring advance info about victim's system)
 
 ### Practical Work : exploits , auxiliary , payloads of "msfconsole" tool
 - we'll learn how to hack the Victim's system via `msfconsole` tool
@@ -116,18 +117,17 @@
 - STEP 1 : we need to add the report (of Victim's system) inside `msfconsole` tool - which we got via `nmap` tool
 	- STEP 1.1 : `ls` , msf is a terminal of our system inside msf itself , output <br><img src="../notes-pics/03-Module/16_lecture/16_lecture-13-M3.jpg" alt="" width="500"/>
 	- STEP 1.2 : run `pwd` <br>- within "msfconsole" tool , we'll get location of our main system i.e `pwd` , output : "/home/kali" <br>- on the location which u open "msfconsole" tool , "msfconsole" tool give the access of those file <br>of that location i.e "/home/kali" location
-	- `Note ✅` : actually we made the "xml" file cuz "msfconsole" tool can understand only ".xml" files <br>but can't understand ".html" files ✔
+	- `Note ✅` : actually we made the "xml" file cuz "msfconsole" tool can understand only ".xml" files <br>but can't understand ".html" files
 - STEP 2 : `db_import Saurabh.xml` : to add that report file i.e "Saurabh.xml" inside the database of "msfconsole" tool
 	- Note : we need to add report of Automation Enumeration i.e "Saurabh.xml" , <br>not the Manual Enumeration 
 	- output : importing process will start & successfully that file get imported <br><img src="../notes-pics/03-Module/16_lecture/16_lecture-14-M3.jpg" alt="" width="500"/>
 - STEP 3 : run either `hosts` OR `hosts 192.168.224.128` : to check the report (of host i.e 192.168.224.128) which is been added 
 	- hosts : means we want to check whether that IP address is there or not inside database of "msfconsole" tool ✔
-	- but run this `hosts` command - means we want to check how many IP-addresses/hosts are connected ✔ <br>- no need to define IP address after "hosts" command
+	- but run this `hosts` command - means we want to check how many IP-addresses/hosts are connected ✔ <br>`Note ✅` : no need to define IP address after "hosts" command cuz we only added one report of a IP-address <br> not multiple different IP-addresses
 	- output : get all the report lists of  hosts/IP-addresses which are connected with the database <br><img src="../notes-pics/03-Module/16_lecture/16_lecture-15-M3.jpg" alt="" width="500"/>
 	- Q : only these much details are inside the report when we did "Automation" Enumeration Scan ? <br>Ans : No 
-	- `Note ✅` : no need to define IP address with `hosts` command ✔ <br>- so just writing `hosts` command & hit enter - then we'll get how many IP-addresses/reports are added 
 - STEP 4 : `services 192.168.224.128` to check further details of that report 
-	- "service 192.168.224.128" command : means show the extra services of the report <br>Q : Which report ? - Ans : 192.168.224.128
+	- "service 192.168.224.128" command : means show the extra services of the report <br>Q : Which report ? <br>Ans : 192.168.224.128
 	- `Note ✅` : <br>Q : when to define a specific IP address to check the report of that IP address ? <br>Ans : when we have multiple IP-addresses/reports added inside the database of "msfconsole" tool <br>- currently we have one report only i.e ✔<br><img src="../notes-pics/03-Module/16_lecture/16_lecture-15-M3.jpg" alt="" width="500"/>
 	- so if don't put IP address with "services" command like this `services` & hit enter <br>then we'll get the report of that IP address cuz we only one report added in the database ✔
 	- but if we have multiple IP-addresses/reports added inside the database <br>then we have to define that IP address - to see the report of that IP address ✔
@@ -156,10 +156,11 @@
 
 ---
 ### End of the lecture (Doubts) :
-1. if we have payloads on our system then anti-virus will scan
-2. nmap -sS -v -p1-65535 192.168.244.129 -sC -sV -O -oX Saurabh.xml - this command not working ✔
+- if we have payloads on our system then anti-virus will scan
+- `nmap -sS -v -p1-65535 192.168.244.129 -sC -sV -O -oX Saurabh.xml` - this command not working ✔
 	- if "Metasploitable2" system is off then it won't work
 	- so turn ON the "Metasploitable2" system - means start this system <br>then do scanning , if machine is off - then scanning can't possible
 	- so firstly - ON the "Metasploitable2" system then this command for scanning
+	- Note : in process of Network Scanning , in 5goals , 1st goal was - check whether Victim's system is online or offline <br>& here u didn't even remember the 1st goal
 - Advice : don't come in doubt-session , first try by urself <br>cuz depending on Doubt session completely then doubt-session will make ur skill worst 📃 <br>- mine thought : u should know when to use doubt-session & when not to <br>repeat the lecture , if u have any doubt
 

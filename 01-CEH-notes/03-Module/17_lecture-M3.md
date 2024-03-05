@@ -3,12 +3,12 @@
 ---
 ### What we'll learn 
 > Lecture Name : SMTP & NFS enumeration | Exploitation
-> 1) Practical work - SMTP enumeration scan
-> 2) Practical work - NFS enumeration scan
+> 1) Practical work : SMTP enumeration scan
+> 2) Practical work : NFS enumeration scan
 > 3) Further STEPS of Lecture 16 - exploits , auxiliary , payloads for each service/protocol
 
 ---
-### Practical work - SMTP enumeration scan
+### Practical work : SMTP enumeration scan
 - port no. of SMTP service/protocol i.e 25
 - STEP 1 :  `nc 192.168.192.130 25` & hit enter , output : connection refused - cuz IP address is wrong <br>STEP 1.1 : `nc 192.168.224.128 25` & enter , output : <br>![[17_lecture-0-M3.jpg | 500]] <br>- so connection established
 - STEP 2 : help , ls commands not gonna work in SMTP service/protocol - cuz SMTP used for mail transferring ✔
@@ -17,7 +17,7 @@
 	- STEP 2.3 : run `VRFY root` , output : "252 2.0.0 root" <br>- but we'll not get any files & folder access if we run `ls , help` commands <br>- cuz purpose of SMTP i.e just to verify mail & see the mail stuff only ✔
 - before doing NFS enumeration , first check in "Saurabh.html" report , whether NFS service/protocol exist or not ✔
 
-### Practical work - NFS enumeration scan
+### Practical work : NFS enumeration scan
 - in "Saurabh.html" report , `111` is a port no. of NFS aka rpcbind ✔ <br>![[17_lecture-2-M3.jpg | 500]]
 - NFS = Network File System
 - now let's scan port no. 111 - means we need to scan all scripts of NFS service/protocol
