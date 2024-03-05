@@ -22,7 +22,7 @@
 - NFS = Network File System
 - now let's scan port no. 111 - means we need to scan all scripts of NFS service/protocol
 - STEP 1 : `sudo su`
-- STEP 2 : `nmap -sS -v -p111 192.168.224.128 --script=nfs* -sV -O -oX bhmanual.xml` <br>but we know the OS - so remove `-O`
+- STEP 2 : `nmap -sS -v -p111 192.168.224.128 --script=nfs* -sV -O -oX bhmanual.xml` <br>but we know the OS , so remove `-O`
 	- STEP 2.1 : run `nmap -sS -v -p111 192.168.224.128 --script=nfs* -sV -oX bhmanual.xml` & enter
 - STEP 3 : `xsltproc bhmanual.xml -o bhmanual.html` , 
 	- output : open the .html file in browser <br><img src="../notes-pics/03-Module/17_lecture/17_lecture-3-M3.jpg" alt="" width="500"/>
@@ -71,10 +71,10 @@
 	- so System "A" is ur system , so us system is LHOST & LPORT
 	- IP address = host/address & port = road/route-way <br>LHOST = listening/local HOST (HOST means - address/IP-address) <br>LPORT = listening/local PORT (means on which route/road u're standing to listen the reply of that exploit) ✔
 	- in LHOST , attacker's IP address will come i.e our system's IP address <br>in LPORT , attacker's port will come i.e a port of our system's <br>- currently , here u're a attacker i.e System "A" ✔
-	- in RHOST , remote's IP address will come i.e IP address of Victim's system (on which u're attacking) <br>in RPORT , remote's port will come i.e a port of of Victim's system ✔ <br>- currently , here System "B" is Victim
+	- in RHOST , remote's IP address will come i.e IP address of Victim's system (on which u're attacking) <br>in RPORT , remote's port will come i.e a port no. of Victim's system ✔ <br>- currently , here System "B" is Victim
 	- Advice : when we do practical we'll understand , no need to worry
 	- `Imp note ⭐` : concept working of port ✔
-		- Eg 1 : let's say u're sending a connection via port no. 21 to Victim's system<br>so the connection will go via port no. 21 from ur system <br>- but that exploit can be on any port no. of Victim's system , but any one port no. must be open <br>- Eg : that port could be 22 or 23 
+		- Eg 1 : let's say u're sending a connection via port no. 21 to Victim's system<br>so the connection will go via port no. 21 from ur system <br>- but that exploit can be on any port no. of Victim's system , but any one port no. must be open <br>- Eg : that port could be 22 or 23 or nearest to 21 port no.
 		- Eg 2 : let's say , u're sending a mail to Victim's system & mail port no. is 25 <br>- so that mail will go via 25 port no. from ur system <br>- but Victim's System can receive that mail in any port no. (which is empty & near to that 25 port no.) 
 	- rough sketch <br><img src="../notes-pics/03-Module/17_lecture/17_lecture-10-M3.jpg" alt="" width="500"/>
 - STEP 10 : setting RHOSTS & RPORT
