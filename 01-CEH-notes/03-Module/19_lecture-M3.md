@@ -4,9 +4,9 @@
 ### What we'll learn 
 > Lecture Name : Privilege Escalation on Linux & windows 
 > 1) Practical Work : Exploitation : Tool = exploit database (https://www.exploit-db.com)
-> 2) Understanding theoretically - Privilege Escalation on Linux & windows
+> 2) Theory : Privilege Escalation on Linux & windows
 > 3) Practical Work : Privilege Escalation on Linux & windows
-> 4) Security to save the system from Privilege Escalation
+> 4) Practical Work : Security to save the system from Privilege Escalation
 
 ---
 ### Practical Work : Exploitation : Tool = Exploit Database
@@ -50,7 +50,7 @@
 	- first , we'll see payloads for android then automatically - u can use payloads for windows OS also by urself 
 - so Exploitation of Linux is done , let's see more
 
-### Understanding theoretically - Privilege Escalation on Linux & windows
+### Theory : Privilege Escalation on Linux & windows
 - Q : what is Privilege Escalation ✔
 	- Ans : Privilege Escalation : means taking control/access of a Victim's system in unauthorized way
 	- Like understanding behavior of a person (who is Victim) & then taking access of his/her system in unauthorized way
@@ -65,8 +65,8 @@
 	- so once this command `rw init = /bin/bash` executed <br>- then we ress F10 or `exit` command to reboot the Victim's system ✔
 	- Q : in which line we need to add this command `rw init = /bin/bash` <br>Ans : we'll see in practical of it
 - `imp ⭐` : How Privilege Escalation in Windows OS
-	- doing Privilege Escalation in Windows OS , we need a pendrive (shoukd be minimum 4gb)
-	- & we make that pendrive - bootable via installed "tails OS" in it ✔ <br>- then once that pendrive becomes bootable - then we'll restart our system 
+	- doing Privilege Escalation in Windows OS , we need a pendrive (should be minimum 4gb)
+	- & we make that pendrive - bootable via installed "tails OS" in it ✔ <br>- then once that pendrive becomes bootable - then we'll restart victim's system 
 	- when that system is rebooting then continuously - we press BIOS key i.e F10 or F12 or ESC or ESC+Delete <br>- so BIOS key depends on the system ✔
 		- we'll see more about "Tails OS" - when we go to dark web to host the website ✔<br>- Tails OS made by a organization who made tor browser
 	- so when we press BIOS key continuously then BIOS setting will get open <br>- in BIOS setting - then select the Boot drive as that pendrive - then we'll restart our system <br>- so once system restarting done - then Tails OS will be opened ✔
@@ -88,14 +88,14 @@
 	- STEP 5 : run `pwd` , output : `/` - this backslash means root ✔ <br>STEP 5.1 : now any command like `ls` , `cd` , etc will work
 	- STEP 6 : now coming in root location via `cd` (if u executed any command)
 		- STEP 6.1 : to change the password directly , run `passwd <user-password>` - like here `passwd root` ✔
-		- STEP 6.2 : now give password like `1234` & then retype it , output : <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-15-0-M3" alt="" width="500"/>00]]
+		- STEP 6.2 : now give password like `1234` & then retype it , output : <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-15-0-M3.jpg" alt="" width="500"/>
 		- in output , new password is updated of "root" without writing previous password of kali ✔
 		- STEP 6.3 : by-default password of kali is "kali" , to change the password "kali" - command is `passwd kali` <br>- but don't run the command ✔
 		- to change the username of kali OS - then search on google by urself
 	- so here we access the kali system as root/admin user without login inside the Kali system <br> - means Kali OS didn't asked for login ✔
 	- STEP 7 : now shutdown the Kali & start it again
 	- STEP 8 : when we login inside Kali <br>- username we changed into "root" <br>- by-default root password is kali - but we changed "kali" into "123" & so password is 123 
-	- STEP 8.1 : now open terminal & we don't need to type the password to enter as root user in terminal <br>- cuz we as a user login directly as admin/root user <br>- output : directly the terminal will get opened as root <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-15-1-M3" alt="" width="500"/>00]]
+	- STEP 8.1 : now open terminal & we don't need to type the password to enter as root user in terminal <br>- cuz we as a user login directly as admin/root user <br>- output : directly the terminal will get opened as root <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-15-1-M3.jpg" alt="" width="500"/>
 - Practical : Privilege Escalation on Windows OS
 	- software which are required 
 		- rufus - to make bootable pendrive : [Rufus - Create bootable USB drives the easy way](https://rufus.ie/en/) <br>- once rufus is downloaded then no need to install it - cuz directly it gets open 
@@ -115,7 +115,7 @@
 	- u can copy files of ur windows OS - inside Tails OS
 	- Advice : ur main system i.e Windows OS will not get affected , while being & doing something in Tails OS
 
-### Security to save the system from Privilege Escalation
+### Practical Work : Security to save the system from Privilege Escalation
 - STEP 1 : in Windows OS , open settings 
 - STEP 2 : Privacy & security > Device encryption , turn on "Device encryption"
 	- then this option will secure our drives (like C Drive , D Drive , etc) + make the data overall secure
@@ -128,10 +128,12 @@
 
 ---
 ### End of the lecture (Doubts) :
-1. Q : in which language Python built on <br>Ans : i.e C , not java
-2. Q : if that Victim put the password in BIOS of his/her system ✔<br>Ans : then we can't access the data of his/her system 
-3. Q : in pendrive , we can insert payload or not <br>Ans : yes , but we can't run the payload in BIOS <br>- cuz to run it on BIOS , we need to boot the system
-4. u can set the password on BIOS , so that nobody can do Privilege Escalation <br>& u can also reset the password of BIOS also in future ✔ 
+- Q : is privilege escalation can be done on a system without touching that system physically <br>Ans : https://www.perplexity.ai/search/is-privilege-escalation-OXWbZ_1cQP6_hgHUs9nIEA
+- Q : how can i detect if my system has been compromised by privilege escalation <br>Ans : 
+- Q : in which language Python built on <br>Ans : i.e C , not java
+- Q : if that Victim put the password in BIOS of his/her system ✔<br>Ans : then we can't access the data of his/her system 
+- Q : in pendrive , we can insert payload or not <br>Ans : yes , but we can't run the payload in BIOS <br>- cuz to run it on BIOS , we need to boot the system
+- u can set the password on BIOS , so that nobody can do Privilege Escalation <br>& u can also reset the password of BIOS also in future ✔ 
 - Advice : to become a greater Ethical Hacker
 	- till yet , we just saw 2 tools i.e msfconsole & armitage - so both have different exploits for different services
 	- so practice what we completed yet - then u'll understand automatically how each exploit is working 
