@@ -3,21 +3,21 @@
 ---
 ### What we'll learn 
 > Lecture Name : Privilege Escalation on Linux & windows 
-> 1) Exploitation : Tool = exploit database (https://www.exploit-db.com)
+> 1) Practical Work : Exploitation : Tool = exploit database (https://www.exploit-db.com)
 > 2) Understanding theoretically - Privilege Escalation on Linux & windows
 > 3) Practical Work : Privilege Escalation on Linux & windows
 > 4) Security to save the system from Privilege Escalation
 
 ---
-### Exploitation : Tool = Exploit Database
+### Practical Work : Exploitation : Tool = Exploit Database
 - STEP 0 : keep the kali & Victim's system ON
 - exploit database (https://www.exploit-db.com) : is a website which contains all the exploits of everything <br>- there are many exploits which are not found anywhere , but it has
 > how to use it
-- STEP 1 : open the website & search `vsftpd` , output : <br>![[19_lecture-0-M3.jpg | 500]]
+- STEP 1 : open the website & search `vsftpd` , output : <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-0-M3.jpg" alt="" width="500"/>
 - in output , we're getting many things related to vsftpd , <br>so to make the output short - then search it with version ✔
-- STEP 2 : `vsftpd 2.3.4` - searching it with it's version , output : only 2 output shown <br>![[19_lecture-1-M3.jpg | 500]]
+- STEP 2 : `vsftpd 2.3.4` - searching it with it's version , output : only 2 output shown <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-1-M3.jpg" alt="" width="500"/>
 - STEP 3 : click on 2nd one - cuz it's for metasploit , <br>- output : all the details will be shown related to this exploit including it's coding
-- STEP 4 : come back & click on 1st one , output : we'll get in which language , version , data , etc about the exploit <br>![[19_lecture-2-M3.jpg | 500]]
+- STEP 4 : come back & click on 1st one , output : we'll get in which language , version , data , etc about the exploit <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-2-M3.jpg" alt="" width="500"/>
 - so the code is written in Python & version of python is 3
 - Advice : we just need to know in which language the exploit was written ✔ <br>then nothing we don't need to know about that exploit 
 	- mine thought : also see the data , version , who made - cuz if that exploit is very old or very new <br>then might be that exploit itself has vulnerabilities which is not good & due to this , <br>hacking the victim's system with that exploit is not good decision
@@ -28,22 +28,22 @@
 - STEP 7 : `ls -l` : checking files have executable permission or not <br>- if that ".py" file doesn't have executable permission then run `chmod +x 49757.py`
 - STEP 8 : there are 2 ways to run a executable file 
 	- STEP 8.1 : 1st way : run `./49757.py` , 
-		- output : <br>![[19_lecture-3-M3.jpg | 400]]
+		- output : <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-3-M3.jpg" alt="" width="500"/>
 		- in output , syntax error is coming - means we can any executable file via `./` <br>- but doesn't mean that `./` can run always every executable file ✔ <br>- so 90% times , we use `./`
 		- in kali , python pre-installed with 3rd version & this python file also version 3 <br>- now we'll execute it via python3
 	- STEP 8.2 : 2nd way : executing the file via it's own extension file name , run `python3 49757.py`
-		- output : we'll also get how to usage of the file & the error<br>![[19_lecture-4-M3.jpg | 500]]
+		- output : we'll also get how to usage of the file & the error<br><img src="../notes-pics/03-Module/19_lecture/19_lecture-4-M3.jpg" alt="" width="500"/>
 		- in output , error came cuz we didn't define the host <br>- host : means IP address
 	- STEP 8.3 : run `python3 49757.py 192.168.224.128`
-		- output : <br>![[19_lecture-5-M3.jpg | 500]]
+		- output : <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-5-M3.jpg" alt="" width="500"/>
 		- in output , this error means sir's switch to python8 , instead of using python3 <br>- let's switch to python3
-	- STEP 8.4 : switching to python3 - run `update-alternatives --config java` , output <br>![[19_lecture-6-M3.jpg | 500]]
+	- STEP 8.4 : switching to python3 - run `update-alternatives --config java` , output <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-6-M3.jpg" alt="" width="500"/>
 	- STEP 8.4.1 : press `1` - cuz sir's python3 is inside java 11
-	- STEP 8.5 : run `python3 49757.py 192.168.224.128` , output <br> ![[19_lecture-7-M3.jpg | 500]] <br>- so execution is successful
+	- STEP 8.5 : run `python3 49757.py 192.168.224.128` , output <br> <img src="../notes-pics/03-Module/19_lecture/19_lecture-7-M3.jpg" alt="" width="500"/> <br>- so execution is successful
 	- STEP 8.6 : run `ls` , output : file & folder/directories will be shown of that victim's system <br>- even `ifconfig` also works
 	- so this is also another way to hack the victim's system
 - we'll also can get exploits related to google chrome browser in the website 
-	- Eg : ![[19_lecture-8-M3.jpg | 500]]
+	- Eg : <img src="../notes-pics/03-Module/19_lecture/19_lecture-8-M3.jpg" alt="" width="500"/>
 	- here "❌" : means that exploit is not tested & "✔" : means that exploit is tested completely ✔
 - till yet , we saw individually how to use auxiliaries & then exploits , upcoming we'll see payloads ✔
 	- & we'll try payloads for android cuz payloads are mostly used in android <br>- but there are many payloads for windows OS also
@@ -54,7 +54,7 @@
 - Q : what is Privilege Escalation ✔
 	- Ans : Privilege Escalation : means taking control/access of a Victim's system in unauthorized way
 	- Like understanding behavior of a person (who is Victim) & then taking access of his/her system in unauthorized way
-	- Eg : there's a system of Shail & he is a admin on his system & u (who is a attacker) are not even a guest user on his system <br>- but still via unauthorized way - u're taking admin access of his system - this process called Privilege Escalation ✔ <br>![[19_lecture-9-M3.jpg | 300]]
+	- Eg : there's a system of Shail & he is a admin on his system & u (who is a attacker) are not even a guest user on his system <br>- but still via unauthorized way - u're taking admin access of his system - this process called Privilege Escalation ✔ <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-9-M3.jpg" alt="" width="500"/>
 - Q : where Privilege Escalation is being done <br>Ans : i.e in Linux & windows OS
 - first , we'll understand theoretical <br>1) How Privilege Escalation in Linux & then we'll see <br>2) How Privilege Escalation in windows
 - `imp ⭐` : How Privilege Escalation in Linux
@@ -72,30 +72,30 @@
 	- so when we press BIOS key continuously then BIOS setting will get open <br>- in BIOS setting - then select the Boot drive as that pendrive - then we'll restart our system <br>- so once system restarting done - then Tails OS will be opened ✔
 - doing Privilege Escalation in Android - is bit difficult cuz structure of Android OS is different <br>- cuz most of the things are running on one drive - which makes the issue , but it's not impossible to do ✔
 - Pic - Theoretical Process of Privilege Escalation on Linux & on windows 
-	- Pic : ![[19_lecture-10-M3.jpg | 500]]
+	- Pic : <img src="../notes-pics/03-Module/19_lecture/19_lecture-10-M3.jpg" alt="" width="500"/>
 
 ### Practical : Privilege Escalation on Linux & windows
 - wscubetech YT vid : [How to Escalate Privileges in Linux and Windows? | System Hacking - Ethical Hacking 🐱‍👤 - YouTube](https://www.youtube.com/watch?v=8sQheqT6HBE&ab_channel=WsCubeTech)
 - Practical : Privilege Escalation on Linux
-	- STEP 1 : restart the Kali OS & during rebooting/restarting the Kali press the "E" key continuously , output : <br>![[19_lecture-11-M3.jpg | 500]]
+	- STEP 1 : restart the Kali OS & during rebooting/restarting the Kali press the "E" key continuously , output : <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-11-M3.jpg" alt="" width="500"/>
 	- this output - means editing mode is ON now
 	- STEP 2 : now put the cursor inside the Kali & press "Backspace" key
-	- the useful line for us i.e Linux <br>![[19_lecture-12-M3.jpg | 500]]
-	- STEP 3 : bring the cursor on "Linux" line & remove words "quite splash <br>STEP 3.1 : change "ro" into "rw" <br>STEP 3.2 : after "rw" , write this `rw init=/bin/bash` , so rw - means read & write ✔<br>![[19_lecture-13-M3.jpg | 500]]
+	- the useful line for us i.e Linux <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-12-M3.jpg" alt="" width="500"/>
+	- STEP 3 : bring the cursor on "Linux" line & remove words "quite splash <br>STEP 3.1 : change "ro" into "rw" <br>STEP 3.2 : after "rw" , write this `rw init=/bin/bash` , so rw - means read & write ✔<br><img src="../notes-pics/03-Module/19_lecture/19_lecture-13-M3.jpg" alt="" width="500"/>
 	- Q : `rw init=/bin/bash` - which location is this <br>Ans : i.e Terminal of ur (attacker) Kali OS
-	- STEP 4 : reboot the Kali , press `Ctrl + x` , output : after reboot , <br>![[19_lecture-14-M3.jpg | 500]]
+	- STEP 4 : reboot the Kali , press `Ctrl + x` , output : after reboot , <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-14-M3.jpg" alt="" width="500"/>
 	- in output , we got the by-default root location access on the terminal ✔
 	- STEP 5 : run `pwd` , output : `/` - this backslash means root ✔ <br>STEP 5.1 : now any command like `ls` , `cd` , etc will work
 	- STEP 6 : now coming in root location via `cd` (if u executed any command)
 		- STEP 6.1 : to change the password directly , run `passwd <user-password>` - like here `passwd root` ✔
-		- STEP 6.2 : now give password like `1234` & then retype it , output : <br>![[19_lecture-15-0-M3.jpg | 500]]
+		- STEP 6.2 : now give password like `1234` & then retype it , output : <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-15-0-M3" alt="" width="500"/>00]]
 		- in output , new password is updated of "root" without writing previous password of kali ✔
 		- STEP 6.3 : by-default password of kali is "kali" , to change the password "kali" - command is `passwd kali` <br>- but don't run the command ✔
 		- to change the username of kali OS - then search on google by urself
 	- so here we access the kali system as root/admin user without login inside the Kali system <br> - means Kali OS didn't asked for login ✔
 	- STEP 7 : now shutdown the Kali & start it again
 	- STEP 8 : when we login inside Kali <br>- username we changed into "root" <br>- by-default root password is kali - but we changed "kali" into "123" & so password is 123 
-	- STEP 8.1 : now open terminal & we don't need to type the password to enter as root user in terminal <br>- cuz we as a user login directly as admin/root user <br>- output : directly the terminal will get opened as root <br>![[19_lecture-15-1-M3.jpg | 500]]
+	- STEP 8.1 : now open terminal & we don't need to type the password to enter as root user in terminal <br>- cuz we as a user login directly as admin/root user <br>- output : directly the terminal will get opened as root <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-15-1-M3" alt="" width="500"/>00]]
 - Practical : Privilege Escalation on Windows OS
 	- software which are required 
 		- rufus - to make bootable pendrive : [Rufus - Create bootable USB drives the easy way](https://rufus.ie/en/) <br>- once rufus is downloaded then no need to install it - cuz directly it gets open 
@@ -111,7 +111,7 @@
 	- STEP 3 : restart the PC & during process of restarting press F9 or F12 <br>- so that bootable pendrive OR Boot Device will be shown
 	- STEP 4 : select ur pendrive & hit enter & then click on "Tails"
 	- STEP 5 : let's do configuration stuff , click on "+" button <br>STEP 5.1 : click on "Administration Password" & write the password for administration like "123" <br>- further settings u can do if u want <br>STEP 5.2 : click on "Start Tails" button
-	- STEP 6 : in Tails OS , click on "Home" or file explorer of this OS <br>STEP 6.1 : click "+ other locations" button - then click on ur pendrive & u'll get files & folders of ur Windows OS <br>![[19_lecture-16-M3.jpg | 300]] <br>STEP 6.2 : go inside "Users" folder , output <br>![[19_lecture-17-M3.jpg | 300]]
+	- STEP 6 : in Tails OS , click on "Home" or file explorer of this OS <br>STEP 6.1 : click "+ other locations" button - then click on ur pendrive & u'll get files & folders of ur Windows OS <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-16-M3.jpg" alt="" width="500"/> <br>STEP 6.2 : go inside "Users" folder , output <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-17-M3.jpg" alt="" width="500"/>
 	- u can copy files of ur windows OS - inside Tails OS
 	- Advice : ur main system i.e Windows OS will not get affected , while being & doing something in Tails OS
 
@@ -119,7 +119,7 @@
 - STEP 1 : in Windows OS , open settings 
 - STEP 2 : Privacy & security > Device encryption , turn on "Device encryption"
 	- then this option will secure our drives (like C Drive , D Drive , etc) + make the data overall secure
-	- output : now each drive will become from locked <br>- Before Pic : ![[19_lecture-18-M3.jpg | 500]] <br>- After Pic : ![[19_lecture-19-M3.jpg | 500]]
+	- output : now each drive will become from locked <br>- Before Pic : <img src="../notes-pics/03-Module/19_lecture/19_lecture-18-M3.jpg" alt="" width="500"/> <br>- After Pic : <img src="../notes-pics/03-Module/19_lecture/19_lecture-19-M3.jpg" alt="" width="500"/>
 - Conclusion : if this option is turn on in a system , then Privilege Escalation can't be done in that system <br>- & can't access the data of that system
 
 ---
