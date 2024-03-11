@@ -35,7 +35,7 @@
 		- Cuz the router has a inbuild feature to switch/convert it's own - a Private IP into Public IP & vice versa - for communication <br>cuz a private IP can't directly talk to Public IP & vice versa - that's why ✔
 		- so router is a intermediator , so it'll switch from a Private IP to a Public IP & vice versa <br> <img src="../notes-pics/01-Module/03_lecture/03_lecture-6-M1.jpg" alt="Pic 1" width="600"/>
 - Q : Now tell me how many identities that the router have ? <br>Ans : so a Public IP , a Private IP & the router is a hardware - so MAC address also a identity , so total 3 identities ✔ 
-- Now the devices which are connected , let's say one of them is connected , so how many identities a device have ? <br>1) a Private IP address <br>2) a MAC address <br>3) a localhost
+- Q : Now the devices which are connected , let's say one of them is connected , so how many identities a device have ? <br>1) a Private IP address <br>2) a MAC address <br>3) a localhost
 	- What is Localhost ? <br>Ans : just like we said a Public IP - is a real name of a person & a private IP is a nick of a person <br>so same way , a localhost - is like a brain of a person , so let's say - whatever u think/thoughts in ur brain, <br>so those thinking process or thoughts - remain inside ur brain - those stuff doesn't go outside <br>or nobody can't understand about ur thoughts or thinking process <br>- so we're doing self-routing or self-communication or self-talk ✔
 	- in a device (like a lapi/phone) `imp ⭐` <br>- default IP of localhost : `127.0.0.1` <br>- the localhost's domain is `localhost` ✔
 	- purpose of it : in ur device (like lapi, phone, PC) , the localhost used for self-testing - so the localhost is the 3rd identity ✔

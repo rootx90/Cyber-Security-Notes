@@ -108,6 +108,16 @@ general doubt
 
 --- 
 
+### Doubts after going through the course 
+
+1. privilege escalation
+   - Q : step by step process how to do privilege escalation on parrotOS
+   - Mine advice : it's a big standalone topic - which u need to dig into deep
+- 
+
+
+--- 
+
 ### Guidance after course
 - Q : in which i need to be updated & in which field not <br>Eg : so i need to keep update in CEH , penetration & in which field not need to be updated
 - Q : will ai replace Ethical hackers , cuz u saw penetestGPT on github

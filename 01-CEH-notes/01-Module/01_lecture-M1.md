@@ -17,6 +17,7 @@
 
 ### What is Network ?
 - when 2  or more than 2 systems connected/combined together & communicating with each other then a network will be created aka Network
+
 ### What is Networking ?
 - when 2 or more than 2 systems start sharing resources like transferring files/data
 - means when 2 or more than 2 systems communicating & starts sharing data/files then the process called Networking 
@@ -60,7 +61,7 @@
 2. MAN (Metropolitan area Network) 
 3. WAN (wide area network)
 
-- there are many types of Networks but those are sub-types of these 3 & those are not useful to know cuz u'll feel confusion but these 3 are imp
+- there are many types of Networks but those are sub-types of these 3 <br>& those are not useful to know cuz u'll feel confusion but these 3 are imp
 
 ### What is LAN network ?
 - it's a small network 
@@ -91,7 +92,7 @@
 		- let's say u want to send a PDF to that system , but globally there are many systems with different addresses , <br>even if u try to send then u can't cuz u don't have address of that system - so without the address of that system , <br>u can't send that PDF or a packet , so u need a unique address i.e IP address of a system
 		- without a IP address , communication can't happen , so everywhere IP address used
 	- meaning of identity in IP address 
-		- how IP address considered as identity :
+		- Q : how IP address considered as identity
 		- Eg : in ur credit-card , numbers (which are inside the credit card) are not random , <br>those each numbers contains ur identities <br>- if u want to separate each things in small parts in this Earth planet then on what bases u'll divided i.e each parts will be divided as different countries <br>- if u want to divide each countries into small parts i.e into different states of each country & each state will be divided as cities <br>- so u can see we're dividing the globe -> counties -> states -> cities
 		- let's say ur credit card no. contain `8566 8566 8566 8566` 
 			- 1st number - for country (cuz it's using in)
@@ -112,20 +113,20 @@
 		- 4) https://global.discourse-cdn.com/elastic/original/3X/1/9/1932036f159cdd29d2724589cb3b6b1370e4edb5.png
 	- Eg of wrong IP address no. <br> - 999.999.999.999 ❌ , cuz it's out of range/limit <br>- Note : IP address can't be starting with 0 like this 0.012.322.333 ❌ or 012.223.112.10 ❌, but initially or ending 0 can be like this 102.223.12.10 ✔ or 120.223.12.10 ✔
 		- Mine searching 
-			- Ques : Can an IP address start with 0? ✔<br>Ans : No, an IP address cannot start with 0. An IP address is a series of numbers separated by periods, <br>and each number must be between 0 and 255. So, the first number in an IP address cannot be 0. cuz we said it must be b/w of them ✔<br>- we didn't said from 0 to 255
+			- Q : Can an IP address start with 0? ✔<br>Ans : No, an IP address cannot start with 0. An IP address is a series of numbers separated by periods, <br>and each number must be between 0 and 255. So, the first number in an IP address cannot be 0. cuz we said it must be b/w of them ✔<br>- we didn't said from 0 to 255
 			- Any address that begins with a 0 is invalid (except as a default route).<br>- Any address with a number above 255 in it is invalid. <br>- Any address that has more than 3 dots is invalid
 			- Each number in each pair can range from **0 to 255**. So, the full IP addressing range goes from 0.0.0.0 to 255.255.255.255.
-			- Ques : is ip address can end with 0 <br>Ans : an IP address ending with zero cannot be assigned to a specific device on a network <br>This is because an IP address ending with zero is reserved for special purposes, such as a default gateway or a network address. <br>> [Is it possible to have an IP address that ends with zero? - Networking](https://copyprogramming.com/howto/ip-address-ending-with-zero) <br>> [networking - Why can't IP addresses start with 0 or 255? - Super User](https://superuser.com/questions/665502/why-cant-ip-addresses-start-with-0-or-255)
+			- Q : is ip address can end with 0 <br>Ans : an IP address ending with zero cannot be assigned to a specific device on a network <br>This is because an IP address ending with zero is reserved for special purposes, such as a default gateway or a network address. <br>> [Is it possible to have an IP address that ends with zero? - Networking](https://copyprogramming.com/howto/ip-address-ending-with-zero) <br>> [networking - Why can't IP addresses start with 0 or 255? - Super User](https://superuser.com/questions/665502/why-cant-ip-addresses-start-with-0-or-255)
 	- how size works & understanding packets in an IP address ✔
 		- in IPv4 , size of each pair is 8bits (1 byte) - means each pair of an IP address taking 8bits storage to hold the data/packet
 		- Eg : so let's say System "A" & System "B" communicate each other via IP address <br>& to send+receive files/data <br>then without storage data/packets can't be transferred 
 		- so that packets required storage capacity to send & receive the data 
-		- Ques : who is giving storage space to those data/packets ✔<br>Ans : i.e each pairs of an IP address , so data gets hold inside each pairs of an IP address & then transferred
+		- Q : who is giving storage space to those data/packets ✔<br>Ans : i.e each pairs of an IP address , so data gets hold inside each pairs of an IP address & then transferred
 		- Eg : let's say data's size is 1MB to send from System "A" to System "B" - so firstly 1MB gets broke into bytes <br>then for one time , only 32bits can be transferred , so 1st 32bits data will get transferred -> 2nd 32bits data will get transferred - so data-packets gets send/receive into chunks/parts within each pairs of an IP address , <br>so this process will happen until data gets send/received completely 
     	- but all the packets get send/receive i.e in the form of IP address
 	- Total size of a IPv4 address i.e 32bits = 4 bytes
 	- meaning of each pair in IPv4 address `imp ⭐`
-		- Ques : where IP address used national or international <br>Ans : IP address used globally , so whatever information we want , IP address travel around the globe to get the information that's why it's used internationally 
+		- Q : where IP address used national or international <br>Ans : IP address used globally , so whatever information we want , IP address travel around the globe to get the information that's why it's used internationally 
 		- 1st pair from left side : country (depends on which country u're living right now)
 		- 2nd pair : contain the state of a country
 		- 3rd pair : contain ISP details + city details 
@@ -139,7 +140,7 @@
 		- firstly , investigating team will find out from which country that IP address is ?
 		- then they will connect the country with 2nd pair i.e state 
 		- then find out the ISP for that IP address via asking from ISP that which person's of that IP address is ? <br>cuz when u take a SIM of a company then they will ask for identity like aadhaar card , <br>so that SIM u'll get is connected with ur aadhaar card - that's why an IP address contain 2 things i.e address + identity ✔
-- Ques : what u think that via an IP address of a system , that system can be hack or not? `imp ⭐`
+- Q : what u think that via an IP address of a system , that system can be hack or not? `imp ⭐`
 	- Ans : if u think that the system can't be hacked via an IP address of that system then u're wrong
 	- Practical Example : 
 		- STEP 1 : open kali terminal
@@ -161,7 +162,7 @@
 			- about `nc` : <br>- so 1524 port will be attacked via small tool i.e netcat <br>- `-v` : used to show scanning process on terminal so that we can see <br>otherwise we wouldn't be able to see what stuff is going on background <br>- `192.168.224.128` : before running `ns` tool , first check whether u're targeting Victim's IP address or not <br>- `1524` : Now check the attack we're gonna do on which port i.e `1524` ✔
 			- output : we hacked the Victim's IP address , now we entered inside the victim's system
 			- Now if u do `ls` command then u can see all the files & folders
-- Ques : can we access files & folders of a website or not ? `imp ⭐`
+- Q : can we access files & folders of a website or not ? `imp ⭐`
 	- Ans : generally , files & folders of a website can't be accessed by normal user except only admin of that website can access
 	- a website made by a developer & that developer kept that complete files & folders of that website on a server
 	- so what if we can access those files & folders or what if we get the vulnerability inside that website
@@ -179,7 +180,7 @@
 - Q : define MAC address <br>Ans : Hardware/H address OR physical address
 - Doubts (mostly only direct solutions) : 
 	- Q : timeline 1:16:17 - 1:17:12 - Lecture 4 <br>when u did airplane mode ON , then IP address gets changed but what if i off the airplane mode before searching google.com <br>& again u ON then IP address will get changed 
-		- Ques : so the new IP address that we got , so is again a new request will go from this New IP address 
+		- Q : so the new IP address that we got , so is again a new request will go from this New IP address 
 		- Ans : when u do airplane mode off then a packet will go first but with packet + more details also go <br>which will see in upcoming lectures <br>so once the packet reach to the google server , then google will see IP address got changed <br>so No new request will go again from the new IP address ✔ <br>- any packet request will go when u do a request 📃
 	- Q : once u learn the kali then u can use Parrot OS too <br>Kali & Parrot OS are both made on debian os based , so commands will be same but ubuntu <br>& other OS are different each other mostly & window OS are based on GUI mostly , <br>So once u learned the Kali then other OS are easier to use & understand
 	- Q : the practical demo u saw about How to hack a system via an IP address is just a tiny example , later on we'll see from scratch
@@ -229,7 +230,7 @@
     - timeline 47:38 - 1:10:27 Lecture 1 : two practical examples not done yet by myself ⭐
     	- but atleast write the tool & commands for references
     	- Those Steps are not explained in depth in order to implement practical so when u get the SSD then implement to check
-    - Ques : how to access root folder of Kali <br> Ans : sudo -i <br>for More : [open root terminal in kali](https://www.wikihow.com/Open-the-Root-Terminal-in-Kali-Linux)
+    - Q : how to access root folder of Kali <br> Ans : sudo -i <br>for More : [open root terminal in kali](https://www.wikihow.com/Open-the-Root-Terminal-in-Kali-Linux)
     - Q : How Does the Internet Work? <br>Ans : [How Does the Internet Work? - Glad You Asked S1 - YouTube](https://www.youtube.com/watch?v=TNQsmPf24go&ab_channel=Vox)
     - Q : What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi <br>Ans : [What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi - YouTube](https://www.youtube.com/watch?v=iKYHf22qVdM&ab_channel=Vox&ab_channel=TEDEd)
 

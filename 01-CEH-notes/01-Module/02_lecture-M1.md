@@ -115,8 +115,8 @@
 		- 1st pair : country - in which country , for which hardware that MAC address given for <br>2nd Pair : state - which state of that country 
 		- 3rd pair : (Vendor + city) details <br>- vendor = means which country made that product & city = means in which city, that product supplied <br>- here ISP will come cuz it's MAC <br>- Eg : if any crime happen via ur wifi which is made by "mercusys" then MAC address of this company router will go to Cyber Police
 		- last all 3 pairs : contain only Device information/ID + little bit of billing info <br>(not that bill which u buy but the price at which company bring into market) - same as in IPv6
-	- Ques : Eg in this Pic , is the MAC address correct or not ? <br>Ans : no , <br>1) cuz combination is `0 - 9` & `A-F (only capital alphabets)` should be used to make a MAC address <br>2) in a MAC address , each pairs separated by hyphens (which is a standard format of a MAC address) , not colons <br>but colons also fine
-- How to check MAC address
+	- Q : Eg in this Pic , is the MAC address correct or not ? <br>Ans : no , <br>1) cuz combination is `0 - 9` & `A-F (only capital alphabets)` should be used to make a MAC address <br>2) in a MAC address , each pairs separated by hyphens (which is a standard format of a MAC address) , not colons <br>but colons also fine
+- Q : How to check MAC address
 	- winOS : cmd = getmac
 	- linux & MacOS : Terminal = ifconfig
 	- output : <br> <img src="../notes-pics/01-Module/02_lecture/02_lecture-2-M1.jpg" alt="Pic 1" width="600"/>

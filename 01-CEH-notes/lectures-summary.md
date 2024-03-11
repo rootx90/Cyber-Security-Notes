@@ -1,0 +1,76 @@
+### Mine Lectures Summary
+
+- Networking Concepts
+    - Topic 1 : Intro to Networking
+        - define network 
+        - define networking
+        - Responsible factors in networking process
+        - Types of Networks in networking
+        - define LAN , MAN , WAN
+        - define IP address 
+          - importance of IP address
+          - meaning of address in IP address
+          - meaning of identity in IP address
+          - understanding a IP Address No.
+          - identifying wrong & correct a IP address
+          - how size works & understanding packets in an IP address
+          - meaning of each pair in IPv4 address
+            - Q : where IP address used national or international
+            - Practical Work : Q : what u think that via an IP address of a system , that system can be hack or not?
+            - Practical Work : Q : can we access files & folders of a website or not ?
+    - Topic 2 : Type of networks
+        - importance of MAC add
+        - define MAC address
+        - versions of IP address : IPv4 vs IPv6
+        - Types of IP address 
+        - each types of IP address
+            - public IP vs private IP
+            - static IP vs Dynamic IP
+            - Practical Work : Static vs Dynamic IP address
+        - Rules in Types of IP addresses
+            - Rule for Public & Private IP address
+        - understanding MAC add
+        - Q : How to check MAC address
+            - Practical work : Q : of getting vendor details of an MAC address (of a device)
+    - Topic 3 : how internet works
+        - about : How Internet Works
+            - Q : who give us internet ?
+            - Q : now tell are these IP address Private or Public IP address (bought by ISP companies for their network users)
+            - Q : what u do after once broadband setup completely at ur home ?
+            - Q : tell that the range of IP addresses - that router have are private or public IPs ?
+            - Q : how many identities that the router has ?
+            - Q : Now the devices which are connected , let's say one of them is connected , so how many identities a device has ?
+            - Source vs Destination
+            - Q : which range of network is this - LAN or WAN ?
+            - Q : the public IP of the router (which is got from the ISP) connected with google server
+            - 2 ways to give/assign IP address to the system & features of router
+                - manual 
+                - Dynamic : DHCP vs ARP
+                - Example : how Internet works
+    - Topic 4 : all about Ports & protocols
+        - Ports in networking     
+			- Q : define Port
+			- understanding what is Port
+				- Q : but think about that can only just knowing IP address of that system , can we reach to that system ?
+				- Q : is that zomato delivery boy have only 1 pathway to reach at Shizuka's Home ?
+				- Working of Ports
+        - Types of Ports
+			- 3 types of Ports
+			- Practical Work : Dynamic Port
+			- Q : How ZOOM company knows that ZOOM needs to be run on let's say Port no. 20
+			- HTTP & HTTPs 
+        - Protocols in Networking
+			- define protcol
+				- Q : where Protocols are used ?
+				- Q : How data is transmitted ?
+				- Q : Device Communication , what's the role of protocols in it ?
+				- Types of Layers in networking
+			- 2 types of protocols 
+			- TCP flags | How TCP works
+				- Q : what is flag
+				- 6 Flags/signs of TCP
+				- TCP 3-way handshake & TCP session termination
+            - TCP vs UDP
+    - Topic 5 : Domain & DNS Record
+
+
