@@ -72,5 +72,67 @@
 				- TCP 3-way handshake & TCP session termination
             - TCP vs UDP
     - Topic 5 : Domain & DNS Record
-
-
+        - What is a Domain
+			- Importance of having a "Domain" name of a website
+				- Q : so can u reach on his system - the website (which u created as a developer) - is now extracted by ur friend in his system
+				- Q : now can u as a developer access that system
+				- Q : Now u as a normal human being , can u remember this IP address
+				- Q : Why that developer purchase a domain name
+				- Q : Why that developer purchase a domain name 
+					- Q : is that setting page of Domain name or that domain name connected with
+					- Q : what that developer need to do to connect the domain name with that Private static IP address (of that website)
+			- define domain name
+        - What is DNS
+        - a Domain's Setting page info / DNS records
+			- Understanding : Domain's name setting page info (Records in DNS & there use)
+        - working of Zone file of DNS
+			- Q : why DNS called as a address book of internet
+			- Q : now what DNS gonna do ?
+			- Q : where will DNS go to check IP address of google.com ?
+			- Q : can DNS directly access that website ?
+			- Q : where this Zone file exist , who has this file ?
+        - HTML request - overview : what is request & response (packet)
+			- Q : what is request means ?
+			- overview of HTML request packet
+    - Topic 6 : Request Headers
+        - What is a HTML request ?
+			- Q : what this actually green box is ? where it is use ? for what purpose it's use
+			- Q : then where that packet request will go first
+			- understanding a packet request
+				- Q : why system generate or send request packet to the server ? for what purpose it's use ?
+				- Q : what is Header means ?
+				- Q : what is encoding ?
+				- Q : why these info goes in body
+				- Q : did u ever saw a URL address inside the browser
+				- Q : but have u never saw a "body" section of a packet request
+        - What is a HTML response ?
+			- Q : A HTML response is a packet providing Permission to access the website/content ? - is this statement correct ?
+        - Types of HTTP Request methods/ways - to send the data
+			- define method 
+			- about Types of HTTP request methods/ways
+- Lab setup
+    - Topic 6 + 7 : Lab setup
+    - Topic 8 : All About Linux
+        - What is Linux
+        - features of Linux
+        - Basic File System of Linux
+    - Topic 9 : linux commands
+    - Topic 10 : More Linux Commands
+        - 3 playstore in kali
+    - Topic 10 + 11 : IG / Footprinting & Reconnaissance
+        - Q : what's Information Gathering ?
+		- Q : what we do in information gathering ?
+		- Q : importance of information Gathering ? 
+		- Q : on which stuff we do information gathering
+		- Q : what are the information which can help us to hack a Victim in "information Gathering" process
+			- information gathering of a company
+			- information gathering of a website/app or company's technology (if company is tech based)
+				- Q : why knowing traffic of a website / Importance of traffic (in a website)
+		- Q : How to find out those details stuff in information Gathering
+			- 3 sources to do Information Gathering
+    - Topic 12 : test session / surprise test
+    - Topic 13 : I.G (information gathering) using Search Engines & Google Dorks
+        - What we do in Information Gathering
+        - Types of I.G
+        - use/pros of Information Gathering
+        - Practical Work : Ways to do Information Gathering
