@@ -29,7 +29,7 @@
 	- so when Victim knows that u're asking about Victim himself/herself , it'll be consider as Active I.G <br>cuz here u're doing Direct Interacting with someone about Victim ✔
 - in Passive I.G , For Eg : 
 	- gathering information without interacting - means Victim didn't know that u're collecting Information <br>about her/him - like going social media of Victim , etc websites - to know about the victim
-- Q : u're getting information about that person from his/her Linkedin profile , so is it Active or Passive I.G<br>Ans : that's Active I.G , cuz when u view that person's Linkedin profile then Linkedin will <br>send the notification to that person about "This is a person who viewed ur profile" <br>- `imp Note ⭐` :  any information which make Victim aler/aware or Victim now knows about it <br>then it'll be Active I.G , not passive ✔
+- Q : u're getting information about that person from his/her Linkedin profile , so is it Active or Passive I.G<br>Ans : that's Active I.G , cuz when u view that person's Linkedin profile then Linkedin will <br>send the notification to that person about "This is a person who viewed ur profile" <br>- `imp Note ⭐` :  any information which make Victim alert/aware or Victim now knows about it <br>then it'll be Active I.G , not passive ✔
 - Q : Information Gathering Practical did on WsCubeTech , is it Active or Passive I.G <br>Ans : that was Passive I.G 99% <br>- Mine thought - for 1% was Active cuz u visited on linkedin & linkedin will notify to Victim who visited
 
 ### use/pros of Information Gathering

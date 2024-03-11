@@ -91,6 +91,7 @@
 			- Q : where will DNS go to check IP address of google.com ?
 			- Q : can DNS directly access that website ?
 			- Q : where this Zone file exist , who has this file ?
+    			- Q : how much time the Zone file will take to update when any info gets updated in DNS record by admin ?
         - HTML request - overview : what is request & response (packet)
 			- Q : what is request means ?
 			- overview of HTML request packet
@@ -110,6 +111,7 @@
         - Types of HTTP Request methods/ways - to send the data
 			- define method 
 			- about Types of HTTP request methods/ways
+
 - Lab setup
     - Topic 6 + 7 : Lab setup
     - Topic 8 : All About Linux
@@ -119,7 +121,9 @@
     - Topic 9 : linux commands
     - Topic 10 : More Linux Commands
         - 3 playstore in kali
-    - Topic 10 + 11 : IG / Footprinting & Reconnaissance
+
+- IG
+    - Topic 10 + 12 + 13 : IG / Footprinting & Reconnaissance
         - Q : what's Information Gathering ?
 		- Q : what we do in information gathering ?
 		- Q : importance of information Gathering ? 
@@ -130,9 +134,32 @@
 				- Q : why knowing traffic of a website / Importance of traffic (in a website)
 		- Q : How to find out those details stuff in information Gathering
 			- 3 sources to do Information Gathering
-    - Topic 12 : test session / surprise test
-    - Topic 13 : I.G (information gathering) using Search Engines & Google Dorks
+    			- 1st source : search engines
+    - Topic 11 : test session / surprise test
+    - Topic 12 : I.G using 2nd source : Google Dorks
         - What we do in Information Gathering
         - Types of I.G
         - use/pros of Information Gathering
         - Practical Work : Ways to do Information Gathering
+    - Topic 13 : I.G using 3rd party Tools & Services
+        - till how many sources we saw in I.G
+		- 3rd source : using Third Party services/Tools for I.G
+			- tools
+			- Practical work : Doing I.G via Wappalyzer tool
+				- Q : who open this Port 80
+				- Practical Eg - to understand service of the Apache server
+					- define eth0
+					- Q : what're the stuff connected with this interface ?
+					- Q : which page
+					- Q : which file get online when the service gets started
+			- practical work : Doing I.G via NetCraft-Extension tool
+				- Q : so in further , we'll see from where this DNS admin email leaked
+				- define Cipher
+            - Practical work : 3rd source : gathering "DNS record" for I.G
+				- Q : how many NS (name servers) a website have ?
+            - Practical work : 3rd source : gathering "subdomain" for I.G
+			- Practical Work : 3rd source : gathering via "dnsenum" inbuilt tool for I.G
+
+- Network Scanning
+    - Topic 14 : Intro to Network Scanning
+        - 
