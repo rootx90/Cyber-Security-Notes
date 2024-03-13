@@ -66,7 +66,7 @@
 		- Public IP : <br>- use in WAN network ✔, Eg : connected public IP addresses with internet <br>- Eg : public IP are real names like ur name in aadhar card , ur real name used in govt. documents , etc
 	2. static vs dynamic IP ✅
 		- static IP : it means fix/never-change/non-changeable IP address <br>dynamic IP : means changeable IP address
-		- why static & dynamic IP address introduced : 
+		- Q : why static & dynamic IP address introduced ?
 			- cuz IPv4 address not able to fulfill the demand of no. of internet users - cuz only maximum 4.7 billion IP address can be <br>created & if each IP address (out of 4.7billion) give to each people - then till IPv4 not able to fulfill the demand <br>for each no. of internet users - that's why static & dynamic IP address introduced
 			- so static & dynamic IP address provide ways to utilize different IP addresses of IPv4
 		- in Dynamic IP address 
@@ -136,7 +136,7 @@
 - My Doubts : 
     - Q : in `whatsmyipv4` website ✔ <br>- but my IPv4 address is not changing when i try to do via connecting with router & disconnecting+connecting with router <br>even after offing the router & on the router again <br>- but when i try to do it via SIM data network then it's working - that IP was Public Dynamic IP address ✔ <br>- Q : why is it like that , is my ISP provided static IP address is it so ? <br>Ans : No , it's the Private IP address but it's dynamic
 	- Q : How Dynamic & why it's not changing when u did with the router <br>Ans : cuz in router situation , the private IP address of that system will change only when a new system gets connected with <br>ur router & when u connect again then u'll see a different IP address - but generally the private IP will not change <br>cuz the router kept a large range of Private IP addresses 
-    - Q : Can we change the MAC address for temporary? <br>yes , we'll change it for keep ourself anonymous but it's upcoming topic <br>we can't change MAC address permanent but we'll hide/change kindof like permanent
+    - Q : Can we change the MAC address for temporary? <br>Ans : yes , we'll change it for keep ourself anonymous but it's upcoming topic <br>we can't change MAC address permanent but we'll hide/change kindof like permanent
     - Q : about Port & Port no. 80 <br>Ans : we'll understand in later stage of concepts <br>that Demo practical on "hack the system via it's IP address" - just shown for motivation to learn more
-- mostly hacking happens on wireless devices , not on wired devices <br>& hacking wired network are easier , so that's why mostly we'll learn about wireless network ✔
+- Q : mostly hacking happens on wireless devices , not on wired devices <br>& hacking wired network are easier , so that's why mostly we'll learn about wireless network ✔
 - Advice : don't see & learn outside the course otherwise u'll get confuse , so do revision what u have learned yet

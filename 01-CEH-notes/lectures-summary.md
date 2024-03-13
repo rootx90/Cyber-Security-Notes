@@ -1,7 +1,7 @@
 ### Mine Lectures Summary
 
 - Networking Concepts
-    - Topic 1 : Intro to Networking
+    - Lecture 1 : Intro to Networking
         - define network 
         - define networking
         - Responsible factors in networking process
@@ -22,23 +22,33 @@
             - Q : where IP address used national or international
             - Practical Work : Q : what u think that via an IP address of a system , that system can be hack or not?
             - Practical Work : Q : can we access files & folders of a website or not ?
-        - End of the lecture (Doubts)
-            - Q : 
-    - Topic 2 : Type of networks
+    - Lecture 2 : Type of networks
         - importance of MAC add
-        - define MAC address
+        - about MAC address
         - versions of IP address : IPv4 vs IPv6
-        - Types of IP address 
-        - each types of IP address
-            - public IP vs private IP
-            - static IP vs Dynamic IP
-            - Practical Work : Static vs Dynamic IP address
-        - Rules in Types of IP addresses
-            - Rule for Public & Private IP address
-        - understanding MAC add
-        - Q : How to check MAC address
+            - difference b/w IPv4 vs IPv6
+        - Types of IP address + why types of IP address invented + rules for only private vs public IP
+            - Types of IP address 
+            - explanation : each types of IP address
+                - public IP vs private IP
+                - static IP vs Dynamic IP
+                    - in dynamic IP
+                        - Q : why static & dynamic IP address introduced
+                        - Q : what's the advantage here
+                        - Q : how we're utilizing 4.7 billion IP addresses
+                    - in static IP
+                        - Q : who need static IP address ?
+                - Eg : understanding Dynamic IP vs Static IP addresses
+                - Practical Work : Static vs Dynamic IP address
+            - Rules in Types of IP addresses
+                - Rule for Public & Private IP address
+        - MAC address
+            - understanding MAC add
+                - Q : Eg in this Pic , is the MAC address correct or not ?
+            - Q : How to check MAC address
+                - Q : in output , why have different MAC addresses
             - Practical work : Q : of getting vendor details of an MAC address (of a device)
-    - Topic 3 : how internet works
+    - Lecture 3 : how internet works
         - about : How Internet Works
             - Q : who give us internet ?
             - Q : now tell are these IP address Private or Public IP address (bought by ISP companies for their network users)
@@ -53,7 +63,7 @@
                 - manual 
                 - Dynamic : DHCP vs ARP
                 - Example : how Internet works
-    - Topic 4 : all about Ports & protocols
+    - Lecture 4 : all about Ports & protocols
         - Ports in networking     
 			- Q : define Port
 			- understanding what is Port
@@ -77,7 +87,7 @@
 				- 6 Flags/signs of TCP
 				- TCP 3-way handshake & TCP session termination
             - TCP vs UDP
-    - Topic 5 : Domain & DNS Record
+    - Lecture 5 : Domain & DNS Record
         - What is a Domain
 			- Importance of having a "Domain" name of a website
 				- Q : so can u reach on his system - the website (which u created as a developer) - is now extracted by ur friend in his system
@@ -101,7 +111,7 @@
         - HTML request - overview : what is request & response (packet)
 			- Q : what is request means ?
 			- overview of HTML request packet
-    - Topic 6 : Request Headers
+    - Lecture 6 : Request Headers
         - What is a HTML request ?
 			- Q : what this actually green box is ? where it is use ? for what purpose it's use
 			- Q : then where that packet request will go first
@@ -119,17 +129,17 @@
 			- about Types of HTTP request methods/ways
 
 - Lab setup
-    - Topic 6 + 7 : Lab setup
-    - Topic 8 : All About Linux
+    - Lecture 6 + 7 : Lab setup
+    - Lecture 8 : All About Linux
         - What is Linux
         - features of Linux
         - Basic File System of Linux
-    - Topic 9 : linux commands
-    - Topic 10 : More Linux Commands
+    - Lecture 9 : linux commands
+    - Lecture 10 : More Linux Commands
         - 3 playstore in kali
 
 - IG
-    - Topic 10 + 12 + 13 : IG / Footprinting & Reconnaissance
+    - Lecture 10 + 12 + 13 : IG / Footprinting & Reconnaissance
         - Q : what's Information Gathering ?
 		- Q : what we do in information gathering ?
 		- Q : importance of information Gathering ? 
@@ -141,13 +151,13 @@
 		- Q : How to find out those details stuff in information Gathering
 			- 3 sources to do Information Gathering
     			- 1st source : search engines
-    - Topic 11 : test session / surprise test
-    - Topic 12 : I.G using 2nd source : Google Dorks
+    - Lecture 11 : test session / surprise test
+    - Lecture 12 : I.G using 2nd source : Google Dorks
         - What we do in Information Gathering
         - Types of I.G
         - use/pros of Information Gathering
         - Practical Work : Ways to do Information Gathering
-    - Topic 13 : I.G using 3rd party Tools & Services
+    - Lecture 13 : I.G using 3rd party Tools & Services
         - till how many sources we saw in I.G
 		- 3rd source : using Third Party services/Tools for I.G
 			- tools
@@ -167,8 +177,8 @@
 			- Practical Work : 3rd source : gathering via "dnsenum" inbuilt tool for I.G
 
 - Network Scanning
-    - Topic 14 : Intro to Network Scanning
-        - 
+    - Lecture 14 : Intro to Network Scanning
+        - a
 
 ### End of Lectures (Doubts) summary
 
@@ -263,4 +273,37 @@ Q : How Does the Internet Work?
 
 Q : What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi
 ```
+
+- Lecture 2 : Type Of Networks
+```
+Q : how to identify which IPv6 format correct & which one is wrong
+
+Q : About MAC address
+
+Q : static IP or dynamic ip , which used by normal users of internet
+
+
+Q : How both IP address + MAC address (of a device) interact with the server
+
+Q : in whatsmyipv4 website
+	- but my IPv4 address is not changing when i try to do via connecting with router & disconnecting+connecting with router
+		even after offing the router & on the router again
+	- but when i try to do it via SIM data network then it's working - that IP was Public Dynamic IP address
+	- Q : why is it like that , is my ISP provided static IP address is it so ?
+	
+Q : How Dynamic & why it's not changing when u did with the router
+
+Q : Can we change the MAC address for temporary?
+
+Q : about Port & Port no. 80
+
+Q : mostly hacking happens on wireless devices , not on wired devices 
+	& hacking wired network are easier , so that's why mostly we'll learn about wireless network
+```
+
+- Lecture 3 : How Internet Works
+```
+
+```
+
 
