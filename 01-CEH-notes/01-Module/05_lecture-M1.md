@@ -110,6 +110,7 @@
 - timeline 30:40 - 30-50 : without SSL - a website is not secure
 - difference b/w forwarding vs redirecting <br>Ans : <br>> https://www.perplexity.ai/search/is-redirecting-or-pSK7KvhCQAiH8gaf1ISr1Q <br>> https://stackoverflow.com/questions/8646650/difference-between-forwarding-and-redirection ✔<br>> https://stackoverflow.com/questions/6068891/difference-between-jsp-forward-and-redirect
 - Q : about DNS : <br>> https://blog.bytebytego.com/p/why-the-internet-is-both-robust-and <br>> https://www.perplexity.ai/search/what-is-DNS-IjDM0PvKRBWqhUwji9b3SQ ✔
+- Q 1 : what is DNS means in cyber security . explain in short bullet points to 10yr old kid with a real life example <br>Q 2 : in kali OS , 8.8.8.8 created by nslookup tool <br>question 1 : is this IP address a DNS server or what's it <br>question 2 : if it's a DNS server then what's the difference between DNS & IP address <br>explain each question with bullet points to 10yr old kid with real life examples <br>Ans : https://www.perplexity.ai/search/what-is-DNS-LC_aBtPcQR.dZj_6Q6X0NQ ✔
 - Q : what information are inside the zon-file DNS of a website ✔<br>Ans : https://ns1.com/resources/dns-zones-explained
 - 1) about domain
 	- domain is made in less letter to make it small 
