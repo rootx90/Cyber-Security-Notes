@@ -54,15 +54,25 @@
             - Q : now tell are these IP address Private or Public IP address (bought by ISP companies for their network users)
             - Q : what u do after once broadband setup completely at ur home ?
             - Q : tell that the range of IP addresses - that router have are private or public IPs ?
-            - Q : how many identities that the router has ?
-            - Q : Now the devices which are connected , let's say one of them is connected , so how many identities a device has ?
+            - Q : Now tell me how many identities that the router have ?
+            - Q : Now the devices which are connected , let's say one of them is connected , so how many identities a device have ?
+                - Q : what is localhost ?
             - Source vs Destination
+                - Q : if u want to go from Jodhpur to jaipur , so what's source & the destination
             - Q : which range of network is this - LAN or WAN ?
             - Q : the public IP of the router (which is got from the ISP) connected with google server
             - 2 ways to give/assign IP address to the system & features of router
-                - manual 
-                - Dynamic : DHCP vs ARP
+                - Q : when the router was giving the IP address to each devices then did we manually fill/define the IP address for each devices ?
+                - 2 ways to give/assign IP address to the system/device
+                    - manual 
+                    - automation : DHCP vs ARP
+                    - purpose of DHCP
+                    - working of DHCP
+                    - Q : How DHCP able to know that which IP address of which system of is free <br>(whether that System is connected or not) - but DHCP only do work related to assign IP only , <br>not more than this
+                    - purpose of ARP
+                    - working of ARP
                 - Example : how Internet works
+                    - Q : & u want to connect with sir then which IP will be shared
     - Lecture 4 : all about Ports & protocols
         - Ports in networking     
 			- Q : define Port
@@ -303,7 +313,27 @@ Q : mostly hacking happens on wireless devices , not on wired devices
 
 - Lecture 3 : How Internet Works
 ```
+Q : in Phone , from where it gets the IP address (cuz it's not the router) ?
 
+Q : can we change the Public Static IP address
+
+Q : what if we want to convert static IP into dynamic IP ? - for this do we need to purchase
+
+Q : IP address of localhost is same ? so why IP address is allotted ?
+
+Q : in settings of the phone ?
+
+Q : the range of Private IP address - that the router have
+
+Q : Once online exam complete after submit , then a IP shown - so who which IP is that ?
+
+Q : when 2 different devices - do same google search then what happen ?
+
+Q : via Public IP address of the router , we can access everything
 ```
 
+- Lecture 4 : all about Ports & protocols
+```
+
+```
 

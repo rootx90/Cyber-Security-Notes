@@ -36,7 +36,7 @@
 		- so router is a intermediator , so it'll switch from a Private IP to a Public IP & vice versa <br> <img src="../notes-pics/01-Module/03_lecture/03_lecture-6-M1.jpg" alt="Pic 1" width="600"/>
 - Q : Now tell me how many identities that the router have ? <br>Ans : so a Public IP , a Private IP & the router is a hardware - so MAC address also a identity , so total 3 identities ✔ 
 - Q : Now the devices which are connected , let's say one of them is connected , so how many identities a device have ? <br>1) a Private IP address <br>2) a MAC address <br>3) a localhost
-	- What is Localhost ? <br>Ans : just like we said a Public IP - is a real name of a person & a private IP is a nick of a person <br>so same way , a localhost - is like a brain of a person , so let's say - whatever u think/thoughts in ur brain, <br>so those thinking process or thoughts - remain inside ur brain - those stuff doesn't go outside <br>or nobody can't understand about ur thoughts or thinking process <br>- so we're doing self-routing or self-communication or self-talk ✔
+	- Q : What is Localhost ? <br>Ans : just like we said a Public IP - is a real name of a person & a private IP is a nick of a person <br>so same way , a localhost - is like a brain of a person , so let's say - whatever u think/thoughts in ur brain, <br>so those thinking process or thoughts - remain inside ur brain - those stuff doesn't go outside <br>or nobody can't understand about ur thoughts or thinking process <br>- so we're doing self-routing or self-communication or self-talk ✔
 	- in a device (like a lapi/phone) `imp ⭐` <br>- default IP of localhost : `127.0.0.1` <br>- the localhost's domain is `localhost` ✔
 	- purpose of it : in ur device (like lapi, phone, PC) , the localhost used for self-testing - so the localhost is the 3rd identity ✔
 	- so let's say - the monitor has 3rd identity i.e the localhost
@@ -78,7 +78,7 @@
 			- So purpose/work of DHCP is to assign/give an IP address ✔
 		- so we don't have to manually define/give an IP address to each devices which are getting connected with the router
 	- ARP
-		- How DHCP able to know that which IP address of which system of is free <br>whether that System is connected or not - but DHCP only do work related to assign IP only , not more than this ✔
+		- Q : How DHCP able to know that which IP address of which system of is free (whether that System is connected or not) <br>- but DHCP only do work related to assign IP only , not more than this ✔
 		- Eg : in a company , we have a account team & sales team <br>so Sales team - only sale things - so sales is DHCP <br>but account team - keep only the data of "kisco kitney paise diya" , where money goes , how much to give to that person<br>which person have to give money , which person gave the money , etc <br>so account - is ARP ✔
 		- so the router has another feature i.e ARP (address resolution protocol)
 		- Broadcast : Broadband (means router/internet) but broadcast - means sending a message <br>to everyone who is connected for that work , so ARP also same as broadcast ✔
