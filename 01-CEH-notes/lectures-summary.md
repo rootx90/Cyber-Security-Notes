@@ -11,13 +11,19 @@
           - importance of IP address
           - meaning of address in IP address
           - meaning of identity in IP address
+            - Q : how IP address considered as identity
           - understanding a IP Address No.
           - identifying wrong & correct a IP address
+            - Q : Can an IP address start with 0?
+            - Q : is ip address can end with 0 ?
           - how size works & understanding packets in an IP address
+            - Q : who is giving storage space to those data/packets
           - meaning of each pair in IPv4 address
             - Q : where IP address used national or international
             - Practical Work : Q : what u think that via an IP address of a system , that system can be hack or not?
             - Practical Work : Q : can we access files & folders of a website or not ?
+        - End of the lecture (Doubts)
+            - Q : 
     - Topic 2 : Type of networks
         - importance of MAC add
         - define MAC address
@@ -163,3 +169,63 @@
 - Network Scanning
     - Topic 14 : Intro to Network Scanning
         - 
+
+### End of Lectures (Doubts) summary
+
+- Lecture 1 : Intro to Networking
+```
+Q : in nmap , what `-sT` means
+Q : what happen if u hack someone else device without telling that person
+Q : define MAC address
+Q : timeline 1:16:17 - 1:17:12 - Lecture 4
+    when u did airplane mode ON , then IP address gets changed 
+    but what if i off the airplane mode before searching google.com & again u ON then IP address will get changed
+	Q : so the new IP address that we got , so is again a new request will go from this New IP address
+Q : the practical demo u saw about How to hack a system via an IP address is just a tiny example , 
+    later on we'll see from scratch if u type ipconfig /all command on cmd 
+    & on internet - search for my ip address then in both situation - IP address will be different why ?
+Q : to become better EH , then u have to practice a lot & revise
+Q : while doing that practical for hacking a system via an IP address , so here comes that we need to hide our actual IP address , 
+    so that no one can find us , otherwise our details also get revealed & mac address also contain details
+Q : LAN port & LAN network = both are different each other
+Q : in that practical demo class of hacking a system via IP address that system , so we found the port also , 
+    so later on we'll learn about Ports in depth , cuz mostly attacks are depend on ports , also don't need to know every ports
+Q : why we can't access IP address of google instead of typing name of google , this we'll see in upcoming lecture 
+    that actually behind the scene , how "google" name gets converted into IP address
+Q : in Practical demo of IP address , when we access Port , a port was running a service i.e bindshell 
+    - so shell means terminal & bind means joining/connecting 2 different terminals together , 
+    but port 443 used for transferring & receiving the data securely , so Port no. 443 will never give access to join with a terminal , 
+    so when we know working of each PORT then we'll able to hack each port & Port no. 3 is HTTPs with SSL certificate
+Q : in this course , we'll not see the direct way like hacking social media , but u'll get complete understanding of hacking process
+Q : to explain a topic , first clear the base then tell about the topic to that person
+Q : in practical demo of hacking a system via IP address , so in next class , we'll see how to identify is 
+    this ur IP address or not & that IP address is not of Victim
+Q : phishing attack , credit card got hacked ? if u give details of ur credit card on unknown website + give all OTP then ur details 
+    will get taken away & hacking server of a bank is not easy - cuz server of a bank contain different types of firewall
+    & 99.9% difficult to reach there
+Q : anything possible to hack like bitcoin or mining in blockchain , technology is decentralized which means no body is controlling
+    but centralized technology eg : facebook - controlling by mark zuckerberg , 
+    but in blockchain technology - there's no owner to control it , so it's handled + manage + secure via people who are using them like u ,
+    but in blockchain - data is not stored in one system - data is divided into multiple devices & to hack
+    then u have to hack each system but to make a blockchain group , there's a "smart contract" being made
+    which is same for everyone , so if "smart contract' being hacked then each system gets hacked & u can hack somebody's blockchain wallet but u have to do RND
+Q : mining in blockchain - required bunch of best GPU in order to hack a mining & for mining , different OS comes , 
+    PC for mining will be different than ur normal PC & u can't stop that PC - cuz it should be run continuously for mining
+Q : importance of VMware , due to it - data can't be harmed cuz system of VMware is different 
+    than ur actual system - it's like using 2 different Laptops
+Q : changing location via IP address of different countries possible via VPNs & proxies & how hackers are able to change the location
+    - it depends on VPN or Proxies cuz like VPN has time limit to change the IP address & location
+Q : Advice : nothing is secure on the internet 100%
+Q : we'll make our on custom proxies not VPN - later on , cuz VPN is not secure but proxy is much secure to change the IP address 
+    - which we just saw in 22)
+Q : VPN & proxies are used for security purpose
+Q : a VPN's companies , give same IP address which u were using at that time
+Q : how to be anonymous ?
+Q : if u're learning something then in 2 ways can be used bad or good , but if u don't know whatever action/steps u're 
+    gonna take towards that bad thing & how that action can impactful at what percentage 
+    then don't take a action/steps towards that bad thing
+Q : how to access root folder of Kali
+Q : How Does the Internet Work?
+Q : What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi
+```
+
