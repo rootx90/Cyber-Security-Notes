@@ -82,11 +82,14 @@
 				- Working of Ports
         - Types of Ports
 			- 3 types of Ports
+    			- Q : how do u know that http works on 80 Port no
+    			- Q : What are Registered Ports ?
 			- Practical Work : Dynamic Port
 			- Q : How ZOOM company knows that ZOOM needs to be run on let's say Port no. 20
-			- HTTP & HTTPs 
+    			- Q : is it ever happen that u open the ZOOM + whatsapp at the same time & due to port they both crash ?
+			- difference b/w HTTP vs HTTPs 
         - Protocols in Networking
-			- define protcol
+			- define protocol
 				- Q : where Protocols are used ?
 				- Q : How data is transmitted ?
 				- Q : Device Communication , what's the role of protocols in it ?
@@ -334,6 +337,26 @@ Q : via Public IP address of the router , we can access everything
 
 - Lecture 4 : all about Ports & protocols
 ```
+Q : List down important ports to know as a ethical hacker
 
+Q : About ARP
+	Q : what is ARP in wifi-router
+	Q : in wifi-router , is ARP considered as a data packet or a protocol ?
+	Q : why wifi-router send ARP packet ? if wifi-router sends ARP packet then where that ARP packet goes ?
+	Q : what happens when a router receives an ARP request
+	Q : how does a router determine the mac address of a device
+	
+Q : Domain of a website - also connected with server of that website
+
+Q : if ur ISP providing internet to u then whatever searches u're doing - are they able to read my searches data ?
+
+Q : which protocol mostly used to make establish connection between 2 systems
+	like when a client system talk to any server in this world - is that protocol TCP or something else
+	
+Q : without Port , no data can be transferred , so Ports is everywhere
 ```
 
+- Lecture 5 : Domain & DNS Record
+```
+
+```
