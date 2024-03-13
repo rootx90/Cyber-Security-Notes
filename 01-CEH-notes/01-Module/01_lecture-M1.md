@@ -214,7 +214,7 @@
 		- & now rules are made for company who make VPN & proxies i.e will keep the record of the user <br>cuz if VPN's IP address goes to the internet & any illegal activities happen then investing will happen
 		- & cyber Police will ask from the company that which person was using this IP address of VPN at assume current time is 10:24
 	- Q : Advice : nothing is secure on the internet 100% 📃
-	- Q : we'll make our on custom proxies not VPN - later on , cuz VPN is not secure but proxy is much secure to change the IP address - which we just saw in 22) 📃
+	- Q : we'll make our on custom proxies not VPN - later on , cuz VPN is not secure but proxy is much secure to change the IP address - which we just saw in 22 📃
 	- Q : how to be anonymous ? 
 		- so by doing some settings , we can change our IP address & mac address
 		- can anybody trace me if we're using VPN & if we're using proxy then nobody can trace ? 
