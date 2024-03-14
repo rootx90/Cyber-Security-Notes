@@ -274,7 +274,102 @@
                 
 - Network Scanning
     - Lecture 14 : Intro to Network Scanning
-        - a
+        - what is Network Scanning
+		- 5 Goals to achieve in the process of Network Scanning
+			- 1st Goal/STEP : Host is online or no
+			- 2nd Goal/STEP : Ports Ope
+			- 3rd Goal/STEP : services
+			- 4th Goal/STEP : softwares + their versions
+				- Q : so who is using this "http" service ?
+			- 5th Goal/STEP : OS banner grabbing
+		- Practical Work : Network Scanning - Nmap tool
+		- Types of scan
+			- Q : why we need these types of scan
+			- 1st scan that we run : TCP i.e "-sT"
+				- Q : how TCP will find/scan which Ports are open & which are not of an IP-address/system
+					- Q : how many ways that TCP do handshake/communication ?
+					- Q : but how many minimum ports are required for communication ?
+					- Q : is it good if TCP sending packet from a system to each port from 1 - 65535 for establishing communication ?
+						- Q : who will decide the activity (i.e continuously sending packet to each port) is good or bad ?
+					- Q : if TCP send packet to all those ports to build connection with "A" system
+				- Q : how to write TCP in nmap tool
+			- 2nd scan : SYN scan i.e -sS
+		- Practical Work : network scanning with nmap tool
+			- Practical Example of Nmap
+				- Q : how to find out IP addresses of each system which are in range + which are online
+				- Q : How to know which IP addresses are in range of our System's IP address
+				- Q : what is virtual & virtual machine ?
+				- Q : Now tell which IP address for who
+					- Q : is 1st IP address is of Victim , If not then why
+				- Q : how many ports are in network ?
+				- Q : what & why are these packets which were sent & received by nmap
+					- Q : what was the main moto for scanning all the ports ?
+				- Q : after writing this "nmap -v -p- 192.168.224.128 -sV"
+					- Q : whose IP address is this 192.168.224.128
+					- Q : who is the victim here ?
+				- Q : output of STEP 4.2 , who makes port no. 80 online ?
+				- Q : why we're saving the file in xml format only
+				- Q : why version of a software is important for us
+    - Lecture 15 : Enumeration
+        - What is Enumeration
+			- Q : define enumeration
+			- Q : How Enumeration can be done ? Ans : by using "nmap" too
+			- Q : how we can do Enumeration by using "nmap" tool
+				- Q : name the location where all applications installed files kept & sometimes those applications supporting files used when required
+			- Steps to find "scripts" folder of nmap
+				- Q : in lecture 14 , we were doing network scanning to see open ports then which was the 1st port no. & which service was running on that 1st port no.
+				- Q : now find out how many scripts are inside usr/share/nmap/scripts whose name is FTP
+					- Q : what all these "scripts" of nmap tool does
+					- Q : these scripts are divided into parts , How ?
+					- Q : why we'll get scripts of each service which is running on each port no.
+		- Types of Enumeration
+			- Automation Enumeration
+			- Manual Enumeration
+			- Advantages of "Automation" & "Manual" Enumeration Scan
+				- Q : why we run "Automation" Enumeration first & then "Manual"
+				- Q : so what we'll do
+		- Practical Work : Automation & Manual Enumeration Scans
+			- Q : to know how much percentage is done by "Automation" Enumeration Scan
+		- What next to do
+			- Q : what does FTP service do
+			- Q : what does SMTP service do
+			- Q : what does TELNET service do
+			- Q : so if we hack that system via FTP service then - what access u'll get
+			- Q : if we hack the system via SMTP
+			- Q : if we hack the system via TELNET
+    - Lecture 16 : FTP & Telnet enumeration
+        - intro of lecture
+		- Practical work : FTP connection
+			- Q : which was the 1st port which we scanned via both type of Enumeration
+			- Q : in network scanning - we talked about , what is "verbose" means -v ?
+			- Q : where was the user & password when we got the report after doing both type of Enumeration Scan
+		- Practical Work : Telnet connection
+			- Q : on which port no. Telnet service/protocol is running
+			- Q : now why we'll not use "netcat" tool
+		- What are exploits , auxiliary , payloads of "msfconsole" tool
+			- Q : What are Auxiliaries ?
+				- Q : what are these two type of scripts doing ?
+			- Q : What are Exploits ?
+			- Q : What are payloads ?
+		- Practical Work : exploits , auxiliary , payloads of "msfconsole" tool
+			- Q : only these much details are inside the report when we did "Automation" Enumeration Scan ?
+			- Q : Which report ?
+			- Q : when to define a specific IP address to check the report of that IP address ?
+		- searching : exploits , auxiliary , payloads for each service/protocol
+    - Lecture 17 : SMTP & NFS enumeration 
+		- Practical work : SMTP enumeration scan
+		- Practical work : NFS enumeration scan
+			- Q : what does http service/protocol do ?
+			- Q : what does Domain do ?
+
+- Exploitation
+    - Lecture 17 : Exploitation
+		- Further STEPS of Lecture 16 - exploits , auxiliary , payloads for each service
+			- Q : in this output pic , which one is better - auxiliary or exploit ?
+			- Q : but How that exploit gonna know on which IP address & a port - that exploit needs to send data/information
+			- Q : which system that u need to give RHOSTS & RPORT
+    - Lecture 18 : More About Exploitation & Armitage
+        - 
 
 ### End of Lectures (Doubts) summary
 
@@ -550,4 +645,36 @@ Q : there are 2 systems "System A" & "System B"
 	then is firewall block IP address of system A or System B
 	
 Q : why sometimes http , https called as service & sometimes as protocols
+```
+
+- Lecture 15 : Enumeration
+```
+```
+
+- Lecture 16 : FTP & Telnet enumeration
+```
+Q : if we have payloads on our system then anti-virus will scan
+
+Q : `nmap -sS -v -p1-65535 192.168.244.129 -sC -sV -O -oX Saurabh.xml` - this command not working
+```
+
+- Lecture 17 : SMTP & NFS enumeration | Exploitation
+```
+Q : can be hack the Windows OS with the same process
+
+Q : should we need to master all the tools or a particular tool of kali linux
+
+Q : Mine Doubt : in "Practical work - NFS enumeration scan"
+	Q : are all commands can be run without network of kali OS or not ?
+```
+
+- Lecture 18 : More About Exploitation & Armitage
+```
+Q : different status of ports
+
+Q : let's say u don't have social Media account of that person then how u can do IG about that person
+
+Q : to hack a hacker then it's bit difficult cuz
+
+Q : when we do search then many exploits comes - then how to know useage of each exploits
 ```

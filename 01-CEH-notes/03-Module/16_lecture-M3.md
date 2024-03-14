@@ -93,15 +93,15 @@
 	- STEP 5.5 : `db_status` , output : "Connected to msf. Connection Type: postgresql" <br>- so the database is connected 
 
 ### What are exploits , auxiliary , payloads of "msfconsole" tool
-- What are Auxiliaries ? ✔ 
+- Q : What are Auxiliaries ? ✔ 
 	- Auxiliaries are scripts of Metasploit i.e `msfconsole` tool
 	- Eg : in previous lecture , we used scripts (i.e Manual & Automation Enumeration Scans) in `nmap` tool <br>- so these 2 scripts command are of `nmap` tool & both brings extra information<br>Q : what are these two type of scripts doing ? <br>Ans : they are bringing advance/extra information about of the Victim's System
 	- so `msfconsole` tool gave the name of those scripts as Auxiliaries <br>so these are working as scripts
 	- so in "msfconsole" tool , Auxiliaries (which are scripts) brings extra/advance information <br>just like both Enumeration Scan does
-- What are Exploits ? ✔
+- Q : What are Exploits ? ✔
 	- Exploits used to hack the system for short-term <br>- Eg 1 : we used `netcat` tool to hack the system , so if any internet issue comes then connection will get lost <br>- Exploits hack the system for short-term <br>- Eg 2 : let's say we have the Victim's system but if Victim's system switched off <br>then automatically connection gets lost , then again system can't be connected 
 	- so Exploits will hack the system instantly & work instantly <br>`Note ✅` : but if connection gets lost from that system then can't establish the connection again with that system
-- What are payloads ? ✔
+- Q : What are payloads ? ✔
 	- Payloads are used for long-term hacking the system
 	- they get installed inside the system & start running in background/back-end of the system 
 	- `Note ✅` : we can make the connection multiple times with that same system if connection gets lost
@@ -156,8 +156,8 @@
 
 ---
 ### End of the lecture (Doubts) :
-- if we have payloads on our system then anti-virus will scan
-- `nmap -sS -v -p1-65535 192.168.244.129 -sC -sV -O -oX Saurabh.xml` - this command not working ✔
+- Q : if we have payloads on our system then anti-virus will scan
+- Q : `nmap -sS -v -p1-65535 192.168.244.129 -sC -sV -O -oX Saurabh.xml` - this command not working ✔
 	- if "Metasploitable2" system is off then it won't work
 	- so turn ON the "Metasploitable2" system - means start this system <br>then do scanning , if machine is off - then scanning can't possible
 	- so firstly - ON the "Metasploitable2" system then this command for scanning

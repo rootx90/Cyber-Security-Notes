@@ -124,11 +124,11 @@
 ---
 ### End of the lecture (Doubts) :
 - Q : different status of ports <br>1. closed Ports : https://lh5.googleusercontent.com/Lu6RVb_BWhvtlA6mBfCxjIBKTjDJBzMdw7r2PmURvYiff898ZfFPi9pL0QD5WrENBFqRkIjzbM4RJOfc8j-LETkhHds-HarA9naH0KrxUWryXjADAdeUAG--_u0vcEZ44QkubmE <br>2. unfiltered ports : https://lh6.googleusercontent.com/21YBSZPEdyvcQtu4CXnB_IwMbTlmIXVRT_IgMv_vGNwOwr6BU4tKTVEw616jlrK_zzH-tvZDYtJsoMziyQYgWri2LgEJMKDAUBclcW3RGD-eR6Aj8w4VU5IuiFzZw5Y-L3y5Egw <br>3. open | Filtered ports : https://miro.medium.com/v2/resize:fit:720/format:webp/1*7LuIDiYGbosYLmBflveVbA.png <br>4. Open & filtered ports : https://res.cloudinary.com/practicaldev/image/fetch/s--kDlnbHnv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zn9thto105mplgsk3xkv.png
-- let's say u don't have social Media account of that person then how u can do IG about that person
+- Q : let's say u don't have social Media account of that person then how u can do IG about that person
 	- Ans : information gathering is a trick which u just need to use ur mind 
 	- if u want to know about that person then go to his social Media <br>- if u're not getting any info from his social media - then u can go to his friends <br>- so make his friends as ur friend & make a fake social media account & talk to him
 	- u need to understand concept about Social Engineering & IG <br>are tricks which u can't be done via using tools , u have to use ur mind
-- to hack a hacker then it's bit difficult cuz
+- Q : to hack a hacker then it's bit difficult cuz
 	- whatever the things u know - he/she also knows that's why
 	- & what if he/she knows more than u  
 - Q : when we do search then many exploits comes - then how to know useage of each exploits
