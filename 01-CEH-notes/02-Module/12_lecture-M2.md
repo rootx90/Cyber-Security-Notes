@@ -6,7 +6,7 @@
 > 1) Theory : What we do in Information Gathering ?
 > 2) Theory : Types of I.G
 > 3) Theory : use/pros of Information Gathering
-> 4) Practical Work : Ways to do Information Gathering
+> 4) Practical work : Information Gathering via 2nd source i.e google Dorks/operators
 
 ---
 
@@ -39,7 +39,7 @@
 2. Easy Processing
 3. Accurate Attacking <br>- cuz we done the main thing i.e Information Gathering - due to which system got hacked
 
-### Ways to do Information Gathering
+### Practical work : Information Gathering via 2nd source i.e google Dorks/operators
 - in [10_lecture-M2](10_lecture-M2.md) , we did information gathering about Victim (WsCubeTech) via 1st way/source i.e using Search Engines 
 - here we'll see 2nd source i.e Google Dorks/operators (means Google Hacking Advance Techniques)
 	- STEPS - to do Google Advance Search
@@ -139,6 +139,6 @@
 
 ---
 ### End of the Lectures (Doubts) : 
-- More on : Google Dorks/Operators : <br>> https://www.youtube.com/watch?v=u_gOnwWEXiA&ab_channel=NullByte <br>> https://www.youtube.com/watch?v=lESeJ3EViCo&ab_channel=Hak5 <br>> https://www.youtube.com/watch?v=hrVa_dhD-iA&ab_channel=NetworkChuck <br>> https://www.youtube.com/watch?v=xpzvlC6WNPU&ab_channel=An0nAli <br>> https://www.youtube.com/watch?v=QLhUYxgalKI&ab_channel=CyberStudies <br>> https://www.youtube.com/watch?v=GlIG37uZSjQ&ab_channel=Afshan-AFSHackersAcademy
+- Q : More on : Google Dorks/Operators & cheat sheet <br>> https://www.youtube.com/watch?v=u_gOnwWEXiA&ab_channel=NullByte <br>> https://www.youtube.com/watch?v=lESeJ3EViCo&ab_channel=Hak5 <br>> https://www.youtube.com/watch?v=hrVa_dhD-iA&ab_channel=NetworkChuck <br>> https://www.youtube.com/watch?v=xpzvlC6WNPU&ab_channel=An0nAli <br>> https://www.youtube.com/watch?v=QLhUYxgalKI&ab_channel=CyberStudies <br>> https://www.youtube.com/watch?v=GlIG37uZSjQ&ab_channel=Afshan-AFSHackersAcademy <br>> cheat sheet <br>- https://github.com/chr3st5an/Google-Dorking <br>- https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06 <br>- https://www.stationx.net/google-dorks-cheat-sheet/ <br>- https://hackr.io/blog/google-dorks-cheat-sheet
 - Advice : clear ur doubts during lecture, cuz taking ur doubts at home is like baggage <br>if u're getting any doubt in ur mind during lecture then clear it right now <br>otherwise if u're not getting doubt during lecture then it's fine ✔
 - Advice - Q : can i get the PPT via which Sir Explain <br>Ans : those PPT are not useful cuz only points are written in those PPT <br>so make ur own self-notes , so these PPT are useless & in future , u'll get many books to read

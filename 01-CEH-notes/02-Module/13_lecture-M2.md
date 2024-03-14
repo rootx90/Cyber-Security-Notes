@@ -20,7 +20,7 @@
 - Tools :
 	- wappalyzer - technology profile : [Wappalyzer - Technology profiler](https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg)
 	- Netcraft Extension : [Netcraft Extension](https://chromewebstore.google.com/detail/netcraft-extension/bmejphbfclcpmpohkggcjeibfilpamia)
-1. Doing I.G via Wappalyzer tool
+1. Practical Work : Doing I.G via Wappalyzer tool
 	- STEP 1 : go wscubetech.com website & then open the Wappalyzer on this website <br> <img src="../notes-pics/02-Module/13_lecture/13_lecture-0-M2.jpg" alt="Pic 1" width="500"/>
 	- it's showing version of technologies 
 	- Importance of knowing about version of a technology is being used on website : <br>- let's say u're using ZOOM & it's version is 2.4 currently <br>- so it gets updated from 2.3 - which means there was vulnerability in 2.3 that's why it gets updated to 2.4 <br>& then we can exploit that vulnerability <br>- that's why , company say that update ur phone
@@ -51,20 +51,20 @@
 			- so all networks gets ON , so port no. 80 is opened by apache
 		- by-default apache will run that "index.html" file on Port no. 80 , but we can change Port no. ✔
 		- STEP 9 : to check whether that page is the one (which is running or not) <br>- STEP 9.1 : run `gedit index.html` <br>- STEP 9.2 : & then change the heading from "Apache2 hAcking" to "Apache2 Debian Default Page" <br>- STEP 9.3 : then run any one of them out of 3 , let's say IP `192.168.224.138:80` <br>output : now page heading will get changed & local page i.e "index.html" will get online
-2. Doing I.G via NetCraft-Extension tool
+2. Practical Work : Doing I.G via NetCraft-Extension tool
 	- STEP 1 : open wscubetech.com & click Netcraft-Extension tool <br> <img src="../notes-pics/02-Module/13_lecture/13_lecture-6-M2.jpg" alt="Pic 1" width="500"/>
 	- STEP 2 : click on "Site Report" btn of Netcraft-Extension tool 
 		- output : all the information we'll get which we learned in DNS Topic <br> <img src="../notes-pics/02-Module/13_lecture/13_lecture-7-M2.jpg" alt="Pic 1" width="500"/>
 	- information which are useful in output of STEP 2 
 		- Background - is not useful info 
-		- in Network section : <br>- Nameserver : which we talked in lecture 5 - in DNS topic i.e NS1 & NS2  , <br>- "Netblock Owner - Amazon Data Services India" - means this site using AWS server , <br>- IPv4 address - of wscubetech <br>- IPv6 address - is not present cuz IPv4 already running for a site  <br>- organisation - which is a address , <br>- DNS admin : we're getting email id of DNS Admin <br>Q : so in further , we'll see from where this DNS admin email leaked ✔<br>- Reserver DNS : telling AWS server's name i.e south-1.compute.amazonaws.com
+		- in Network section : <br>- Nameserver : which we talked in lecture 5 - in DNS topic i.e NS1 & NS2  , <br>- "Netblock Owner - Amazon Data Services India" - means this site using AWS server , <br>- IPv4 address - of wscubetech <br>- IPv6 address - is not present cuz IPv4 already running for a site  <br>- organization - which is a address , <br>- DNS admin : we're getting email id of DNS Admin <br>Q : so in further , we'll see from where this DNS admin email leaked ✔<br>- Reserver DNS : telling AWS server's name i.e south-1.compute.amazonaws.com
 		- in IP delegation section : contains information related to server & where server being changed
 		- in SSL/TLS section : contains basic information<br>- Cipher : means telling algorithm - means on server , which encryption algorithm is used <br>we'll see this information in upcoming lectures
 		- in Certificate Transparency : contains information which algorithm is used
 		- in Hosting History : contains server information <br>-Pic : <img src="../notes-pics/02-Module/13_lecture/13_lecture-8-M2.jpg" alt="Pic 1" width="500"/> <br>- this Pic , telling information about when wscubetech changed/updated the server <br>including IP address & web server but OS remain same <br>- currently IP address u can see in pic & web server : is Apache/2.4.52 Ubuntu - means <br>apache - is a server & it's version 2.4.52 & OS is Ubuntu ✔
 		- & rest below details are not useful
 
-### 3rd source : gathering "DNS record" for I.G
+### Practical Work : 3rd source : gathering "DNS record" for I.G
 - STEP 1 : go in different websites for DNS record
 - STEP 2 : search `DNS lookup` & open websites like https://nslookup.io & https://digitalocean.com
 - STEP 3 : in "nslookup.io" website , search "wscubetech.com"
@@ -87,14 +87,14 @@
 	- output : u'll not see much information about this website , so this website is secure
 - so we gathered information via seeing major records like DNS , NS , MX records but subdomains records left ✔
 
-### 3rd source : gathering "subdomain" for I.G
+### Practical Work : 3rd source : gathering "subdomain" for I.G
 - STEP 1 : search subdomain finder & click on https://subdomainfinder.c99.nl <br>- this website works properly , but use other websites also by urself 
 - STEP 2 : in this website , write "wscubetech.com" & click "start scan"
 	- Pic : <img src="../notes-pics/02-Module/13_lecture/13_lecture-12-M2.jpg" alt="Pic 1" width="500"/>
 	- these are sub-domains of wscubetech , some are active - which are running & some are non-active
 - now let's say u want to see each records separately like MX then search `MX record finder` ✔ 
 
-### 3rd source : gathering information via "dnsenum" inbuilt tool
+### Practical Work : 3rd source : gathering information via "dnsenum" inbuilt tool
 - so we gathered information via websites , now let's use a inbuilt tool i.e `dnsenum` ✔
 - STEP 1 : if u don't know about dnsenum then run `dnsenum -h`
 - STEP 2 : run `dnsenum wscubetech.com` , 
@@ -114,11 +114,11 @@
 ---
 
 ### End of the lecture (Doubts) :
-- Q : what does eth0 means in kaliOS : <br>Ans : https://www.perplexity.ai/search/what-is-eth0-UNspIzinTgWuKYsx17xqRw
-- Q : define enumeration : <br>Ans : https://www.perplexity.ai/search/what-is-enumeration-aQCZTIiwSHWmPZzfxz1wGA
-- Q : define footprinting : <br>Ans : it's aka I.G <br>https://www.techtarget.com/searchsecurity/definition/footprinting
+- Q : what does eth0 means in kaliOS <br>Ans : https://www.perplexity.ai/search/what-is-eth0-UNspIzinTgWuKYsx17xqRw
+- Q : define enumeration <br>Ans : https://www.perplexity.ai/search/what-is-enumeration-aQCZTIiwSHWmPZzfxz1wGA
+- Q : define footprinting <br>Ans : it's aka I.G <br>https://www.techtarget.com/searchsecurity/definition/footprinting
 - Q : is both Enumeration , footprinting means same as I.G <br>Ans : Yes
-- Q : about DNS Enumeration : <br>Ans : <br>> https://www.youtube.com/watch?v=rQ-dc5kwRtU&ab_channel=HackerSploit <br>> https://www.youtube.com/watch?v=EpfHhEGz35I&ab_channel=HackerSploit <br>> https://www.youtube.com/watch?v=c3Ts6F2OcWk&ab_channel=NetSecNow <br>> https://www.youtube.com/watch?v=ZUAOuXJQ0ao&ab_channel=TheAB <br>> https://www.youtube.com/watch?v=VyGTVrR0Mio&ab_channel=SpinTheHack <br>> https://www.youtube.com/watch?v=9f1AW2it2WY&ab_channel=ITkFunde <br>> https://www.youtube.com/watch?v=mCbz92LdEfY&ab_channel=CyberJunkie <br>> https://medium.com/@danielwebimprints/dns-enumeration-f9cd0d60b67b <br>> https://medium.com/@ssalssa.1.12.2.1.2.1/dnsenum-154cc0f3691c <br>> https://ankisinha.medium.com/dnsenum-a-command-line-information-gathering-tool-a535078207a6 <br>> https://www.knowledgehut.com/blog/security/enumeration-in-ethical-hacking <br>> https://www.techtarget.com/searchsecurity/definition/footprinting
+- Q : about DNS Enumeration <br>Ans : <br>> https://www.youtube.com/watch?v=rQ-dc5kwRtU&ab_channel=HackerSploit <br>> https://www.youtube.com/watch?v=EpfHhEGz35I&ab_channel=HackerSploit <br>> https://www.youtube.com/watch?v=c3Ts6F2OcWk&ab_channel=NetSecNow <br>> https://www.youtube.com/watch?v=ZUAOuXJQ0ao&ab_channel=TheAB <br>> https://www.youtube.com/watch?v=VyGTVrR0Mio&ab_channel=SpinTheHack <br>> https://www.youtube.com/watch?v=9f1AW2it2WY&ab_channel=ITkFunde <br>> https://www.youtube.com/watch?v=mCbz92LdEfY&ab_channel=CyberJunkie <br>> https://medium.com/@danielwebimprints/dns-enumeration-f9cd0d60b67b <br>> https://medium.com/@ssalssa.1.12.2.1.2.1/dnsenum-154cc0f3691c <br>> https://ankisinha.medium.com/dnsenum-a-command-line-information-gathering-tool-a535078207a6 <br>> https://www.knowledgehut.com/blog/security/enumeration-in-ethical-hacking <br>> https://www.techtarget.com/searchsecurity/definition/footprinting
 - Q : DNS zone transfer <br>Ans : https://www.youtube.com/watch?v=kdYnSfzb3UA&ab_channel=HackerSploit
 - Q : meaning of "mapping one domain to another domain" <br>Ans : https://www.perplexity.ai/search/maping-one-domain-PmuGNqyJS62xJURQ1j3CZQ
 - Q : if we do footprinting via 3rd party then if any information will go to that main host of the website <br>Ans : somewhat Yes & somewhat No <br>- cuz when u do something & then a packet will go that server , connection not made properly <br>- that's why whenever we do penetration on a website - then ask for a permission from that person <br>- but if u do without telling then u'll be caught by that company + cyber police <br>- & our information goes - cuz we're using a 3rd party tool/website <br>- cuz we saw how to behind the scene , connection gets established <br>so when we do Information gathering - then that server will go our system's packet <br>cuz without sending a Packet Request - information gathering can't possible <br>- it's like if u want to Kate indirectly then either u have to search her on internet or talk to someone who knows her

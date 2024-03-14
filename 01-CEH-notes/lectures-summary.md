@@ -210,27 +210,51 @@
     - Lecture 10 : More Linux Commands
         - 3 playstore in kali
 
-- IG
-    - Lecture 10 + 12 + 13 : IG / Footprinting & Reconnaissance
+- IG / Footprinting & Reconnaissance
+    - Lecture 10 + 12 + 13 : IG 
         - Q : what's Information Gathering ?
 		- Q : what we do in information gathering ?
 		- Q : importance of information Gathering ? 
 		- Q : on which stuff we do information gathering
 		- Q : what are the information which can help us to hack a Victim in "information Gathering" process
+    		- so these details help to hack a person , How ?
 			- information gathering of a company
 			- information gathering of a website/app or company's technology (if company is tech based)
 				- Q : why knowing traffic of a website / Importance of traffic (in a website)
 		- Q : How to find out those details stuff in information Gathering
 			- 3 sources to do Information Gathering
     			- 1st source : search engines
+    			- Practical work : firstly , IG via normal search engines
     - Lecture 11 : test session / surprise test
     - Lecture 12 : I.G using 2nd source : Google Dorks
         - What we do in Information Gathering
+            - Personal Details
+            - Company Details
+            - System Information
+            - Gathering all Information about target/Victim
+            	(Victim - means that person/system on which we're going to attack)
+            - Entities Belong to target
+            	(Entities - means name , no. , etc)
+            - Technology
+            	(means taking out information about technologies that Victim were/is using)
         - Types of I.G
+            - Active
+            - Passive
+            - Q : u're getting information about that person from his/her Linkedin profile , so is it Active or Passive I.G
+            - Q : Information Gathering Practical did on WsCubeTech , is it Active or Passive I.G
         - use/pros of Information Gathering
-        - Practical Work : Ways to do Information Gathering
+            - Time Saving
+            - Easy Processing
+            - Accurate Attacking
+        - Practical Work : Information Gathering via 2nd source i.e google Dorks/operators
+            - Q : why temp file being created
+            - Q : can we access files & folders from a computer of any client
+            - Q : can we access/see files & folders of a website of a developer
     - Lecture 13 : I.G using 3rd party Tools & Services
         - till how many sources we saw in I.G
+            - 1st source : search engines
+            - 2nd source : google dorks / google Advance Operators
+            - 3rd source : now we'll use - Third Party Services/Tools
 		- 3rd source : using Third Party services/Tools for I.G
 			- tools
 			- Practical work : Doing I.G via Wappalyzer tool
@@ -247,7 +271,7 @@
 				- Q : how many NS (name servers) a website have ?
             - Practical work : 3rd source : gathering "subdomain" for I.G
 			- Practical Work : 3rd source : gathering via "dnsenum" inbuilt tool for I.G
-
+                
 - Network Scanning
     - Lecture 14 : Intro to Network Scanning
         - a
@@ -460,7 +484,70 @@ Q : someone did something via Kali Linux & he/she installed the kali in VMware i
 	Q : is IP address of System or router ? which one will go ?
 ```
 
-- Lecture 7 : 
+- Lecture 7 : Lab setup
 ```
 
+```
+
+- Lecture 8 : All about Linux
+```
+Q : about "/etc" folder in kaliOS
+
+Q : can temp mails can be track
+```
+
+- Lecture 9 : Linux commands
+```
+Q : Folder vs File
+
+Q : why hashtag removed from inside the "sources.list"
+
+Q : How to Update and Upgrade Kali Linux Operating System? How to install Kali latest Version
+```
+
+- Lecture 10 : More Linux Commands & Information Gathering
+```
+
+```
+
+- Lecture 11 : Test Session
+```
+
+```
+
+- Lecture 12 : I.G (information gathering) using Search Engines & Google Dorks
+```
+Q : More on : Google Dorks/Operators & cheat sheet
+```
+
+- Lecture 13 : I.G using 3rd party Tools & Services
+```
+Q : what does eth0 means in kaliOS
+
+Q : define enumeration
+
+Q : define footprinting
+
+Q : is both Enumeration , footprinting means same as I.G
+
+Q : about DNS Enumeration
+
+Q : DNS zone transfer
+
+Q : meaning of "mapping one domain to another domain"
+
+Q : if we do footprinting via 3rd party then if any information will go to that main host of the website
+
+Q : is any Dorks have for Social Medias like for Google Dorks is for google
+```
+
+- Lecture 14 : Intro to Network Scanning
+```
+Q : define IDS
+
+Q : there are 2 systems "System A" & "System B"
+	- if System A sending request continuously via same port number to System B which is a unknown system
+	then is firewall block IP address of system A or System B
+	
+Q : why sometimes http , https called as service & sometimes as protocols
 ```
