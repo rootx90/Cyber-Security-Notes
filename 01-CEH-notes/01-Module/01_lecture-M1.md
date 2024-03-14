@@ -100,7 +100,7 @@
 			- 3rd number - for city + which city branch of bank , Eg : Jasola - is a branch, so in one city , there will be only one Jasola
 			- 4th number - for user details or details of account holder
 		- so that credit card no. contain the identity , so same with a IP address no.
-- understanding a IP address no. :
+- understanding a IP address no.
 	- IPv4 address = means v (version) & 4 (4th version)
 	- earlier we have many version before IPv4 & those are not useful to know & <br>IPv4 is commonly IP address version used on the internet
 	- IPv4 Pic : <img src="../notes-pics/01-Module/01_lecture/01_lecture-2-M1.jpg" alt="Pic 1" width="500"/>

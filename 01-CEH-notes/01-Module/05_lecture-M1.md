@@ -24,7 +24,7 @@
 		- Now that system extracted ur website on it's own storage & the developer got a Public static IP address <br>let's say 253.231.91.63 ✔<br>Q : Now u as a normal human being , can u remember this IP address <br>Ans : No , u can't & even no other person can remember this IP address <br>- cuz in this world , there are many different websites where u visit
 		- So the developer was that on his website , very less people are coming on his website <br>so he got to know that people not able to remember ur website's Public Static IP address
 		- so that developer went to companies like GODADDY , so these companies sell different Domain names <br>for IP addresses of different websites - like wscube.com : here "wscube.com" is a name <br>so WsCube Company purchased a Domain name i.e "wscube.com" from GODADDY
-			- when that developer purchase this Domain name from GODADDY <br>then GoDaddy will give 2 things to that developer <br>1) with that Domain name , he also got a setting dashboard page of that Domain Name <br>settings like "how to connect that name with the Public Static IP address of a website" , etc.. <br>2) & to login into this setting page , username & password also got
+			- Q : when that developer purchase this Domain name from GODADDY <br>then GoDaddy will give 2 things to that developer <br>1) with that Domain name , he also got a setting dashboard page of that Domain Name <br>settings like "how to connect that name with the Public Static IP address of a website" , etc.. <br>2) & to login into this setting page , username & password also got
 		- Q : Why that developer purchase a domain name ? <br>Ans : cuz so that he can attach/link that IP address (of his website) with that Domain name <br>so when anyone search "wscube.com" then that person will went to that IP address ✔
 			- Eg : Q : in this world , there are many humans , so in daily life , do u call people by saying them <br>"u come here human" & some people face matches each other <br>Ans : No cuz u call them via their own name , so same with each IP address has their own domain name
 			- Q : is that setting page of Domain name or that domain name connected with <br>that website's IP address (which is made by the developer) or not ?<br>Ans : No , so 1st we need to connect <br>Q : what that developer need to do to connect the domain name with that Private static IP address (of that website) <br>Ans : so we need to fill the information of setting page - of that domain name which is purchased by that developer <br>- what info we need to fill - we'll see
@@ -72,7 +72,7 @@
 		- like port no. 80 - running on http , 25 port no. - on SMTP , 21 port no. - FTP
 		- & this is dangerous , if someone knows about which services on which port no. running <br>then that attacker can easily exploit the system/network ✔
 	- `PTR` record : means pointer
-		- what is pointer ? <br>Ans : means pointing towards a thing <br>eg : u made that mistake then devendra sir will point a finger towards u
+		- Q : what is pointer ? <br>Ans : means pointing towards a thing <br>eg : u made that mistake then devendra sir will point a finger towards u
 		- Q : why PTR record ? importance of it ? <br>Ans : white hat hacker & hackers do scanning on a website , then real name or real domain name of a website <br>don't go to hackers or white hat hacker , so to save from this problem - a different domain name given <br>- Eg : let's a hacker wants to scan wscubetech , so we'll write "google.com" - so when a hacker do scanning <br>then the hacker will get google.com , not wscubetech domain name & due to this , the hacker will get confused <br>& whatever the intention of the hacker is will be stopped & on that moment - hacker will stop the scanning ✔
 		- so in this situation , PTR record used ✔
 
@@ -108,34 +108,34 @@
 - now that packet details contain those information which is `GET /doc/text.html HTTP/1.1` <br>so understanding this packet we'll see in next lecture - currently just understand what's request & response
 ### End of the lecture (doubts)
 - timeline 30:40 - 30-50 : without SSL - a website is not secure
-- difference b/w forwarding vs redirecting <br>Ans : <br>> https://www.perplexity.ai/search/is-redirecting-or-pSK7KvhCQAiH8gaf1ISr1Q <br>> https://stackoverflow.com/questions/8646650/difference-between-forwarding-and-redirection ✔<br>> https://stackoverflow.com/questions/6068891/difference-between-jsp-forward-and-redirect
-- Q : about DNS : <br>> https://blog.bytebytego.com/p/why-the-internet-is-both-robust-and <br>> https://www.perplexity.ai/search/what-is-DNS-IjDM0PvKRBWqhUwji9b3SQ ✔
+- Q : difference b/w forwarding vs redirecting <br>Ans : <br>> https://www.perplexity.ai/search/is-redirecting-or-pSK7KvhCQAiH8gaf1ISr1Q <br>> https://stackoverflow.com/questions/8646650/difference-between-forwarding-and-redirection ✔<br>> https://stackoverflow.com/questions/6068891/difference-between-jsp-forward-and-redirect
+- Q : about DNS <br>Ans : <br>> https://blog.bytebytego.com/p/why-the-internet-is-both-robust-and <br>> https://www.perplexity.ai/search/what-is-DNS-IjDM0PvKRBWqhUwji9b3SQ ✔
 - Q 1 : what is DNS means in cyber security . explain in short bullet points to 10yr old kid with a real life example <br>Q 2 : in kali OS , 8.8.8.8 created by nslookup tool <br>question 1 : is this IP address a DNS server or what's it <br>question 2 : if it's a DNS server then what's the difference between DNS & IP address <br>explain each question with bullet points to 10yr old kid with real life examples <br>Ans : https://www.perplexity.ai/search/what-is-DNS-LC_aBtPcQR.dZj_6Q6X0NQ ✔
 - Q : what information are inside the zon-file DNS of a website ✔<br>Ans : https://ns1.com/resources/dns-zones-explained
-- 1) about domain
+- Q : about domain
 	- domain is made in less letter to make it small 
 	- & domain doesn't contain special characters & it's not made case sensitive <br>that's why in any way we want to search that website - we can
 	- but domain name is made in that way so that it can be easily searchable
-- 2) how pages are inside the IP address
+- Q : how pages are inside the IP address
 	- this is not thing we need to understand , we just have to understand <br>how working is happening , how request , response is working
 	- cuz if we go into too deep inside the website then we'll become programmer 
 	- & mostly we scan websites in penetration testing field - so in this field we go in deep & details <br>in this course , we don't need to go in deep - cuz this is ethical hacking , not specific field 
-- 3) How IP address is linked with pages of a website ?
+- Q : How IP address is linked with pages of a website ?
 	- Ans : a developer deploy/put on a server (which has Public static IP address) <br>& this IP Address gets connected a domain name
 	- so actually that website are inside the server , we just access the website via it's IP address ✔
 	- those pages of the website are not inside the IP address , we just access the website ✔ 
 	- Eg : is home build on the address or that address is of that home , so that address of that home 
 	- so that server is a home & IP address is a address ✔ 
-- 4) can IP address of domain name change or not ?
+- Q : can IP address of domain name change or not ?
 	- eg : wscubetech's server is on AWS amazon & the ip is 4.4.4.4 <br>so amazon is charges too much
 	- so wscubetech moved on let's say microsoft server i.e azure <br>so wscubetech will get 2.2.2.2 IP from microsoft's server ✔
 	- here the Public static IP address remain same of these servers but when wscubetech <br>change from a server to another server then wscubetech got a different IP address ✔
 	- so wscubetech's team will go in domain's record setting , so in `A` record : put that 2.2.2.2 IP address <br>so this IP will get connect with wscubetech domain , 
 	- but server's Public Static IP address will not change , <br>but if u change the server then u'll get the new IP address from that server ✔
 	- Eg : u currently live in parthapnagar but u moved to different place <br>but here parthapnagar will not change , parthapnagar will stay on it's place even if u change ur location <br>& if someone come in that parthapnagar then that person will purchase that home <br>so that home becomes of that person ✔
-- 5) if website has a malware then website will get corrupt
-- 6) advice : doing practical only possible when ur concepts are cleared <br>so devendra sir said , after information gathering , we'll start practicals <br>but before this , clear ur basics properly
-- 7) with a domain name , hosting also needs to be purchase 
+- Q : if website has a malware then website will get corrupt
+- advice : doing practical only possible when ur concepts are cleared <br>so devendra sir said , after information gathering , we'll start practicals <br>but before this , clear ur basics properly
+- Q : with a domain name , hosting also needs to be purchase 
 	- cuz a developer kept his website on his own system
 	- but a developer can't by server (whose Public static IP address) cuz servers are very expensive <br>so that's why that developer purchase a hoisting for a server ✔
 	- hoisting - means put that complete website on the server <br>means the zip file of a website deploy inside the server ✔

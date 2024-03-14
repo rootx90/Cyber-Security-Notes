@@ -25,7 +25,7 @@
 	- so from `Host` to `Content-Length` : is called request Headers <br>& from request line to `Content-Length` : called request message header
 	- Q : what is Header means ? <br>Ans : u can say "request line" is a hair - means firstly URL of the website come <br>then "request header" - here header means head of human body
 	- `Accept` header : means Eg : `Accept : image/gif, image/jpeg, */*`
-		- here means the request that we sent to the website , we told in the request <br>that our system which type of image format can understand <br>so gif & jpeg are format/extension of images
+		- here means the request that we sent to the website , we told in the request <br>that our system which type of image format can understand - so gif & jpeg are format/extension of images
 		- so our system can understand this 2 types of image format <br>so that when that website's server reply then send the image in any of the those 2 format only
 		- `*/*` : means anything , means our system support all the image format so the website's server <br>can send any image format, that's why - at the end of the request it's used
 	- `Accept-Language` header : means our system which language can understand
@@ -55,9 +55,9 @@
 - A HTML response is a packet - which means providing Permission to access the website/content <br>Includes GET/POST , Headers & Body (complete program of that page)
 - Q : A HTML response is a packet providing Permission to access the website/content ? - is this statement correct ? <br>Ans : this statement - means whenever a website reply then no permission asked to access it<br>No cuz , whenever u ask sensitive page/info then the website will not allow & it'll stop u from access it <br>- so , response doesn't mean that in reply , always u'll get the website , sometimes website will not allow u to access those info <br>- so "not allowing to access" also kinda response from the website
 
-### Types of HTTP Request Methods ?
+### Types of HTTP Request Methods - to send the data
 - so we'll see about those methods/way during transferring/sending the data
-- Method : means a way/तरीका to send something <br>Eg : to share info , u have 3 ways/methods : via call OR sms OR whatsapp message <br>- so we have 3 ways/methods - so any of them we can use to send the data
+- Q : define Method <br>Ans : means a way/तरीका to send something <br>Eg : to share info , u have 3 ways/methods : via call OR sms OR whatsapp message <br>- so we have 3 ways/methods - so any of them we can use to send the data
 - HTTP Request Methods 
 	- Pic 1 : <br><img src="../notes-pics/01-Module/06_lecture/06_lecture-1-M1.jpg" alt="Pic 1" width="600"/>
 	- Pic 2 : <br><img src="../notes-pics/01-Module/06_lecture/06_lecture-2-M1.jpg" alt="Pic 1" width="600"/>
@@ -126,8 +126,8 @@
 	- STEP 2 : click on "Get ur Ninite" button
 	- Ninite : is a good platform to download multiple softwares at once & less chance of virus to come
 ### End of the Lecture (Doubts) : 
-- about HTTP Request Header Packet <br>Ans : https://code.tutsplus.com/http-headers-for-dummies--net-8039t
-- about OPTIONS method 
+- Q : about HTTP Request Header Packet <br>Ans : https://code.tutsplus.com/http-headers-for-dummies--net-8039t
+- Q : about OPTIONS method 
     - Ans : [what's the usecase of OPTIONS method in HTTP request methods](https://www.perplexity.ai/search/whats-the-usecase-iNvGx1wARkCLqgBQ.vLg1w)
     - 1st) The HTTP OPTIONS method is like asking a server, "Hey, what can I do with you?" <br>2) It helps the client know which operations (like GET, POST, DELETE) are allowed on a specific resource. <br>3) The server responds with a list of supported methods, so the client knows what it can ask the server to do. <br>4) It's a way for the client to understand how to interact with the server without actually changing anything on the server itself.
 - about CONNECT method

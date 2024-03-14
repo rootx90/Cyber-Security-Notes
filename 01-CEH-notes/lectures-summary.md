@@ -4,24 +4,38 @@
     - Lecture 1 : Intro to Networking
         - define network 
         - define networking
-        - Responsible factors in networking process
+        - about : Responsible factors in networking process
+        - Explanation : Responsible factors in networking process
+            - Communication
+            - Sharing Software
+            - Sharing File
+            - Sharing Info
+            - Information Preservation
+            - Security
+            - Sharing Hardware
+            - Sharing Data
         - Types of Networks in networking
-        - define LAN , MAN , WAN
-        - define IP address 
-          - importance of IP address
-          - meaning of address in IP address
-          - meaning of identity in IP address
-            - Q : how IP address considered as identity
-          - understanding a IP Address No.
-          - identifying wrong & correct a IP address
-            - Q : Can an IP address start with 0?
-            - Q : is ip address can end with 0 ?
-          - how size works & understanding packets in an IP address
-            - Q : who is giving storage space to those data/packets
-          - meaning of each pair in IPv4 address
-            - Q : where IP address used national or international
-            - Practical Work : Q : what u think that via an IP address of a system , that system can be hack or not?
-            - Practical Work : Q : can we access files & folders of a website or not ?
+            - LAN
+            - MAN
+            - WAN
+        - what's LAN
+        - what's MAN
+        - what's WAN
+        - what's IP address 
+            - importance of IP address
+            - meaning of address in IP address
+            - meaning of identity in IP address
+                - Q : how IP address considered as identity
+            - understanding a IP Address No.
+                - identifying wrong & correct a IP address
+                - Q : Can an IP address start with 0?
+                - Q : is ip address can end with 0 ?
+            - how size works & understanding packets in an IP address
+                - Q : who is giving storage space to those data/packets
+            - meaning of each pair in IPv4 address
+                - Q : where IP address used national or international
+                - Practical Work : Q : what u think that via an IP address of a system , that system can be hack or not?
+                - Practical Work : Q : can we access files & folders of a website or not ?
     - Lecture 2 : Type of networks
         - importance of MAC add
         - about MAC address
@@ -82,6 +96,7 @@
 				- Working of Ports
         - Types of Ports
 			- 3 types of Ports
+    			- 1 ) Well Known Ports <br>2 ) Registered ports <br>3 ) Dynamic Ports
     			- Q : how do u know that http works on 80 Port no
     			- Q : What are Registered Ports ?
 			- Practical Work : Dynamic Port
@@ -98,23 +113,49 @@
 			- TCP flags | How TCP works
 				- Q : what is flag
 				- 6 Flags/signs of TCP
+                    - URG (urgent)
+                    - FIN (finish)
+                        - Q : so once the file get transferred 100% then did u still keep ur wifi on or hotspot on ?
+                    - RST (Reset)
+                    - PSH (Push)
+                    - ACK (Acknowledge)
+                    - SYN (Synchronize)
 				- TCP 3-way handshake & TCP session termination
+                    - during creating/establishing a connection b/w 2 systems - this process will happen
+                    - Explanation of TCP session Termination (once connection is done then show connection gets stop)
             - TCP vs UDP
     - Lecture 5 : Domain & DNS Record
         - What is a Domain
 			- Importance of having a "Domain" name of a website
+    			- Q : what're the details of his friend's system
 				- Q : so can u reach on his system - the website (which u created as a developer) - is now extracted by ur friend in his system
 				- Q : now can u as a developer access that system
 				- Q : Now u as a normal human being , can u remember this IP address
-				- Q : Why that developer purchase a domain name
+				- Q : when that developer purchase this Domain name from GODADDY then GoDaddy will give 2 things to that developer
 				- Q : Why that developer purchase a domain name 
+    				- Q : in this world , there are many humans , so in daily life , do u call people by saying them "u come here human" & some people face matches each other
 					- Q : is that setting page of Domain name or that domain name connected with
 					- Q : what that developer need to do to connect the domain name with that Private static IP address (of that website)
-			- define domain name
+			- What is Domain name 
         - What is DNS
         - a Domain's Setting page info / DNS records
+            - A record
+            - CNAME record
+            - MX record
+            	- Q : how SBI bank got this sbi.in or sbi.com
+            - TXT record
+            	- Q : what is SPF record ?
+            - NS record
+            	- Q : what's the usecase of NameServers ?
+            	- Q : How Name servers protect the server of a website from DOS attack ?
+            - SOA record
+            - SRV record
+            - PTR record
+            	- Q : what is pointer ?
+            	- Q : why PTR record ? importance of it ?
 			- Understanding : Domain's name setting page info (Records in DNS & there use)
         - working of Zone file of DNS
+            - Q : what was the DNS ?
 			- Q : why DNS called as a address book of internet
 			- Q : now what DNS gonna do ?
 			- Q : where will DNS go to check IP address of google.com ?
@@ -127,19 +168,37 @@
     - Lecture 6 : Request Headers
         - What is a HTML request ?
 			- Q : what this actually green box is ? where it is use ? for what purpose it's use
-			- Q : then where that packet request will go first
+    			- Q : then where that packet request will go first
 			- understanding a packet request
 				- Q : why system generate or send request packet to the server ? for what purpose it's use ?
+				- Request line
+                - Host 
 				- Q : what is Header means ?
-				- Q : what is encoding ?
-				- Q : why these info goes in body
-				- Q : did u ever saw a URL address inside the browser
-				- Q : but have u never saw a "body" section of a packet request
+                - Accept header
+                - Accept-Language header
+                - Accept-Encoding header
+    				- Q : what is encoding ?
+                - User-Agent header
+                - Content-Length
+                - body section
+    				- Q : why these info goes in body
+    				- Q : did u ever saw a URL address inside the browser
+    				- Q : but have u never saw a "body" section of a packet request
         - What is a HTML response ?
 			- Q : A HTML response is a packet providing Permission to access the website/content ? - is this statement correct ?
         - Types of HTTP Request methods/ways - to send the data
 			- define method 
 			- about Types of HTTP request methods/ways
+                - GET method
+                - HEAD method
+                	- Q : what is Status line in header section
+                - POST method
+                - PUT method
+                - DELETE method
+                - OPTIONS method
+                - TRACE method
+                	- Q : what u do without going in drive or folder
+                - CONNECT method
 
 - Lab setup
     - Lecture 6 + 7 : Lab setup
@@ -363,6 +422,45 @@ Q : without Port , no data can be transferred , so Ports is everywhere
 ```
 
 - Lecture 5 : Domain & DNS Record
+```
+Q : difference b/w forwarding vs redirecting
+
+Q : about DNS
+
+Q 1 : what is DNS means in cyber security . explain in short bullet points to 10yr old kid with a real life example
+Q 2 : in kali OS , 8.8.8.8 created by nslookup tool
+	question 1 : is this IP address a DNS server or what's it
+	question 2 : if it's a DNS server then what's the difference between DNS & IP address
+	
+Q : what information are inside the zon-file DNS of a website
+
+Q : about domain
+
+Q : how pages are inside the IP address
+
+Q : How IP address is linked with pages of a website ?
+
+Q : can IP address of domain name change or not ?
+
+Q : if website has a malware then website will get corrupt
+
+Q : with a domain name , hosting also needs to be purchase
+```
+
+- Lecture 6 : Request Headers
+```
+Q : about HTTP Request Header Packet
+
+Q : about OPTIONS method
+
+Q : someone did something via Kali Linux & he/she installed the kali in VMware in main system
+    - so can we reach to his/her from VMware to main system
+	Q : browser is wide wide or LAN network ?
+	Q : so is VMware has that Public IP address ?
+	Q : is IP address of System or router ? which one will go ?
+```
+
+- Lecture 7 : 
 ```
 
 ```
