@@ -339,6 +339,12 @@ Q : via Public IP address of the router , we can access everything
 ```
 Q : List down important ports to know as a ethical hacker
 
+Q : http vs https | importance of https | importance of SSL/TLS certificate
+Q : in https , 
+    when sensitive data (like password, username) being send from client system 
+    to server , then that where data embedded 
+Q : is that data being embedded on body or header of a request
+
 Q : About ARP
 	Q : what is ARP in wifi-router
 	Q : in wifi-router , is ARP considered as a data packet or a protocol ?

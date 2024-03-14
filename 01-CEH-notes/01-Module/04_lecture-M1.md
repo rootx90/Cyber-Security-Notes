@@ -169,6 +169,15 @@
 
 ### End of the Lecture (Doubts) : 
 - Q : List down important ports to know as a ethical hacker ✔<br>Ans : <br>> https://www.perplexity.ai/search/List-down-important-MOsfQc2xSzumEycOp_dgFw <br>> https://www.geeksforgeeks.org/50-common-ports-you-should-know/
+- Q : http vs https | importance of https | importance of SSL/TLS certificate ✔️ <br>Ans : <br>> https://www.youtube.com/watch?v=9B4Xn_kP3e4&ab_channel=ThapaTechnical <br>> https://www.youtube.com/watch?v=eWdPWSBKxso&ab_channel=ITkFunde <br> https://www.youtube.com/watch?v=hExRDVZHhig&ab_channel=PowerCertAnimatedVideos
+- Q : in https , when sensitive data (like password, username) being send from client system to server , <br>then that where data embedded <br>Q : is that data being embedded on body or header of a request ✔️
+    - Ans : Embedding Sensitive Data in HTTPS Requests:
+    - Location of Data: <br>- Sensitive data like passwords and usernames are typically embedded in the body of an HTTPS request rather than the header.
+    - Body vs. Header: <br>- The body of an HTTP request contains the actual data being sent to the server, including form data, JSON payloads, or other content. <br>- The header of an HTTP request contains metadata about the request, such as the type of content being sent, authentication tokens, and cookies.
+    - Secure Transmission: <br>- HTTPS encrypts the entire communication between the client and server, ensuring that sensitive data in both the body and headers is encrypted during transmission.
+    - Best Practice: <br>- It is recommended to always send sensitive information in the body of an HTTPS request to ensure better security and privacy protection.
+    - In HTTPS communication, sensitive data like passwords and usernames should be included in the body of the request to maintain security and confidentiality through encryption provided by the HTTPS protocol.
+    - More : https://www.perplexity.ai/search/in-https-when-N3HVYH54RDudfTuUu8lztg
 - Mine Doubts : 
 	- About ARP
 		- Q : what is ARP in wifi-router <br>Q : in wifi-router , is ARP considered as a data packet or a protocol ? <br>Ans : <br>> [Ans 1](https://www.perplexity.ai/search/in-wifirouter-is-lLBms0eST8qOoPyZgmLS8Q?s=u)<br>> [Ans 2](https://www.perplexity.ai/search/what-is-ARP-P4OXAwQ3TOmfciz9etE9zw?s=u)
