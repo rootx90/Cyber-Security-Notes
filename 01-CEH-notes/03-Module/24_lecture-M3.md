@@ -14,29 +14,29 @@
 ### Ways to be anonymous
 > - for Changing user-agent + MAC address → go to 23th lecture
 > 3. Changing IP address 
-1. Changing IP address
+3. Changing IP address
 	- 2 ways to change the IP address <br>1st way : Manual Process <br>2nd way : Auto/Automatic Process
 	- in Manual Process , we use Proxychains (it's a in-built Proxy tool in kali)<br>in Auto Process , use VPN + Proxy ✔
 ### VPN & Proxy
 - VPN
 	- Virtual Private Network
-	- How it Works ✔
+	- Q : How it Works ✔
 		- our system has a Public Static IP address for surfing internet - Eg : 1.1.1.1 <br>now VPN (is a virtual system) - which has also a Public Static IP address , Eg : 2.2.2.2 & a open port - Eg : port no. 80
 		- Q : what is virual/virtualization in terms of VPN ✔
 			- Ans : not real , eg : Vmware <br>- Eg : in GTA game , whatever u're doing like u can (see + play + understand + etc) <br>all are virtual - but doesn't exist in reality
 			- same way , VPN is a virtual system & we can use it - but in reality - it doesn't exist
 		- so our system is connected with a VPN - & that VPN is connected with internet <br>- firstly , now our system searching "google" - then a request packet will be generated (from our system) <br>- so once a request packet gets generated - then our system will send the packet request via using it's own Public Static IP address <br>to that open port of VPN
-		- - once that VPN got the packet request <br>Q : what VPN will do now ? <br>Ans : it'll stop the actual Public Static IP address of our system <br>- then VPN will send that packet request to the internet/www via using it's own Public Static IP address
+		- once that VPN got the packet request <br>Q : what VPN will do now ? <br>Ans : it'll stop the actual Public Static IP address of our system <br>- then VPN will send that packet request to the internet/www via using it's own Public Static IP address
 		- Q : what's the security point here <br>Ans : in the process , the Public Static IP address of our system is not going to outside OR directly to the internet <br>- VPN will stop the Public Static IP address of our system from going to the internet <br>& VPN will use it's own Public Static IP address to access internet
 		- now VPN will use it's own Public Static IP address - in order to send those request packets (of our system) to the internet <br>- now when the internet send response/reply - then the response will go to the IP address of VPN (not the IP address of our system) <br>- so internet response will go to 2.2.2.2 (which is a Public Static IP address of VPN) <br>- once that VPN system got the reply from the internet - then that VPN will send to our system's IP address
 		- so here our system accessing internet indirectly - via VPN - in order to hide the Public Static IP address of our system <br>- so whatever work is happening - is done by VPN , our system & internet - not interacting each other directly ✔
 		- hope u understood is : how our system's Public Static IP address is hidden & how the VPN works
 - Proxy
-	- How Proxy Works ✔
+	- Q : How Proxy Works ✔
 		- in Proxy , we have 2 real systems <br>our System has a Public Static IP address - Eg : 1.1.1.1 <br>& proxy System has a Public Static IP address - Eg : 2.2.2.2 & a open port
 		- but the special thing about Proxy i.e a proxy has a list of many (Public Static IP addresses + ports) <br>- depends on how much that proxy required
 		- so our system searched for google - due to search , a packet request will be created <br>- so our system will use it's own Public Static IP address (i.e 1.1.1.1) - to send the packet request to the "Proxy System"<br>- then "Proxy System" will use it's own Public Static IP address (i.e 2.2.2.2) - to send that packet request to the internet/www
-		- Q : but how security comes b/w "Proxy system" & internet ✔ <br>Ans : this Proxy - has a list of (Public Static IP addresses + Ports) <br>Q : now first - what Proxy will do <br>Ans : "Proxy System" firstly send that packet request to the internet via using it's actual first Public Static IP address & a open port<br>- after sometime , once that first (IP address + that open port) time over , <br>then the "proxy System" will use the next IP address & a open port <br>- & so on that "Proxy System" will do switching from one (IP address + a open port) to another
+		- Q : but how security comes b/w "Proxy system" & internet ✔ <br>Ans : this Proxy - has a list of (Public Static IP addresses + Ports) <br>Q : now first, what Proxy will do <br>Ans : "Proxy System" firstly send that packet request to the internet via using it's actual first Public Static IP address & a open port<br>- after sometime , once that first (IP address + that open port) time over , <br>then the "proxy System" will use the next IP address & a open port <br>- & so on that "Proxy System" will do switching from one (IP address + a open port) to another
 		- so due to this , response & request of packets will go from one (IP address + a open port) to another of "Proxy System"
 - Cons/weakness of VPN & why Proxy is better than a VPN
 	- Q : why Proxy is better than a VPN <br>Ans : in a Proxy , there is a list of many both (Public Static IP addresses + open ports)
@@ -49,7 +49,7 @@
 ### Practical Work of Manual Process : VPN
 - STEP 1 : download & install a VPN chrome extension <br>> VPN 1 : [Free VPN for Chrome - VPN Proxy VeePN](https://chromewebstore.google.com/detail/free-vpn-for-chrome-vpn-p/majdfhpaihoncoakbjgbdhglocklcgno) <br>> VPN 2 : [ZenMate-Best VPN for Chrome](https://chromewebstore.google.com/detail/free-vpn-zenmate-best-vpn/fdcgdnkidjaadafnichfpabhfomcebme) <br>> VPN 3 : Proton VPN
 - STEP 2 : check ur Public Static IP address on [What Is My IP Address -IPv4 & IPv6](https://whatismyipaddress.com/) <br>- output : it'll show ur IPv4 + IPv6 + ur location (city + region + country) also <br>- so our details is leaking
-- STEP 3 : turn ON the VPN & select a location - in order to get an IP address - then reload this website [What Is My IP Address -IPv4 & IPv6](https://whatismyipaddress.com/)
+- STEP 3 : turn ON the VPN & select a location - in order to get an IP address <br>- then reload this website [What Is My IP Address -IPv4 & IPv6](https://whatismyipaddress.com/)
 	- output : u'll get changed IPv4 & IPv6 + location will be shown (which u selected on VPN)
 	- now that's fine - VPN saved our identity <br>Q : but how to know whether the VPN will leak our details or not ✔
 	- STEP 3.1 : go to [DNS leak test](https://dnsleaktest.com/)

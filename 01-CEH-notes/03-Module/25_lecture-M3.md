@@ -118,7 +118,7 @@
 
 ---
 ### End of the lecture (Doubts) :
-1. not possible to find a illegal activities Hackers - cuz they sometimes do illegal activities - then they leave
+- not possible to find a illegal activities Hackers - cuz they sometimes do illegal activities - then they leave <br>- means then they stop doing that activities <br>- my thought : a person do bad activities acc. to  his/her needs & wants
 - More commands for Ahmyth : if any issues coming in Ahmyth or it's not getting open then run these commands
 	- STEP 1 : go inside /home/kali/AhMyth/AhMyth-Server/app/app/Factory/
 	- STEP 2 : in "Factory" folder , run `ls` , output : a sign.jar file will be shown

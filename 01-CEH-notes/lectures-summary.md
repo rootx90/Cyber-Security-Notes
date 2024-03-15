@@ -481,7 +481,103 @@
 				- STEP 2 : Changing MAC address
 				- STEP 3 : Changing IP address (in 24th lecture)
     - Lecture 24 : VPN & Proxy
-        - 
+        - Ways to be anonymous
+			3. Changing IP address
+		- VPN & Proxy
+			- VPN
+				- Q : How it Works
+					- Q : what is virual/virtualization in terms of VPN
+				- Q : what VPN will do now ?
+				- Q : what's the security point here
+			- Proxy
+				- Q : How Proxy Works
+				- Q : but how security comes b/w "Proxy system" & internet
+				- Q : now first , what Proxy will do
+			- Cons/weakness of VPN & why Proxy is better than a VPN
+				- Q : why Proxy is better than a VPN
+		- Practical Work of Manual Process : VPN
+			- Q : but how to know whether the VPN will leak our details or not
+		- Practical Work of Manual Process : Proxy
+			- Q : where is setting files located of any software in kali
+			- Q : whatever we did via manual Process of Proxy , what's the cons/weakness
+		- Practical Work of Auto Process : Proxy
+			- Q : Auto Process vs manual process for proxy - which is better
+			- Q : why we use TOR browser OR Security of TOR browser
+		- Hoisting a website in TOR
+			- Q : what we have right now - so that we can bring it Online
+			- Q : on which port no. - localhost goes online
+			- Q : which folder contains configuration files of all softwares
+			- Q : which link is this
+	- Lecture 25 : Android Hacking using Msfvenom & Ahmyth
+		- About : Payloads & working of it
+			- About Payloads
+			- Working of it
+				- Q : then what we do
+				- Q : LHost & LPORT - of which system : Attacker or Victim
+		- 1st Practical Work : making android payload via msfvenom tool
+			- Q : acc. to u which one protocol we need for android payload - TCP or HTTP
+			- Q : so we need put LHOST but acc. to u which one IP we need put in LHOST
+		- 2nd Practical Work : sharing apk file world-wide via Ahmyth tool
+			- Q : which port no. we need
+			- Options are
+			- Q : is Payload gives long or short term access
+			- Q : what should Victim do to remove that payload instead of giving long term access to attacker
+	- Lecture 26 : Concept of DOS Attack
+		- About : DOS attack
+			- Q : What it does
+				- Q : what are resources mean in a system
+			- Q : what if i make ur processor to use or full 100% utilization - then what'll happen
+				- Q : what if i make ur RAM , storage full - then what will happen
+			- Working of DOS (not the DOS attack)
+				- Q : so what happen if Victim's system get 100MB , 200MB packets at a time
+				- Q : is this data virtual or real
+		- Types of DOS Attacks
+			- 3 Types of DOS Attacks
+			- in DOS attack
+				- Q : can Attacker's system send total 10MB data packet a time to Victim's system <br>- Note : Attacker's system has a 10MB limit to send at a time
+			- in DDOS attack
+				- Q : why we need DDOS attack
+				- Working of DDOS Attack
+				- Cons of DDOS attack
+			- in DRDOS attack
+				- Q : why we need DRDOS attack
+				- Working of it
+		- Behind the scene : How DOS attack happens
+			- Q : how TCP send data packets OR how TCP do communication b/w 2 devices
+				- Q1) : from "System A" to "System B" , which packet/flag will go
+				- Q2) in reply , SYN + ACK flag will come from "System B" to "System A"
+				- Q3) "System A" send a ACK flag as a reply to "System B"
+			- understanding a situation : Attacker vs Victim with TCP 3-way handshake
+				- Q : is this complete TCP 3-way handshake will be considered as a DOS attack from attacker side <br>Q : let's say Victim's system has a limit to process 1000 data packets at a time
+				- Q : why this is not a DOS attack
+				- Q : what if attacker send those 10,000 data packets via different IP-addresses , still firewall block
+		- Practical Work : DOS attack via hping3 tool
+			- Q : what is spoof means
+		- Practical Work : buffer overflow attack
+		- how to install jdk java v8
+    - Lecture 27 : DOS Attack practical
+        - About : Function in programming - in terms of CEH
+			- About Function
+		- How DOS Attack implemented via a function in Bash
+			- Understanding Example : DOS attack via a function in programming
+				- Q : what's happening in code
+		- Practical Work : DOS attack via fork() bomb
+			- Q : what we did for changing MAC address of a system
+			- STEPS : implementation of it in Kali
+			- STEP : implementation of it in windows
+		- Concept : How DOS attack done on a website via BurpSuite
+			- Q : in contact form , why these limitations/boundations are in each input field
+				- Q : who is stopping the client system from sending the data packets
+			- Q : now what we'll happen in server
+			- Q : never a DOS attack can be happen via the IP of the website , why
+			- Q : how to intercept/stop that data packets in the middle - from going to the server-side
+		- Download & Installation Steps - BurpSuite
+			- Q : if a file made of ".py" - then via which thing u're gonna run <br>Q : but "ESEdition.jar" file made via java - then via which thing - to run this file
+		- Practical Work : DOS attack on a website via BurpSuite
+			- STEPS - to open BurpSuite Tool
+			- STEPS : DOS attack on a website via BurpSuite
+				Q : how to link "127.0.0.1:8080" IP + Port No. in (Proxy -> Options -> "Proxy Listeners" Section) with the browse
+	- Lecture 28 : Session Hijacking
 
 
 
@@ -856,5 +952,52 @@ Q : is IP will get change/bounce in our SIM - just like proxy
 Q : MAC address can't give more details about Victim, except details about company of that MAC-address
 
 Q : diff b/w TOR tool & TOR browser
+```
+
+- Lecture 25 : Android Hacking using Msfvenom & Ahmyth
+```
+More commands for Ahmyth : if any issues coming in Ahmyth or it's not getting open then run these commands
+
+Q : to stop the program in kali task manager
+
+Q : if we make that payload apk via binding - then can we upload it on playstore
+	Q : if u make developer account - then can playstore allow
+	Q : if we as a hacker - make playstore failed in testing our payload apk , then it's possible
+	
+Q : can we make our custom payloads
+
+Q : is undetectable payloads possible to make
+```
+
+- Lecture 26 : Concept of DOS Attack
+```
+Q : when we do DOS attack & during DOS attack - data packets are generated , is those files saved in Victim's system
+	Q : how to check those saved files - in order to delete those files from Victim's system
+	Q : is those files also saved when DOS attacked done on Victim's system Processor + RAM
+	Q : example - if someone doing DOS attack on my PC - & those files are not saved on my PC
+```
+
+- Lecture 27 : DOS attack Practical
+```
+Q : is BASH a actual programming language?
+```
+
+- Lecture 28 : Session Hijacking
+```
+Q : apart from LAN , is Session Hijacking possible in WAN
+
+Q : to do Session Hijacking , is Victim needs to be connected in our network
+
+Q : let's say u're doing illegal activities - then the ur information will be accumulated by ur ISP/SIM-of-the-company
+			
+Q : About : forensic in cyber security
+
+Q : is using a particular tool for long yrs - is fine
+
+Q : till yet , what we have done
+
+Q : which type of Job is good
+
+Q : if network is not working properly
 ```
 

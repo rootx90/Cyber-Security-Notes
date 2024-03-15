@@ -15,14 +15,13 @@
 - Advice : programming is basically related to programmers - it's not our work <br>- so as a CEH , u must have knowledge about it - cuz by using function - a hacker do a DOS attack ✔
 - About Function
 	- [what is a function](https://www.perplexity.ai/search/what-is-a-I1GK5sp2QHebO3afTUIyTA)
-	- A function in programming is a self-contained software routine that performs a specific task[1]. It is a block of organized, reusable code that is used to perform a single, related action[2]. Here are five points to explain the function concept to a 10-year-old kid:
-		1. **Reusability**: Functions allow you to use the same code multiple times in a program, <br>making it more efficient and easier to maintain[1].
-		2. **Modularity**: Functions help organize your code by breaking it into smaller, more manageable pieces[2].
-		3. **Input and Output**: Functions usually take in data (input), process it, and return a result (output) [4].
+	- A function in programming is a self-contained software routine that performs a specific task. It is a block of organized, reusable code that is used to perform a single, related action. Here are five points to explain the function concept to a 10-year-old kid:
+		1. **Reusability**: Functions allow you to use the same code multiple times in a program, <br>making it more efficient and easier to maintain.
+		2. **Modularity**: Functions help organize your code by breaking it into smaller, more manageable pieces.
+		3. **Input and Output**: Functions usually take in data (input), process it, and return a result (output) .
 		4. **Examples**: In everyday life, you can think of a function as a recipe that you follow to cook a meal. <br>The recipe is a set of instructions that you repeat every time you want to cook the meal, making it easier and faster to prepare.
-		5. **Built-in Functions**: Most programming languages come with built-in functions that you can use in your programs, <br>like adding two numbers or calculating the square root of a number[3].
+		5. **Built-in Functions**: Most programming languages come with built-in functions that you can use in your programs, <br>like adding two numbers or calculating the square root of a number.
 	- Example : <br>To illustrate this with an example, imagine you have a toy box with different toys. <br>You can create a function to count the number of toys in the box. When you want to count the toys again, <br>you can simply call the function, and it will return the number of toys without you having to write the same code twice. <br>This makes your toy box (program) more organized and efficient.
-	- Citations:  <br>[1] https://www.pcmag.com/encyclopedia/term/function <br>[2] https://www.tutorialspoint.com/computer_programming/computer_programming_functions.htm <br>[3] https://en.wikipedia.org/wiki/Function_(computer_programming) <br>[4] https://users.cs.utah.edu/~germain/PPS/Topics/functions.html <br>[5] https://www.sololearn.com/en/Discuss/2057001/what-is-a-function-in-programming-i-cant-seem-to-grasp-the-definition-of-it
 
 ### How DOS Attack implemented via a function in Bash
 - we'll do DOS attack via a function in Bash Programming , not in actual programming langs
@@ -31,7 +30,7 @@
 	- in code , in bash programming , <br>> "`|`" : used for OR <br>> "`&`" : used to run processes in background , so this code will run in background ✔
 	- More about "`|`" in Bash : [command line - What does the linux pipe symbol "|" do? - Super User](https://superuser.com/questions/756158/what-does-the-linux-pipe-symbol-do)
 	- Q : what's happening in code ✔<br>Ans : we "add()" function "add | add &" : means we called the same function twice in block of code <br>- after the end of it , again called the function <br>- due to this , the function will call again & again itself recursively
-	- so this function continuously call itself again & again - then at the end , it'll increase system's processing power - aka DOS attack ✔
+	- so this function continuously call itself again & again - then at the end , it'll increase system's processing power <br>- aka DOS attack ✔
 	- in Bash programming , we use "`:`" instead of "add"
 - in Bash Programming
 	- the code `:(){ :|:& };:` aka "`fork() Bomb` ✔

@@ -152,7 +152,7 @@ timeline 1:10:36 : [30-11-2023 - YouTube](https://www.youtube.com/watch?v=R0c_U-
 	- Q : to do Session Hijacking , is Victim needs to be connected in our network  ✔
 		- Ans : so Attacker do ki either a attacker will connect to the Victim's router <br>OR a attacker allow Victim to connect in attacker's router/wifi
 		- Eg : like in colleges , there are free wifi - so what if i go inside the wifi router <br>- then all those people (who're connected) will be hacked by u <br>- then u can capture their data packets
-	- Q ; let's say u're doing illegal activities - then the ur information will be accumulated by ur ISP/SIM-of-the-company <br>- then how can we make our system secure - so that we're not be trace by Cyber Police
+	- Q : let's say u're doing illegal activities - then the ur information will be accumulated by ur ISP/SIM-of-the-company <br>- then how can we make our system secure - so that we're not be trace by Cyber Police
 		- Ans : there's no system/app/service which is full-proof 100% secure
 		- so those who u do illegal activities - mostly they leave a trace/proof about their identify
 		- Q : if u try to hack companies via their wifi router <br>Ans : it's not possible , cuz outside many companies - put firewall in their router <br>- so keeping a firewall - makes 99% secure - which we'll see in upcoming lecture <br>- but if firewall is not properly configured in their router - then after finding a way - we can enter in their router

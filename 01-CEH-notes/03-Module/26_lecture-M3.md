@@ -71,7 +71,7 @@
 ### Behind the scene : How DOS attack happens
 - if we (as a attacker) send a data packet - then that data packet will go via any protocol - Eg : TCP
 - let's take TCP protocol <br>Q : how TCP send data packets OR how TCP do communication b/w 2 devices<br>Ans : via TCP 3-way handshake
-	- in TCP 3-way handshake <br>Q1) : from "System A" to "System B" , which packet/flag will go <br>Ans : SYN flag <br>2) in reply , SYN + ACK flag will come from "System B" to "System A" <br>3) "System A" send a ACK flag as a reply to "System B" 
+	- in TCP 3-way handshake <br>Q1) : from "System A" to "System B" , which packet/flag will go <br>Ans : SYN flag <br>Q2) in reply , SYN + ACK flag will come from "System B" to "System A" <br>Q3) "System A" send a ACK flag as a reply to "System B" 
 - understanding a situation : Attacker vs Victim with TCP 3-way handshake
 	- both attacker & Victim sitting on port no. 21 , <br>let's say attacker's system IP = 1.1.1.1 & victim's system IP = 4.4.4.4
 	- so <br>1) Attacker send a data packet to Victim's system <br>2) then attacker got a reply from Victim <br>3) & then attacker send a reply to Victim <br>now connection established b/w Attacker & Victim
