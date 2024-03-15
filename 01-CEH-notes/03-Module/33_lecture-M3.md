@@ -96,11 +96,11 @@
 
 ---
 ### End of the lecture (Doubts) :
-- More on : Types of steganography
+- Q : More on : Types of steganography
 	- [What Is Steganography & How Does It Work?](https://www.kaspersky.com/resource-center/definitions/what-is-steganography)
 	- [What is Steganography? A Complete Guide with Types & Examples](https://www.simplilearn.com/what-is-steganography-article)
 	- [types of steganography Cryptography](https://www.perplexity.ai/search/types-of-steganography-Zu0VwHumR.6SsozYnFPRYg?s=u)
-- More on : Types of Hashing in cryptography
+- Q : More on : Types of Hashing in cryptography
 	- [cryptography hash functions](https://www.tutorialspoint.com/cryptography/cryptography_hash_functions.htm)
 	- [types of hashing in cryptography](https://www.perplexity.ai/search/types-of-hashing-xsC_T_5iTB6XZ2VgNOSnQw?s=u)
 	- [Hash Functions and list/types of Hash functions](https://www.geeksforgeeks.org/hash-functions-and-list-types-of-hash-functions/)

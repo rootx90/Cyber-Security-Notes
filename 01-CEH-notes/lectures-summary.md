@@ -651,6 +651,100 @@
 			- Q : in zaproxy tool , what risk means in "alerts" tab
 			- Q : in zaproxy tool - what Description , Other Info , Solution , Reference , Alert Tags means in "alerts" tab
     - Lecture 30 : Vulnerability Assessment by Acunetix Pro & Wi-fi Hacking
+		- Download & installation : Acunetix tool
+		- Practical Work : Vulnerability Assessment via Acunetix tool
+			- Q : which person will get more information
+		- Concept : Wifi-hacking
+			- understanding Concept : working process & communication b/w devices & the wifi-router
+				- Q : first step - what u'll do in order to connect with ur router device
+				- Q : why that packet aka "handshake file"
+				- Q : what identities the router have
+					- Q : what is 3rd one - mean how do u identify ur wifi
+				- Q : out of these two , which one u can edit acc. to u
+			- Understanding Concept : how wifi-hacking possible
+				- 1st vulnerability
+				- 2nd vulnerability
+					- Q : But what if ur device got the exact same ESSID/name of that unknown router - then what ur device (eg : phone) will do
+				- Q : as a attacker , what u do
+					- Q : How 2nd vulnerability consider as a vulnerability
+					- Q : how do we capture that packet/handshake-file
+				- Practical Theory : Q : how to capture that packet
+					- Q : out of these 2 mods , which one is by-default same as wifi-adpapter used by normal users
+					- Q : de-authentication vs authentication
+					- Q : now once the device is de-authenticated - then what the device will do
+					- Q : do we (as a attacker) need to disconnect that Victim from his device from the his wifi-router
+					- Q : can we do this practical to that device which is connected with LAN cable wifi
+					- Q : is this practical can be down via our device's wifi-hotspot - which acts a router
+				- Q : do u know on what basis - wifi works
+		- Buying Suggestions : USB wifi-adapter
+			- Q : recommended wifi-adapters - instead of TP-Llink TL
+		- Practical Work : wifi-hacking via a USB wifi-adapter device
+			- Q : to check whether that connected or not
+			- Q : what 1st thing - we need to do to change the mode into "Monitor" mode of wifi-adapter
+			- Q : to change the device - in "monitor" mode - then which command ifconfig OR iwconfig
+			- Q : then what those applications/devices will do - to get the net
+			- Q : via which thing - the airodump-ng will monitor all other networks - which are in range
+			- Q : some wifi-networks have same channel no. 5
+			- Q : what was the BSSID
+			- Q : MAC address of whom
+			- channel no. vs port no.
+				- Q : what is a channel no.
+				- Q : Why means we kept that button on that frequency
+				- Q : why only in port no. 21 = FTP runs
+    - Lecture 31 : More about Wi-Fi Hacking & Social Engineering
+		- Practical Work : more about wifi-hacking & wifi password cracking
+			- Q : here , what's STATION
+			- now we need to disconnect that router , for this we have 2 ways :
+			- Q : what this command will do
+		- Theory : Social Engineering
+			- About : Social Engineering
+			- Types of SE
+				- 3 types
+					1) Human based
+					2) Computer based
+					3) Mobile based
+				- Explanation of those 3 types
+				- in Human-based SE 
+					- Eavesdropping
+					- Vishing
+						- Q : here those people - which identity they have used
+					- Shoulder Surfing
+					- Piggybacking
+					- Dumpster Diving
+				- in Computer-based SE
+					- Pop-up windows
+					- Hoax Letters
+					- Chain Letters
+					- Instant Chat Messenger
+					- Spam Email
+					- Scareware
+				- Mobile-based SE
+					- Publishing Malicious Apps
+					- Repackaging Legitimate Apps
+					- Using Fake Security Apps
+					- Smishing (SMS Phishing)
+		- Practical Work : phishing of SE
+    - Lecture 32 : Wi-Fi Hacking & Password Cracking
+        - Practical work : Wi-Fi Hacking
+		- Practical work : Password Cracking
+			- Explanation : wordlist file
+				- Q : in form our password is kept
+				- Q : how the password is kept in encrypted form
+				- Q : what's hash
+				- Q : About Hash password
+				- Q : but how the system got to know - we wrote the wrong password - when we try to sign with wrong password in our device
+				- Q : how a wordlist made
+				- Q : how this "|" pip sign works to crack the password
+				- Q : is wifi will be used in this "password cracking" process
+				- Q : do know how much time it'll take to crack the password
+		- Ways to find patterns in a password
+			- 1 Q : what best thing we can do to do password cracking
+			- 2 Q : what to do - in order to find out pattern in the password - if u got a device/lapi of a criminal/targeted-victim/hacker
+			- 3 Q : why that profile name in double quotes
+			- 4 Q : let's say there're 3 wifi-profile name of wscubetech wifi-router - then can i able to know the pattern of passwords of wscubetech
+			- 5 Q : if u got the access of criminal/victim's system
+			- 6 Q : if u got the access of criminal/victim's system
+    - Lecture 33 : more about Password Cracking & Cryptography
 
 
 
@@ -1098,4 +1192,37 @@ Q : related to router
 
 Q : related to wifi
 	Q 1 : How Hackers Spy on you from your own WiFi
+```
+
+- Lecture 31 : More about Wi-Fi Hacking & Social Engineering
+```
+Q : what is PSK in WPA
+Q : what to do if a common word list passwords not working to crack the password after running aircrack-ng
+Q : what kind of operations attacker can perform via phishing attack
+```
+
+- Lecture 32 : Wi-Fi Hacking & Password Cracking
+```
+Q : what's packet injection
+Q : is packet injection was the same as we were sending de-authentication packet
+
+Q : in 2024 , which encryption used for wifi password
+```
+
+- Lecture 33 : more about Password Cracking & Cryptography
+```
+Q : More on : Types of steganography
+
+Q : More on : Types of Hashing in cryptography
+
+Q : can we copy "SAME" file & paste it in other location
+
+Q : can we stop the process of "SAM" file via TaskManager
+
+Q : single band vs dual band wifi adapter
+```
+
+- Lecture 34 : 
+```
+
 ```
