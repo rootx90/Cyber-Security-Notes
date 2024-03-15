@@ -150,7 +150,7 @@
 	- Advice : hide/changing  IP address via Manual Process - is just an example ✔
 	- but not useful - using Manual Process to hide IP address
 	- & even our own details were getting leaked via manual process
-1. Q : how to make a file or folder online via apache2 service ✔
+- Q : how to make a file or folder online via apache2 service ✔
 	- in Kali
 		- STEP 1 : `sudo su`
 		- STEP 2 : run `service apache2 start`
@@ -167,7 +167,7 @@
 		- STEP 8.3 : accessing that folder , write in address bar - `http://192.168.186.143/test/` , output : directories also accessible
 		- we did local machine to local machine to send (the small KB size downloadable files) 
 		- but u can use this way to send world-wide <br>- to send world-wide , we need a public static IP address - which we can get cloudflared tool
-2. Q : imsi vs imei vs IP-address ✔
+- Q : imsi vs imei vs IP-address ✔
 	- imsi no. : is used for identity , system can't be hacked via IMSI <br>cuz no network is created via IMSI
 	- u can only hack stuff via that thing - which uses internet i.e IP-address , bluetooth (also create a network)
 	- IMEI no. - is a identity of a phone & not changeable but MAC-address can be changed <br>- in order to change IMEI no. - then we need change the hardware ✔
@@ -176,10 +176,10 @@
 	- Q : what if that thief didn't insert a SIM - then what'll happen <br>Ans : then WIFI ISP will get the details <br>![[24_lecture-11-M3.jpg | 500]]
 	- via IMEI no. - phone cloning also happen <br> so IMI phones has same IMEI no. - that's why police not able to find thief
 	- Hackers use someone's SIM to call a Victim - but they don't use their own actual SIM
-3. Q : is IP will get change/bounce in our SIM - just like proxy ✔
+- Q : is IP will get change/bounce in our SIM - just like proxy ✔
 	- Ans : if u purchase VPN , Proxy - then our details will get leaked & u can't hide
 	- so never do any illegal work - which requires to hide the IP-address <br>& those who do - then they use someone's wifi - to do illegal activities
-4. MAC address can't give more details about Victim, except details about company of that MAC-address
+- Q : MAC address can't give more details about Victim, except details about company of that MAC-address
 - Advice : always keep ur wifi password strong
 - Mine Doubts
 	- for more about Practical Manual Process of Proxy i.e "proxychains" : <br>[Installing Tor services on Kali Linux & usage of Proxychains. practical lab lecture 4 - YouTube](https://www.youtube.com/watch?v=6vg5JlQhHgo&ab_channel=NetworkingRoot)

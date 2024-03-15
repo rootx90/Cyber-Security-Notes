@@ -369,7 +369,122 @@
 			- Q : but How that exploit gonna know on which IP address & a port - that exploit needs to send data/information
 			- Q : which system that u need to give RHOSTS & RPORT
     - Lecture 18 : More About Exploitation & Armitage
+		- Practical Work : More About Exploitation via msfconsole tool
+			- Q : "Filtered" Port
+			- Q : how to find useful exploits related to that service
+			- Q : what RHOSTS should be ?
+			- Q : what's the command to set the RHOSTS or change the previous RHOSTS with a new one
+			- Q : what does tomcat means
+			- Q : in which situation , a person will get more vulnerabilities
+			- Q : why only after login in a application - then only that person will get more vulnerabilities
+			- Q : Who brings Extra information in "msfconsole" (cuz we're using "msfconsole" tool right now)
+		- Practical Work : Armitage too
+			- Q : we have "show advanced options" , when we use it
+			- Q : why that exploit of tomcat not working & not able to hack the Victim's system
+    - Lecture 19 : Privilege Escalation on Linux & windows
+		- Practical Work : Exploitation : Tool = Exploit Database
+		- Theory : Privilege Escalation on Linux & windows
+			- Q : what is Privilege Escalation
+			- Q : where Privilege Escalation is being done
+				- Q : How Privilege Escalation in Linux
+					- Q : which location is this "/bin/bash"
+					- Q : in which line we need to add this command "rw init = /bin/bash"
+				- Q : How Privilege Escalation in Windows OS
+		- Practical : Privilege Escalation on Linux & windows
+			- Practical : Privilege Escalation on Linux
+				- Q : "rw init=/bin/bash" - which location is this
+			- Practical : Privilege Escalation on Windows OS
+		- Practical Work : Security to save the system from Privilege Escalation
+			- Practical Work : saving Win OS from Privilege Escalation
+    - Lecture 20 : Ngrok & Bind Shell , Reverse Shell
+		- Theory + Practical work : ways to hack the system
+			- System hacking via Netcat tool
+				- Q : how we access/go to the server
+				- Q : i want to connect my system with that server , so what i'll write on my system
+				- Q : But How to make connection/communicate with a system - which has no vulnerabilities
+				- Q : & the client wants to connect that server
+			- Practical : System Hacking (which has no vulnerabilities) via Netcat tool
+				- Q : for a client system , what it needs
+				- Q : can u join inside this conversation b/w client & server , right now
+			- Q : how to give a Public Static IP address to this server
+			- Practical : System Hacking (which has no vulnerabilities) via ngrok tool
+				- download & installation & setting it up for work
+				- Practical : How to turn it ON & use it
+					- Q : on which port no. - we turn on the server
+		- Theory : Hacking via both netcat + ngrok tool : Bind Shell , Reverse Shell
+			- About : Bind Shell & Reverse Shell
+				- Bind Shell
+					- Q : what a attacker will do on his/her system , means what that attacker will write on his/her system
+				- Reverse Shell
+					- Q : What Victim system will run a command
+				- difference b/w Bind Shell vs Reverse shel
+				- firewall situation with Bind Shell vs Reverse shell
+					- while doing Bind shell
+						- Q : why firewall (of Victim's system) will block the IP-address (of attacker)
+					- while doing Reverse shell
+						- Q : Eg : when u (as a server) do screen-share ur system via Any-desk , then is any-desk ever stopped u ? like u can't share ur screen , etc ..
+					- in Both Bind Shell & Reverse shell , Q : why Victim run the command
+			- Practical Work : Bind Shell & Reverse Shell
+				- Practical Work : Bind Shel
+				- Practical Work : Reverse Shell
+				- Practical - A Trick to execute that command inside the Victim's system
+					- Q : why Victim wants to run that command & give the access of his/her system to unknown person
+	- Lecture 21 : System Hacking Using Url ( Camphish )
+    	- Theory : understanding : What is URL
+			- Q : do u think a system can be hacked via URL
+			- Q : can we access files & folders of that address which u don't have
+		- Theory : understanding tool : System Hacking Using Camphish
+			- Q : the what we (as a attacker) do
+		- Practical Work : System hacking via URL by using Camphish tool
+			- Q : which one have good camera
+		- Practical Work : combining cloudflared tool with camphish tool
+			- Q : why we're using cloudflared tool
+			- Q : how .deb file installed
+    - Lecture 22 : System Hacking ( storm-breaker )
+        - Intro
+		- Download & Installation - StormBreaker tool
+			- Q : all the templates are hosted by "storm-breaker" on which ?
+			- Q : if Sir share any URL based on a template , then will u able to reach on this link or any data will share b/w u & sir via localhost
+			- Q : if we make that localhost link - world wide access , then all those templates (of "storm-breaker" tool) will get world-wide access or not
+		- Practical Work : StormBreaker tool
+			- Q : is there any difference b/w these 2 different outputs
+	- Lecture 23 : Layers Of Internet & UA & MAC Address Change
+        - intro - Layers of internet
+			- Q : what's the internet Rule ?
+				- Q : what do we need to access anything OR a file on the internet
+				- Q : means u search the IP address of FB - then FB show the login page - & u login inside FB - then can u access ur FB account
+				- Q : if u search directly i.e Kapil's FB profile on FB website - then can u get directly the Kapil's profile
+				- Q : u need a hacking page of wscubetech , so if u search wscubetech & can the search will show hacking page of wscubetech
+			- Q : from where do we get the URL of anything - means who provide URL
+				- Q : what is search engines
+				- Q : why + How we got the ethical hacking page directly
+			- Q : why we can't access anything without search engines + importance of search engines
+				- Q : can u tell me - do u know complete address/URL of ur FB profile account
+				- Q : Eg : can u remember always that complete URL/address of hacking page of wscubetech
+		- what is HTTP
+		- What is URLs
+			- Q : URL vs URI
+			- Eg of URL Structure
+		- types of Webs on internet : Surface Web , Deep Web , Dark Web , Hidden Web
+			- Surface Web
+			- Deep Web
+			- Dark Web
+			- Hidden Web
+		- Tor Browser : accessing Deep Web & Dark Web
+			- Q : why we need Tor Browser
+				- Q : did u try to access Deep Web , Dark Web via ur Chrome Browser or any brower
+			- Q : Securities + Reasons : How Tor Browser is Secure
+				- Q : let's say that Victim do illegal activities & u want to hack his/her system/server
+				- Q : what kind of details carried by user-agent to send to the server
+			- Ways to be anonymous
+				- STEP 1 : changing the user-agent detail
+				- STEP 2 : Changing MAC address
+				- STEP 3 : Changing IP address (in 24th lecture)
+    - Lecture 24 : VPN & Proxy
         - 
+
+
+
 
 ### End of Lectures (Doubts) summary
 
@@ -589,6 +704,8 @@ Q : someone did something via Kali Linux & he/she installed the kali in VMware i
 Q : about "/etc" folder in kaliOS
 
 Q : can temp mails can be track
+
+Q : what's hard link & soft link in linux
 ```
 
 - Lecture 9 : Linux commands
@@ -676,5 +793,68 @@ Q : let's say u don't have social Media account of that person then how u can do
 
 Q : to hack a hacker then it's bit difficult cuz
 
-Q : when we do search then many exploits comes - then how to know useage of each exploits
+Q : when we do search then many exploits comes - then how to know usage of each exploits
 ```
+
+- Lecture 19 : Privilege Escalation on Linux & windows
+```
+Q : is privilege escalation can be done on a system without touching that system physically
+
+Q : how can i detect if my system has been compromised by privilege escalation
+
+Q : in which language Python built on
+
+Q : if that Victim put the password in BIOS of his/her system
+
+Q : in pendrive , we can insert payload or not
+
+Q : settings in kali linux OS to prevent or secure from Privilege Escalation
+```
+
+- Lecture 20 : Ngrok & Bind Shell , Reverse Shell
+```
+Q : is all hackers use windows OS or Linux based OS to compromise or hack the Victim's system
+
+Q : is more networking required
+
+Q : Ways to use ngrok
+	Q : can 2 hackers can use ngrok for communication ?
+	
+Q : is ngrok actually safe
+
+Q : in order to talk via ngrok is both the system should have ngrok installed or just 1 system can have it
+
+Q : via ngrok , only 1 client or multiple clients can talk to the server at the same time
+```
+
+- Lecture 21 : System Hacking Using Url ( Camphish )
+```
+```
+
+- Lecture 22 : System Hacking ( storm-breaker )
+```
+Q : in github , clone means ?
+
+Q : which one thing mostly hacking performed
+```
+
+- Lecture 23 : Layers Of Internet & UA & MAC Address Change
+```
+```
+
+- Lecture 24 : VPN & Proxy
+```
+Q : why not to use Manual Process to hide/change our IP address
+
+Q : how to make a file or folder online via apache2 service
+
+Q : imsi vs imei vs IP-address
+	Q : what if that thief didn't insert a SIM - then what'll happen
+	
+Q : is IP will get change/bounce in our SIM - just like proxy
+
+Q : MAC address can't give more details about Victim, except details about company of that MAC-address
+
+Q : diff b/w TOR tool & TOR browser
+```
+

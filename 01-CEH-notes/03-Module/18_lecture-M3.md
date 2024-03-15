@@ -16,7 +16,7 @@
 - STEP 5 : `services`
 	- we have did Enumeration scan with ftp , telnet , smtp , rpcbind - which is nfs protocol 
 	- now let's so towards Apache Tomcat i.e port no. 8180 & it's protocol = http <br><img src="../notes-pics/03-Module/18_lecture/18_lecture-0-M3.jpg" alt="" width="500"/>
-	- "Filtered" Port : means those ports which are not properly neither "close" nor "open" ✔ <br>& these sort of ports are not useful for us 
+	- Q : "Filtered" Port : means those ports which are not properly neither "close" nor "open" ✔ <br>& these sort of ports are not useful for us 
 		- only "Open" ports are useful for us ✔<br>- Pic of only "Open" ports : like above pic or [Pic of only "Open" status ports](https://nudesystems.com/how-to-use-nmap-to-scan-any-port-udp-tcp-2021/)
 		- "filtered" ports are half opened & half closed : <br>- Pic of Filtered Port : <br>> [1 Pic of only "filtered" status ports](https://www.hackingarticles.in/nmap-for-pentester-port-status/)<br>> [2 Pic of only "filtered" status ports](https://www.researchgate.net/figure/Figure-Nmap-detects-a-filtered-port_fig1_336838917) <br>> https://www.blumira.com/wp-content/uploads/2022/12/image2-1.png
 		- so "filtered" & "close" status ports aren't useful for us ✔
@@ -131,7 +131,7 @@
 - Q : to hack a hacker then it's bit difficult cuz
 	- whatever the things u know - he/she also knows that's why
 	- & what if he/she knows more than u  
-- Q : when we do search then many exploits comes - then how to know useage of each exploits
+- Q : when we do search then many exploits comes - then how to know usage of each exploits
 	- Ans : u have to try each exploits of each service/protocol
 	- what u think that everything can be done easily , <br>u don't have to learn each exploits - just do practice
 	- that's why a Homework was given i.e bring 2 exploits for each service/protocol

@@ -93,7 +93,7 @@
 	- STEP 2.4 : send this link to Victim & say him/her to open it on browser & allow camera <br>- output : once that Victim allow the camera - then camphish will capture the pictures of his/her face
 	- output : we'll get Public Static IP addresses & their live cam pictures <br><img src="../notes-pics/03-Module/21_lecture/21_lecture-13-M3.jpg" alt="" width="400"/>
 	- STEP 2.5 : close the process , press `CTRL + C`
-	- Note ✅ : if we change the complete URL via [Bitly URL Shortener | ](https://bitly.com/) or any other URL shortener
+	- Note ✅ : if we change the complete URL via [Bitly URL Shortener](https://bitly.com/) or any other URL shortener
 		- then issues will come - & even if u're able to change the URL from these URL shortener websites <br>- then redirection problem will come - cuz 3 times redirect will happen behind the scene
 
 ---

@@ -37,7 +37,7 @@
 
 ### What is URLs
 - URL : Uniform Resource Locator <br>URI : Uniform Resource Identifier
-	- URL vs URI : both means same almost
+	- Q : URL vs URI : both means same almost
 	- for more b/w URI vs URL <br>> [URI vs URL: Definition, Key Differences, and More](https://www.hostinger.com/tutorials/uri-vs-url) <br>> [Difference between URL and URI - GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-url-and-uri/) <br>> answer from AI : [URI vs URL](https://www.perplexity.ai/search/URI-vs-URL-daCSNsl9Qb.XGP3Vn0JenA?s=u)
 - it's a web Resource Unique identifier : means it uniquely identifies each resource 
 - Eg of URL Structure : `protocol://hostname[:port]/[path/]file[?param=value]`
@@ -78,12 +78,12 @@
 	- Eg 4 : Q : Now many people knows about that website & <br>let's say u started illegal activities with kishan - to get the profit , which category of web <br>Ans : Dark Web
 
 ### Tor Browser : accessing Deep Web & Dark Web
-- why we need Tor Browser
+- Q : why we need Tor Browser
 	- Q : did u try to access Deep Web , Dark Web via ur Chrome Browser or any brower <br>Ans : Not Possible , cuz need a special Search Engine i.e Onion - is a search engine of Tor Browser ✔
 	- Tor Browser used to access Deep Web , Dark Web - mostly it used for accessing Dark Web 
 - in terms Security : is Tor Browser secure 
 	- Yes , cuz its consider most secured Browser
-	- Securities + Reasons : How Tor Browser is Secure ✔
+	- Q : Securities + Reasons : How Tor Browser is Secure ✔
 		- 1st : this browser is not used for normal surfing on the internet , <br>in order to access those stuff - we can't use normal browsers
 		- 2nd : u can remember normal links like "google.com" , etc <br>but u can't  remember links which are search in Tor Browser
 			- Eg : 12102BA62A3062090.onion - somewhat a link/URL will looks like in TOR browser <br>- in Tor Browser , each link/URL ends with ".onion" extension 

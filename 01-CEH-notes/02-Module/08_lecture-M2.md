@@ -86,6 +86,7 @@ Q : what's the special thing about Linux which is used in ethical hacking
 ---
 ### End of the Lectures (Doubts) : 
 - Q : about "/etc" folder in kaliOS : https://www.perplexity.ai/search/in-kaliOS-etc-zw9g0USkSfGsFxbl_UgdTg 
-- Q : can temp mails can be track <br>Ans : Yes , via SPF record can be track that temp mail & <br>via IP address also possible - if we got his/her actual IP address 
+- Q : can temp mails can be track <br>Ans : Yes , via SPF record can be track that temp mail & <br>via IP address also possible - if we got his/her actual IP address
+- Q : what's hard link & soft link in linux <br>Ans : https://www.perplexity.ai/search/whats-hard-link-ABVrgCKyQCyVAv.lSGEmFQ
 - Kali Linux VS Blackarch Linux: Which is Better for Ethical Hacking : <br>[Kali Linux VS Blackarch Linux: Which is Better for Ethical Hacking - YouTube](https://www.youtube.com/watch?v=puH_p924mCI&ab_channel=WsCubeTech)
 - Install KALI LINUX Purple on Windows 10/11 | what's new in it : <br>[Install KALI OS Purple on Windows 10/11 - YouTube](https://www.youtube.com/watch?v=yM4neJ6Ne-k&ab_channel=WsCubeTech)

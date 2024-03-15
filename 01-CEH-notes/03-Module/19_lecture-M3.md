@@ -57,14 +57,14 @@
 	- Eg : there's a system of Shail & he is a admin on his system & u (who is a attacker) are not even a guest user on his system <br>- but still via unauthorized way - u're taking admin access of his system - this process called Privilege Escalation ✔ <br><img src="../notes-pics/03-Module/19_lecture/19_lecture-9-M3.jpg" alt="" width="500"/>
 - Q : where Privilege Escalation is being done <br>Ans : i.e in Linux & windows OS
 - first , we'll understand theoretical <br>1) How Privilege Escalation in Linux & then we'll see <br>2) How Privilege Escalation in windows
-- `imp ⭐` : How Privilege Escalation in Linux
+- `imp ⭐` : Q : How Privilege Escalation in Linux
 	- in linux , when booting process happen - then there are 2 types of cursor <br>1) in booting process of linux going on - then cursor color will be white - means cursor is outside of that linux <br>2) but when u click inside the linux system while the booting process going on - then cursor will be hide <br>- means cursor is inside the linux system
 	- so when booting process going on in that linux system & the cursor is inside the system <br>- then we press only `E` key continuously - then in that linux system , editing mode will be started <br>- so when editing mode started - then files & file's locations will be shown <br>- one of the location will be shown which is very useful for us i.e the location written with "ro"
 	- "ro" : means read only , so here we (as a attacker) changed "ro" into "rw" <br>- so before booting the Victim's linux system , we write "rw init = /bin/bash" ✔<br>- "rw init = /bin/bash" : means when re-booting process started then initialize & bring this "/bin/bash" location <br>or open "/bin/bash" location ✔
 	- Q : which location is this "/bin/bash" ✔<br>Ans : this location is of terminal - means when terminal gets open then it opens on this location 
 	- so once this command `rw init = /bin/bash` executed <br>- then we ress F10 or `exit` command to reboot the Victim's system ✔
 	- Q : in which line we need to add this command `rw init = /bin/bash` <br>Ans : we'll see in practical of it
-- `imp ⭐` : How Privilege Escalation in Windows OS
+- `imp ⭐` : Q : How Privilege Escalation in Windows OS
 	- doing Privilege Escalation in Windows OS , we need a pendrive (should be minimum 4gb)
 	- & we make that pendrive - bootable via installed "tails OS" in it ✔ <br>- then once that pendrive becomes bootable - then we'll restart victim's system 
 	- when that system is rebooting then continuously - we press BIOS key i.e F10 or F12 or ESC or ESC+Delete <br>- so BIOS key depends on the system ✔
@@ -116,11 +116,12 @@
 	- Advice : ur main system i.e Windows OS will not get affected , while being & doing something in Tails OS
 
 ### Practical Work : Security to save the system from Privilege Escalation
-- STEP 1 : in Windows OS , open settings 
-- STEP 2 : Privacy & security > Device encryption , turn on "Device encryption"
-	- then this option will secure our drives (like C Drive , D Drive , etc) + make the data overall secure
-	- output : now each drive will become from locked <br>- Before Pic : <img src="../notes-pics/03-Module/19_lecture/19_lecture-18-M3.jpg" alt="" width="500"/> <br>- After Pic : <img src="../notes-pics/03-Module/19_lecture/19_lecture-19-M3.jpg" alt="" width="500"/>
-- Conclusion : if this option is turn on in a system , then Privilege Escalation can't be done in that system <br>- & can't access the data of that system
+- Practical Work : saving Win OS from Privilege Escalation
+  - STEP 1 : in Windows OS , open settings 
+  - STEP 2 : Privacy & security > Device encryption , turn on "Device encryption"
+  	- then this option will secure our drives (like C Drive , D Drive , etc) + make the data overall secure
+  	- output : now each drive will become from locked <br>- Before Pic : <img src="../notes-pics/03-Module/19_lecture/19_lecture-18-M3.jpg" alt="" width="500"/> <br>- After Pic : <img src="../notes-pics/03-Module/19_lecture/19_lecture-19-M3.jpg" alt="" width="500"/>
+  - Conclusion : if this option is turn on in a system , then Privilege Escalation can't be done in that system <br>- & can't access the data of that system
 
 ---
 ### Homework
@@ -133,6 +134,7 @@
 - Q : in which language Python built on <br>Ans : i.e C , not java
 - Q : if that Victim put the password in BIOS of his/her system ✔<br>Ans : then we can't access the data of his/her system 
 - Q : in pendrive , we can insert payload or not <br>Ans : yes , but we can't run the payload in BIOS <br>- cuz to run it on BIOS , we need to boot the system
+- Q : settings in kali linux OS to prevent or secure from Privilege Escalation <br>Ans : https://www.perplexity.ai/search/settings-in-kali-9xLazoyKRMuQ5Dbd.Qu3qw
 - u can set the password on BIOS , so that nobody can do Privilege Escalation <br>& u can also reset the password of BIOS also in future ✔ 
 - Advice : to become a greater Ethical Hacker
 	- till yet , we just saw 2 tools i.e msfconsole & armitage - so both have different exploits for different services

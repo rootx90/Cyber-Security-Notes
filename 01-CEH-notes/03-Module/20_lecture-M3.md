@@ -146,12 +146,12 @@
 
 ---
 ### End of the lecture (Doubts) :
-1. Q : is all hackers use windows OS or Linux based OS to compromise or hack the Victim's system <br>Ans : Linux
-2. Q : is more networking required <br>Ans : Devendra sir taught u enough about networking - which is required to know , but if u want to learn more then u can  <br>- cisco advance network can be done if u want <br>- the more clearly u understand about networking or any concept in Cyber Security - the better u'll able to do hacking
-3. Ways to use ngrok
+- Q : is all hackers use windows OS or Linux based OS to compromise or hack the Victim's system <br>Ans : Linux
+- Q : is more networking required <br>Ans : Devendra sir taught u enough about networking - which is required to know , but if u want to learn more then u can  <br>- cisco advance network can be done if u want <br>- the more clearly u understand about networking or any concept in Cyber Security - the better u'll able to do hacking
+- Q : Ways to use ngrok
 	- Q : can 2 hackers can use ngrok for communication ? <br>Ans : Yes - cuz it provides secure communication
 	- u can give access of ur system to someone - so that he/she can work in ur system <br>- this can be done in windows also , just search "how to download netcat for windows"
-4. Q : is ngrok actually safe <br>Ans : nothing is safe & secure completely <br>- but when we open it's website then it's asking for cookies , hopefully we didn't gave our actual email <br>- but it took ur system cookies  , so if illegal activities done from ur side - then investigation can happen
+- Q : is ngrok actually safe <br>Ans : nothing is safe & secure completely <br>- but when we open it's website then it's asking for cookies , hopefully we didn't gave our actual email <br>- but it took ur system cookies  , so if illegal activities done from ur side - then investigation can happen
 - Mine doubts : 
 	- Q : in order to talk via ngrok is both the system should have ngrok installed or just 1 system can have it <br>Ans : To talk via ngrok, only one system needs to have ngrok installed. The system that has ngrok installed <br>will act as a proxy and allow the other system to access a local service running on it. The other system can access <br>the local service by connecting to the ngrok URL provided by the system with ngrok installed.
 	- Q : via ngrok , only 1 client or multiple clients can talk to the server at the same time <br>Ans : Ngrok allows multiple clients to talk to the server at the same time, <br>but the number of simultaneous ngrok agent sessions is limited based on the plan. The free tier account <br>allows only one port to be exposed at a time, but it is possible to expose multiple ports using a configuration file.
