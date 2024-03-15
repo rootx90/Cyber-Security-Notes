@@ -85,7 +85,7 @@
 	3) App Sandboxing Vulnerabilities
 	4) Weak Device and App Encryption
 	5) OS and App Update Issues
-	6) Jailbreaking & Rooting- 
+	6) Jailbreaking & Rooting
 		- both words means same 
 		- Jailbreaking = used in IOS <br>Rooting = used in Android
 		- if someone trying to do rooting/Jailbreak in ur phone - that's mean - that person taking full control over ur phone

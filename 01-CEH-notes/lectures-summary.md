@@ -745,9 +745,206 @@
 			- 5 Q : if u got the access of criminal/victim's system
 			- 6 Q : if u got the access of criminal/victim's system
     - Lecture 33 : more about Password Cracking & Cryptography
+		- wifi-phishing : in wifi-hacking
+			- Q : how 2 wifi-adapters work in wifi-phishing
+		- Theory : windowOS password cracking
+			- Q : can u tell where window's OS password got saved , any location ?
+				- Q : what we gonna do
+				- Q : means will be safe , if ur password cracked by someone easily
+		- Practical work : windowOS password cracking
+			- Q : earlier which symbol used to save in a file
+    - Lecture 35 : Hacking Mobile Platforms
+		- Theory : intro
+		- Mobile Platform Attack Vectors (Vulnerable Areas)
+			- Explanation : Mobile Platform Attack Vectors
+				- 1 ) Bluetooth
+					- Q : do u know what we were doing with bluetooth - when headphone was not in the market
+				- 2 ) Wi-Fi Device
+				- 3 ) App Store
+				- 4 ) Internet
+				- 5 ) website
+				- 6 ) Corporate VPN gateway + Corporate Intranet
+				- 7 ) Telco Service Provider / mobile towers
+		- Theory : OWASP Top 10 - Mobile Risks - 2016
+			- Explanation of OWASP Top 10 - Mobile Risks - 2016
+				- M1 : Improper Platform Usage
+					- Q : when u open ZOOM - then is by-default ZOOM takes fingerprint
+				- M2 : Insecure Data Storage
+				- M3 : Insecure Communication
+				- M4 : Insecure Authentication
+				- M5 : Insufficient Cryptography
+				- M6 : Authorization
+				- M7 : Client code quality
+				- M8 : Code Tampering
+				- M9 : Reverse Engineering
+				- M10 : Extraneous Functionality
+		- Mobile Platform Vulnerability & Risks
+			- Explanation : ways from where viruses , attacks can come in the device
+				- 1 ) Malicious Apps in Stores
+				- 2 ) Mobile Malware
+				- 3 ) App Sandboxing Vulnerabilities
+				- 4 ) Weak Device and App Encryption
+				- 5 ) OS and App Update Issues
+				- 6 ) Jailbreaking & Rooting
+				- 7 ) Mobile Application Vulnerabilities
+				- 8 ) Privacy Issues (Geolocation)
+				- 9 ) Weak Data Security
+				- 10 ) Excessive Permissions
+				- 11 ) Weak Communication Security
+				- 12 ) Physical Attacks
+		- Mobile Security Guidelines
+    - Lecture 37 : Malware Analysis
+		- Theory : what's Malware program
+			- About : Malware
+				- Q : why is it made
+				- Q : what happens if it comes inside the victim's system
+				- Q : why is it use
+			- Examples of Malware (Types of Viruses inside Malware)
+				- 1 ) Backdoor
+				- 2 ) Rootkit
+				- 3 ) Virus
+				- 4 ) Worm
+					- Q : how it damage the software in a OS (of a system)
+				- 5 ) Trojan Horse
+					- Q : have u heard about RAT
+					- Q : what does RAT do
+				- 6 ) Crypter
+					- Q : when u download a software or a file , will that file/folder will be in encrypted form
+					- Q : but now , anti-virus become more smart , what does they do
+					- Q : u tell me that if someone hiding a normal thing from u - then will u doubt or not
+				- 7 ) Ransomware
+		- Theory : trojan
+			- about
+			- Common Ports used by Trojans
+				- Q : what runs on Port no. 80
+		- Theory : Virus & worms
+			- about
+		- Types of Malware Analysis
+			- 2 types of Malware Analysis
+			- About : Static Malware analysis vs Dynamic Malware Analysis
+				- Q : how to check which ports are open & which are not opened
+			- in Static Malware analysis
+				- 1 ) File Fingerprinting
+				- 2 ) Local & Online malware scanning
+				- 3 ) Performing string search
+				- 4 ) identifying Packing / Obfuscation method
+				- 5 ) Finding the portable executables (PE) information
+				- 6 ) Identifying file dependencies
+				- 7 ) Malware Disassembly
+			- Stage of Dynamic Malware Analysis
+				- 2 stages of it
+				- intro : System Baselining & Host Integrity Monitoring
+				- System Baselining vs Host integrity monitoring
+					- Q : what's registry
+				- in Host integrity monitoring
+					- Q : define API
+		- Practical Work : malware_threats.zip & legion(root) tool
+			- Q : is this "Malware Threats" file also work in android
+		- Resources : 500 Books
 
+- Cryptography
+    - Lecture 33 : more about Password Cracking & Cryptography
+		- Theory : Cryptography
+			- Q : what's Cryptography
+			- it has total 4 branches
+				- 1 ) steganography
+				- 2 ) Hashing
+				- 3 ) Encoding
+				- 4 ) Encryption
+			- Explanation of each branches of it
+				- steganography
+					- Types of steganography / Ways to implement steganography
+						- 1 ) Image/Video/Audio steganography
+						- 2 ) whitespace/Text/Document steganography
+						- 3 ) Natural writing steganography
+						- 4 ) Network steganography
+					- Image/Video/Audio steganography
+					- whitespace/Text/Document steganography
+					- Natural writing steganography
+				- Hashing
+					- Q : then what does it mean - "Password got leaked"
+				- Encoding
+					- Q : do u know how http works
+				- Encryption
+					- Working Process of Encryption
+			- Q : what's algorithm
+				- Q : can u call that guy without follow these steps in sequence
+    - Lecture 34 : Cryptography
+        - Overview - what we'll learn
+		- Cryptography Concepts
+			- More about it
+				- 1 ) Data Conversion
+				- 2 ) Scrambled Code (Encrypted)
+				- 3 ) Protect data
+				- 4 ) Email Messages + Web transactions
+					- Q : in Web Transactions which cryptography will be use - Encoder or Encryption ?
+			- Objectives of Cryptography
+				- 1 ) Confidentiality
+				- 2 ) Integrity
+				- 3 ) Authentication
+				- 4 ) Non-repudiation
+					- Q : can Vishal say that "me didn't send the PDF book to Kapil"
+					- Q : can Kapil say that "me didn't got this data from Vishal"
+		- Types of Cryptography
+			- 3 types of it
+				- 1 ) Symmetric Encryption
+				- 2 ) Asymmetric Encryption
+				- 3 ) Hash functions
+		- Types Encryption techniques of Cryptography
+			- Q : what's Encryption (Ciphers)
+			- Types of Encryption/Ciphers
+				- 2 Types of it :
+					- 1 ) Classical Ciphers
+					- 2 ) Modern Ciphers
+				- Q : what's Classical & Modern mean
+			- in Classical Ciphers techniques/algorithms
+				- 2 types
+				- Substitution cipher 
+					- Q : how Substitution cipher will encrypt this message
+					- Q : what x = 1 means
+				- Transposition cipher
+					- Q : how did u know that total 6 possibilities/permutations could be from "ABC"
+			- in Modern Ciphers techniques
+				- Types of Modern Ciphers techniques
+					- 1) based on the type of key used
+						- 1.1) Private Key / Symmetric Key Ciphers
+						- 1.2) Public Key / Asymmetric Key Ciphers
+					- 2) based on the type of input data
+						- 2.1) Block Ciphers
+						- 2.2) Stream Ciphers
+				- in based on the type of key used
+				- in based on the type of input data
+		- Types of Encryption Algorithms
+		- Tools : Hash tools , Cryptography tools - for WinOS
+			- Hash tools
+			- Cryptography tools - for WinOS
+			- Practical Work : steganography
+				- Q : how to find diff b/w both file
+				- Q : how to extract decrypt the file
 
+- Firewall Concept
+    - Lecture 36 : Firewall Concept
 
+- Logs
+    - Lecture 38 : Logs & Doubt Solve & Batch End
+		- Theory : Logs
+			- what's log
+			- for what purpose , it's used / usecase of it
+				- Q : if that hacker will put that payload anywhere inside that big storage (of ur system) , will u be able to find that payload
+				- Q : will u be able to find that payload via scanning
+				- Q : what we can do as a victim
+			- Types of logs in WindowOS
+				- 3 types of logs in winOS
+		- Practical Work : Logs
+			- How to see logs in winOS
+			- About "Covering Tracks" (means when hackers delete the logs to install something)
+			- Clear Logs in Linux + winOS
+
+- Lecture 39 : resources
+    - advice
+    - telegram
+    - download courses
+    - My Resources (which i found)
 
 ### End of Lectures (Doubts) summary
 
@@ -1222,7 +1419,90 @@ Q : can we stop the process of "SAM" file via TaskManager
 Q : single band vs dual band wifi adapter
 ```
 
-- Lecture 34 : 
+- Lecture 34 : Cryptography
+```
+Q : OTP bypass - via burpSuite - is it a part of WAPT
 ```
 
+- Lecture 35 : Hacking Mobile Platforms
+```
+Q : can crack app/tool fine to use
+
+Q : a student's android & iphone - both devices go hacked & he/she is looking into Google Account Manager in Gmail 
+	& he saw unknown settings - he's saying i.e "it's a part of social engineering" - then his phone got compromise
+	Q : sir asked from that student : how do u know that ur phone got compromise
+	
+Q : can i use free proxies or cracked proxies to hide the actual IP of the internet
+
+Q : if a person connected to ur fake wifi - then can we install malicious stuff on that person's device
+```
+
+- Lecture 37 : Malware Analysis
+```
+Q : About : API
+
+Q : About : Virus & Worm
+	Q : difference b/w virus & worm
+	Q : which one share information about the victim's system Virus or worm
+	Q : is virus also self-replicate program to damage the victim's system
+	Q : is virus or worm which one is better
+	Q : Malware vs. Worm vs. Virus & which one is more dangerous
+	
+About : in Dynamic Malware Analysis , System Baselining & Host Integrity Monitoring
+	Q : what is the purpose of system baselining in dynamic malware analysis
+	Q : More on - System Baselining & Host Integrity Monitoring
+	
+Q : why redirect way used for the website
+
+Q : is trojan will work on linux
+```
+
+- Lecture 38 : Logs & Doubt Solve & Batch End
+```
+Advice : this Log is different than mathematics logs - whenever u learn new things then empty ur mind to grab new knowledge
+
+Q : when i cleared the chrome's history then is this action will be stored in "event viewer" in windows OS
+
+Q : define covering tracks
+
+Q : How we can bind any malwares behind an image or a vid , etc
+
+Q : worms or virus can be easily run after binding them behind an image or a vid
+
+Q : define reverse-hacking
+
+Q : what if i use hardware (eg : wifi-adapter of a friend) & that friend also use it for penetration
+
+Q : can we hack another system - via after hacking victim's system
+
+Q : will my Main IP add. or details will go
+
+Q : which Linux OS is good
+
+Q : how to hack CCTVs camera
+
+Q : if 2 different ports open like HTTP & HTTPS in a website , then what kindof attacks possible
+
+Q : once this course completed - then what to do extra
+
+Q : how to do website hacking
+
+Q : steps to secure a website or a wordpress website
+
+Q : what're the hardware & software tools for hacking 
+```
+
+- Lecture 39 : resources
+```
+Q : how to ON the developer mode in ParrotOS
+
+Q : Saurabh did scanning on a website - & that website contains many open ports like FTP , SMTP , etc - due to open ports , the website was vulnerable - then he tried many payloads - but connection not establish - what should i do
+
+Q : if a website has indexof vulnerability then what kind of attacks can be done
+
+Q : importance of firewall in a system
+
+Q : AIIMS data hacked , How
+
+Q : for password cracking - what to do
 ```

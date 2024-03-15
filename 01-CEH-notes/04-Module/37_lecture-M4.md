@@ -141,8 +141,8 @@
 
 ---
 ### End of the lecture (Doubts) :
-- About : API <br>Ans : https://www.perplexity.ai/search/what-is-api-60yHBWFdS.SuYUDKpB6DfA
-- About : Virus & Worm
+- Q : About : API <br>Ans : https://www.perplexity.ai/search/what-is-api-60yHBWFdS.SuYUDKpB6DfA
+- Q : About : Virus & Worm
 	- Q : difference b/w virus & worm <br>> https://www.cyberghostvpn.com/privacyhub/wp-content/uploads/2021/06/Virus-vs-Worm@2x-1-1024x720.png <br>> [Difference between Worms and Virus - GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-worms-and-virus/)
 	- Q : which one share information about the victim's system Virus or worm <br>> [Ans 1](https://www.perplexity.ai/search/which-one-share-TFvgyICdRCKFymvyXP6hVA?s=u) <br>> [Ans 2](https://www.perplexity.ai/search/which-one-share-9lheZjUITwOJY8zUh.pELw?s=u)
 	- Q : is virus also self-replicate program to damage the victim's system <br>> [Ans 1](https://www.perplexity.ai/search/is-virus-also-8dV9T3W5TP6b1Zet9lrp.w?s=u)

@@ -129,8 +129,8 @@
 		- output : now that file saved as ".bmp" extension
 		- Note : u can change the algorithm option during encryption - but not during Decryption
 	- STEP 3 : viewing both normal image & .bmp file (which has cover image) <br>STEP 3.1 : open that normal image & .bmp file , u can't tell the difference b/w both
-	- STEP 4 : how to find diff b/w both file <br>1) normal file image has .png or .jpg & that encrypted file has .bmp extension <br>2) both files has different size (size of normal image file has in KB & that one has in MB)
-	- STEP 5 : how to extract decrypt the file
+	- STEP 4 : Q : how to find diff b/w both file <br>1) normal file image has .png or .jpg & that encrypted file has .bmp extension <br>2) both files has different size (size of normal image file has in KB & that one has in MB)
+	- STEP 5 : Q : how to extract decrypt the file
 		- STEP 5.1 : open the app -> click "Extract data" -> select input file as that .bmp file
 		- STEP 5.2 : select output file location -> then write the password (which u made while hiding) -> click "extract data"
 		- output : u'll get that file back again
