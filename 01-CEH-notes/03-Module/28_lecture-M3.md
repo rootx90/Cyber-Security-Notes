@@ -94,7 +94,7 @@
 		- in output pic , 192.168.186.142 : is a IP of Victim's system (parrot OS)
 		- STEP 2.4 : Q : as a target 1 - which system do u want to listen the communication/data-packets
 			- Ans : Parrot OS
-			- STEP 2.4.1 : in Ethercap -> select Parrot OS IP -> click "Add to Target 1" , output : IP of Victim's system selected as target-1 <br>![[28_lecture-7-M3.jpg | 500]]
+			- STEP 2.4.1 : in Ethercap -> select Parrot OS IP -> click "Add to Target 1" , <br>output : IP of Victim's system selected as target-1 <br>![[28_lecture-7-M3.jpg | 500]]
 			- Q : acc. to u which IP is Target 2 <br>Ans : 1st one i.e 192.168.186.1 - is our system's router's IP <br>- cuz data packets goes from attacker's system to attacker system's router - then Victim's system
 		- STEP 2.5 : select 1st IP -> click "Add to Target 2" -> click on "world shape" btn (which is a MITM menu)
 			- "hexagonal shape" btn : used to stop & start the MITM attack

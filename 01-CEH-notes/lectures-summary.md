@@ -578,6 +578,79 @@
 			- STEPS : DOS attack on a website via BurpSuite
 				Q : how to link "127.0.0.1:8080" IP + Port No. in (Proxy -> Options -> "Proxy Listeners" Section) with the browse
 	- Lecture 28 : Session Hijacking
+		- what is Session
+		- what is Session Hijacking
+			- Q : what we do in Session Hijacking
+			- Working of Session
+				- Q : how server identified or got to know about
+				- Q : at 1st step - what that server did with the login request packet
+				- Q : if ID & password is correct - then what request the server sent as a response
+				- Q : why sessionID goes via "cookies" header - inside the request packet from the client
+				- Q : what if we hijack the sessionID of the client
+				- Q : when will user get the sessionID from the server
+				- Q : should i hack username + password OR sessionID of the client - which one is better with a reason
+		- Practical Work : Session Hijacking in a local system
+			- Q : where sessionID exists if a person didn't login in a website
+		- what is MITM attack
+			- Q : how those 2 systems gonna communicate each other <br>Q : who's the intermediator b/w them <br>Q : who's the centralize system - via which those 2 systems are talking each other
+			- Q : at home , what u use to do surfing in the internet
+			- Q : can MITM possible on Victim's phone SIM
+		- Practical Work : Session Hijacking of a Victim's system
+			- Q : when Session Hijacking performed
+			- Q : if we want to take the sessionID of victim's system - then How to take it - we'll see in further STEPS
+			- Q : acc. to u which IP is Target 2
+			- Q : acc. to u - which thing we need to search - in order to get data packets of Victim's system
+    - Lecture 29 : Web Server Hacking using ZAP
+        - Explanation by Sir - About : Web Servers Vs Web Applications
+			- Web Server
+				- Q : what's a Web
+				- Q : what's a server
+				- Q : when u open a website - then behind the scene - what processes happen
+				- Q : inside the request packet , what details are inside
+				- Q : there are online light games websites , so how processes (of sending & receiving data packets) done
+				- Q : if we play pubg , freefire , etc heavy games on websites (on client) - then where all processes load comes
+				- Q : after this , what'll happen - if many people of each country started playing these heavy games on websites
+			- web application
+				- Q : where u download these heavy games - means do u play these games on websites or download in system
+		- About : web server + it's attacks + attack Methodology
+			- What's web server
+			- Web Server Attacks
+				- Directory Traversal Attack
+					- Q : what's it & how were we doing it
+				- Web server Misconfiguration
+				- Web Cache Poisoning Attack
+				- SSH Brute Force Attack
+					- Q : how Brute Force attack done on SSH
+				- Web Server Password Cracking
+				- SSRF (Server-Side Request Forgery Attack)
+					- Q : u generated a request for deleting ur FB account - Now u're putting that user's FB ID instead of putting ur FB ID no. What'll happen Now
+			- Web server Attack Methodology
+				- Information Gathering + Web Server Footprinting
+				- Website Mirroring
+				- Vulnerability Scanning
+				- Session Hijacking
+				- Web Server Password Cracking
+		- About : Web Application + WebApps Hacking Methodology
+			- A Web Application has
+				- Interface
+				- End user (client)
+				- Web server
+				- Client Side Script (Browser)
+			- WebApps Hacking Methodology
+				- Footprinting Web Infrastructure
+				- Analyze Web Application
+				- Bypass Client Side Control
+				- Attack Authentication Mechanism
+				- Attack Authentication Schemes
+				- Attack Access Control
+				- Attack Session Management Mechanism
+				- Perform Injection Attacks
+		- Practical Work : Website Attacks
+			- Q : what OWASP organization do
+			- Q : in zaproxy tool , what confidence means in "alerts" tab
+			- Q : in zaproxy tool , what risk means in "alerts" tab
+			- Q : in zaproxy tool - what Description , Other Info , Solution , Reference , Alert Tags means in "alerts" tab
+    - Lecture 30 : Vulnerability Assessment by Acunetix Pro & Wi-fi Hacking
 
 
 
@@ -1001,3 +1074,28 @@ Q : which type of Job is good
 Q : if network is not working properly
 ```
 
+- Lecture 29 : Web Server Hacking using ZAP
+```
+Q : Ghost framework for android - to get the remote access of a android device
+
+Q : can a Wifi Tower possible to hack
+```
+
+- Lecture 30 : Vulnerability Assessment by Acunetix Pro & Wi-fi Hacking
+```
+Q : in wifi-hacking , 2 things done to complete the process of wifi-hacking
+
+Q : related to router
+	Q 1: when a first connection establish between the laptop & the router
+	Q 1.1 : nce connection process is completed & the router is completely connected with the device like laptop
+	Q 2 : how does a router remember the mac address of a connected device
+	Q 3 : networking - How does my router identify different devices? - Super User
+	Q 4 : Do routers save MAC addresses for devices that were once on the network? 
+		Or only MAC addresses for devices currently on the network? - Quora
+	Q 5 : What is the use of a MAC address in a router? - Quora
+	Q 6 : Do sites see and store MAC addresses? Either of your PC or the wifi device connecting to the 'net?
+	Q 7 : is wifi router save the mac address of a connected device
+
+Q : related to wifi
+	Q 1 : How Hackers Spy on you from your own WiFi
+```

@@ -167,7 +167,7 @@
 - commands to install drivers for TP-Link wifi adapter
 	- STEP 1 : `apt install dkms`
 	- STEP 2 : `apt install realtek-rtl88xxau-dkms`
-- in wifi-hacking , 2 things done to complete the process of wifi-hacking ✔<br>1) wifi-scanning <br>2) password cracking
+- Q : in wifi-hacking , 2 things done to complete the process of wifi-hacking ✔<br>1) wifi-scanning <br>2) password cracking
 - Q : related to router 
 	- Q 1: when a first connection establish between the laptop & the router <br>- is that router will take the laptop's MAC address ✔<br>Q 1.1 : nce connection process is completed & the router is completely connected with the device like laptop <br>- then will the router keep the laptop's MAC address to remember ✔<br>Q 2 : how does a router remember the mac address of a connected device ✔
 	- Ans 1 & 1.1 : Once the connection process is completed and the router is completely connected with the device like a laptop, <br>the router does not keep the laptop's MAC address to remember. <br>The MAC address is a unique identifier for each network interface in a device, and it is used to identify devices on a network. <br>When a device connects to a network, the router does not automatically assign its MAC address to the connecting device. <br>Instead, the router uses the MAC address of the connecting device to communicate with it during the connection process.
