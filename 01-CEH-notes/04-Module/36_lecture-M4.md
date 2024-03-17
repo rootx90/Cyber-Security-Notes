@@ -19,7 +19,7 @@
 - System/application Firewall
 	- in WinOS , is a inbuilt firewall in our system
 	- Q : at ur home , many devices are connected to the router & even ur PC is connected with that router <br>- & Q : is will ur PC's firewall (which is installed in ur PC) protect the router or the other systems or only ur PC ✔️
-		- Q pic : <br>![[36_lecture-0-M4.jpg | 500]]
+		- Q pic : <br><img src="../notes-pics/04-Module/36_lecture/36_lecture-0-M4.jpg" alt="" width="500"/>
 		- Generally , each devices has it's own inbuilt firewall <br>but in this situation , assume those other systems don't have their own firewall - but ur PC has
 		- Ans : ur PC only - cuz that firewall is of ur system
 	- Q : now let's say a firewall is installed in that router <br>- so will that router's firewall protect all the systems (which are connected the router)
@@ -62,7 +62,7 @@
 	- STEP 5 : `gedit modsecurity.conf` -> remove the "#" from "SecRequestBodyAccess On" -> save the file
 	- Q : in kali OS , by-default firewall aka <br>Ans : iptables
 	- STEP 6 : run `iptables -h` , output : to check the options <br>- "modesecurity.conf" : is a setting file of iptables firewall
-	- STEP 7 : `iptables -L` , output : <br>![[36_lecture-1-M4.jpg | 500]]
+	- STEP 7 : `iptables -L` , output : <br><img src="../notes-pics/04-Module/36_lecture/36_lecture-1-M4.jpg" alt="" width="500"/>
 	- Q : the folder which we shared , will it come in INPUT or OUTPUT <br>Ans : i.e output
 - we have a better firewall i.e "ufw" - cuz in "iptables" we need to ON or OFF all these 3 policies one by one manually <br>- but in "ufw" , we can turn ON or OFF in one go manually
 - STEP 8 : run `ufw` , output : options will be shown of this firewall <br>STEP 8.1 : run `ufw enable` , output : many rules will be shown of this firewall <br>- but earlier "iptables" has only 3 policies <br>STEP 8.2 : run `iptables -L` , output : many rules will get applied
