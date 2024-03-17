@@ -1052,8 +1052,8 @@ Q : static IP or dynamic ip , which used by normal users of internet
 Q : How both IP address + MAC address (of a device) interact with the server
 
 Q : in whatsmyipv4 website
-	- but my IPv4 address is not changing when i try to do via connecting with router & disconnecting+connecting with router
-		even after offing the router & on the router again
+	- but my IPv4 address is not changing when i try to do via connecting with router 
+		& disconnecting+connecting with router even after offing the router & on the router again
 	- but when i try to do it via SIM data network then it's working - that IP was Public Dynamic IP address
 	- Q : why is it like that , is my ISP provided static IP address is it so ?
 	
@@ -1496,7 +1496,10 @@ Q : what're the hardware & software tools for hacking
 ```
 Q : how to ON the developer mode in ParrotOS
 
-Q : Saurabh did scanning on a website - & that website contains many open ports like FTP , SMTP , etc - due to open ports , the website was vulnerable - then he tried many payloads - but connection not establish - what should i do
+Q : Saurabh did scanning on a website 
+	- & that website contains many open ports like FTP , SMTP , etc 
+	- due to open ports , the website was vulnerable - then he tried many payloads 
+	- but connection not establish - what should i do
 
 Q : if a website has indexof vulnerability then what kind of attacks can be done
 
