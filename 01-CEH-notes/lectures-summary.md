@@ -924,6 +924,16 @@
 
 - Firewall Concept
     - Lecture 36 : Firewall Concept
+		- Theory : what's firewall
+		- Theory : types of firewall
+			- types of it
+			- 2 forms of it
+			- explanation : types of it
+		- Practical Work : prevent directory traversal vulnerability via firewall configuration
+			- Q : in kali OS , which folder contain all the installed applications setting files
+			- Q : what's the command to edit the file name
+			- Q : in kali OS , by-default firewall aka
+			- Q : the folder which we shared , will it come in INPUT or OUTPUT
 
 - Logs
     - Lecture 38 : Logs & Doubt Solve & Batch End
@@ -1435,6 +1445,11 @@ Q : a student's android & iphone - both devices go hacked & he/she is looking in
 Q : can i use free proxies or cracked proxies to hide the actual IP of the internet
 
 Q : if a person connected to ur fake wifi - then can we install malicious stuff on that person's device
+```
+
+- Lecture 36 : Firewall Concept
+```
+Q : to download ParrotOS , which file format required for vmware
 ```
 
 - Lecture 37 : Malware Analysis
