@@ -28,6 +28,7 @@
 		- due to this , connection will be established b/w them via a port no. & an IP address <br>- now no hacking is performing , only talking/messaging will happen b/w them ✔<br>- Eg : from client system , we'll send "Hi" & the server will reply "hello"
 		- Conclusion pic : <br><img src="../notes-pics/03-Module/20_lecture/20_lecture-2-M3.jpg" alt="" width="500"/>
 	- Practical : System Hacking (which has no vulnerabilities) via Netcat tool ✔
+    	- here we're establishing communication b/w 2 systems locally , not for www
 		- STEP 1 : open kali & metasploitable2
 		- STEP 2 : in Kali , in terminal , run `sudo su` <br>STEP 2.1 : run `nc -lvp 8686` (u can give any 4 digit port no. whatever u like) ✔<br>- output : Listening on [any] 8686 ...
 		- so the Kali system - becomes a server 
@@ -37,13 +38,13 @@
 		- STEP 6 : in Metasploitable2 (which is a client) , write "hi" <br>STEP 6.1 : go in Kali (which is a server) , output : we'll get "hi" <br>SETP 6.2 : in Kali write "hello" - then in Metasploitable2 , we'll get "hello"
 		- STEP 7 : close the connection , press `CTRL + C`
 		- Q : can u join inside this conversation b/w client & server , right now ✔<br>Ans : No , cuz this server doesn't have a Public Static IP address <br>- currently , this server is using a private IP address
-	- Q : how to give a Public Static IP address to this server ✔<br>Ans : we a tool i.e Ngrok 
-		- About Ngrock<br>- Ngrok need a open port no. - which u want to make world wide <br>- so when we give a port no. (which we want to make word wide) to it - then it'll make that port no. as open <br>- then it'll give an IP address (which will be a Public Static IP address) & a open port no. <br>- so an Public Static IP address & a open port no. which it's giving - if we send these 2 things (IP address & port no.) to a person <br>& then that person will be connected & communication established b/w u & that person 
-		- Eg : let's say Ngrok gives an Public static IP address -> 192.168.66.128 & a open port no. 4141 <br>- so i u share these 2 things i.e IP address & port no. with someone & doesn't matter how far that person from u<br>- that person will be connected on ur 8080 port no. <br><img src="../notes-pics/03-Module/20_lecture/20_lecture-4-M3.jpg" alt="" width="500"/>
+	- Q : how to give a Public Static IP address to this server ✔<br>Ans : we have a tool i.e Ngrok 
+		- About Ngrok<br>- Ngrok need a open port no. - which u want to make world wide <br>- so when we give a port no. (which we want to make word wide) to it - then it'll make that port no. as open <br>- then it'll give an IP address (which will be a Public Static IP address) & a open port no. <br>- so an Public Static IP address & a open port no. which it's giving - if we send these 2 things (IP address & port no.) to a <br>person & then that person will be connected & communication established b/w u & that person 
+		- Eg : let's say Ngrok gives an Public static IP address -> 192.168.66.128 & a open port no. 4141 <br>- so if u share these 2 things i.e IP address & port no. with someone & doesn't matter how far that person from u<br>- that person will be connected on ur 8080 port no. <br><img src="../notes-pics/03-Module/20_lecture/20_lecture-4-M3.jpg" alt="" width="500"/>
 	- there's no much difference b/w a client & a server system , except few things <br>- like server has more configuration & it has a Public Static IP address
 - Practical : System Hacking (which has no vulnerabilities) via ngrok tool ✔
 	- download & installation & setting it up for work
-		- STEP 1 : in kali , open a browser , search "download ngrok" <br>STEP 1.1 : signup (if u don't have account) , use temp mail for signup - [Temp Mail](https://temp-mail.org/en/) OR [tempmailo](https://tempmailo.com/) OR [emailnator](https://www.emailnator.com/)<br>- if temp-mail is not working then try different website for fack email address <br>STEP 1.2 : download x86-64amd setup of ngrok for linux <br>STEP 1.3 : extract the file 
+		- STEP 1 : in kali , open a browser , search "download ngrok" <br>STEP 1.1 : signup (if u don't have account) , use temp mail for signup - [Temp Mail](https://temp-mail.org/en/) OR [tempmailo](https://tempmailo.com/) OR [emailnator](https://www.emailnator.com/)<br>- if temp-mail is not working then try different website for fake email address <br>STEP 1.2 : download x86-64amd setup of ngrok for linux <br>STEP 1.3 : extract the file 
 		- STEP 2 : in terminal , run `sudo su` <br>STEP 2.1 : first check whether that extracted ngrok file has a executable permission or not  , run `ls -l` , output : <br><img src="../notes-pics/03-Module/20_lecture/20_lecture-5-M3.jpg" alt="" width="500"/>
 		- so it has executable permission , if it doesn't have executable permission then use `chmod` command
 		- Note : don't install it via command line based cuz u'll get many errors if u do
