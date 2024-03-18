@@ -6,14 +6,14 @@
 ---
 > Table of Contents
 
-### 1. Web Fundamentals
+### 01 Module - Web Fundamentals
 1. [01_lecture]() : What is web application penetration testing?
 2. [02_lecture]() : WAPT Learning Roadmap 2021 | Course Overview
 3. [03_lecture]() : Web Fundamentals #1 How do we load websites? HTTP Verbs?
 4. [04_lecture]() : Web Fundamentals #2 What are cookies? Explained in detail | Practical Demo | HTTPOnly, Secure Flag
 5. [05_lecture]() : Web Fundamentals #3 Mini CTF | Tryhackme
 
-### 2. Burp Suite
+### 02 Module - Burp Suite
 1. [06_lecture]() : Burp Suite #1 Introduction | Installation | Configuration | Proxy
 2. [07_lecture]() : Burp Suite #2 Features | Proxy | Repeater | Intruder | Extender
 3. [08_lecture]() : Burp Suite #3 How Burp Suite Proxy Works? MITM Attack?
@@ -21,7 +21,7 @@
 5. [10_lecture]() : Burp Suite #5 Intruder | Sequencer | Bruteforce attack | Sqli Authentication
 6. [11_lecture]() : Burp Suite #6 Decoder, Comparer and Extender | Final Video
 
-### 3. Web Security
+### 03 Module - Web Security
 1. [12_lecture]() : How to get into Web Application Security | PortSwigger Academy
 2. [13_lecture]() : [HINDI] XML External Entity (XXE) Injection | Types of Attacks | Prevention
 3. [14_lecture]() : [HINDI] XXE Injection Labs | Retrieve Files, SSRF Attack | Web Security Academy
