@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 ### Overview
 - Cross-Site Request Forgery aka CSRF
 ### what we'll learn

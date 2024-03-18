@@ -1,4 +1,4 @@
-#WAPT #penetration-testing 
+#WAPT-notes
 
 ## Topics must know as a WAPT
 1) Basics/fundamentals must be clear

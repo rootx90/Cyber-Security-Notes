@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 ### Overview
 - most imp topic ⭐
 - we'll over XSS - reflected type & 8 challenges of XSS

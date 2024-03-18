@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 ### Overview
 - About stored XSS attack + practical on a lab website
 ### what we'll learn

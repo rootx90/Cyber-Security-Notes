@@ -1,4 +1,4 @@
-#WAPT #penetration-testing 
+#WAPT-notes
 
 ### What we'll learn
 1) what's penetration testing

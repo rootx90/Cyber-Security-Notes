@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 
 ### Overview
 - we'll do practical web mini CTF (capture the flag) of this complete webApp fundamentals

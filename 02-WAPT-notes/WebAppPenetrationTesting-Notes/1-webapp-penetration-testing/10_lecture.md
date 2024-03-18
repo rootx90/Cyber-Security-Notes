@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 
 ### Overview
 - Lecture name : BurpSuite - Intruder , Sequencer , Bruteforce attack , Sqli Authentication Bypass

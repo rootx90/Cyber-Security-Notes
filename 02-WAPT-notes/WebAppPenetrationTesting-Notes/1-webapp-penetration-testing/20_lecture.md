@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 ### Overview
 - `zip2John` is a utility of "John the ripper" tool ✔
 ### what we'll learn

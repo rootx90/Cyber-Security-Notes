@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 ### Overview
 - Lecture Name : How to setup Damn Vulnerable Web application (DVWA) in Ubuntu using Docker
 ### what we'll learn

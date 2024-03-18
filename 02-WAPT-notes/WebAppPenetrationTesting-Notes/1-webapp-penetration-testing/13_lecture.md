@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 
 ### Overview
 - Lecture name : XML External Entity (XXE) Injection - types of attacks

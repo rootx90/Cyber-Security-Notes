@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 ### what we'll learn
 - about SQLi
 - How authentication page i.e login page works for a new user & existing user

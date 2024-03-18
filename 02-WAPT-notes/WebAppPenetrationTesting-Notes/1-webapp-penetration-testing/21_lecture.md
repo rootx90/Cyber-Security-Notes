@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 ### Overview
 - exploiting via SQL injection , how we can change the name of database , which database using , table name , column name , sensitive details like username & password ✔ 
 ### what we'll learn

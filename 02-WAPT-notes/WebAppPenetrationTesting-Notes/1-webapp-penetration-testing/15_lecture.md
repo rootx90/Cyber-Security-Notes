@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 
 ### Overview
 - Example : let's say u're a agent as name "Agent T" & u got a task to test a webapp/website & everything is going well & u say that everything is working fine but u got a little vulnerability/issue. so the process from that little issue to `Remote Code Execution` , we'll see & we'll play as "Agent T" ✔

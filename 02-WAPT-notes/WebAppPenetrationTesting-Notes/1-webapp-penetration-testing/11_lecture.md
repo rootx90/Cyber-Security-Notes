@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 
 ### Overview
 - Lecture name : BurpSuite - Decoder, Comparer & extender

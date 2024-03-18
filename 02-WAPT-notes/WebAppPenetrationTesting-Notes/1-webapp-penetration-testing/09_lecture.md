@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes
 
 ### Overview
 - Lecture name : SQL Injection on OWASP : Juice Shop  , Repeater & Target

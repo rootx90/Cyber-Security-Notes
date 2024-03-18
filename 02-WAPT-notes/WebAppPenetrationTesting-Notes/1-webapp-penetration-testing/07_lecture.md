@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 
 ### Overview
 - in this lecture , only high level overview of these features of BurpSuite discussed

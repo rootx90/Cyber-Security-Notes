@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes  
 
 ### Overview
 - Lecture name : XML Injection Labs - Retrieve Files , SSRF attack 

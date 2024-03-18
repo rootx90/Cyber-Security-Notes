@@ -1,4 +1,4 @@
-#WAPT #penetration-testing
+#WAPT-notes
 
 ### Overview
 - Lecture name : How to get into Web App security - Port Swigger Academy
