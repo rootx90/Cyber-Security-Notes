@@ -48,7 +48,7 @@
 	2) Loading some content
 		- content (HTML , CSS , JS, etc assets files..) , how all these file will get loaded on the client machine
 		- so content loaded via a `HTTP GET request`
-		- *what is an HTTP GET request*
+		- what is an HTTP GET request
 			- `GET request` : it's a type of HTTP verb/method
 			- it means to get the content from the server to the client machine
 			- `what is server & web server` : server one who `serves` , so here server is a web server , so server will serves to the `web`
@@ -56,19 +56,19 @@
 				& it gets open inside the client machine , so this is work of `web server`
 			- so `HTTP GET requests` used to bring the resources/files/content <br>
 				from the server (whose has the `IP address` of that Domain Name) to the client machine
-			- Example of HTTP GET request : ![[WAPT-lecture-3-0.jpg]]
+			- Example of HTTP GET request : <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
 				- it's a output of what content we got via HTTP GET request of neverssl.com
 				- wireshark - it's a free and open-source packet analyzer software.
-		- *what is Protocol & why HTTPS came* 
+		- what is Protocol & why HTTPS came
 			- most of the websites now use HTTPS
 			- `HTTPS`  : it's a secure (encrypted) version of HTTP & it works 99% as HTTP but in secure way
-			- `HTTPS` : use TLS 1.3 encryption , if a Domain Name has less than TLS 1.3 `HTTPS` then it's a vulnerability in order to communicate without : 
+			- `HTTPS` : use TLS 1.3 encryption , if a Domain Name has less than TLS 1.3 `HTTPS` <br>then it's a vulnerability in order to communicate without : 
 				1) Other parties being able to send the data
 				2) Other parties being able to modify the data
 			- in old protocols , data can be read (coz data goes in plain text & it wasn't encrypted) eg : HTTP protocol & data can be modified , so in old days , let's say we're using a packet sniffer tool (like Burp Suite) , so via using this tool , we can intercept/catch/snatch/attack/interrupt the request , we can modify
 			- Eg : let's say u're using banking website & you're transferring money in your account then we can change the account to a different one via packet sniffer tool by a attacker , so that money goes to a different account number , so HTTP was not secure , that's why HTTPS came
 			- but HTTPS is not completely secure coz if it is so , then our job will not be there as a penetration tester , so nothing is completely secure but HTTPS is secure than HTTP
-		- *what is a web server*
+		- what is a web server
 			- it's like a software which responds to the HTTP/HTTPS requests
 			- means if u do GET request via either HTTP or HTTPS then a web server (which is a other party or a piece of a software) will responds to these HTTP/HTTPS requests
 			- Eg of Popular web servers : Apache , Nginx , IIS , etc
@@ -88,21 +88,21 @@
 	- refer HTTP verbs : [HTTP request methods - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 	- `GET` :  used to get the data from web server to the client machine
 	- `POST` : used to take the data from the client machine to the web server like `contact form` & etc.
-	- *a HTTP request is divided into 2 parts i.e 1st `verb` & 2nd `path for the server`*
+	- a HTTP request is divided into 2 parts i.e 1st `verb` & 2nd `path for the server`
 		- Eg : `GET /index.html` - means get the index.html from the web server , so atleast we need to tell the server that what we want to bring to the client machine that's why `path` need to define
 		- assume that the server is bringing the `index.html` file from it's `root` directory
-	- *headers*
+	- headers
 		- used to give more information about your request
 		- information such as type of encoding, method, cookies & etc
-	- *`body` of the request*
+	- `body` of the request
 		- in `POST` request , `body` is important coz a `post` request is not considered valid without `body`
 		- in `GET` request , `body` can be defined but generally the `server` skip/ignore it , so generally `body` will not come in `GET` request but even if it comes in `GET` request then the `server` will skip it
-	- *Example - a GET request retrieving a simple js file* ![[WAPT-lecture-3-1.jpg]]
+	- Example - a GET request retrieving a simple js file <img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
 		1) `GET /main.js HTTP/1.1` - means get the main.js file via using `HTTP` protocol
 		2) `HOST: 192.168.170.129:8081`  - `192.168.170.129` -> it's a IP address & `8081` - is a port of the web server
 		3) `Connection: keep-alive` - means keep the connection alive
 		4) `user Agent` - tells the browser & it's version like chrome browser is `80` version & sometimes it tells the OS with which bit the user using (which is a loophole) 
-		5) `Accept: */*` : means we can access from anywhere
+		5) `Accept: /` : means we can access from anywhere
 		6) `Referer` : means from it's originating
 		7) `Accept-Encoding: gzip, deflate` - means types of encoding which can be accepted
 		8) `Accept-language` - means types of languages which are define only those can be accepted
@@ -114,10 +114,10 @@
 		- STEP 4 : click on a `demo.testfire.net` file > `Headers` , just look at the things
 			- in General , u can see `Request URL` , `Request Method`, `status code`, `remote address`, `referrer policy`
 			- in Request Headers , u can see `Accept` , `Accept-Encoding` , `Accept-language`, `Cache-Control`, `Cookie`, `Host`, `User-Agent`
-	- *Responses*
+	- Responses
 		- `Define` : means when we request from the web server then we get the response
 		- it follows a basic structure of any HTTP request
-			1) *1st line - `describes the status`* : means the request is made by user whether that request can be fulfilled by a web server or not, breakdown of status code , 404 : Not Found (general) `v imp ⭐`
+			1) 1st line - `describes the status` : means the request is made by user whether that request can be fulfilled by a web server or not, breakdown of status code , 404 : Not Found (general) `v imp ⭐`
 				- `Note` : this status code breakdown is `v imp` till life time if you're doing debugging , webdev, security, 
 				- `100 - 199` : used to give basic information
 				- `200 - 299` : Successes response of GET request (200 OK is the "normal" response for a GET request)
@@ -131,7 +131,7 @@
 				- `500 - 599` : server errors
 					- Eg : The server tried, but something went wrong on their side like `Bad Gateway - status code 502`
 				- refer for more : [HTTP response status codes - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-			2) *Response Headers* `(v imp ⭐)`
+			2) Response Headers `(v imp ⭐)`
 				- STEP 1 : open any website like `demo.testfire.net`
 				- STEP 2 : press F12 key %3E network tab > select `all` tab
 				- STEP 3 : reload the page again & you'll get all the content of that website , which means that what are the files which required to load that page completely
@@ -146,9 +146,11 @@
 					- `Date` : means showing the `client machine date & time` in real time who accessed the website
 				- it's v imp bcoz it tells mostly the web server & cookies of that website which you can use for testing such recession management , attacks , etc
 				- it's also have a `body`
-				- Eg : response to the GET request ![[WAPT-lecture-3-2.jpg]]
+				- Eg : response to the GET request <img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
 					- so for GET request , we'll get normal web content or information such as JSON
 					- for POST request , information may be a status code or same as GET request
+
+---
 
 ### Ques
 1) What verb would be used for a login ? : `POST`
