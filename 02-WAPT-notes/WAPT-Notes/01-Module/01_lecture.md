@@ -3,31 +3,31 @@
 ---
 ### What we'll learn
 > 1) what's penetration testing
-> 2) what is webapp penetration testing (WAPT)
+> 2) what's webapp penetration testing (WAPT)
 > 3) techniques
 > 4) tools to use how to do
 
 ---
 ### Aim of this course - Anuj Sir
 - after doing this course , u can say that u know WAPT even thou you're beginner/noob 
-- we'll do a playlist on `burp suite` - we'll do it via TryHackMe & `WAPT` we'll do by a different playlist , so that both gets interconnected , so if anyone knows `burp suite` , `OWASP TOP 10` , & know over all `OWASP` including all test cases , that guy can go for WAPT jobs
+- we'll do a playlist on "burp suite" - we'll do it via TryHackMe & "WAPT" we'll do by a different playlist , <br>so that both gets interconnected , so if anyone knows "burp suite" , "OWASP TOP 10 , <br>& know over all OWASP including all test cases" - that guy can go for WAPT jobs
 - coz Anuj sir working as a Penetration Tester in deloitte
 
 ### overview
-- u can go webapp penetration testing if you're from developer background or like u know programming stuff then u can come in appSec (application security)
+- u can go webapp penetration testing if you're from developer background <br>or like u know programming stuff then u can come in appSec (application security)
 
 ---
 
 - WebApp : means interactive application , not the static website 
 
 ### 1. what's Penetration Testing
-- `Situation Example` - consider yourself as thief , u want to enter inside somebody's home
-- so what you'll think first about ways to enter inside home 
+- `Situation Example` <br>- consider yourself as thief , u want to enter inside somebody's home
+  - so what you'll think first about ways to enter inside home 
     - either you'll see that i should get the door open or window via which we can enter
     - or will u try to pretend to be unknown or u can take a marriage card of someone to give them , etc
-- so it's like doing penetration testing (means entering inside the house) 
-- so same way we want to enter inside that webapp to get the access/loophole/vulnerability/issues
-- so we're saying window/door/etc... -> these are considered as vulnerabilities
+  - so it's like doing penetration testing (means entering inside the house) <br>
+    so same way we want to enter inside that webapp to get the access/loophole/vulnerability/issues <br>
+    so we're saying window/door/etc... -> these are considered as vulnerabilities
 - *Example of webApp vulnerabilities*
     1) misconfiguration of web server
     2) directory traversal attack (means due to misconfiguration of web server , directories are open)
