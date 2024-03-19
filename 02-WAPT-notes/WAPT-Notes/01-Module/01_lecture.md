@@ -8,7 +8,6 @@
 > 4) tools to use how to do
 
 ---
-
 ### Aim of this course - Anuj Sir
 - after doing this course , u can say that u know WAPT even thou you're beginner/noob 
 - we'll do a playlist on `burp suite` - we'll do it via TryHackMe & `WAPT` we'll do by a different playlist , so that both gets interconnected , so if anyone knows `burp suite` , `OWASP TOP 10` , & know over all `OWASP` including all test cases , that guy can go for WAPT jobs
