@@ -1,13 +1,20 @@
 #WAPT-notes
 
-## Topics must know as a WAPT
+---
+### What we'll learn
+> Lecture Name : WAPT Learning Roadmap 2021 | Course Overview
+> 1) Topics must know as a WAPT
+
+---
+
+## 1. Topics must know as a WAPT
 1) Basics/fundamentals must be clear
-	1) such as web server , what is it , how it works
+	1) such as web server (what is it , how it works)
 	2) what's web app , how a webapp works
 	3) protocols , types of protocols
-	4) Types of HTTP requests
+	4) HTTP , HTTPs , HTTP vs HTTPs , Types of HTTP requests
 	5) cookies, types of cookies
-	- so we'll learn all of these via TryHackMe website
+	- so we'll learn all of these via "TryHackMe" website
 2) `Web Fundamentals` - go to [TryHackMe | Cyber Security Training](https://tryhackme.com/)
 	- STEP 1 : go to `learn` tab
 	- STEP 2 : click on `search` btn
@@ -20,4 +27,5 @@
 3) Burp suite
 	- search it on `TryHackMe`
 4) OWASP TOP 10
-	- it contains TOP 10 threads , Juice shop , overpass , multilidae 2 , webGOAT
+	- once ur fundamentals cleared + u know burpsuite also - then we'll see OWASP TOP 10
+	- it contains TOP 10 threads (Juice shop , overpass , ZAP , multilidae 2 , webGOAT)

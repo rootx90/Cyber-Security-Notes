@@ -1,11 +1,15 @@
 #WAPT-notes  
 
+---
 ### what we'll learn
-1) how do we load websites 
-2) how a web requests goes
-3) how it works
-4) structure of it
-5) types of HTTP requests
+> Lecture Name : Web Fundamentals #1 How do we load websites? HTTP Verbs?
+> 1) how do we load websites 
+> 2) how a web requests goes
+> 3) how it works
+> 4) structure of it
+> 5) types of HTTP requests
+
+---
 
 ### Overview of web fundamentals
 1) what's HTTP request , HTTP responses
