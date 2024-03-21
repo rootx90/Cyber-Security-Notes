@@ -9,7 +9,7 @@
 > 4) structure of a web request
 > 5) types of HTTP requests
 
-### Overview of web fundamentals
+### Overview - web-fundamentals (of tryhackme.com)
 1) what's HTTP request , HTTP responses
 2) what's web server
 3) Cookies
@@ -24,7 +24,7 @@
 	  	but the server can't understand by just writing "tryhackme.com" , cuz server understand the `IP address` language
     - but humans can't understand or remember `IP address` of any websites , <br>
 		that's why `Domain Name Services (DNS)` came , so humans started using domain names for each websites 
-	- Q : what's DNS <br>
+	- Q : what's DNS ✔️<br>
         Ans : DNS means like yellow pages - means there's a directory which contains phone numbers of people - so same with DNS<br>
 		DNS is like a giant phone book that takes a URL (like https://tryhackme.com/) & turns it into an IP address. <br>
         This means people don't have to remember IP addresses for their favorite websites
@@ -34,7 +34,7 @@
 	- so first server will check inside it's own directory whether that have or not , <br>
 		if server doesn't have it then u'll (client) get generic error , <br>
 		if server have `IP address` of that Domain Name then that Domain Name will get it's own `IP Address`
-	- Q : what is IP Address
+	- Q : what is IP Address ✔️
 		- Definition : on the internet , each devices (which are connected with internet) have their own unique `IP address` , <br>
 			in the corner of the world , any device which is connected to the internet , that device will have an unique `IP address`. <br>
 			Eg: web server also has it's own unique `IP address`
@@ -47,21 +47,33 @@
 		if the `IP address` of that Domain Name exists then we'll get the `IP address` of it
 2) Loading some content
     - here we'll see : as earlier said , u searched "tryhackme.com" - then the server got the IP address (of this domain name) <br>
-		but the content which will come in ur browser - Q : how that content will come ? <br>
-		content (HTML , CSS , JS, etc assets files..) , Q : how all these file will get loaded on the client machine
-    - so content loaded via a `HTTP GET request`
-    - Q : what is an HTTP GET request
-		- `GET request` : it's a type of HTTP verb/method
-		- it means to get the content from the server to the client machine
-		- `what is server & web server` : server one who `serves` , so here server is a web server , so server will serves to the `web`
-		- so when say to the server that bring a `index.html` file of that Domain Name then the server will send the`index.html` <br>
-			& it gets open inside the client machine , so this is work of `web server`
-		- so `HTTP GET requests` used to bring the resources/files/content <br>
-			from the server (whose has the `IP address` of that Domain Name) to the client machine
-		- Eg of HTTP GET request : <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
-			- it's a output of what content we got via HTTP GET request of neverssl.com
-			- wireshark - it's a free and open-source packet analyzer software.
-    - Q : what is Protocol & why HTTPS came
+		but the content which will come in ur browser <br>
+		Q : how that content will come ? - means content (HTML , CSS , JS, etc assets files..) <br>
+		how all these file will get loaded on the client machine ✔️ <br>
+		Ans : so content loaded via a `HTTP GET request`
+    - Q : what is an HTTP GET request ✔️
+		- `GET` request : it's a type of HTTP verb/method <br>
+			Q : what's verb ? ✔️<br>
+			Ans : means GET , POST = these are verbs <br>
+			Q : why HTTP comes with GET request ✔️<br>
+			Ans : cuz HTTP is a type of GET request - cuz we're talking about web <br>
+			Q : what's GET ✔️<br>
+			Ans : GET = means to get the content from the server to the client machine
+    - Q : what is server & web server ✔️<br>
+		Ans : server one who `serves` , <br>
+		Q : what things a server serves ✔️<br>
+		Ans : it'll not serves a plate of foods - so here "server" is a web server , so the server will serves to the `web` <br>
+			means it'll serves a web page
+        - so when we say to the server that bring a `index.html` file of that Domain Name - then the server will send the`index.html` <br>
+   			& it gets open inside the client machine , so this is a work of `web server`
+		- Q : How this working of web Server is done OR how the server able to send the index.html file to the client machine ✔️<br>
+			Ans : the web-server's working process done when we send a GET request
+    - so `HTTP GET requests` used to bring the resources/files/content <br>
+   		from the server (whose has the `IP address` of that Domain Name) to the client machine
+    - Eg of HTTP GET request : <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
+		- it's a output of what content we got via HTTP GET request of neverssl.com
+		- wireshark - it's a free and open-source packet analyzer software.
+    - Q : what is Protocol & why HTTPS came ✔️
 		- most of the websites now use HTTPS
 		- `HTTPS`  : it's a secure (encrypted) version of HTTP & it works 99% as HTTP but in secure way
 		- `HTTPS` : use TLS 1.3 encryption , if a Domain Name has less than TLS 1.3 `HTTPS` <br>then it's a vulnerability in order to communicate without : 
@@ -75,7 +87,7 @@
 			so that money goes to a different account number , so HTTP was not secure , that's why HTTPS came
 		- but HTTPS is not completely secure coz if it is so , then our job will not be there as a penetration tester , <br>
 			so nothing is completely secure but HTTPS is secure than HTTP
-    - Q : what is a web server
+    - Q : what is a web server ✔️
 		- it's like a software which responds to the HTTP/HTTPS requests
 		- means if u do GET request via either HTTP or HTTPS then a web server (which is a other party or a piece of a software) <br>
 			will responds to these HTTP/HTTPS requests
@@ -89,7 +101,7 @@
 			1) HTML - defines the structure of the page
 			2) CSS - make the page look fancy
 			3) JS - runs in the browser & allows u to make the pages dynamic & interactive
-		- Q : <br>1) What request verb/method is used to retrieve page content : `GET` <br>2) What port do web servers normally listen/runs on : `port 80`
+		- Q : <br>1) What request verb/method is used to retrieve page content ✔️ : `GET` <br>2) What port do web servers normally listen/runs on ✔️ : `port 80`
 
 ### More HTTP - Verbs/methods & requests formats
 - there are 9 different HTTP verbs are GET , POST & etc.
