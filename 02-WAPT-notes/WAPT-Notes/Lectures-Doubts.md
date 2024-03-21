@@ -15,7 +15,15 @@ Q : couldn't able to open this room because this room is private , so what shoul
 ## Lectures Doubts
 
 - Lecture 1
-    1. what's Penetration Testing
-       - Q : directory Traversal vulnerability happens due to misconfiguration of the website's web-server or due to misconfiguration of firewall ?
-    - general doubts
-        - Q : why we need OWASP or what if i don't follow OWASP OR importance of it
+```
+1) Q : what's Penetration Testing
+    - Q : directory Traversal vulnerability happens due to misconfiguration of the website's web-server
+        or due to misconfiguration of firewall ?
+- general doubts
+    - Q : why we need OWASP or what if i don't follow OWASP OR importance of it
+```
+- Lecture 3 : 
+```
+1) Finding the server
+
+```
