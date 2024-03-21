@@ -28,25 +28,27 @@
         Ans : DNS means like yellow pages - means there's a directory which contains phone numbers of people - so same with DNS<br>
 		DNS is like a giant phone book that takes a URL (like https://tryhackme.com/) & turns it into an IP address. <br>
         This means people don't have to remember IP addresses for their favorite websites
-    - so whenever you write a URL as Domain Name of that website & hit Enter then first goes DNS request to the server <br>
+    - so whenever you write a URL as Domain Name of that website & hit Enter then 1stly a DNS request will go to the server <br>
 		then server will check inside it's own directories whether this "tryhackme.com/" domain name have or not , <br>
 		so inside the server's directory , if server have it then server will translate it from the Domain Name into its IP address
 	- so first server will check inside it's own directory whether that have or not , <br>
 		if server doesn't have it then u'll (client) get generic error , <br>
 		if server have `IP address` of that Domain Name then that Domain Name will get it's own `IP Address`
 	- Q : what is IP Address
-		- Definition : on the internet , each internet connected devices have their own unique `IP address` , <br>
+		- Definition : on the internet , each devices (which are connected with internet) have their own unique `IP address` , <br>
 			in the corner of the world , any device which is connected to the internet , that device will have an unique `IP address`. <br>
 			Eg: web server also has it's own unique `IP address`
-		- it's look like this `100.70.172.11` aka `octet` - means this (`x.x.x.x`)
-		- so an `IP Address` is formed/contain/made of 4 groups of numbers. <br>
+		- it's look like this `100.70.172.11` aka `octet` - means 8-bit number i.e this (`x.x.x.x`)
+		- so an `IP Address` is formed/made of 4 groups of numbers. <br>
 			Eg : `100` - is 1st group , `70` is 2nd group , `172` is 3rd group & `11` is 4th group
 		- Range of each group of an `IP address` is `0 - 255` , will never see till 256 range , <br>
-			like in programming , array index starts from 0 , so it's also starts from `0`
+			like in programming , array index starts from 0 , so an IP address's range also starts from `0`
 	- this is how the process happens to find the server of that Domain Name , <br>
 		if the `IP address` of that Domain Name exists then we'll get the `IP address` of it
 2) Loading some content
-    - content (HTML , CSS , JS, etc assets files..) , how all these file will get loaded on the client machine
+    - here we'll see : as earlier said , u searched "tryhackme.com" - then the server got the IP address (of this domain name) <br>
+		but the content which will come in ur browser - Q : how that content will come ? <br>
+		content (HTML , CSS , JS, etc assets files..) , Q : how all these file will get loaded on the client machine
     - so content loaded via a `HTTP GET request`
     - Q : what is an HTTP GET request
 		- `GET request` : it's a type of HTTP verb/method
