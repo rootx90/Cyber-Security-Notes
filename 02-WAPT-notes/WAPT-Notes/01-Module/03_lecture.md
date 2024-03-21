@@ -35,9 +35,9 @@
 		if server doesn't have it then u'll (client) get generic error , <br>
 		if server have `IP address` of that Domain Name then that Domain Name will get it's own `IP Address`
 	- Q : what is IP Address ✔️
-		- Definition : on the internet , each devices (which are connected with internet) have their own unique `IP address` , <br>
-			in the corner of the world , any device which is connected to the internet , that device will have an unique `IP address`. <br>
-			Eg: web server also has it's own unique `IP address`
+		- Definition : on the internet , each devices (which are connected to the internet) have their own unique `IP address` , <br>
+			means in the corner of the world , any device which is connected to the internet , <br>
+			that device will have an unique `IP address`. Eg: web server also has it's own unique `IP address`
 		- it's look like this `100.70.172.11` aka `octet` - means 8-bit number i.e this (`x.x.x.x`)
 		- so an `IP Address` is formed/made of 4 groups of numbers. <br>
 			Eg : `100` - is 1st group , `70` is 2nd group , `172` is 3rd group & `11` is 4th group
@@ -47,8 +47,8 @@
 		if the `IP address` of that Domain Name exists then we'll get the `IP address` of it
 2) Loading some content
     - here we'll see : as earlier said , u searched "tryhackme.com" - then the server got the IP address (of this domain name) <br>
-		but the content which will come in ur browser <br>
-		Q : how that content will come ? - means content (HTML , CSS , JS, etc assets files..) <br>
+		but the content which will come in ur (client) browser <br>
+		Q : how that content will come in ur browser ? - means content (HTML , CSS , JS, etc assets files..) <br>
 		how all these file will get loaded on the client machine ✔️ <br>
 		Ans : so content loaded via a `HTTP GET request`
     - Q : what is an HTTP GET request ✔️
@@ -67,7 +67,7 @@
         - so when we say to the server that bring a `index.html` file of that Domain Name - then the server will send the`index.html` <br>
    			& it gets open inside the client machine , so this is a work of `web server`
 		- Q : How this working of web Server is done OR how the server able to send the index.html file to the client machine ✔️<br>
-			Ans : the web-server's working process done when we send a GET request
+			Ans : done when we (client) send a "GET request" to the server
     - so `HTTP GET requests` used to bring the resources/files/content <br>
    		from the server (whose has the `IP address` of that Domain Name) to the client machine
     - Eg of HTTP GET request : <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>

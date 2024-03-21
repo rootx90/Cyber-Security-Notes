@@ -25,5 +25,19 @@ Q : couldn't able to open this room because this room is private , so what shoul
 - Lecture 3 : 
 ```
 1) Finding the server
-
+2) Loading some content
+    Q : diff. b/w server vs web server 
+    Ans : https://www.perplexity.ai/search/difference-between-server-vM7DAFvPRterYLukvuiCGw
+        - Server: 
+            Imagine a server like a big box that stores and shares information. 
+            It's like a giant library that keeps books safe and lets people borrow them when needed.
+        - Web Server:
+            Now, think of a web server as a special type of server that focuses on websites.
+            It's like a library that specifically holds books about different topics that people can read online.
+        - Purpose:
+            A server can store all kinds of information, like books, 
+            while a web server is more like a library dedicated to online books (websites).
+        - Access:
+            Just like you need a library card to borrow books, computers need permission to access servers. 
+            Web servers are like libraries with online memberships for websites.
 ```
