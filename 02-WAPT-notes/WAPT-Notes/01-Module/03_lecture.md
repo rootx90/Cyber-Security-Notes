@@ -67,12 +67,14 @@
         - so when we say to the server that bring a `index.html` file of that Domain Name - then the server will send the`index.html` <br>
    			& it gets open inside the client machine , so this is a work of `web server`
 		- Q : How this working of web Server is done OR how the server able to send the index.html file to the client machine ✔️<br>
-			Ans : done when we (client) send a "GET request" to the server
+			Ans : done when we (client) send a "GET request" to the server <br>
+			so when we say to the server that "give that page" - then only the server will server will send to us (client) <br>
+			so the server automatically will not send anything to the client , so client have to do a GET request
     - so `HTTP GET requests` used to bring the resources/files/content <br>
    		from the server (whose has the `IP address` of that Domain Name) to the client machine
     - Eg of HTTP GET request : <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
-		- it's a output of what content we got via HTTP GET request of neverssl.com
-		- wireshark - it's a free and open-source packet analyzer software.
+		- it's a output of HTTP GET request of neverssl.com
+		- wireshark - it's a free & open-source packet analyzer software.
     - Q : what is Protocol & why HTTPS came ✔️
 		- most of the websites now use HTTPS
 		- `HTTPS`  : it's a secure (encrypted) version of HTTP & it works 99% as HTTP but in secure way
@@ -185,7 +187,7 @@
    - cuz in `POST` request , we need `body` cuz data goes to validate on the web server , so need `body`
 4) What's the status code for "i'm a teapot ?" <br>
 	Ans : `418`
-5) What status code will you get if you need to authenticate to access some content, and you're unauthenticated ?
+5) What status code will you get if you need to authenticate to access some content & you're unauthenticated ?
    - Ans : `401`
    - means you're access the web page which needs login & signup but you didn't have account of that website but u want to signup/authenticate
    - then no response we'll get from the server right now , so this will be shown on client side
