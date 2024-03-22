@@ -125,18 +125,21 @@
 	- conclusion : <br>
 		POST request : means the data will be send as a "POST" to the web server <br>
 		GET request : means the data will come as a "GET" from the web server
-- a HTTP request is divided into 2 parts i.e 1st `verb` & 2nd `path for the server`
-	- Eg : `GET /index.html` - means get the index.html from the web server , <br>
-		so atleast we need to tell the server that what we want to bring to the client machine that's why `path` need to define
-	- assume that the server is bringing the `index.html` file from it's `root` directory
-- headers
+- a HTTP request is divided into 2 parts i.e <br>
+	1st `verb` <br>
+	2nd `path` for the server
+	- Eg : `GET /index.html` - means get the index.html from the web server
+    	- so atleast we need to tell the server that what - we want to bring to the client machine that's why `path` need to define
+    	- "index.html" is inside the root path of the web server (not the linux root directory path) <br>
+			means bring the "index.html" from the web-server's root path - we're saying this to the server
+- `headers` of the request
 	- used to give more information about ur request
-	- information such as type of encoding, method, cookies & etc
+	- information such as which type of the request it's , type of encoding, method, cookies & etc
 - `body` of the request
 	- in `POST` request , `body` is important cuz a `post` request is not considered valid without `body`
-	- in `GET` request , `body` can be defined but generally the `server` skip/ignore it , <br>
-		so generally `body` will not come in `GET` request but even if it comes in `GET` request then the `server` will skip it
-- Eg - a GET request retrieving a simple js file <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
+	- in `GET` request , `body` can be defined but generally the `server` skip/ignore the `body` , <br>
+		means generally , `body` doesn't come in `GET` request but even if it comes in `GET` request then the `server` will skip it
+- Eg : a GET request retrieving a simple js file <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
     1) `GET /main.js HTTP/1.1` - means get the main.js file via using `HTTP` protocol
     2) `HOST: 192.168.170.129:8081`  - `192.168.170.129` -> it's a IP address & `8081` - is a port of the web server
     3) `Connection: keep-alive` - means keep the connection alive
