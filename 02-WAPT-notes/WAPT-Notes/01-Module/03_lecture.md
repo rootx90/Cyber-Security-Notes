@@ -9,6 +9,9 @@
 > 4) structure of a web request
 > 5) types of HTTP requests
 
+### Platform used
+- tryhackme.com
+
 ### Overview - web-fundamentals (of tryhackme.com)
 1) what's HTTP request , HTTP responses
 2) what's web server
@@ -91,26 +94,37 @@
 		- but HTTPS is not completely secure cuz if it is so , then our job will not be there in a company as a penetration tester , <br>
 			so nothing is completely secure but HTTPS is secure than HTTP
     - Q : what is a web server ✔️
-		- it's like a software which responds to the HTTP/HTTPS requests
-		- means if u do GET request via either HTTP or HTTPS then a web server (which is a other party or a piece of a software) <br>
-			will responds to these HTTP/HTTPS requests
+		- it's like a software which responds to the HTTP/HTTPS requests <br>
+			means if u do a GET request via either HTTP or HTTPS - in order to bring that content <br>
+			then a web server (which is a other party or a piece of a software) will responds to the HTTP/HTTPS requests
 		- Eg of Popular web servers : Apache , Nginx , IIS , etc
-		- bydefault `HTTP` runs on port 80 & `HTTPS` runs on port 443
-		- reference to understand `port` : [Networking For Cyber Security - EthicalSharmaji YT](https://www.youtube.com/playlist?list=PLHOJoqBk02jR2iH1EO2KB4-8kwcagCR0i)
+		- bydefault `HTTP` runs on port 80 & `HTTPS` runs on port 443 <br>
+			if u don't know about `port` - then see Networking Playlist : [Networking For Cyber Security - EthicalSharmaji YT](https://www.youtube.com/playlist?list=PLHOJoqBk02jR2iH1EO2KB4-8kwcagCR0i)
 		- Generally , most of the CTFs (Capture the Flag) are based on websites , <br>
-			which means if you get a open running web server on port 80 or port 443 , then u can attack & spread/exploit
-		- reference to understand CTF : OSCP playlist of EthicalSharmaji
-		- the actual content of the web page is normally a combination of HTML , CSS & JS
-			1) HTML - defines the structure of the page
-			2) CSS - make the page look fancy
-			3) JS - runs in the browser & allows u to make the pages dynamic & interactive
-		- Q : <br>1) What request verb/method is used to retrieve page content ✔️ : `GET` <br>2) What port do web servers normally listen/runs on ✔️ : `port 80`
+			which means if you get a open running web server on port 80 or port 443 , then u can attack & spread/exploit <br>
+			reference to understand CTF : OSCP playlist of EthicalSharmaji YT
+    - the actual content of the web page is normally a combination of (HTML , CSS & JS)
+        1) HTML - for the structure of the page
+   		1) CSS - make the page look fancy
+   		2) JS - runs in the browser & allows u to make the pages dynamic & interactive
+    - Q : 
+        1) What request verb/method is used to retrieve page content ✔️ : `GET`
+        2) What port do web servers normally listen/runs on ✔️ <br>
+			Ans : generally , web servers runs on `port 80`
 
 ### More HTTP - Verbs/methods & requests formats
-- there are 9 different HTTP verbs are GET , POST & etc.
-- refer HTTP verbs : [HTTP request methods - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
-- `GET` :  used to get the data from web server to the client machine
-- `POST` : used to take the data from the client machine to the web server like `contact form` & etc.
+- there are 9 different HTTP "verbs" aka methods , Eg : are GET , POST & etc. <br>
+	& each HTTP methods has different function <br>
+	refer HTTP verbs : [HTTP request methods - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+- GET vs POST request
+    - `GET` : used to retrieve/get the data from web server to the client machine
+    - `POST` : used to send the data from the client machine to the web server <br>
+    	Eg : adding a comment or contact form & etc. <br>
+		Eg : in the "feedback form" , u fill/write & click on "submit" btn - then the form is action i.e POST <br>
+    		so the request which goes i.e POST , not GET - cuz those input data goes inside server
+	- conclusion : <br>
+		POST request : means the data will be send as a "POST" to the web server <br>
+		GET request : means the data will come as a "GET" from the web server
 - a HTTP request is divided into 2 parts i.e 1st `verb` & 2nd `path for the server`
 	- Eg : `GET /index.html` - means get the index.html from the web server , <br>
 		so atleast we need to tell the server that what we want to bring to the client machine that's why `path` need to define
