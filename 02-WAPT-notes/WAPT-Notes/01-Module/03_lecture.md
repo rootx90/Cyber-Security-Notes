@@ -60,34 +60,35 @@
 			Q : what's GET ✔️<br>
 			Ans : GET = means to get the content from the server to the client machine
     - Q : what is server & web server ✔️<br>
-		Ans : server one who `serves` , <br>
+		Ans : server one who `serves` <br>
 		Q : what things a server serves ✔️<br>
 		Ans : it'll not serves a plate of foods - so here "server" is a web server , so the server will serves to the `web` <br>
 			means it'll serves a web page
         - so when we say to the server that bring a `index.html` file of that Domain Name - then the server will send the`index.html` <br>
-   			& it gets open inside the client machine , so this is a work of `web server`
+   			& it gets open inside the client machine , so this is a working of `web server`
 		- Q : How this working of web Server is done OR how the server able to send the index.html file to the client machine ✔️<br>
 			Ans : done when we (client) send a "GET request" to the server <br>
-			so when we say to the server that "give that page" - then only the server will server will send to us (client) <br>
+			so when we say to the server that "give that page" - only then the server will send content to us (client) <br>
 			so the server automatically will not send anything to the client , so client have to do a GET request
     - so `HTTP GET requests` used to bring the resources/files/content <br>
    		from the server (whose has the `IP address` of that Domain Name) to the client machine
     - Eg of HTTP GET request : <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
-		- it's a output of HTTP GET request of neverssl.com
+		- it's a output of "HTTP GET request" of neverssl.com - from client machine
 		- wireshark - it's a free & open-source packet analyzer software.
     - Q : what is Protocol & why HTTPS came ✔️
 		- most of the websites now use HTTPS
-		- `HTTPS`  : it's a secure (encrypted) version of HTTP & it works 99% as HTTP but in secure way
-		- `HTTPS` : use TLS 1.3 encryption , if a Domain Name has less than TLS 1.3 `HTTPS` <br>then it's a vulnerability in order to communicate without : 
-			1) Other parties being able to send the data
-			2) Other parties being able to modify the data
-		- in old protocols , data can be read (coz data goes in plain text & it wasn't encrypted) <br>
-			eg : HTTP protocol & data can be modified , so in old days , let's say we're using a packet sniffer tool (like Burp Suite) , <br>
-			so via using this tool , we can intercept/catch/snatch/attack/interrupt the request , we can modify
-		- Eg : let's say u're using banking website & you're transferring money in your account <br>
-			then we can change the account to a different one via packet sniffer tool by a attacker , <br>
-			so that money goes to a different account number , so HTTP was not secure , that's why HTTPS came
-		- but HTTPS is not completely secure coz if it is so , then our job will not be there as a penetration tester , <br>
+		- `HTTPS` : it's a secure (encrypted) version of HTTP & it works 99% same as HTTP but in secure way
+		- `HTTPS` : use TLS 1.3 encryption , if a Domain Name has less than TLS 1.3 `HTTPS` <br>
+			then it's a vulnerability in order to communicate without : 
+			1) Other parties/hacker being able to send the data
+			2) Other parties/hacker being able to modify the data
+		- in old protocols , data can be read (cuz data goes in plain text & data wasn't encrypted) <br>
+			eg : in HTTP protocol , data can be modified , so in old days , let's say a hacker using a packet sniffer tool (like Burp Suite) , <br>
+			so via using this tool , hacker can intercept/catch/snatch the request & he/she can modify the request
+		- Eg : let's say u're using banking website & u're transferring money in ur account <br>
+			then a attacker can change the A/C no. to a different one via packet sniffer tool , <br>
+			so that money goes to that different A/C no. , so HTTP was 0% secure - that's why HTTPS came
+		- but HTTPS is not completely secure cuz if it is so , then our job will not be there in a company as a penetration tester , <br>
 			so nothing is completely secure but HTTPS is secure than HTTP
     - Q : what is a web server ✔️
 		- it's like a software which responds to the HTTP/HTTPS requests
@@ -95,7 +96,7 @@
 			will responds to these HTTP/HTTPS requests
 		- Eg of Popular web servers : Apache , Nginx , IIS , etc
 		- bydefault `HTTP` runs on port 80 & `HTTPS` runs on port 443
-		- reference to understand `port` : [Networking For Cyber Security - EthicalSharmaji - YT](https://www.youtube.com/playlist?list=PLHOJoqBk02jR2iH1EO2KB4-8kwcagCR0i&ab_channel=EthicalSharmaji)
+		- reference to understand `port` : [Networking For Cyber Security - EthicalSharmaji YT](https://www.youtube.com/playlist?list=PLHOJoqBk02jR2iH1EO2KB4-8kwcagCR0i)
 		- Generally , most of the CTFs (Capture the Flag) are based on websites , <br>
 			which means if you get a open running web server on port 80 or port 443 , then u can attack & spread/exploit
 		- reference to understand CTF : OSCP playlist of EthicalSharmaji
@@ -115,10 +116,10 @@
 		so atleast we need to tell the server that what we want to bring to the client machine that's why `path` need to define
 	- assume that the server is bringing the `index.html` file from it's `root` directory
 - headers
-	- used to give more information about your request
+	- used to give more information about ur request
 	- information such as type of encoding, method, cookies & etc
 - `body` of the request
-	- in `POST` request , `body` is important coz a `post` request is not considered valid without `body`
+	- in `POST` request , `body` is important cuz a `post` request is not considered valid without `body`
 	- in `GET` request , `body` can be defined but generally the `server` skip/ignore it , <br>
 		so generally `body` will not come in `GET` request but even if it comes in `GET` request then the `server` will skip it
 - Eg - a GET request retrieving a simple js file <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
@@ -143,12 +144,12 @@
 	- it follows a basic structure of any HTTP request
     1) 1st line - `describes the status` : means the request is made by user <br>
 		whether that request can be fulfilled by a web server or not, breakdown of status code , 404 : Not Found (general) `v imp ⭐`
-        - `Note` : this status code breakdown is `v imp` till life time if you're doing debugging , webdev, security, 
+        - `Note` : this status code breakdown is `v imp` till life time if u're doing debugging , webdev, security, 
         - `100 - 199` : used to give basic information
         - `200 - 299` : Successes response of GET request (200 OK is the "normal" response for a GET request)
         - if u get the success response of a GET request then status code will be `200` normally otherwise b/w `200 - 299` can be range
         - `300 - 399` : Redirects (the information you want is elsewhere)
-        - Eg : let's u're opening/accessing a twitter page but you're not login then twitter will redirect u to it's login page
+        - Eg : let's u're opening/accessing a twitter page but u're not login then twitter will redirect u to it's login page
         - so in this case , generally status code is `302` 
         - `400 - 499` : contain always client side errors (browser based)
         - Eg : you did something wrong , like asking for something that doesn't exist on the server , requesting for wrong thing , so u'll get 404 status code
@@ -180,16 +181,16 @@
 ### Ques
 1) Q : What verb would be used for a login ?<br>
 	Ans : `POST`
-2) Q : What verb would be used to see your bank balance once you're logged in ? <br>
+2) Q : What verb would be used to see ur bank balance once u're logged in ? <br>
 	Ans : `GET` cuz we'll get the page from the web server , so it's `GET` request 
 3) Q : Does the body of a GET request matter ? yea/Nay
    - Ans : `Nay`
    - cuz in `POST` request , we need `body` cuz data goes to validate on the web server , so need `body`
 4) What's the status code for "i'm a teapot ?" <br>
 	Ans : `418`
-5) What status code will you get if you need to authenticate to access some content & you're unauthenticated ?
+5) What status code will you get if you need to authenticate to access some content & u're unauthenticated ?
    - Ans : `401`
-   - means you're access the web page which needs login & signup but you didn't have account of that website but u want to signup/authenticate
+   - means u're access the web page which needs login & signup but you didn't have account of that website but u want to signup/authenticate
    - then no response we'll get from the server right now , so this will be shown on client side
    - so client side means `400` series , so for unauthorized status code - `401`
 

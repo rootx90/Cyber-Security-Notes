@@ -6,10 +6,33 @@
 
 ## related to Course
 ```
-Q : couldn't able to open this room because this room is private , so what should i do sir , let me know
+Q : couldn't able to open this room because this room is private
     Even i open the BurpSuite room in tryhackme , BurpSuite Room section is divided into individual rooms based on topics 
-    & only starting first 2 rooms are free & rest are paid to do, - This is the issue i am facing 
-    So like should I spend money on these or not or is there any alternatives?
+    & only starting first 2 rooms are free & rest are paid to do, This is the issue i am facing 
+
+    in tryhackme , i found these room for web fundamentals
+    1. https://tryhackme.com/room/howwebsiteswork
+    2. https://tryhackme.com/room/httpindetail
+    3. https://tryhackme.com/room/dnsindetail
+    4. https://tryhackme.com/room/puttingitalltogether
+    Note : the room for webfundamentals which u showed is not same as i found in tryhackme even after searching on search bar
+
+    rooms for BurpSuite
+    5. https://tryhackme.com/r/room/burpsuitebasics
+    6. https://tryhackme.com/r/room/burpsuiterepeater
+    Note : further rooms for BurpSuite are paid 
+
+    Current Status About Me : i started your WAPT playlist & i am thinking to do those stuff 
+        what i can do until i don't get reply from me , so waiting for reply 
+
+    So like should I spend money on these or not or should i go for alternatives
+Ans : you can buy tryhackme subscription for 1 month and do these paid rooms.It will be worth it.
+    
+    Q : Ok sir but in tryhackme , there are 2 different rooms for web fundamentals
+       1. https://tryhackme.com/path/outline/web (i think this is a complete course of WAPT according to your WAPT lectures)
+       2. https://tryhackme.com/r/room/webfundamentals (this is a individual module)
+
+    Which one should I buy for 1month subscription? Let me know.
 ```
 
 ## Lectures Doubts
@@ -40,4 +63,6 @@ Q : couldn't able to open this room because this room is private , so what shoul
         - Access:
             Just like you need a library card to borrow books, computers need permission to access servers. 
             Web servers are like libraries with online memberships for websites.
+    Q : why HTTP comes with GET request
+    Q : diff b/w sniffing vs spoofing
 ```
