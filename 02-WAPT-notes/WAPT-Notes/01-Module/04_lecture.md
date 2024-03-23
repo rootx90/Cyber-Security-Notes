@@ -1,14 +1,18 @@
 #WAPT-notes  
 
-### Overview
-- This Topic is vv imp for session management⭐
-- whatever attacks are done without cookies are rare
-- Cookies most important for session management ⭐
-
+---
 ### what we'll learn
 1) what are cookies
 2) usecase of cookies
 3) how to manipulate cookies with practical
+
+### Platform used
+- tryhackme.com
+
+### Overview
+- This Topic is vv imp for session management⭐
+- whatever attacks are done without cookies are rare
+- Cookies most important for session management ⭐
 
 ---
 

@@ -206,21 +206,43 @@
 
 ---
 
-### Ques
-1) Q : What verb would be used for a login ?<br>
+### Ques (tryhackme - web-fundamentals)
+> Module : More HTTP - Verbs/methods & requests formats
+- Q : What verb would be used for a login ?<br>
 	Ans : `POST`
-2) Q : What verb would be used to see ur bank balance once u're logged in ? <br>
-	Ans : `GET` cuz we'll get the page from the web server , so it's `GET` request 
-3) Q : Does the body of a GET request matter ? yea/Nay
-   - Ans : `Nay`
-   - cuz in `POST` request , we need `body` cuz data goes to validate on the web server , so need `body`
-4) What's the status code for "i'm a teapot ?" <br>
+	- Reason : why POST request
+		- cuz in order to login , as a user (client) - we need to send some data/credentials to the server <br>
+			means when we fill the username & password - then click on "submit" btn <br>
+			then these data will go to the server & then only the server will be able to match the data
+		- if we directly say "i want to login" - then the server can give "login page" <br>
+			but when u put credentials - then only u can be able to login
+  		- conclusion : u need to send some data (like username + password OR OTP for login) to the server <br>
+			so these sort of data will go as a POST request - that's why that request would be POST
+- Q : What verb would be used to see ur bank balance once u're logged in ? <br>
+	Ans : `GET` cuz we'll get the page from the web server , so it's `GET` request
+	- Reason : why GET request
+		- after u logged in & u want to check ur bank balance - so u'll want "bank balance" from the server <br>
+			i.e "give me a page which shows my bank balance" <br>
+			so behind the scene , a GET request will go from client machine to the server
+		- & u can check it via "inspect tool" <br>
+			Advice : do this - then only u can understand properly
+- Q : Does the body of a GET request matter ? yea/Nay
+    - Ans : `Nay` <br>
+   	- Reason : why No
+       	- cuz in `POST` request , data which is in `body` section - that data goes to validate on the server <br>
+			so in this situation , data always come inside `body` section - that's why the request is POST request
+		- in GET request , put data inside `body` section as much as u want - it doesn't matter
+- Q : What's the status code for "i'm a teapot ?" <br>
 	Ans : `418`
-5) What status code will u get if u need to authenticate to access some content & u're unauthenticated ?
-   - Ans : `401`
-   - means u're access the web page which needs login & signup but u didn't have account of that website but u want to signup/authenticate
-   - then no response we'll get from the server right now , so this will be shown on client side
-   - so client side means `400` series , so for unauthorized status code - `401`
+- Q : What status code will u get if u need to authenticate to access some content & u're unauthenticated ?
+    - Ans : `401`
+    - Reason : why 401
+        - means u're access the web page which needs login & signup <br>
+	   		but u didn't have account of that website but u want to signup/authenticate
+        - Q : 1st we'll see where we made the mistake <br>
+	   		Ans: on client side - means we don't have credentials
+		- so no response we'll get from the server right now - so this mistake will be shown on client side <br>
+  			client side means `400` series & for unauthorized status code - `401`
 
 ---
 
