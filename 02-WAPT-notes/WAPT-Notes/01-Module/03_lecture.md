@@ -139,16 +139,17 @@
 	- in `POST` request , `body` is important cuz a `post` request is not considered valid without `body`
 	- in `GET` request , `body` can be defined but generally the `server` skip/ignore the `body` , <br>
 		means generally , `body` doesn't come in `GET` request but even if it comes in `GET` request then the `server` will skip it
-- Eg : a GET request retrieving a simple js file <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
-    1) `GET /main.js HTTP/1.1` - means get the main.js file via using `HTTP` protocol
-    2) `HOST: 192.168.170.129:8081`  - `192.168.170.129` -> it's a IP address & `8081` - is a port of the web server
+- Eg : a GET request retrieving a simple js file <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-1-M1.jpg" alt="Pic 1" width="600"/>
+    1) `GET /main.js HTTP/1.1` - means we're saying to the that get the main.js file via using `HTTP` protocol
+    2) `HOST: 192.168.170.129:8081` - `192.168.170.129` -> it's a IP address & `8081` - is a port of the web server
     3) `Connection: keep-alive` - means keep the connection alive
-    4) `user Agent` - tells the browser & it's version like chrome browser is `80` version & sometimes it tells the OS with which bit the user using (which is a loophole) 
+    4) `user Agent` - tells about the browser (details + it's version) & sometimes it tells OS details (which is a loophole) of the client machine 
     5) `Accept: /` : means we can access from anywhere
-    6) `Referer` : means from it's originating
-    7) `Accept-Encoding: gzip, deflate` - means types of encoding which can be accepted
-    8) `Accept-language` - means types of languages which are define only those can be accepted
-    - so from this `header` , u can know that the request is done from (Chrome version 80, from window 10) , so this info is useful to use for forensics & analyzing packet captures
+    6) `Referer: http://192.168.170.129:8081` : means from it's originating
+    7) `Accept-Encoding: gzip, deflate` - means types of encoding which can be accepted by the client machine
+    8) `Accept-language` - means types of languages (which are define) only those can be accepted by the client machine
+    - so from this `header` , u can know that the request is created from this (Chrome version 80, from window 10) ,<br>
+		so this info is useful to use for forensics & analyzing packet captures
 - [ ] Practical Task 
 	- STEP 1 : open any website like `demo.testfire.net`
 	- STEP 2 : press F12 key > network tab > select `all` tab
@@ -189,7 +190,7 @@
 			- `Date` : means showing the `client machine date & time` in real time who accessed the website
 		- it's v imp cuz it tells mostly the web server & cookies of that website which you can use for testing such recession management , attacks , etc
 		- it's also have a `body`
-		- Eg : response to the GET request <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-0-M1.jpg" alt="Pic 1" width="600"/>
+		- Eg : response to the GET request <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-2-M1.jpg" alt="Pic 1" width="600"/>
 			- so for GET request , we'll get normal web content or information such as JSON
 			- for POST request , information may be a status code or same as GET request
 

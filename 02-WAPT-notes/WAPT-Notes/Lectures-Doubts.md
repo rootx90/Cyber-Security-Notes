@@ -65,4 +65,23 @@ Ans : you can buy tryhackme subscription for 1 month and do these paid rooms.It 
             Web servers are like libraries with online memberships for websites.
     Q : why HTTP comes with GET request
     Q : diff b/w sniffing vs spoofing
+
+### More HTTP - Verbs/methods & requests formats
+    Q : why body section doesn't come in GET request 
+        Ans : 
+    Q : when body section comes with GET request - then why body section is skipped by the server
+        Ans : 
+    Q : in which case , body section will come with GEt request
+        Ans : 
+
+    Q : why body section will comes with POST request to the server
+        Ans : cuz eg : we're loginIn instagram , so this request will be POST request 
+            & whatever u filled inside the loginIn page - will be considered as sensitive data
+            that's why that data comes inside body section
+            request = POST request + data comes inside = body section => that's why body section comes with POST request
+    
+    Q : define Accept-Encoding in HTTP request
+        Ans: https://www.perplexity.ai/search/whats-AcceptEncoding-in-vqQ.HNktRta4Wf0N6wrERQ
+    Q : define Accept-language in HTTP request
+        Ans: https://www.perplexity.ai/search/whats-Acceptlanguage-in-vqQ.HNktRta4Wf0N6wrERQ
 ```
