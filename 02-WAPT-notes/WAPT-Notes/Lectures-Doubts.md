@@ -84,4 +84,7 @@ Ans : you can buy tryhackme subscription for 1 month and do these paid rooms.It 
         Ans: https://www.perplexity.ai/search/whats-AcceptEncoding-in-vqQ.HNktRta4Wf0N6wrERQ
     Q : define Accept-language in HTTP request
         Ans: https://www.perplexity.ai/search/whats-Acceptlanguage-in-vqQ.HNktRta4Wf0N6wrERQ
+
+- Responses
+    Q : 
 ```

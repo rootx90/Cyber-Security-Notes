@@ -31,7 +31,7 @@
         Ans : DNS means like yellow pages - means there's a directory which contains phone numbers of people - so same with DNS<br>
 		DNS is like a giant phone book that takes a URL (like https://tryhackme.com/) & turns it into an IP address. <br>
         This means people don't have to remember IP addresses for their favorite websites
-    - so whenever you write a URL as Domain Name of that website & hit Enter then 1stly a DNS request will go to the server <br>
+    - so whenever u write a URL as Domain Name of that website & hit Enter then 1stly a DNS request will go to the server <br>
 		then server will check inside it's own directories whether this "tryhackme.com/" domain name have or not , <br>
 		so inside the server's directory , if server have it then server will translate it from the Domain Name into its IP address
 	- so first server will check inside it's own directory whether that have or not , <br>
@@ -99,9 +99,9 @@
 			then a web server (which is a other party or a piece of a software) will responds to the HTTP/HTTPS requests
 		- Eg of Popular web servers : Apache , Nginx , IIS , etc
 		- bydefault `HTTP` runs on port 80 & `HTTPS` runs on port 443 <br>
-			if u don't know about `port` - then see Networking Playlist : [Networking For Cyber Security - EthicalSharmaji YT](https://www.youtube.com/playlist?list=PLHOJoqBk02jR2iH1EO2KB4-8kwcagCR0i)
+			if u don't know about `port` - then see Networking Playlist : [Networking For Cyber Security - EthicalSharmaji YT](https://www.utube.com/playlist?list=PLHOJoqBk02jR2iH1EO2KB4-8kwcagCR0i)
 		- Generally , most of the CTFs (Capture the Flag) are based on websites , <br>
-			which means if you get a open running web server on port 80 or port 443 , then u can attack & spread/exploit <br>
+			which means if u get a open running web server on port 80 or port 443 , then u can attack & spread/exploit <br>
 			reference to understand CTF : OSCP playlist of EthicalSharmaji YT
     - the actual content of the web page is normally a combination of (HTML , CSS & JS)
         1) HTML - for the structure of the page
@@ -143,7 +143,8 @@
     1) `GET /main.js HTTP/1.1` - means we're saying to the that get the main.js file via using `HTTP` protocol
     2) `HOST: 192.168.170.129:8081` - `192.168.170.129` -> it's a IP address & `8081` - is a port of the web server
     3) `Connection: keep-alive` - means keep the connection alive
-    4) `user Agent` - tells about the browser (details + it's version) & sometimes it tells OS details (which is a loophole) of the client machine 
+    4) `user Agent` <br>
+		tells about the browser (details + it's version) & sometimes it tells OS details (which itself is a "finding") of the client machine 
     5) `Accept: /` : means we can access from anywhere
     6) `Referer: http://192.168.170.129:8081` : means from it's originating
     7) `Accept-Encoding: gzip, deflate` - means types of encoding which can be accepted by the client machine
@@ -152,47 +153,56 @@
 		so this info is useful to use for forensics & analyzing packet captures
 - [ ] Practical Task 
 	- STEP 1 : open any website like http://demo.testfire.net
-	- STEP 2 : press F12 key > network tab > select `all` tab
-	- STEP 3 : reload the page again & you'll get all the content of that website , which means that what are the files which required to load that page completely
-	- STEP 4 : click on a `demo.testfire.net` file > `Headers` , just look at the things
+	- STEP 2 : press F12 key -> network tab -> select `all` tab
+	- STEP 3 : reload the page again , output : u'll get all the content of that website <br>
+		means those are the files which are required to load that page completely
+	- STEP 4 : click on a `demo.testfire.net` file -> `Headers` , just look at the things
 		- in General , u can see `Request URL` , `Request Method`, `status code`, `remote address`, `referrer policy`
-		- in Request Headers , u can see `Accept` , `Accept-Encoding` , `Accept-language`, `Cache-Control`, `Cookie`, `Host`, `User-Agent`
+		- in "Request Headers" , u'll see `Accept` , `Accept-Encoding` , `Accept-language`, `Cache-Control`, `Cookie`, `Host`, `User-Agent`
 - Responses
-	- Definition : means when we request from the web server then we get the response
+	- Definition : means when we request from the web server then we get a response
 	- it follows a basic structure of any HTTP request
-    1) 1st line - `describes the status` : means the request is made by user <br>
-		whether that request can be fulfilled by a web server or not, breakdown of status code , 404 : Not Found (general) `v imp ⭐`
-        - `Note` : this status code breakdown is `v imp` till life time if u're doing debugging , webdev, security, 
-        - `100 - 199` : used to give basic information
-        - `200 - 299` : Successes response of GET request (200 OK is the "normal" response for a GET request)
-        - if u get the success response of a GET request then status code will be `200` normally otherwise b/w `200 - 299` can be range
-        - `300 - 399` : Redirects (the information you want is elsewhere)
-        - Eg : let's u're opening/accessing a twitter page but u're not login then twitter will redirect u to it's login page
-        - so in this case , generally status code is `302` 
-        - `400 - 499` : contain always client side errors (browser based)
-        - Eg : you did something wrong , like asking for something that doesn't exist on the server , requesting for wrong thing , so u'll get 404 status code
-        - it is mostly useful for debugging
-        - `500 - 599` : server errors
-        - Eg : The server tried, but something went wrong on their side like `Bad Gateway - status code 502`
-        - refer for more : [HTTP response status codes - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-	2) Response Headers `(v imp ⭐)`
-		- STEP 1 : open any website like `demo.testfire.net`
-		- STEP 2 : press F12 key %3E network tab > select `all` tab
-		- STEP 3 : reload the page again & you'll get all the content of that website , which means that what are the files which required to load that page completely
-		- STEP 4 : click on a `demo.testfire.net` file > `Headers` tab , in "Response Headers"
-			- `HTTP/1.1` - means u requested for a page from the server & the server have that page , status code got `200 OK`
-			- `Server` - Apache-Coyote/1.1 - it's also considered as `finding low vulnerability` cuz  it's showing this server & version of it 1.1
-				- this website is vulnerable that's why we're `server` showing
-				- otherwise strong website doesn't show 
-				- u can check in `bug bounty` also due to which you can get the money like `50$` , `100$` for finding this issue only
-			- `Content-Type: text/html;charset-150-8859-1` - means the data going to the server in the form of text & html form
-			- `Transfer-Encoding`
-			- `Date` : means showing the `client machine date & time` in real time who accessed the website
-		- it's v imp cuz it tells mostly the web server & cookies of that website which you can use for testing such recession management , attacks , etc
-		- it's also have a `body`
-		- Eg : response to the GET request <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-2-M1.jpg" alt="Pic 1" width="600"/>
-			- so for GET request , we'll get normal web content or information such as JSON
-			- for POST request , information may be a status code or same as GET request
+    1) 1st line - describes the `status` : means the request (which is made by user) whether that request can be <br>
+		fulfilled by a web server or not , eg : 404 - Not Found (general) 
+        - A basic breakdown of the status code `v imp ⭐` <br>
+			`Note ✅` : this status code breakdown is `v imp` till life time if u're doing debugging , webdev, security, etc
+			- `100 - 199` : used to give basic information
+            - `200 - 299` : 
+                - Successes response of GET request (200 OK is the "normal" response for a GET request)
+				- if u get the success response of a GET request then status code will be `200` normally <br>
+					otherwise b/w `200 - 299` can be range
+            - `300 - 399` : Redirects (the information u want is elsewhere)
+                - Eg : let's u're opening/accessing a twitter page but u're not login then twitter will redirect u to it's login page <br>
+    				so in this case , generally status code is `302` 
+            - `400 - 499` : contain always client side errors (browser based)
+                - Eg : u did something wrong - like asking for something <br>
+    				that doesn't exist on the server (means requesting for wrong thing) so u'll get 404 status code
+                - it is mostly useful for debugging
+            - `500 - 599` : server errors
+                - Eg : The server tried, but something went wrong on their side like "Bad Gateway - status code 502"
+            - refer for more : [HTTP response status codes - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+  	2) Response Headers `(v imp ⭐)`
+    	- STEP 1 : open any website like `demo.testfire.net`
+    	- STEP 2 : press F12 key -> network tab -> select `all` tab
+    	- STEP 3 : reload the page again & u'll get all the content of that website <br>
+			which means those are the files which are required to load that page completely
+    	- STEP 4 : click on a `demo.testfire.net` file -> `Headers` tab , in "Response Headers"
+        	- `HTTP/1.1 200 OK` - means u requested for a page from the server <br>
+				& the server have that page , so status code got `200 OK`
+        	- `Server: Apache-Coyote/1.1` - it's also considered as `low vulnerability finding` <br>
+				cuz it's showing (type of server & tha server's version 1.1) <br>
+				this website is vulnerable that's why it's showing (the server & it's version) <br>
+				otherwise strong website doesn't show 
+				- also u can check in `bug bounty` due to which u can get the money like `50$` , `100$` for finding only this issue 
+    		- `Content-Type: text/html;charset-150-8859-1` - means the data going to the server in the form of text & html form
+    		- `Transfer-Encoding`
+    		- `Date` : means showing the `client machine date & time` in real time who accessed the website
+    	- it's v imp cuz a vulnerable website's shows mostly (type of server & cookies of that website) <br>
+			which u can use for testing such session management , attacks , etc
+    	- it's also have a `body`
+    	- Eg : response to the GET request <br><img src="../../notes-pics/01-Module/03_lecture/03_lecture-2-M1.jpg" alt="Pic 1" width="600"/>
+    		- so for GET request , we'll get normal web content or information such as JSON
+    		- for POST request , information may be a status code or same as GET request
 
 ---
 
@@ -206,9 +216,9 @@
    - cuz in `POST` request , we need `body` cuz data goes to validate on the web server , so need `body`
 4) What's the status code for "i'm a teapot ?" <br>
 	Ans : `418`
-5) What status code will you get if you need to authenticate to access some content & u're unauthenticated ?
+5) What status code will u get if u need to authenticate to access some content & u're unauthenticated ?
    - Ans : `401`
-   - means u're access the web page which needs login & signup but you didn't have account of that website but u want to signup/authenticate
+   - means u're access the web page which needs login & signup but u didn't have account of that website but u want to signup/authenticate
    - then no response we'll get from the server right now , so this will be shown on client side
    - so client side means `400` series , so for unauthorized status code - `401`
 
