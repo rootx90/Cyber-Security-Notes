@@ -151,14 +151,14 @@
     - so from this `header` , u can know that the request is created from this (Chrome version 80, from window 10) ,<br>
 		so this info is useful to use for forensics & analyzing packet captures
 - [ ] Practical Task 
-	- STEP 1 : open any website like `demo.testfire.net`
+	- STEP 1 : open any website like http://demo.testfire.net
 	- STEP 2 : press F12 key > network tab > select `all` tab
 	- STEP 3 : reload the page again & you'll get all the content of that website , which means that what are the files which required to load that page completely
 	- STEP 4 : click on a `demo.testfire.net` file > `Headers` , just look at the things
 		- in General , u can see `Request URL` , `Request Method`, `status code`, `remote address`, `referrer policy`
 		- in Request Headers , u can see `Accept` , `Accept-Encoding` , `Accept-language`, `Cache-Control`, `Cookie`, `Host`, `User-Agent`
 - Responses
-	- `Define` : means when we request from the web server then we get the response
+	- Definition : means when we request from the web server then we get the response
 	- it follows a basic structure of any HTTP request
     1) 1st line - `describes the status` : means the request is made by user <br>
 		whether that request can be fulfilled by a web server or not, breakdown of status code , 404 : Not Found (general) `v imp ⭐`
