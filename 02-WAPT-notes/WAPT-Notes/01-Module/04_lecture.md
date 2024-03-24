@@ -2,9 +2,14 @@
 
 ---
 ### what we'll learn
-1) what are cookies
-2) usecase of cookies
-3) how to manipulate cookies with practical
+> Lecture Name : Web Fundamentals #2 What are cookies? Explained in detail | Practical Demo | HTTPOnly, Secure Flag
+> 1) what are cookies
+> 2) Purpose/usage of Cookies
+> 3) why cookies ? or importance of it
+> 4) for what purpose Using Cookies
+> 5) Manipulating Cookies - how u can manipulate cookies
+> 6) Alternatives - useful to know
+> 7) More on Cookies
 
 ### Platform used
 - tryhackme.com
@@ -15,7 +20,6 @@
 - Cookies most important for session management ⭐
 
 ---
-
 
 ### 1. What are Cookies
 - Cookies are small bits of data which is stored in the browser
