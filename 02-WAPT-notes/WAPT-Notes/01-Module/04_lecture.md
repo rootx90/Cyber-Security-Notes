@@ -112,13 +112,16 @@
 		- means attacks which are related to JS like `document.cookie()` (is a payload) <br>
 			so JS & XSS (Cross site scripting) both have a payload that can't be executed 
 		- means stealing cookies via XSS is not possible , if u set/define the cookie as `HttpOnly` attribute
-- Q : where cookies are sent
+- Q : where cookies are sent ✔️
 	- there are 2 attributes i.e `Domain` & `Path`
-	- Eg of `Domain` : if u have an webapp as xyzz.com , so value of `Domain` attribute must be define/set as xyzz.com <br>
-		or u can set the subdomain also but if the website is xyzz.com but value of `Domain` attribute set as <br>
+	- Eg of `Domain` attribute : 
+		<br>- if u have an webapp as xyzz.com - then u can define/set the value of `Domain` attribute must be as xyzz.com <br>
+		or u can set the subdomain also 
+		<br>- but if the website is xyzz.com but value of `Domain` attribute set as <br>
 		something else then its insecure configuration
-	- Eg of `Path` : only define/set the path of ur application like `/docs` or `/docs/web` , etc <br>
-		but path is define as empty like this `/` then this also not good which shows insecure configuration
+	- Eg of `Path` attribute : 
+		<br>- only define/set the path of ur application like `/docs` or `/docs/web` , etc 
+		<br>- but path is define as empty like this `/` (aka "%x2F") then this also not good which shows insecure configuration
 	- `SameSite` attribute of cookies
 		- used to prevent CSRF (Cross-Site Request Forgery) attack
 		- Eg : if u're logged-in in a webapp & u got the link from somewhere or someone send that & <br>
@@ -127,15 +130,22 @@
 		- so via CSRF attack , attacker can make u to perform unintended actions
 		- so if there is `SameSite` attribute defined to the cookie then attacker can't do anything
 	
-### Tasks
+### Homework
 - see more on `SameSite` attribute , http cookie
 
-### Practical Tasks
+### Practical Work : how to see a cookie of a website
 
 - STEP 1 : open demo.testfire.net -> press F12 -> refresh the page again
-- STEP  2 : `application` tab -> inside storage - Cookies 
-	- Eg of Cookie : u'll find the cookies of this website as this ![[WAPT-lecture-4-0.jpg]]
-	- if u see the `Path` is empty which means this webapp is vulnerable , so `Path`  shouldn't be empty ✔️
-	- but this webapp set the `HttpOnly` & `Secure` attribute inside the cookie which is good✔️
-	- this webapp doesn't define `SameSite` attribute , so we can perform crsf attack
+- STEP 2 : `application` tab -> inside storage - Cookies 
+	- Eg of Cookie : u'll find the cookies of this website as this <br><img src="../../notes-pics/01-Module/04_lecture/04_lecture-0-M1.jpg" alt="Pic 1" width="500"/>
+	- in Pic , 
+		<br>- if u see the `Path` is empty which means this webapp is vulnerable , so `Path`  shouldn't be empty
+		<br>- but this webapp set the `HttpOnly` & `Secure` attributes flags inside the cookie which is good ✔️
+	- this webapp doesn't define `SameSite` attribute , so we can perform CSRF attack
+	- Conclusion : this is how we can see the cookie of a website
+- STEP 3 : u can see "Local Storage" & "Session Storage"
 
+---
+
+### End of the lecture (Doubts)
+- Practical demo on CSRF : https://www.youtube.com/watch?v=AHV9ThkRT9w&ab_channel=SpinTheHack
