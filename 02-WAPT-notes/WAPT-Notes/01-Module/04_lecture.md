@@ -61,23 +61,24 @@
 					`Set-Cookie` header comes inside `Response-Headers` <br>- & we can define/set the cookies via JS inside the browser
 
 ### 4. for what purpose Using Cookies
-- when u login to a webApp , then u'll get `a Session Token`
-- This Session Token helps/allows the web server to identify that request is done by u
-- Eg of importance of a Session Token ⭐
+- when u login to a webApp , then u'll get `a Session Token` <br>
+	this Session Token helps/allows the web server to identify that request is done by u
+- Eg of importance of a Session Token 
 	- let's say u're logged-in in amazon webapp & at this time , on the web server , multiple requests coming simultaneously <br>
 		& many customers also logged-in on amazon webapp
-	- so then how a web server will identify that requests came from ur side i.e via Cookies ✔️
-	- that's why cookies are extremely imp cuz only the cookies helps the web server to identify that the requests are send from u
-- what happen if someone steal ur session token
-	- Eg : let's say ur if these cookies (which are maintained by the browser) steal by someone <br>
-		(via Man-In-the-middle-attack - burp suite , so we can intercept if u & someone are on the same internet connection)
+	- so then how a web server will identify that request came from ur side i.e via Cookies ✔️ <br>
+		that's why cookies are extremely imp cuz only the cookies helps the web server to identify <br>
+		that the request is send from ur side & other requests are of someone
+- Q : what happen if someone steal ur session-token/cookies (which is maintained by ur browser) ✔️
+	- Eg : let's say if ur cookies steal by someone (via Man-In-the-middle-attack - burp suite , <br>
+		so a attacker can intercept if u & someone are on the same internet connection)
 	- so if someone steal all of ur cookies via MITM (man in the middle attack) then the web server will think <br>
-		that request has been done by someone (who looks like u) but u didn't done any request
-	- so this how u can impersonate (means actually u're not that person <br>
-		but u're showing urself as him - means faking/pretending) to the web server ✔️
+		that request has been done by someone (who looks like u) - but actually u didn't done any request
+	- so this how u can impersonate (means actually u're not that person but u're showing urself as him - means faking/pretending) <br>
+		to the web server
 
 ### 5. Manipulating Cookies - how u can manipulate cookies
-- STEP 1 : open the browser dev tool > application tab > Storage section
+- STEP 1 : open the browser dev tool -> application tab -> Storage section
 - we can also create our custom cookie
 
 ### 6. Alternatives - useful to know
@@ -85,23 +86,30 @@
 
 ### 7. More on Cookies
 - reference : [Using HTTP cookies - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+- Cookies are mainly used for 3 purposes:
+    1) Session Management : logins , shopping carts , etc
+    2) Personalization : user preference , themes , etc
+    3) Tracking : Recording & analyzing user behavior
+	- Conclusion : anything information which is necessary for the server to remember <br>
+		that's why cookies being made to help the server ✔️
 - Define the lifetime of a cookie
 	- `Set-Cookie: id=a3fWa; Expires=Thu, 31 Oct 2021 07:28:00 GMT;`
-	- this is define by a web server automatically 
-	- but if u're deleting cookies manually then this date & time doesn't mean anything
-- Restrict access to cookies (how to protect cookies from unknown access)
-	- majorly , a cookie has 2 attributes to secure the cookie i.e `Secure` & `HttpOnly` ✔️
+	- this is define by a web server automatically <br>
+		but if u're deleting cookies manually then this date & time doesn't mean anything
+- Restrict access to cookies (how to protect cookies from unknown access) ✔️
+	- majorly , a cookie has 2 attributes to secure the cookie i.e `Secure` & `HttpOnly`
 	- if in a cookie , `Secure` attribute flag is defined then means that cookie will not use `HTTP` protocol , <br>
-		only `HTTPS` going to be used by that cookie ✔️
+		only `HTTPS` going to be used by that cookie
 		- `Note ⭐` : sometimes we send the `HTTPS` protocol as `HTTP` protocol using burp suite <br>
-			or by doing any kindof manipulation in packets. ✔️
+			or by doing any kindof manipulation in packets.
 		- so we can't able to send the request , that `cookie` is set/define as `Secure` attribute flag. <br>
-			so due to this , MITM , etc attacks can't possible in that cookie ✔️
-    - if in a cookie , `HttpOnly` attribute flag is define 
-		- means attacks which are related to JS like `document.cookie()` - is a payload ✔️
-		- so JS & XSS (Cross site scripting) both have a payload that can be used ✔️
-		- means stealing cookies via XSS is not possible , if u set/define the cookie as `HttpOnly` attribute ✔️
-- where cookies are sent
+			so due to this , MITM , etc attacks can't possible in that cookie
+		- However, don't assume that `Secure` prevents all access to sensitive information in cookies
+    - if in a cookie , `HttpOnly` attribute flag is define ✔️
+		- means attacks which are related to JS like `document.cookie()` (is a payload) <br>
+			so JS & XSS (Cross site scripting) both have a payload that can be used 
+		- means stealing cookies via XSS is not possible , if u set/define the cookie as `HttpOnly` attribute
+- Q : where cookies are sent
 	- there are 2 attributes i.e `Domain` & `Path`
 	- Eg of `Domain` : if u have an webapp as xyzz.com , so value of `Domain` attribute must be define/set as xyzz.com <br>
 		or u can set the subdomain also but if the website is xyzz.com but value of `Domain` attribute set as <br>
@@ -121,8 +129,8 @@
 
 ### Practical Tasks
 
-- STEP 1 : open demo.testfire.net > press F12 > refresh the page again
-- STEP  2 : `application` tab > inside storage - Cookies 
+- STEP 1 : open demo.testfire.net -> press F12 -> refresh the page again
+- STEP  2 : `application` tab -> inside storage - Cookies 
 	- Eg of Cookie : u'll find the cookies of this website as this ![[WAPT-lecture-4-0.jpg]]
 	- if u see the `Path` is empty which means this webapp is vulnerable , so `Path`  shouldn't be empty ✔️
 	- but this webapp set the `HttpOnly` & `Secure` attribute inside the cookie which is good✔️
