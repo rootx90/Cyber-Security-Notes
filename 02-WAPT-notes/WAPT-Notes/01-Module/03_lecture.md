@@ -151,7 +151,7 @@
     8) `Accept-language` - means types of languages (which are define) only those can be accepted by the client machine
     - so from this `header` , u can know that the request is created from this (Chrome version 80, from window 10) ,<br>
 		so this info is useful to use for forensics & analyzing packet captures
-- Practical Work : how to see the "Request Headers" of a website
+- Practical Work : how to see the "Request Headers" of a website via inspect tool
 	- STEP 1 : open any website like http://demo.testfire.net
 	- STEP 2 : press F12 key -> network tab -> select `all` tab
 	- STEP 3 : reload the page again , output : u'll get all the content of that website <br>

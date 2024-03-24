@@ -133,7 +133,7 @@
 ### Homework
 - see more on `SameSite` attribute , http cookie
 
-### Practical Work : how to see a cookie of a website
+### Practical Work : how to see a cookie of a website via inspect tool
 
 - STEP 1 : open demo.testfire.net -> press F12 -> refresh the page again
 - STEP 2 : `application` tab -> inside storage - Cookies 
