@@ -20,7 +20,7 @@
 
 ---
 
-### How do we load websites ?
+### 1) How do we load websites ?
 - we'll see how website or a webapp loads inside the client machine
 1) Finding the server
     - Eg : u (client) wrote the "tryhackme.com" URL , so "tryhackme.com" is a domain name <br>
@@ -112,7 +112,7 @@
         2) What port do web servers normally listen/runs on ✔️ <br>
 			Ans : generally , web servers runs on `port 80`
 
-### More HTTP - Verbs/methods & requests formats
+### 2) More HTTP - Verbs/methods & requests formats
 - there are 9 different HTTP "verbs" aka methods , Eg : are GET , POST & etc. <br>
 	& each HTTP methods has different function <br>
 	refer HTTP verbs : [HTTP request methods - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
