@@ -32,7 +32,10 @@ Ans : you can buy tryhackme subscription for 1 month and do these paid rooms.It 
        1. https://tryhackme.com/path/outline/web (i think this is a complete course of WAPT according to your WAPT lectures)
        2. https://tryhackme.com/r/room/webfundamentals (this is a individual module)
 
-    Which one should I buy for 1month subscription? Let me know.
+       Which one should I buy for 1month subscription? Let me know.
+    Ans : monthly subscription of tryhackme will give you the access to all the paid rooms.So, you can access anyone.
+
+    
 ```
 
 ## Lectures Doubts
