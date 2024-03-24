@@ -85,7 +85,13 @@ general doubts
         Ans: https://www.perplexity.ai/search/whats-AcceptEncoding-in-vqQ.HNktRta4Wf0N6wrERQ
     Q : define Accept-language in HTTP request
         Ans: https://www.perplexity.ai/search/whats-Acceptlanguage-in-vqQ.HNktRta4Wf0N6wrERQ
+```
 
-- Responses
-    Q : 
+- Lecture 4 : 
+```
+### 7. More on Cookies
+    - Restrict access to cookies (how to protect cookies from unknown access)
+        Q : repeat once again why "Secure" & "HttpOnly" attributes required 
+
+
 ```

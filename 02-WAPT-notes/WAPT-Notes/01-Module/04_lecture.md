@@ -92,22 +92,25 @@
     3) Tracking : Recording & analyzing user behavior
 	- Conclusion : anything information which is necessary for the server to remember <br>
 		that's why cookies being made to help the server ✔️
+- creating Cookies
+    - this is a done by a webdev , not by a cyber security
 - Define the lifetime of a cookie
 	- `Set-Cookie: id=a3fWa; Expires=Thu, 31 Oct 2021 07:28:00 GMT;`
 	- this is define by a web server automatically <br>
-		but if u're deleting cookies manually then this date & time doesn't mean anything
+		but if u're deleting cookies manually (like complete history deleting of a browser) <br>
+		then this date & time doesn't mean anything
 - Restrict access to cookies (how to protect cookies from unknown access) ✔️
 	- majorly , a cookie has 2 attributes to secure the cookie i.e `Secure` & `HttpOnly`
-	- if in a cookie , `Secure` attribute flag is defined then means that cookie will not use `HTTP` protocol , <br>
+	- if in a cookie , `Secure` attribute flag is defined - then means that cookie will not use `HTTP` protocol , <br>
 		only `HTTPS` going to be used by that cookie
-		- `Note ⭐` : sometimes we send the `HTTPS` protocol as `HTTP` protocol using burp suite <br>
-			or by doing any kindof manipulation in packets.
-		- so we can't able to send the request , that `cookie` is set/define as `Secure` attribute flag. <br>
+		- `Note ⭐` : sometimes we send the request via `HTTP` protocol (instead of `HTTPS` protocol) using <br>
+			burp suite or by doing any kindof manipulation in packets.
+		- so we can't able to send the request via `HTTP` protocol - if in that `cookie` , a `Secure` attribute flag is defined/set<br>
 			so due to this , MITM , etc attacks can't possible in that cookie
 		- However, don't assume that `Secure` prevents all access to sensitive information in cookies
     - if in a cookie , `HttpOnly` attribute flag is define ✔️
 		- means attacks which are related to JS like `document.cookie()` (is a payload) <br>
-			so JS & XSS (Cross site scripting) both have a payload that can be used 
+			so JS & XSS (Cross site scripting) both have a payload that can't be executed 
 		- means stealing cookies via XSS is not possible , if u set/define the cookie as `HttpOnly` attribute
 - Q : where cookies are sent
 	- there are 2 attributes i.e `Domain` & `Path`
