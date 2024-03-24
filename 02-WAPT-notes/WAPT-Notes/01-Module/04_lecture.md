@@ -58,7 +58,7 @@
             - Eg : Generally , where the cookie is set/defined - then definitely the cookie will be send with that thing
             - Q : Who set/define the cookie in the browser <br>
 				Ans: Generally , a web server define/set the cookies by a `Set-Cookie` header & <br>
-					`Set-Cookie` header comes inside `Reponse-Headers` <br>- & we can define/set the cookies via JS inside the browser
+					`Set-Cookie` header comes inside `Response-Headers` <br>- & we can define/set the cookies via JS inside the browser
 
 ### 4. for what purpose Using Cookies
 - when u login to a webApp , then u'll get `a Session Token`
