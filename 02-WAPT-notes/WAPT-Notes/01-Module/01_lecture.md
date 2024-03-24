@@ -5,8 +5,8 @@
 > Lecture Name : What is web application penetration testing?
 > 1) what's penetration testing
 > 2) what's webapp penetration testing (WAPT)
-> 3) techniques
-> 4) tools to use how to do
+> 3) techniques of WAPT
+> 4) tools to use for WAPT
 
 ---
 ### Aim of this course - Anuj Sir
@@ -55,6 +55,6 @@
 - OWASP is a non-profitable organization
 - So OWASP made a standard on WAPT & it release TOP 10 webApp's vulnerabilities
 
-### 4. Tools to use
+### 4. tools to use for WAPT
 1) burp suite/burp sweet (`v imp tool`)
 

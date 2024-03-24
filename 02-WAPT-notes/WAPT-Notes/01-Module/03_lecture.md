@@ -3,11 +3,11 @@
 ---
 ### what we'll learn
 > Lecture Name : Web Fundamentals #1 How do we load websites? HTTP Verbs?
-> 1) how do we load websites 
-> 2) how a web requests goes
-> 3) how a web requests works
-> 4) structure of a web request
-> 5) types of HTTP requests
+> 1) how do we load websites
+>    - Finding the server
+> 	 - Loading some content	
+> 2) More HTTP - Verbs/methods & requests formats
+> 3) Ques (tryhackme - web-fundamentals)
 
 ### Platform used
 - tryhackme.com
@@ -20,7 +20,7 @@
 
 ---
 
-### 1) How do we load websites ?
+### 1. How do we load websites ?
 - we'll see how website or a webapp loads inside the client machine
 1) Finding the server
     - Eg : u (client) wrote the "tryhackme.com" URL , so "tryhackme.com" is a domain name <br>
@@ -112,7 +112,7 @@
         2) What port do web servers normally listen/runs on ✔️ <br>
 			Ans : generally , web servers runs on `port 80`
 
-### 2) More HTTP - Verbs/methods & requests formats
+### 2. More HTTP - Verbs/methods & requests formats
 - there are 9 different HTTP "verbs" aka methods , Eg : are GET , POST & etc. <br>
 	& each HTTP methods has different function <br>
 	refer HTTP verbs : [HTTP request methods - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
@@ -190,9 +190,8 @@
         	- `HTTP/1.1 200 OK` - means u requested for a page from the server <br>
 				& the server have that page , so status code got `200 OK`
         	- `Server: Apache-Coyote/1.1` - it's also considered as `low vulnerability finding` <br>
-				cuz it's showing (type of server & tha server's version 1.1) <br>
-				this website is vulnerable that's why it's showing (the server & it's version) <br>
-				otherwise strong website doesn't show 
+				cuz it's showing (type of server & the server's version 1.1) - this website is vulnerable <br>
+				that's why it's showing (the server & it's version) otherwise strong website doesn't show 
 				- also u can check in `bug bounty` due to which u can get the money like `50$` , `100$` for finding only this issue 
     		- `Content-Type: text/html;charset-150-8859-1` - means the data going to the server in the form of text & html form
     		- `Transfer-Encoding`
@@ -204,9 +203,7 @@
     		- so for GET request , we'll get normal web content or information such as JSON
     		- for POST request , information may be a status code or same as GET request
 
----
-
-### Ques (tryhackme - web-fundamentals)
+### 3. Ques (tryhackme - web-fundamentals)
 > Module : More HTTP - Verbs/methods & requests formats
 - Q : What verb would be used for a login ?<br>
 	Ans : `POST`
