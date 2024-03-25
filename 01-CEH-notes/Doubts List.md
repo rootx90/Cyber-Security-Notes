@@ -28,6 +28,10 @@
 	- Ans : 
 
 ---
+Q : for what purpose private Static IP address 
+	<br>- is it like when we share anything via bluetooth then private Static IP address being used , if not - then where give example
+
+---
 - lecture no. 27 & 28 , name : DOS attack practical & Session Hijacking
 - Pratical : in DOS Attack practical - we used BurpSuite Tool <br>& in session Hijacking - we used Wireshark <br>- in both cases , we used different tools to intercept the data packets
 - Doubt : can't we used BurpSuite tool in Session Hijacking - cuz we're intercepting the data packet request <br>- when user was login inside testphpvuln.com

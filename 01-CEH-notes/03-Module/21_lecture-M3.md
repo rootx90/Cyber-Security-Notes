@@ -80,7 +80,7 @@
 	- STEP 1.1 : search either "cloudflare download linux" & go to 1st link<br>STEP 1.2 : OR click on this link [Downloads · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/)
 	- STEP 1.3 : in linux section , click on download to ".deb" of "amd64 / x86-64" <br>- cuz kali linux is debian based
 	- STEP 1.4 : open kali terminal , run `sudo su` <br>Q : how .deb file installed <br>Ans : "dpkg"  command
-	- STEP 1.5 : cd Downloads , run `ls` , run `dpkg -i cloudflared-linux amd64.deb` & hit enter
+	- STEP 1.5 : cd Downloads , run `ls` , run `dpkg -i cloudflared-linux-amd64.deb` & hit enter
 - STEP 2 : how to use cloudflared tool with camphish tool
 	- STEP 2.1 : firstly run camphish , run `./camphish.sh`
 	- now we'll use "serveo.net" server instead of Ngrok
