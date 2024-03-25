@@ -69,7 +69,7 @@
 		- u can even check ur Public Static IP address on - https://whatismyipaddress.com/
 		- so if u give this link to a Victim (& what if it's a hacker) - then he/she will able to know ur Public Static IP address ✔
 		- so it's a loophole for u as a attacker ✔
-	- so we'll use a different tool for making the localhost link world-wide 
+	- so we'll use a different tool for making the localhost link world-wide , instead of "ngrok" tool
 
 ### Practical Work : combining cloudflared tool with camphish tool
 - Q : why we're using cloudflared tool ✔
@@ -102,5 +102,5 @@
 
 ---
 ### End of the lecture (Doubts) :
-1. 
+- use "hound" instead of "ngrok" : https://www.youtube.com/watch?v=vNGXX1ZwUVQ&ab_channel=TechChip
 
