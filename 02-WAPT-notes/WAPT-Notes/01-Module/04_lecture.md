@@ -42,7 +42,7 @@
 - Cookies are information about users that a web server uses them to remember ✔️
 
 ### 3. why cookies or importance of it
-- why cookies / importance of it
+- Q : why cookies / importance of it
     - cuz `HTTP` protocol is stateless (means we can't track `HTTP` protocol) but cookies are used to track <br>
 		or track user data or to track shopping data of ur browser , we can use cookies to track the user's behavior <br>
 		Eg : what u have done in that webapp or for how much time u stayed logged-in there , etc are managed by cookies <br>

@@ -51,8 +51,9 @@
 2) Loading some content
     - here we'll see : as earlier said , u searched "tryhackme.com" - then the server got the IP address (of this domain name) <br>
 		but the content which will come in ur (client) browser <br>
-		Q : how that content will come in ur browser ? - means content (HTML , CSS , JS, etc assets files..) <br>
-		how all these file will get loaded on the client machine ✔️ <br>
+		Q : how that content will come in ur browser ? <br>
+		means content (HTML , CSS , JS, etc assets files..) <br>
+		Q : how all these file will get loaded on the client machine ✔️ <br>
 		Ans : so content loaded via a `HTTP GET request`
     - Q : what is an HTTP GET request ✔️
 		- `GET` request : it's a type of HTTP verb/method <br>

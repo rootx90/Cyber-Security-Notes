@@ -18,7 +18,7 @@
 2) `Web Fundamentals` - go to [TryHackMe | Cyber Security Training](https://tryhackme.com/)
 	- STEP 1 : go to `learn` tab
 	- STEP 2 : click on `search` btn
-	- STEP 3 : search `web fundamentals` (it'll not come coz it's private)
+	- STEP 3 : search `web fundamentals` (it'll not come cuz it's private)
 		- references regarding `web fundamentals - TryHackMe` by me : 
 			- [TryHackMe- Web Fundamentals + My first CTF | by Katjah Smith👩🏽‍💻 | Medium](https://katjah-smith.medium.com/tryhackme-web-fundamentals-my-first-ctf-a9b197f234df)
 			- [TryHackMe | Web Fundamentals Training](https://tryhackme.com/path/outline/web)
