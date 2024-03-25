@@ -63,7 +63,7 @@
 			- in a server system , after domain name - a colon comes & after colon - a port no. is defined
 		- STEP 4 : in order to bring that client on ur server system - then we need to create a command for that client
 			- & once that client run that command on his/her system then only that client can talk
-			- STEP 4.1 : run this command on client system , not on the server system - `nc -v 0.tcp.in.ngrok.io 15576` 
+			- STEP 4.1 : run `nc -v 0.tcp.in.ngrok.io 15576` this command on client system , not on the server system 
 			- STEP 4.2 : open that terminal on which u executed this command "nc -lvp 8686" , output : if someone connected <br><img src="../notes-pics/03-Module/20_lecture/20_lecture-8-M3.jpg" alt="" width="500"/>
 			- in output , if someone connect then we'll get message "connect to [IP-address] from localhost [IP-address] port-no."
 			- so that client can talk to the server , doesn't matter how far that client is from the server <br>- so i u share this command "`nc -v 0.tcp.in.ngrok.io 15576`" to anyone then that client will be connected to u
