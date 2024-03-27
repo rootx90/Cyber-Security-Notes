@@ -95,6 +95,29 @@ general doubts
 ### 7. More on Cookies
     - Restrict access to cookies (how to protect cookies from unknown access)
         Q : repeat once again why "Secure" & "HttpOnly" attributes required 
+```
 
+- lecture 5 : 
+```
+### Intruder
+    Q : what "field fuzzing" means
+
+### Sequencer
+    definition
+        Q : "how much 'randomness' of that session Cookie" - what does this statement means
+
+### Decoder
+    Q : what does encoding & decoding means
+        is encoding = encryption & decoding = decryption , is this statement correct or not
+
+### Comparer
+    Q : what does parameter means 
+
+### Scanner
+    Q : what vulnerability assessment means
+
+### Ques
+    Q : in Q2) , what tool could we use to analyze randomness in different pieces of data such as password reset tokens ?
+        so here what does Token means
 
 ```

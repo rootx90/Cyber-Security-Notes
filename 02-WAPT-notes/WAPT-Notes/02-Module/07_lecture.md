@@ -42,55 +42,59 @@
     - how we set the scope of our project. We can also use this to effectively create a site map of the application we're testing.
 - importance of it
 	- open Burp Suite -> Target tab -> Site map
-	- in firefox , let's say u open "tryhackme.com" or other any websites or webapps u opened. so now inside `target` tab , <br>
-		u'll get those application or websites list
-	- but if u want to test only one of them then why u want to see those others , so in `site map` <br>
-		either do right click or hover then u'll get this popup <br>
+	- in firefox , let's say u open "tryhackme.com" or any other websites/webapps u opened. <br>
+		so now inside `target` tab , u'll get those application or websites list
+	- Q : but if u want to test only one of them - then why u want to see those others websites report ✔️<br>
+		Ans : so in `site map` , either do right click or hover then u'll get this popup <br>
 		<img src="../../notes-pics/02-Module/07_lecture/07_lecture-0-M2.jpg" alt="" width="500"/>
-	- check the checkbox `show only in-scope items`
-	- & those websites/webapps come inside `site map` tab , u can right click on them to put them in `scope` tab ✔️
-    - so `Target` tab is good to manage things
+		<br>- check the checkbox `show only in-scope items`
+    	<br>- & those websites/webapps come inside `site map` tab , u can right click on them to put them in `scope` tab ✔️
+        <br>- so `Target` tab is good to manage different reports
 
-### Intruder
+### Intruder `imp ✅`
 - usecase 
-	- powerful tool for everything from field fuzzing to credential stuffing & etc..
-	- mostly it's used for Brute Forcing - SQL Injection ✔️
+	- powerful tool for everything from field fuzzing to credential stuffing & etc
+	- mostly it's used for Brute Forcing - Eg : SQL Injection ✔️
 
-### Repeater
+### Repeater `imp ✅`
 - definition
 	- Allows us to `repeat` requests that have previously been made with or without modification. <br>
   		Often used in a precursor step to fuzzing with the aforementioned intruder
-	- means any request which came inside - Proxy -> Intercept then right click on that request , <br>
-		u can send that request to `Repeater` tab & then u can change any parameter ✔️
-- Eg : let's say , u got an account number of a person inside `Repeater` tab then u can change the account number to yours account no. <br>
-	& do the `POST` request & if that banking webapp or website is vulnerable then the money comes to your account <br>
+	- means any request which is captured & came inside `Proxy` tab -> `Intercept` tab <br>
+		then right click on that request - then u can send that request to `Repeater` tab <br>
+		& then u can change any parameter of a request ✔️
+- Eg : let's say , u got an A/C number of a person inside `Repeater` tab then u can change the A/C number to urs account no. <br>
+	& do the `POST` request & if that banking webapp or website is vulnerable then the money comes into ur account <br>
 	& `reponse` status code will become `200 ok` ✔️
 
 ### Sequencer
 - Definition
 	- Analyzes the 'randomness' present in parts of the web app which are intended to be unpredictable.
 	- used to find out how much 'randomness' of that session Cookie ✔️
-- usecase : <br>
-	generally , used for testing session cookies ✔️
+- usecase : generally , used for testing session cookies ✔️
 
 ### Decoder
 - definition
-	- it allows us to perform various transforms on pieces of data. These transforms vary from decoding/encoding to various bases or URL encoding
+	- it allows us to perform various transforms on pieces of data. These transforms vary <br>
+		from decoding/encoding to various bases or URL encoding
 - usecase
-	- u're decoding or something is encrypted or base64 encoding done or dzip deleted
-	- so there are many encoding techniques , so for encoding , we also have decoding or decrypting stuff ✔️
+	- u're decoding or something is encrypted or base64 encoding done or dzip deleted , etc <br>
+		so these are encoding techniques & there are many encoding techniques <br>
+		so for encoding , we also have decoding or decrypting stuff ✔️
 	- so whatever the request u capture , so if u send that request to decoder , so that request will get decode ✔️
 
-### Comparer `(v imp ⭐)`
-- used to compare different responses or other pieces of data <br>
-	such as site maps or proxy histories (awesome for access control issue testing). <br>
-	This is very similar to the linux tool i.e diff - means difference.
-- when u see the request on the BurpSuite , then that request contain many parameters , <br>
-	so if u want to see/find the difference b/w those 2 requests/responses then use it ✔️
+### Comparer `v imp ✅`
+- usercase : 
+    - used to compare different responses or other pieces of data <br>
+		such as site maps or proxy histories (awesome for access control issue testing). <br>
+		This is very similar to the linux tool i.e "diff" - means difference.
+    - when u see the request on the BurpSuite , then that request contain many parameters , <br>
+    	so if u want to see/find the difference b/w those 2 requests/responses then use it ✔️
 
 ### Extender
-- Similar to adding mods to a game like minecraft , it allows to add components such as tool integrations, additional scan definitions & more.
-- in BurpSuite -> Extender tab -> BApp Store tab -> u'll see all the extensions & see rating , popularity , <br>
+- Similar to adding mods to a game like minecraft , it allows to add components <br>
+	such as tool integrations, additional scan definitions & more.
+- in BurpSuite -> "Extender" tab -> "BApp Store" tab -> u'll see all the extensions & see rating , popularity , <br>
 	detail (which shows whether u need professional version or not - like Custom header , AuthMatrix , Auth Analyzer, etc , <br>
 	so those extensions u can install which are not BurpSuite Professional) 
 - use case : u want to add mods/tool/extension with Burp Suite ✔️
@@ -100,8 +104,8 @@
 - usecase
     - it automatically gives all the web vulnerability , shows the payload that the payload was used like this , <br>
 		this is how the webapp or website was exploited , etc aka vulnerability assessment
-	- means it automates the task which you were doing manually earlier
-	- reference for vulnerability assessment : [EP #17 What is Vulnerability Assessment? Types? Lifecycle? - YouTube](https://www.youtube.com/watch?v=orkmeZ-SUsA&t=0s&ab_channel=EthicalSharmaji)
+	- means it automates the "vulnerability assessment" task which u were doing manually earlier
+	- reference for vulnerability assessment : [EP #17 What is Vulnerability Assessment? Types? Lifecycle? - uTube](https://www.youtube.com/watch?v=orkmeZ-SUsA&t=0s&ab_channel=EthicalSharmaji)
 
 ### Ques
 
@@ -109,6 +113,7 @@
 	- Ans : Comparer
 - Q2) what tool could we use to analyze randomness in different pieces of data such as password reset tokens ? 
 	- Ans : Sequencer
+	- randomness : means like in password , how much randomness of that password is strong
 - Q3) which tool can we use to set the scope of our project ? 
 	- Ans : target
 - Q4) while only available in the premium versions of Burp Suite, which tool can we use to automatically <br>
@@ -125,4 +130,7 @@
 	- Ans : Intruder
 - Q9) which tool allows us to modify Burp Suite via the addition of extensions ? 
 	- Ans : Extender
+
+---
+### End of the lecture (Doubts)
 

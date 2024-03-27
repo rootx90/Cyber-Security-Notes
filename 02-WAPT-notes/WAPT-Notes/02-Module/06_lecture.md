@@ -109,7 +109,7 @@
 			but HTTP websites doesn't need SSL certificate ✔️
 		- Eg : in firefox -> write https://demo.testfire.net then we'll get error <img src="../../notes-pics/02-Module/06_lecture/06_lecture-6-M2.jpg" alt="" width="500"/>
 		- to avoid/skip this warning , installing SSL certificate
-			- we're running a proxy server on `127.0.0.1:8080` 
+			- we're running a proxy server on `127.0.0.1:8080`
 			- STEP 1 : so go that browser only which u have done the configuration for localhost <br>
 				& then write http://burp & hit enter
 			- now u'll get the page of burp suite <br><img src="../../notes-pics/02-Module/06_lecture/06_lecture-7-M2.jpg" alt="" width="500"/>

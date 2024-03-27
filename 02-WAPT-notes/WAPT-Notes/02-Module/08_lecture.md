@@ -1,13 +1,15 @@
 #WAPT-notes  
 
+---
 ### what we'll learn
-- what's proxy
-- working of it
-- proxy of BurpSuite
-- task related to dark mode proxy (not important topic)
+> Lecture Name : Burp Suite #3 How Burp Suite Proxy Works? MITM Attack?
+> 1) what's proxy
+> 2) working of it
+> 3) proxy of BurpSuite
+> 4) task related to dark mode proxy (not important topic)
 
 ### turn on the Dark Mode in Burp Suite
-- user options > Display > there u go
+- user options -> Display -> there u go
 
 ---
 
@@ -46,13 +48,13 @@
 		9) let's say 1st friend was appreciating (about his 3rd friend) with 2nd friend but 2nd friend modified it & said to 3rd friend that 1st friend was saying wrong things about u
 3) <u>working of it in BurpSuite</u>
 	- STEP 1 : Now let's on the proxy , so in kali linux , run burpSuite in the terminal as `burpsuite` command
-	- STEP 2 : so tryhackme.com/room/burpsuitebasics > in `introduction` section, start the machine & setup the VPN also
+	- STEP 2 : so tryhackme.com/room/burpsuitebasics -> in `introduction` section, start the machine & setup the VPN also
 	- STEP 3 : copy the IP address which is given by tryhackme.com/room/burpsuitebasics
-	- STEP 4 : to change the localhost & port then either go in BurpSuite , change the localhost proxy -> Proxy tab > Options & add that IP address OR open firefox > foxyProxy extension & click on Burp , now this browser got IP address as 10.10.33.100 & hit Enter
+	- STEP 4 : to change the localhost & port then either go in BurpSuite , change the localhost proxy -> Proxy tab -> Options & add that IP address OR open firefox -> foxyProxy extension & click on Burp , now this browser got IP address as 10.10.33.100 & hit Enter
 	- STEP 5 : in burpSuite , on the intercept & in firefox , hit enter & u'll get the GET request of that IP address like this ![[WAPT-lecture-8-0.jpg]]
 		- now u can either `forward`  or `Drop` this GET request just like 3 friend situation ✔
 		- or u can change/modify the GET request , so right click on empty area & click on `Send to Repeater` option ✔ but click on `forward` button
-	- STEP 6 : & turnoff the Intercept & all the things will save inside Proxy > HTTP history ✔
+	- STEP 6 : & turnoff the Intercept & all the things will save inside Proxy -> HTTP history ✔
 		- output : we'll get Juice shop ![[WAPT-lecture-8-1.jpg]]
 		- STEP 6.1 : click let's say on Apple Juice (1000ml) & we'll GET request in Burp Suite , we can check all the request we made according to `time` like this ![[WAPT-lecture-8-2.jpg]]
 	- STEP 7 : to change this GET request , then right click on left side bottom `Request` section & click `Send to Repeater` (means modifying/changing the GET request & then sending to the server) ✔
@@ -60,8 +62,8 @@
 		- Once u change from 1 to 7 inside the GET request then we'll get response for 7 reviews also ![[WAPT-lecture-8-4.jpg]]
 		- so we changed the data & item goes to 7 i.e Green Smoothe
 	- STEP 8: we can run intruder  
-		- STEP 8.1 : in Repeater > right click on `Request` section & click `Send to Intruder`
-		- STEP 8.2 : in burp Suite > Intruder tab
+		- STEP 8.1 : in Repeater -> right click on `Request` section & click `Send to Intruder`
+		- STEP 8.2 : in burp Suite -> Intruder tab
 			- we'll get updated `Target` 
 			- in `Positions` tab (it's a main tab where we need to define where we want to do intruder) ✔
 		- STEP 8.3 : in `Positions` 
@@ -70,8 +72,8 @@
 		- STEP 8.4 : select that `7` & click on `Add %` button (which is aka marker) like this ![[WAPT-lecture-8-5.jpg]]
 			- which means left & right numbers of 7 will change ✔
 		- STEP 8.5 : Intruder have 4 Attack modes/types : but select it as `Sniper`
-		- STEP 8.6 : `Payloads` tab > Payload type as `Numbers` 
-			- in `Payload Options [numbers]` > from as `1` , `To` as 10 & Step as `1` (which means steps will increase by 1 like 1 , 2 , 3 , 4 etc...)
+		- STEP 8.6 : `Payloads` tab -> Payload type as `Numbers` 
+			- in `Payload Options [numbers]` -> from as `1` , `To` as 10 & Step as `1` (which means steps will increase by 1 like 1 , 2 , 3 , 4 etc...)
 		- STEP 8.7 : click `Start Attack` button, now intruder will start & u'll get all those 10 items with 200 ok status code ![[WAPT-lecture-8-6.jpg]]
 	- if we do these 10 GET requests send via `repeater` then time taking increase , even thou currently there are 10 GET requests only but what if we have 1000 requests , so `intruder` will do automatically fast ✔
 
@@ -90,13 +92,13 @@
 	- so server & client request & response shown/captured inside `webSocket History` tab, `Socket`  -> used to make/build connection
 6) Before we move onto exploring our target definition, let's take a took at some of the advanced customization we can utilize in the Burp proxy. Move over to the options section of the Proxy tab and scroll down to Intercept Client Requests. Here we an apply further fine-grained rules to define which requests we would like to intercept. Perhaps the most useful out of the default rules is our only AND rule. What is it's match type? 
 	- Ans : URL
-	- Proxy > options > in Intercept Client Requests , in `And` , what's the `Match Type` i.e URL
+	- Proxy -> options -> in Intercept Client Requests , in `And` , what's the `Match Type` i.e URL
 7) How about it's 'Re la tionship'? In this situation, enabling this match rule can be incredibly useful following target definition as we can effectively leave intercept on permanently (unless we need to navigate without intercept) as it won't disturb sites which are outside of our scope - something which is particularly nice if we need to Google something in the same browser. 
 	- Ans : is in `target scope`
-	- in `Target` tab > `site map` > you see that services , etc stuff are running of firefox which are intercept by BurpSuite
+	- in `Target` tab -> `site map` -> you see that services , etc stuff are running of firefox which are intercept by BurpSuite
 	- but if i want to look at this only for testing i.e ![[WAPT-lecture-8-7.jpg]]
 	- cuz let's say u're typing something on google research work then all the stuff , whatsapp running & messages are coming frequently will be intercept by Burp Suite 
-	- so this section gets long , right click on that localhost > Add to Scope > click No , click on that filter tab > check `Show only in-scope items` like this ![[WAPT-lecture-8-8.jpg]]
+	- so this section gets long , right click on that localhost -> Add to Scope -> click No , click on that filter tab -> check `Show only in-scope items` like this ![[WAPT-lecture-8-8.jpg]]
 	- so all those unnecessary things go away & only targeted thing will get visible for testing
 
 
