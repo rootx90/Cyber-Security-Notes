@@ -15,7 +15,7 @@
 ### Advice to learn stuff
 - we're going slow cuz Anuj sir can make a video on BurpSuite which contain everything about it, <br>
 	but the advantage of learning slow u'll not get 
-- that's why firstly see the vid - understand - ask doubts if u have - do practice of that vid
+- that's why firstly see the vid - understand - ask 	doubts if u have - do practice of that vid
 
 ---
 
@@ -25,9 +25,9 @@
 - Definition 
 	- means the Burp Proxy allows us to intercept & modify requests/responses when interacting with web applications.
 	- means used for funnel traffic analysis 
-	- means the data/packets/header-requests/response are coming , the Burp Proxy can intercept & modify ✔
+	- means the data/packets/header-requests/responses which are coming , the Burp Proxy can intercept & modify ✔️️
 - Importance of it : <br>
-	without it , Burp Suite app doesn't mean anything cuz Burp Suite is a proxy server ✔
+	without it , BurpSuite app doesn't mean anything cuz BurpSuite is a proxy server ✔️
 
 ### Target
 - Definition
@@ -40,52 +40,52 @@
 		either do right click or hover then u'll get this popup <br>
 		<img src="../../notes-pics/02-Module/07_lecture/07_lecture-0-M2.jpg" alt="" width="500"/>
 	- check the checkbox `show only in-scope items`
-	- & those websites/webapps come inside `site map` tab , u can right click on them to put them in `scope` tab ✔
+	- & those websites/webapps come inside `site map` tab , u can right click on them to put them in `scope` tab ✔️
 - so `Target` is good to manage things
 
 ### Intruder
 - usecase 
 	- powerful tool for everything from field fuzzing to credential stuffing & etc..
-	- mostly it's used for Brute Forcing - SQL Injection ✔
+	- mostly it's used for Brute Forcing - SQL Injection ✔️
 
 ### Repeater
 - definition
 	- Allows us to `repeat` requests that have previously been made with or without modification. <br>
   		Often used in a precursor step to fuzzing with the aforementioned intruder
 	- means any request which came inside - Proxy > Intercept then right click on that request , <br>
-		u can send that request to `Repeater` tab & then u can change any parameter ✔
+		u can send that request to `Repeater` tab & then u can change any parameter ✔️
 - Eg : let's say , u got an account number of a person inside `Repeater` tab then u can change the account number to yours account no. <br>
 	& do the `POST` request & if that banking webapp or website is vulnerable then the money comes to your account <br>
-	& `reponse` status code will become `200 ok` ✔
+	& `reponse` status code will become `200 ok` ✔️
 
 ### Sequencer
 - Definition
 	- Analyzes the 'randomness' present in parts of the web app which are intended to be unpredictable.
-	- used to find out how much 'randomness' of that session Cookie ✔
+	- used to find out how much 'randomness' of that session Cookie ✔️
 - usecase : <br>
-	generally , used for testing session cookies ✔
+	generally , used for testing session cookies ✔️
 
 ### Decoder
 - definition
 	- it allows us to perform various transforms on pieces of data. These transforms vary from decoding/encoding to various bases or URL encoding
 - usecase
 	- u're decoding or something is encrypted or base64 encoding done or dzip deleted
-	- so there are many encoding techniques , so for encoding , we also have decoding or decrypting stuff ✔
-	- so whatever the request u capture , so if u send that request to decoder , so that request will get decode ✔
+	- so there are many encoding techniques , so for encoding , we also have decoding or decrypting stuff ✔️
+	- so whatever the request u capture , so if u send that request to decoder , so that request will get decode ✔️
 
 ### Comparer `(v imp ⭐)`
 - used to compare different responses or other pieces of data <br>
 	such as site maps or proxy histories (awesome for access control issue testing). <br>
 	This is very similar to the linux tool i.e diff - means difference.
 - when u see the request on the BurpSuite , then that request contain many parameters , <br>
-	so if u want to see/find the difference b/w those 2 requests/responses then use it ✔
+	so if u want to see/find the difference b/w those 2 requests/responses then use it ✔️
 
 ### Extender
 - Similar to adding mods to a game like minecraft , it allows to add components such as tool integrations, additional scan definitions & more.
 - in BurpSuite > Extender tab > BApp Store tab > u'll see all the extensions & see rating , popularity , <br>
 	detail (which shows whether u need professional version or not - like Custom header , AuthMatrix , Auth Analyzer, etc , <br>
 	so those extensions u can install which are not BurpSuite Professional) 
-- use case : u want to add mods/tool/extension with Burp Suite ✔
+- use case : u want to add mods/tool/extension with Burp Suite ✔️
 
 ### Scanner
 - this feature only in BurpSuite Professional Version
