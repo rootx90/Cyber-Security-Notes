@@ -28,20 +28,28 @@
 	- means the data/packets/header-requests/responses which are coming , the Burp Proxy can intercept & modify ✔️️
 - Importance of it : <br>
 	without it , BurpSuite app doesn't mean anything cuz BurpSuite is a proxy server ✔️
+- Q : in burpSuite app , where we find proxy <br>
+	Ans : inside Proxy tab , 
+	<br>- it has 4 options : Intercept , HTTP history , WebSockets History , Options
+	<br>- in Intercept , it has "Intercept is ON/Off" btn <br>
+	Q : if "Intercept" btn ON - then how packets capturing happen ✔️<br>
+	Ans : then one by one packet capturing happens <br>
+	Q : if u turn "Intercept" btn OFF - then how packets capturing happen ✔️<br>
+	Ans : then packets capturing goes inside HTTP history
 
 ### Target
 - Definition
     - how we set the scope of our project. We can also use this to effectively create a site map of the application we're testing.
 - importance of it
-	- open Burp Suite > Target tab > Site map
-	- in firefox , let's say u open tryhackme.com or other any websites or webapps u opened. so now inside `target` tab , <br>
+	- open Burp Suite -> Target tab -> Site map
+	- in firefox , let's say u open "tryhackme.com" or other any websites or webapps u opened. so now inside `target` tab , <br>
 		u'll get those application or websites list
 	- but if u want to test only one of them then why u want to see those others , so in `site map` <br>
 		either do right click or hover then u'll get this popup <br>
 		<img src="../../notes-pics/02-Module/07_lecture/07_lecture-0-M2.jpg" alt="" width="500"/>
 	- check the checkbox `show only in-scope items`
 	- & those websites/webapps come inside `site map` tab , u can right click on them to put them in `scope` tab ✔️
-- so `Target` is good to manage things
+    - so `Target` tab is good to manage things
 
 ### Intruder
 - usecase 
@@ -52,7 +60,7 @@
 - definition
 	- Allows us to `repeat` requests that have previously been made with or without modification. <br>
   		Often used in a precursor step to fuzzing with the aforementioned intruder
-	- means any request which came inside - Proxy > Intercept then right click on that request , <br>
+	- means any request which came inside - Proxy -> Intercept then right click on that request , <br>
 		u can send that request to `Repeater` tab & then u can change any parameter ✔️
 - Eg : let's say , u got an account number of a person inside `Repeater` tab then u can change the account number to yours account no. <br>
 	& do the `POST` request & if that banking webapp or website is vulnerable then the money comes to your account <br>
@@ -82,7 +90,7 @@
 
 ### Extender
 - Similar to adding mods to a game like minecraft , it allows to add components such as tool integrations, additional scan definitions & more.
-- in BurpSuite > Extender tab > BApp Store tab > u'll see all the extensions & see rating , popularity , <br>
+- in BurpSuite -> Extender tab -> BApp Store tab -> u'll see all the extensions & see rating , popularity , <br>
 	detail (which shows whether u need professional version or not - like Custom header , AuthMatrix , Auth Analyzer, etc , <br>
 	so those extensions u can install which are not BurpSuite Professional) 
 - use case : u want to add mods/tool/extension with Burp Suite ✔️
