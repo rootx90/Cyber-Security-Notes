@@ -119,5 +119,12 @@ general doubts
 ### Ques
     Q : in Q2) , what tool could we use to analyze randomness in different pieces of data such as password reset tokens ?
         so here what does Token means
+```
 
+- Lecture 8
+```
+Q : what's the importance of having proxy server
+Ans : 
+Q : is there are alternative of proxy server & VPN
+Ans : 
 ```
