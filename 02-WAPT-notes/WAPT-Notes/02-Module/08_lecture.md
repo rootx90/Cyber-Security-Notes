@@ -27,39 +27,41 @@
 		& don't allow some which are not needed
   	- Diagram explanation of how request/response done with proxy server : <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-0-M2.jpg" alt="" width="500"/>
 		- in the middle aka proxy server
-		- the request of client 1stly goes to -> the Proxy server -> then the main server (i.e web server of that website)<br>
-			then the response of a web server goes to -> to the proxy server -> then to the client ✔️
+		- the request of client 1stly goes to - the Proxy server - then the main server (i.e web server of that website)<br>
+			then the response of a web server goes to - to the proxy server - then to the client ✔️
 		- Eg : if u're accessing "tryhackme.com" , so firstly , GET request of that website goes to the Proxy server <br>
 			but the GET request don't go directly to the main web server (that's why the proxy server acting as MITM attack) ✔️
-		- so the GET request will go -> to the proxy server -> now the proxy server will check that website exist or not ✔️
+		- so the GET request will go - to the proxy server - now the proxy server will check that website exist or not ✔️
 		- Now the proxy server will see whether that website is inside the allowed list or not , <br>
 			so if that website in the allowed list then only the request will go to the web server of "tryhackme.com"  ✔️
-		- then the web server will send the response -> goes to the proxy server -> then it goes to the client ✔️ 
-		- but if that website is not allowed then the request goes from the client -> <br>
-			to the proxy server -> & the proxy server will check & tell that this website is disallowed , <br>
+		- then the web server will send the response - goes to the proxy server - then it goes to the client ✔️ 
+		- but if that website is not allowed then the request goes from the client - <br>
+			to the proxy server - & the proxy server will check & tell that this website is disallowed , <br>
 			so the response (with a generic error shown to the client machine) will go back to the client directly <br>
 			& the request will not go to the web server ✔️ <br>
-	- so 1st work of proxy i.e to filter the websites : means if there's a requirement <br>
-		then allow something & disallow something 
+	- so 1st work of proxy i.e to filter the websites : <br>
+		means if there's a requirement then allow something & disallow something 
 - `2nd work of proxy` : modify the request/response after intercepting
 	- firstly , all the requests going via the proxy server & responses coming on the proxy server
-	- if we want to test one or more websites then we can do changes on them
+	- if we want to test one or more websites then we can do changes on them (i.e requests & responses)
 	- Eg : means whatever the GET request goes to the proxy server like u need "tryhackme.com" page , <br>
 		so u can do changes on runtime cuz that request didn't send to the web server yet ✔️
-	- Eg : let's say on a banking website , u're sending a GET request that bring my account number details & <br>
-		that backing webapp is vulnerable (means no good developer made that)
+	- Eg : let's say on a banking website , u're sending a GET request that bring my A/C number details & <br>
+		that banking webapp is vulnerable
 	- so generally , the GET request goes directly from client to the web server & <br>
-		the server will bring ur account details -> but in the middle , there is a proxy server , <br>
-		so firstly the GET request go from client to the proxy server then we can change the account number <br>
-		in the proxy server via BurpSuite. so we'll change the account number & that modified one will go the web server ✔️
-    - & the web server don't even know difference b/w both that the actual account number send from the client & <br>
-		send by the proxy server -> which one is original cuz for the web server , the request came from the proxy server ✔️
-	- Eg : it's a 3 people , 1st friend said something to 2nd friend to tell the 3rd friend <br>
-		but 2nd friend changed/modified that chat & told to 3rd friend 
-	- so 3rd friend never going to know that what 1st friend told him , <br>
-		so middle friend is controlling the things like modifying , what to tell & what not to tell , forwarding & dropping ✔️
-	- let's say 1st friend was appreciating (about his 3rd friend) with 2nd friend but 2nd friend modified it & <br>
-		said to 3rd friend that 1st friend was saying wrong things about u
+		the server will bring ur A/C details - but in the middle , there is a proxy server , <br>
+		so firstly the GET request go from client to the proxy server then we can change the A/C number <br>
+		in the proxy server via BurpSuite. so we'll change the A/C number & that modified one will go to the web server ✔️
+    - & the web server never able to know difference b/w both that <br>
+		the actual A/C number send from the client & send by the proxy server - which one is original <br>
+		cuz for the web server , the request came from the proxy server ✔️
+	- Eg : there are 3 people , 1st friend said something to 2nd friend to tell the 3rd friend <br>
+		but 2nd friend changed/modified that chat (of 1st friend) & told to 3rd friend 
+		<br>- so 3rd friend never going to know that what 1st friend actually told me (i.e 3rd friend) ,
+		<br>- u already know that sometimes friends exaggerate
+		<br>- so middle friend is controlling all the things (like modifying , what to tell & what not to tell , forwarding & dropping) ✔️
+    	<br>- let's say 1st friend was appreciating (about his 3rd friend) with 2nd friend but 2nd friend modified it & <br>
+			said to 3rd friend that 1st friend was saying wrong things about u
 
 ### working of proxy in BurpSuite
 - STEP 1 : Now let's on the proxy , so in kali linux , run burpSuite in the terminal as `burpsuite` command
@@ -107,40 +109,40 @@
 
 ### Ques
 
-1) By default , the Burp Suite Proxy listens on only one interface. what is it ? use the format of IP:PORT 
-	- Ans : `127.0.0.1:8080`
-2) Shortcut which allows to forward the request to Repeater ?
-	- Ans : `Ctrl + R`
-3) Shortcut to forward our request to intruder ? if we wanted
-	- Ans : `Ctrl + I`
-4) Burp Suite saves the history of requests sent through the proxy along with their varying details. <br>
+- Q 1) By default , the Burp Suite Proxy listens on only one interface. what is it ? use the format of IP:PORT <br>
+	Ans : `127.0.0.1:8080`
+- Q 2) Shortcut which allows to forward the request to Repeater ? <br>
+	Ans : `Ctrl + R`
+- Q 3) Shortcut to forward our request to intruder ? if we wanted <br>
+	Ans : `Ctrl + I`
+- Q 4) Burp Suite saves the history of requests sent through the proxy along with their varying details. <br>
 	This can be especially useful when we need to have proof of our actions throughout a penetration test or <br>
 	we want to modify and resend a request we sent a while back. What is the name of the first section <br>
-	wherein general web requests (GET/POST) are saved? 
-	- Ans : `HTTP History` tab
-5) Defined in RFC 6455 as a low-latency communication protocol that doesn't require HTTP encapsulation, <br>
+	wherein general web requests (GET/POST) are saved? <br>
+	Ans : `HTTP History` tab
+- Q 5) Defined in RFC 6455 as a low-latency communication protocol that doesn't require HTTP encapsulation, <br>
 	what is the name of the second section of our saved history in Burp Suite? These are commonly used in <br>
-	collaborate application which require real-time updates (Google Docs is an excellent example here). 
-	- Ans : in `proxy` , one we have `HTTP History` but another we have WebSocket history
-	- so server & client request & response shown/captured inside `webSocket History` tab, `Socket`  -> used to make/build connection
-6) Before we move onto exploring our target definition, let's take a took at some of the advanced customization <br>
+	collaborate application which require real-time updates (Google Docs is an excellent example here). <br>
+	Ans : in `proxy` , one we have `HTTP History` but another we have WebSocket history
+	- so server & client request & response shown/captured inside `webSocket History` tab, `Socket` -> used to make/build connection
+- Q 6) Before we move onto exploring our target definition, let's take a took at some of the advanced customization <br>
 	we can utilize in the Burp proxy. Move over to the options section of the Proxy tab and scroll down to Intercept Client Requests. <br>
 	Here we an apply further fine-grained rules to define which requests we would like to intercept. <br>
-	Perhaps the most useful out of the default rules is our only AND rule. What is it's match type? 
-	- Ans : URL
+	Perhaps the most useful out of the default rules is our only AND rule. What is it's match type? <br>
+	Ans : URL
 	- Proxy -> options -> in Intercept Client Requests , in `And` , what's the `Match Type` i.e URL
-7) How about it's 'Re la tionship'? In this situation, enabling this match rule can be incredibly useful <br>
+- Q 7) How about it's 'Re la tionship'? In this situation, enabling this match rule can be incredibly useful <br>
 	following target definition as we can effectively leave intercept on permanently (unless we need to navigate without intercept) <br>
 	as it won't disturb sites which are outside of our scope - something which is particularly nice <br>
-	if we need to Google something in the same browser. 
-	- Ans : is in `target scope`
-	- in `Target` tab -> `site map` -> u see that services , etc stuff are running of firefox which are intercept by BurpSuite
-	- but if i want to look at this only for testing i.e <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-8-M2.jpg" alt="" width="500"/>
-	- cuz let's say u're typing something on google research work then all the stuff , whatsapp running & <br>
+	if we need to Google something in the same browser. <br>
+	Ans : is in `target scope` 
+	<br>- in `Target` tab -> `site map` -> u see that services , etc stuff are running of firefox which are intercept by BurpSuite
+	<br>- but if i want to look at this only for testing i.e <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-8-M2.jpg" alt="" width="500"/>
+	<br>- cuz let's say u're typing something on google research work then all the stuff , whatsapp running & <br>
 		messages are coming frequently will be intercept by Burp Suite 
-	- so this section gets long , right click on that localhost -> Add to Scope -> click No , <br>
+	<br>- so this section gets long , right click on that localhost -> Add to Scope -> click No , <br>
 		click on that filter tab -> check `Show only in-scope items` like this <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-9-M2.jpg" alt="" width="500"/>
-	- so all those unnecessary things go away & only targeted thing will get visible for testing
+	<br>- so all those unnecessary things go away & only targeted thing will get visible for testing
 
 ---
 ### End of the lecture (Doubts)
