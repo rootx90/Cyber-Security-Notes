@@ -4,8 +4,8 @@
 ### what we'll learn
 > Lecture Name : Burp Suite #3 How Burp Suite Proxy Works? MITM Attack?
 > 1) what's proxy
-> 2) working of it
-> 3) proxy of BurpSuite
+> 2) role/working of it
+> 3) working of proxy in BurpSuite
 > 4) task related to dark mode proxy (not important topic)
 
 ---
@@ -58,7 +58,7 @@
 	9) let's say 1st friend was appreciating (about his 3rd friend) with 2nd friend but 2nd friend modified it & <br>
 		said to 3rd friend that 1st friend was saying wrong things about u
 
-### working of it in BurpSuite
+### working of proxy in BurpSuite
 - STEP 1 : Now let's on the proxy , so in kali linux , run burpSuite in the terminal as `burpsuite` command
 - STEP 2 : so tryhackme.com/room/burpsuitebasics -> in `introduction` section, start the machine & setup the VPN also
 - STEP 3 : copy the IP address which is given by tryhackme.com/room/burpsuitebasics
