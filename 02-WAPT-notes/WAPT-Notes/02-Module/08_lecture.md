@@ -11,37 +11,38 @@
 ---
 ### what's Proxy
 - Eg of Proxies : in classroom , u said proxy attendance to a friend <br>
-	which mean that friend ill do that work for u , if you're not going to college ✔️
+	which mean that friend will do that work for u , if you're not going to college ✔️
 
 ### role/working of proxy
-- `1st` : To Filter websites
+- `1st work of proxy` : To Filter websites
     - in college/office , some websites won't open like facebook , tiktok , etc.. so they blocked those websites , <br>
 		so "how they block these websites" ✔️
-    - internet allows every websites , so let's say you're in network team of an organization & u want to block  
-    	- Q : How u gonna block those websites ?
-			1) whatever all the traffic/websites are coming , u need to check - means let's say a user writing `tryhackme.com`
-			2) so this website first will check whether this website defined inside the allowed list or not
-			3) Q : how to check whether that website defined in the allowed list or not - Ans : so this done via proxy
+    - internet allows every websites ✔️, so let's say you're in network team of an organization & u want to block   
+        - Q : How u gonna block those websites ?
+        	1) whatever all the traffic/websites are coming , u need to check - means let's say a user writing "tryhackme.com"
+        	2) so this website first will check whether this website defined inside the allowed list or not
+        	3) Q : how to check whether that website defined in the allowed list or not - Ans : so this done via proxy
 	- this shows the first working of it i.e to filter websites means to allow some websites according to requirement <br>
 		& don't allow some which are not needed
   	- Diagram explanation of how request/response done with proxy server : <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-0-M2.jpg" alt="" width="500"/>
 		- in the middle aka proxy server
-		1) the request of client first goes to -> the Proxy server -> the main server i.e web server , <br>
-			the response of a web server -> to the proxy server -> to the client ✔️
-		2) Eg : if you're accessing `tryhackme.com` , so firstly , GET request of that website goes to the Proxy server , <br>
-			the GET request don't go directly to the main web server (that's why the proxy server acting as MITM attack) ✔️
+		1) the request of client 1stly goes to -> the Proxy server -> then the main server (i.e web server of that website)<br>
+			then the response of a web server goes to -> to the proxy server -> then to the client ✔️
+		2) Eg : if you're accessing "tryhackme.com" , so firstly , GET request of that website goes to the Proxy server <br>
+			but the GET request don't go directly to the main web server (that's why the proxy server acting as MITM attack) ✔️
 		3) so the GET request will go -> to the proxy server -> now the proxy server will check that website exist or not ✔️
 		4) Now the proxy server will see whether that website is inside the allowed list or not , <br>
-			so if that website in the allowed list then only the request will go to the web server of `tryhackme.com`  ✔️
+			so if that website in the allowed list then only the request will go to the web server of "tryhackme.com"  ✔️
 		5) then the web server will send the response -> goes to the proxy server -> then it goes to the client ✔️ 
 		6) but if that website is not allowed then the request goes from the client -> <br>
 			to the proxy server -> & the proxy server will check & tell that this website is disallowed , <br>
-			so the response will go to the client directly , the request will not go to the web server ✔️ 
-		7) & u'll get generic error in u're client machine ✔️
-- `2nd` : modify the request/response after intercepting
+			so the response (with a generic error shown to the client machine) will go to the client directly <br>
+			& the request will not go to the web server ✔️ <br>
+	- so 1st work of proxy i.e to filter the websites
+- `2nd work of proxy` : modify the request/response after intercepting
 	1) firstly , all the requests going via the proxy server & responses coming on the proxy server
 	2) if we want to test one or more websites then we can do changes on them
-	3) Eg : means whatever the GET request goes to the proxy server like u need `tryhackme.com` page , <br>
+	3) Eg : means whatever the GET request goes to the proxy server like u need "tryhackme.com" page , <br>
 		so u can do changes on runtime cuz that request didn't send to the web server yet ✔️
 	4) Eg : let's say on a banking website , u're sending a GET request that bring my account number details & <br>
 		that backing webapp is vulnerable (means no good developer made that)
