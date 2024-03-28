@@ -11,52 +11,54 @@
 ---
 ### what's Proxy
 - Eg of Proxies : in classroom , u said proxy attendance to a friend <br>
-	which mean that friend will do that work for u , if you're not going to college ✔️
+	which mean that friend will do that work for u , if u're not going to college ✔️
 
 ### role/working of proxy
 - `1st work of proxy` : To Filter websites
     - in college/office , some websites won't open like facebook , tiktok , etc.. so they blocked those websites , <br>
 		so "how they block these websites" ✔️
-    - internet allows every websites ✔️, so let's say you're in network team of an organization & u want to block   
-        - Q : How u gonna block those websites ?
-        	1) whatever all the traffic/websites are coming , u need to check - means let's say a user writing "tryhackme.com"
-        	2) so this website first will check whether this website defined inside the allowed list or not
-        	3) Q : how to check whether that website defined in the allowed list or not - Ans : so this done via proxy
+    - Generally , internet allows every websites ✔️, so let's say u're in network team of an organization & u want to block   
+        - Q : How u gonna block those websites which u don't want in ur organization ? ✔️
+        	<br>Ans : 
+			<br>1st) so whatever all the traffic/websites are coming , u need to check - means let's say a user writing "tryhackme.com"
+        	<br>2nd) so first we'll check whether this website defined inside the allowed list or not
+        	<br>3rd) but Q : how to check whether that website defined in the allowed list or not - Ans : so this done via proxy
 	- this shows the first working of it i.e to filter websites means to allow some websites according to requirement <br>
 		& don't allow some which are not needed
   	- Diagram explanation of how request/response done with proxy server : <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-0-M2.jpg" alt="" width="500"/>
 		- in the middle aka proxy server
-		1) the request of client 1stly goes to -> the Proxy server -> then the main server (i.e web server of that website)<br>
+		- the request of client 1stly goes to -> the Proxy server -> then the main server (i.e web server of that website)<br>
 			then the response of a web server goes to -> to the proxy server -> then to the client ✔️
-		2) Eg : if you're accessing "tryhackme.com" , so firstly , GET request of that website goes to the Proxy server <br>
+		- Eg : if u're accessing "tryhackme.com" , so firstly , GET request of that website goes to the Proxy server <br>
 			but the GET request don't go directly to the main web server (that's why the proxy server acting as MITM attack) ✔️
-		3) so the GET request will go -> to the proxy server -> now the proxy server will check that website exist or not ✔️
-		4) Now the proxy server will see whether that website is inside the allowed list or not , <br>
+		- so the GET request will go -> to the proxy server -> now the proxy server will check that website exist or not ✔️
+		- Now the proxy server will see whether that website is inside the allowed list or not , <br>
 			so if that website in the allowed list then only the request will go to the web server of "tryhackme.com"  ✔️
-		5) then the web server will send the response -> goes to the proxy server -> then it goes to the client ✔️ 
-		6) but if that website is not allowed then the request goes from the client -> <br>
+		- then the web server will send the response -> goes to the proxy server -> then it goes to the client ✔️ 
+		- but if that website is not allowed then the request goes from the client -> <br>
 			to the proxy server -> & the proxy server will check & tell that this website is disallowed , <br>
-			so the response (with a generic error shown to the client machine) will go to the client directly <br>
+			so the response (with a generic error shown to the client machine) will go back to the client directly <br>
 			& the request will not go to the web server ✔️ <br>
-	- so 1st work of proxy i.e to filter the websites
+	- so 1st work of proxy i.e to filter the websites : means if there's a requirement <br>
+		then allow something & disallow something 
 - `2nd work of proxy` : modify the request/response after intercepting
-	1) firstly , all the requests going via the proxy server & responses coming on the proxy server
-	2) if we want to test one or more websites then we can do changes on them
-	3) Eg : means whatever the GET request goes to the proxy server like u need "tryhackme.com" page , <br>
+	- firstly , all the requests going via the proxy server & responses coming on the proxy server
+	- if we want to test one or more websites then we can do changes on them
+	- Eg : means whatever the GET request goes to the proxy server like u need "tryhackme.com" page , <br>
 		so u can do changes on runtime cuz that request didn't send to the web server yet ✔️
-	4) Eg : let's say on a banking website , u're sending a GET request that bring my account number details & <br>
+	- Eg : let's say on a banking website , u're sending a GET request that bring my account number details & <br>
 		that backing webapp is vulnerable (means no good developer made that)
-	5) so generally , the GET request goes directly from client to the web server & <br>
-		the server will bring your account details -> but in the middle , there is a proxy server , <br>
+	- so generally , the GET request goes directly from client to the web server & <br>
+		the server will bring ur account details -> but in the middle , there is a proxy server , <br>
 		so firstly the GET request go from client to the proxy server then we can change the account number <br>
 		in the proxy server via BurpSuite. so we'll change the account number & that modified one will go the web server ✔️
-    6) & the web server don't even know difference b/w both that the actual account number send from the client & <br>
+    - & the web server don't even know difference b/w both that the actual account number send from the client & <br>
 		send by the proxy server -> which one is original cuz for the web server , the request came from the proxy server ✔️
-	7) Eg : it's a 3 people , 1st friend said something to 2nd friend to tell the 3rd friend <br>
+	- Eg : it's a 3 people , 1st friend said something to 2nd friend to tell the 3rd friend <br>
 		but 2nd friend changed/modified that chat & told to 3rd friend 
-	8) so 3rd friend never going to know that what 1st friend told him , <br>
+	- so 3rd friend never going to know that what 1st friend told him , <br>
 		so middle friend is controlling the things like modifying , what to tell & what not to tell , forwarding & dropping ✔️
-	9) let's say 1st friend was appreciating (about his 3rd friend) with 2nd friend but 2nd friend modified it & <br>
+	- let's say 1st friend was appreciating (about his 3rd friend) with 2nd friend but 2nd friend modified it & <br>
 		said to 3rd friend that 1st friend was saying wrong things about u
 
 ### working of proxy in BurpSuite
@@ -132,7 +134,7 @@
 	as it won't disturb sites which are outside of our scope - something which is particularly nice <br>
 	if we need to Google something in the same browser. 
 	- Ans : is in `target scope`
-	- in `Target` tab -> `site map` -> you see that services , etc stuff are running of firefox which are intercept by BurpSuite
+	- in `Target` tab -> `site map` -> u see that services , etc stuff are running of firefox which are intercept by BurpSuite
 	- but if i want to look at this only for testing i.e <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-8-M2.jpg" alt="" width="500"/>
 	- cuz let's say u're typing something on google research work then all the stuff , whatsapp running & <br>
 		messages are coming frequently will be intercept by Burp Suite 
