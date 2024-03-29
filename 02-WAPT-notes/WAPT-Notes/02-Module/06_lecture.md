@@ -112,41 +112,46 @@
     	- output : so we got a response as `200 OK` , 
 			<br>- we got a HTML code (which u can render the page there only - click on `render` btn)
 			<br>- & in Response panel , server's (type + version) showing - cuz the website is vulnerable
-	- intercepting via BurpSuite (setting up SSL Certificate issue with https)
+	- intercepting via BurpSuite (issue with https that's why setting up SSL Certificate )
 		- `testphp.vulnweb.com` - is a http website 
-		- we'll get issues with HTTPS when we intercept cuz each `HTTPS` website need SSL certificate <br>
+		- `imp note ✅` : we'll get issues with HTTPS when we intercept <br>
+			cuz each `HTTPS` website need a SSL certificate (like https://www.google.com) <br>
 			but HTTP websites doesn't need SSL certificate ✔️
-		- Eg : in firefox -> write https://demo.testfire.net then we'll get error <img src="../../notes-pics/02-Module/06_lecture/06_lecture-6-M2.jpg" alt="" width="500"/>
+		- Eg : in firefox -> write https://demo.testfire.net then we'll get error <br>
+			<img src="../../notes-pics/02-Module/06_lecture/06_lecture-6-M2.jpg" alt="" width="500"/>
 		- to avoid/skip this warning , installing SSL certificate
 			- we're running a proxy server on `127.0.0.1:8080`
-			- STEP 1 : so go that browser only which u have done the configuration for localhost <br>
+			- STEP 1 : so go that browser (only on which u have done the configuration BurpSuite Proxy server) <br>
 				& then write http://burp & hit enter
-			- now u'll get the page of burp suite <br><img src="../../notes-pics/02-Module/06_lecture/06_lecture-7-M2.jpg" alt="" width="500"/>
+    			- output : now u'll get the page of burp suite <br>
+					<img src="../../notes-pics/02-Module/06_lecture/06_lecture-7-M2.jpg" alt="" width="500"/>
 				- this page gives CA (certification authority) , it gives the certificate
 			- STEP 2 : click `CA Certificate` btn & download it
-			- STEP 3 : in firefox -> settings -> references -> search - certificate
+			- STEP 3 : in firefox -> settings -> preferences -> search - certificate
 			- STEP 4 : click `view certificate` btn -> import -> open it
-			- STEP 5 : check both the checkboxes -> click ok -> then ok , now CA certificate is configured in that browser
+			- STEP 5 : check both the checkboxes -> click ok -> then ok , output : now CA certificate is configured in that browser
 			- STEP 6 : in burp Suite -> Proxy tab -> Intercept tab -> turn off the `intercept` btn
-			- STEP 7 : reload that page again , so u'll not get the error again & that's HTTPS website
-		- role/purpose of SSL certificate in HTTPS ⭐
+			- STEP 7 : go to the browser & reload that website page again , <br>
+				output : so u'll not get that same error again & now that website is now HTTPS website
+		- `imp note ✅` : role/purpose of SSL certificate in HTTPS
 			- each HTTPs website needs a SSL certificate , so that website/webapp send the request/data to the web server <br>
 				that data/request will be in encrypted ✔️
 			- Eg : <img src="../../notes-pics/02-Module/06_lecture/06_lecture-8-M2.jpg" alt="" width="500"/>
-				- u'll get verified by : PortSwigger cuz on firefox , we installed the SSL certificate of PortSwigger ✔️
+				- u'll get verified by : PortSwigger cuz on firefox , we installed the SSL certificate of PortSwigger ✔️ <br>
+					due to this , now all the requests goes encrypted
 				- means each HTTPS website will get intercept by BurpSuite & no error will come <br>
 					cuz SSL certificate installed on this browser ✔️
-	- u can skip all these last 2 step , if u use `Open Browser` feature (which is embedded browser) of burp Suite
-	- so last 2 steps done if u're using old version of burp suite which hasn't have `Open browser` btn burp Suite feature
-	- we have `foxyProxy` firefox extension - which u can use if u don't wanna do that like <br>
-		going on settings -> preference -> & then searching `proxy` & setup the localhost for the burp Suite proxy browser like this <br>
-		<img src="../../notes-pics/02-Module/06_lecture/06_lecture-9-M2.jpg" alt="" width="500"/>
-		- click on Option , u can add Proxy server & see Anuj Sir already setup a Burp Proxy server as `127.0.0.1` like this <br>
-			<img src="../../notes-pics/02-Module/06_lecture/06_lecture-10-M2.jpg" alt="" width="500"/>
-		- the movement he want to use Burp proxy , he'll click on that Burp & if he wants to off the proxy , <br>
-			we'll click on `Turn Off (user firefox settings)`
+    	- u can skip all these of "to avoid/skip this warning , installing SSL certificate" , <br>
+			if u use `Open Browser` feature (which is embedded browser) of burp Suite <br>
+			so last 2 steps done if u're using old version of burp suite which hasn't have `Open browser` btn burp Suite feature
+    	- we have `foxyProxy` firefox extension - which u can use <br>
+			if u don't wanna follow steps of "to avoid/skip this warning , installing SSL certificate" <br>
+    		<img src="../../notes-pics/02-Module/06_lecture/06_lecture-9-M2.jpg" alt="" width="500"/>
+    		- click on Option , u can add Proxy server & see Anuj Sir already setup a Burp Proxy server as `127.0.0.1` like this <br>
+    			<img src="../../notes-pics/02-Module/06_lecture/06_lecture-10-M2.jpg" alt="" width="500"/>
+    		- the movement he want to use Burp proxy , he'll click on that Burp & if he wants to off the proxy , <br>
+    			then he'll click on `Turn Off (user firefox settings)`
 
 ---
-
 ### End of the lecture (Doubts)
 
