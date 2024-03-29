@@ -5,7 +5,7 @@
 > Lecture Name : Burp Suite #3 How Burp Suite Proxy Works? MITM Attack?
 > 1) what's proxy
 > 2) role/working of it
-> 3) working of proxy in BurpSuite
+> 3) Practical Work : working of proxy in BurpSuite
 > 4) task related to dark mode proxy (not important topic)
 
 ---
@@ -63,13 +63,22 @@
     	<br>- let's say 1st friend was appreciating (about his 3rd friend) with 2nd friend but 2nd friend modified it & <br>
 			said to 3rd friend that 1st friend was saying wrong things about u
 
-### working of proxy in BurpSuite
-- STEP 1 : Now let's on the proxy , so in kali linux , run burpSuite in the terminal as `burpsuite` command
-- STEP 2 : so tryhackme.com/room/burpsuitebasics -> in `introduction` section, start the machine & setup the VPN also
+### Practical Work : working of proxy in BurpSuite
+- STEP 0 : setup VPN [Connect to TryHackMe labs using VPN ( OpenVPN client ) - Kali Linux](https://www.youtube.com/watch?v=IvUsXg8dKds&ab_channel=LearningWithTom)
+- STEP 1 : Now let's ON the proxy - means in kali's terminal , run burpSuite as `burpsuite` command
+- STEP 2 : go tryhackme.com/room/burpsuitebasics -> in "introduction" section, start the machine
 - STEP 3 : copy the IP address which is given by tryhackme.com/room/burpsuitebasics
-- STEP 4 : to change the localhost & port then either go in BurpSuite , change the localhost proxy -> Proxy tab -> <br>
-	Options & add that IP address OR open firefox -> foxyProxy extension & click on Burp , <br>
-	now this browser got IP address as 10.10.33.100 & hit Enter
+- STEP 4 : 
+	- STEP 4.0 : go in BurpSuite -> proxy tab -> Options tab , output : u'll see default IP + port no. (i.e 127.0.0.1:8080)<br>
+		Q : why we're defining BurpSuite's proxy default (IP + port no.) on the browser ✔️<br>
+		Ans : cuz if we don't define on the browser - then BurpSuite won't be able to capture/intercept the requests & responses
+	- to change the proxy (IP address & port no.)
+		<br>either go in BurpSuite -> Proxy tab -> Options & add that IP address (which is given by tryhackme.com lab)
+		<br>OR open firefox -> foxyProxy extension & click on "Burp" option (which has default (IP + port no.) configured)
+	- STEP 4.1 : so we'll define the BurpSuite's default proxy (IP address & port) on the browser ,
+		<br>go to firefox -> open foxyProxy extension -> select Burp
+		<br>output : now firefox's IP address + portno. (i.e 127.0.0.1:8080)
+	- STEP 4.2 : in firefox , write "10.10.33.100" & hit Enter
 - STEP 5 : in burpSuite , on the intercept & in firefox , hit enter & u'll get the GET request of that IP address like this 
 	<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-1-M2.jpg" alt="" width="500"/>
 	- now u can either `forward`  or `Drop` this GET request just like 3 friend situation ✔️

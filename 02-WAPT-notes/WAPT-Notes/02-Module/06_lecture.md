@@ -10,12 +10,9 @@
 > 4) how to use it & it's different major components
 > 5) it's proxy component intro
 
-### Overview
-- BurpSuite intro , installation , configuration
-- Burp Suite - most imp tool ✔️️
-
 ### Aim of the lecture
 - after watching complete lectures of BurpSuite , u don't need to watch anything else for it
+- Burp Suite - most imp tool ✔️️
 
 ### Prerequisite
 - must know prev. 5 lectures of Basics of Web Fundamentals 
@@ -118,7 +115,7 @@
 			- STEP 3 : in firefox -> settings -> references -> search - certificate
 			- STEP 4 : click `view certificate` button -> import -> open it
 			- STEP 5 : check both the checkboxes -> click ok -> then ok , now CA certificate is configured in that browser
-			- STEP 6 : in burp Suite -> Proxy tab -> Intercept tab -> turn off the `intercept`button
+			- STEP 6 : in burp Suite -> Proxy tab -> Intercept tab -> turn off the `intercept` button
 			- STEP 7 : reload that page again , so u'll not get the error again & that's HTTPS website
 		- role/purpose of SSL certificate in HTTPS ⭐
 			- each HTTPs website needs a SSL certificate , so that website/webapp send the request/data to the web server <br>
@@ -127,7 +124,7 @@
 				- u'll get verified by : PortSwigger cuz on firefox , we installed the SSL certificate of PortSwigger ✔️
 				- means each HTTPS website will get intercept by BurpSuite & no error will come <br>
 					cuz SSL certificate installed on this browser ✔️
-	- u can skip all these last 2 step , if u use `Open Browser` feature of burp Suite
+	- u can skip all these last 2 step , if u use `Open Browser` feature (which is embedded browser) of burp Suite
 	- so last 2 steps done if u're using old version of burp suite which hasn't have `Open browser` button burp Suite feature
 	- we have `foxyProxy` firefox extension - which u can use if u don't wanna do that like <br>
 		going on settings -> preference -> & then searching `proxy` & setup the localhost for the burp Suite proxy browser like this <br>

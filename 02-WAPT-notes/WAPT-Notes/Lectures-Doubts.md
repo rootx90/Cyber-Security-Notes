@@ -123,8 +123,15 @@ general doubts
 
 - Lecture 8
 ```
-Q : what's the importance of having proxy server
-Ans : 
-Q : is there are alternative of proxy server & VPN
-Ans : 
+mine general doubts
+    Q : what's the importance of having proxy server
+    Ans : 
+    Q : is there are alternative of proxy server & VPN
+    Ans : 
+
+### role/working of proxy
+    Q : what does forwarding & dropping means in terms of proxy
+
+### Practical Work : working of proxy in BurpSuite
+    Q : whenever sir say we'll start the machine of tryhackme & to set a VPN , then how to set a VPN before
 ```

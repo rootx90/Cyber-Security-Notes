@@ -6,9 +6,6 @@
 > 1) features of BurpSuite
 > 2) proxy , Repeater , Intruder , Extender
 
-### Overview
-- in this lecture , only high level overview of these features of BurpSuite discussed
-
 ### Upcoming lectures
 - in upcoming lectures , we'll see these features in depth
 
