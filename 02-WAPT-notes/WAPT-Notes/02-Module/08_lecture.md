@@ -6,7 +6,7 @@
 > 1) what's proxy
 > 2) role/working of it
 > 3) Practical Work : working of proxy in BurpSuite
-> 4) task related to dark mode proxy (not important topic)
+> 4) Enable Dark Mode (not important topic)
 
 ---
 ### what's Proxy
@@ -64,7 +64,7 @@
 			said to 3rd friend that 1st friend was saying wrong things about u
 
 ### Practical Work : working of proxy in BurpSuite
-- STEP 0 : setup VPN [Connect to TryHackMe labs using VPN ( OpenVPN client ) - Kali Linux](https://www.youtube.com/watch?v=IvUsXg8dKds&ab_channel=LearningWithTom)
+- STEP 0 : setup VPN [Connect to TryHackMe labs using VPN ( OpenVPN client ) - Kali Linux](https://www.utube.com/watch?v=IvUsXg8dKds&ab_channel=LearningWithTom)
 - STEP 1 : Now let's ON the proxy - means in kali's terminal , run burpSuite as `burpsuite` command
 - STEP 2 : go tryhackme.com/room/burpsuitebasics -> in "introduction" section, start the machine
 - STEP 3 : copy the IP address which is given by tryhackme.com/room/burpsuitebasics
@@ -128,29 +128,35 @@
 
 ### Ques
 
-- Q 1) By default , the Burp Suite Proxy listens on only one interface. what is it ? use the format of IP:PORT <br>
+- Q 1) To complete this task u need to connect to the TryHackMe network through OpenVEN. <br>
+	I u're sing the in-browser machine this isn't needed <br>
+	(but make sure:u're accessing the machine & using Burp inside the in-browser machine). <br>
+	Ans : check in "Practical Work : working of proxy in BurpSuite"
+- Q 2) By default , the Burp Suite Proxy listens on only one interface. what is it ? use the format of IP:PORT <br>
 	Ans : `127.0.0.1:8080`
-- Q 2) Shortcut which allows to forward the request to Repeater ? <br>
-	Ans : `Ctrl + R`
-- Q 3) Shortcut to forward our request to intruder ? if we wanted <br>
+	- by default , BurpSuite proxy's run on "127.0.0.1:8080"
+- Q 3) Shortcut which allows to forward the request to Repeater ? <br>
+	Ans : `Ctrl + R` or u can right click on "Request" section - then click on "send to Repeater"
+- Q 4) Shortcut to forward our request to intruder ? if we wanted <br>
 	Ans : `Ctrl + I`
-- Q 4) Burp Suite saves the history of requests sent through the proxy along with their varying details. <br>
+- Q 5) Burp Suite saves the history of requests sent through the proxy along with their varying details. <br>
 	This can be especially useful when we need to have proof of our actions throughout a penetration test or <br>
-	we want to modify and resend a request we sent a while back. What is the name of the first section <br>
+	we want to modify & resend a request we sent a while back. What is the name of the first section <br>
 	wherein general web requests (GET/POST) are saved? <br>
 	Ans : `HTTP History` tab
-- Q 5) Defined in RFC 6455 as a low-latency communication protocol that doesn't require HTTP encapsulation, <br>
+- Q 6) Defined in RFC 6455 as a low-latency communication protocol that doesn't require HTTP encapsulation, <br>
 	what is the name of the second section of our saved history in Burp Suite? These are commonly used in <br>
 	collaborate application which require real-time updates (Google Docs is an excellent example here). <br>
 	Ans : in `proxy` , one we have `HTTP History` but another we have WebSocket history
-	- so server & client request & response shown/captured inside `webSocket History` tab, `Socket` -> used to make/build connection
-- Q 6) Before we move onto exploring our target definition, let's take a took at some of the advanced customization <br>
-	we can utilize in the Burp proxy. Move over to the options section of the Proxy tab and scroll down to Intercept Client Requests. <br>
+	- so server & client request & response shown/captured inside `webSocket History` tab, <br>
+		"Socket" : used to make/build connection
+- Q 7) Before we move onto exploring our target definition, let's take a took at some of the advanced customization <br>
+	we can utilize in the Burp proxy. Move over to the options section of the Proxy tab & scroll down to Intercept Client Requests. <br>
 	Here we an apply further fine-grained rules to define which requests we would like to intercept. <br>
 	Perhaps the most useful out of the default rules is our only AND rule. What is it's match type? <br>
 	Ans : URL
 	- Proxy -> options -> in Intercept Client Requests , in `And` , what's the `Match Type` i.e URL
-- Q 7) How about it's 'Re la tionship'? In this situation, enabling this match rule can be incredibly useful <br>
+- Q 8) `imp Q ✅` How about it's 'Re la tionship'? In this situation, enabling this match rule can be incredibly useful <br>
 	following target definition as we can effectively leave intercept on permanently (unless we need to navigate without intercept) <br>
 	as it won't disturb sites which are outside of our scope - something which is particularly nice <br>
 	if we need to Google something in the same browser. <br>
@@ -163,6 +169,8 @@
 		click on that filter tab -> check `Show only in-scope items` like this <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-9-M2.jpg" alt="" width="500"/>
 	<br>- so all those unnecessary things go away & only targeted thing will get visible for testing
 
+### Enable dark mode (not important topic)
+- in Burp Suite -> user options -> Display -> there u go
+
 ---
 ### End of the lecture (Doubts)
-- Turn On the Dark Mode in Burp Suite : user options -> Display -> there u go

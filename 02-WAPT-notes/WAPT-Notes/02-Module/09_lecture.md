@@ -1,12 +1,11 @@
 #WAPT-notes
 
-### Overview
-- Lecture name : SQL Injection on OWASP : Juice Shop  , Repeater & Target
-
+---
 ### what we'll learn
-- Target Definition - Process of doing WAPT : Target , Scope , Site Map & issues definitions - tabs  `(most imp⭐)`
-- Repeater in Detail
-- Juice Shop webapp - SQL Injection via Repeater
+> Lecture Name : Burp Suite #4 Sql Injection on OWASP Juice Shop | Repeater | Target
+> 1) Target Definition - Process of doing WAPT : Target , Scope , Site Map & issues definitions - tabs  `(most imp⭐)`
+> 2) Repeater in Detail 
+> 3) Juice Shop webapp - SQL Injection via Repeater
 
 ---
 
