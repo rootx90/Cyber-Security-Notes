@@ -73,48 +73,58 @@
 		Q : why we're defining BurpSuite's proxy default (IP + port no.) on the browser ✔️<br>
 		Ans : cuz if we don't define on the browser - then BurpSuite won't be able to capture/intercept the requests & responses
 	- to change the proxy (IP address & port no.)
-		<br>either go in BurpSuite -> Proxy tab -> Options & add that IP address (which is given by tryhackme.com lab)
-		<br>OR open firefox -> foxyProxy extension & click on "Burp" option (which has default (IP + port no.) configured)
+		<br>- either go in BurpSuite -> Proxy tab -> Options & add that IP address (which is given by tryhackme.com lab)
+		<br>- OR open firefox -> foxyProxy extension & click on "Burp" option (which has default (IP + port no.) configured)
 	- STEP 4.1 : so we'll define the BurpSuite's default proxy (IP address & port) on the browser ,
 		<br>go to firefox -> open foxyProxy extension -> select Burp
 		<br>output : now firefox's IP address + portno. (i.e 127.0.0.1:8080)
-	- STEP 4.2 : in firefox , write "10.10.33.100" & hit Enter
-- STEP 5 : in burpSuite , on the intercept & in firefox , hit enter & u'll get the GET request of that IP address like this 
+- STEP 5 : in burpSuite , turn ON the intercept & in firefox , write "10.10.33.100" , hit enter <br>
+	output : & u'll get the GET request of that IP address like this
 	<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-1-M2.jpg" alt="" width="500"/>
-	- now u can either `forward`  or `Drop` this GET request just like 3 friend situation ✔️
-	- or u can change/modify the GET request , so right click on empty area & <br>
-		click on `Send to Repeater` option ✔️ but click on `forward` button
-- STEP 6 : & turnoff the Intercept & all the things will save inside Proxy -> HTTP history ✔️
+	- now u can either `forward` or `Drop` this GET request (eg : just like in 3 friend situation , 2nd friend will control whether <br>
+		"I should tell or not or modify & then tell the chat of 1st friend") ✔️
+		<br>- so if u want to tell then click on "forward" btn
+		<br>- or if u don't want to tell - click on "drop" btn
+		<br>- or if u want change/modify the GET request , so right click on empty area & <br>
+			click on "Send to Repeater" option ✔️ but click on "forward" btn
+- STEP 6 : turnoff the Intercept & all the things will save inside Proxy -> "HTTP history" ✔️
 	- output : we'll get Juice shop <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-2-M2.jpg" alt="" width="500"/>
-	- STEP 6.1 : click let's say on Apple Juice (1000ml) & we'll GET request in Burp Suite , <br>
-		we can check all the request we made according to `time` like this <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-3-M2.jpg" alt="" width="500"/>
+	- STEP 6.1 : click let's say on Apple Juice (1000ml) , output : we'll GET request in Burp Suite , <br>
+		we can check all the request we made according to `time` like this 
+		<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-3-M2.jpg" alt="" width="500"/>
 - STEP 7 : to change this GET request , then right click on left side bottom `Request` section & <br>
 	click `Send to Repeater` (means modifying/changing the GET request & then sending to the server) ✔️
-	- STEP 7.1  : in Repeater , change the product from `1` as `7` then we'll get 7 product as Response also <br>
-		like this <br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-4-M2.jpg" alt="" width="500"/>
-	- Once u change from 1 to 7 inside the GET request then we'll get response for 7 reviews also 
+	- STEP 7.1 : in Repeater , change the product from "1" as "7" , <br>
+		output : then we'll get 7 product as Response also like this 
+		<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-4-M2.jpg" alt="" width="500"/>
+	- inside the GET request , Once u change from 1 to 7 , output : then we'll get response "200 OK" & for item no. 7 also
 		<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-5-M2.jpg" alt="" width="500"/>
-	- so we changed the data & item goes to 7 i.e Green Smoothe
-- STEP 8: we can run intruder  
-	- STEP 8.1 : in Repeater -> right click on `Request` section & click `Send to Intruder`
+	- conclusion : 
+		<br>- so we changed the data (i.e the request) & item no. goes to 7 i.e Green Smoothe
+		<br>- we also saw "Q : how repeater works"
+- STEP 8: we can run intruder
+	- STEP 8.1 : in Repeater -> right click on "Request" panel & click on "Send to Intruder"
 	- STEP 8.2 : in burp Suite -> Intruder tab
 		- we'll get updated `Target` 
 		- in `Positions` tab (it's a main tab where we need to define where we want to do intruder) ✔️
-	- STEP 8.3 : in `Positions` 
-		- click on `clear` button
-	- now we did from 1 to 7 but what if we want to run till 100 GET requests step by step automatically ✔️
-	- STEP 8.4 : select that `7` & click on `Add %` button (which is aka marker) like this 
-		<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-6-M2.jpg" alt="" width="500"/>
-		- which means left & right numbers of 7 will change ✔️
-	- STEP 8.5 : Intruder have 4 Attack modes/types : but select it as `Sniper`
-	- STEP 8.6 : `Payloads` tab -> Payload type as `Numbers` 
-		- in `Payload Options [numbers]` -> from as `1` , `To` as 10 & Step as `1` <br>
-			(which means steps will increase by 1 like 1 , 2 , 3 , 4 etc...)
-    - STEP 8.7 : click `Start Attack` button, now intruder will start & u'll get all those 10 items with 200 ok status code 
-		<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-7-M2.jpg" alt="" width="500"/>
-- if we do these 10 GET requests send via `repeater` then time taking increase , <br>
-	even thou currently there are 10 GET requests only but what if we have 1000 requests , <br>
-	so `intruder` will do automatically fast ✔️
+	- STEP 8.3 : in `Positions` -> click on `clear` btn
+	- Q : now we did changed the request from 1 as 7 <br>
+		but we want to run GET requests from 1 to 100 step by step automatically - how we can do this ✔️
+		- Ans : we'll see it in details , right now let's see a small example of it
+    	- STEP 8.4 : select that `7` & click on `Add %` btn (which is aka marker) like this 
+    		<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-6-M2.jpg" alt="" width="500"/>
+    		<br>which means left & right numbers of 7 will change ✔️
+    	- STEP 8.5 : Intruder have 4 Attack modes/types - but right now select it as `Sniper`
+    	- STEP 8.6 : `Payloads` tab -> select "Payload type" as `Numbers` 
+    		- in `Payload Options [numbers]` section -> write "from as" `1` , `To` as 10 & Step as `1` <br>
+    			(which means steps will increase by 1 like 1 , 2 , 3 , 4 etc...)
+        - STEP 8.7 : click `Start Attack` btn <br>
+			output : now intruder will start & u'll get all those 10 items with 200 ok status code 
+    		<br><img src="../../notes-pics/02-Module/08_lecture/08_lecture-7-M2.jpg" alt="" width="500"/>
+			<br>- so after this , we got to know the website has 10 items without any buy
+        - if we do these 10 GET requests send via `repeater` then manually doing it step by step will be time wasting ,<br>
+        	even thou currently there are 10 GET requests only but what if we have 1000 requests ,<br>
+        	so `intruder` will do automatically fast ✔️
 
 ### Ques
 
