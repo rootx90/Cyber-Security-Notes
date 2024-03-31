@@ -117,40 +117,46 @@
 
 ### Repeater + Practical Work of it
 - used to modify the GET Request before sending to the server cuz once we modify the GET request <br>
-	then sending to the server then the response will might get different - this is done by u as a attacker
-- Practical Work : Q : How Juice Shop webapp is vulnerable via SQL injection
-	- STEP 1: run the machine from tryhackme.com - burpsuite -> copy the IP address i.e `10.10.234.165`
-	- STEP 2: in firefox , run the IP address (Juice Shop webapp) & click on `login`
-	- STEP 3: when u try to login then u'll get error & then 
-		- STEP 3.1: go in BurpSuite -> proxy -> HTTP history -> click on time column to sort it & go & click on the latest request 
-		- STEP 3.2 : right click on `Request` section -> click `Send to Repeater` like this 
-			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-3-M2.jpg" alt="" width="500"/>
-		- STEP 3.3: in Repeater tab & this is vulnerable application that's why email & password coming
-		- STEP 3.4: the GET request already gone to the server , <br>
-			so modify the GET request let's say change the password - inside double quotes put single quote <br>
-			& click on `send` & u'll get a response as 401 unauthorized & invalid email or password like this 
-			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-4-M2.jpg" alt="" width="500"/>
-		- STEP 3.5: now let's say make email as single quote like we did for password & click on `send` , <br>
-			so we'll get `500 internal server error` ✔️ like this
-			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-5-M2.jpg" alt="" width="500"/>
-		- even in value of `message` property/key is giving error i.e SQLITE ERROR & even we're getting sqlite file i.e sqlite.js file 
-		- & SQL command also coming , so this webapp is too vulnerable that's why we're getting too much information <br>
-			about the GET request cuz this webapp is vulnerable via SQL injection ✔️ 
-	- STEP 4: so we got to know this webapp is vulnerable via SQL injection
-		- STEP 4.1: go to that webapp -> click on customer feedback
-		- Q : now find the POST request in ur HTTP History in Burp & send it to Repeater
-		- STEP 4.2: in Burp -> Proxy -> HTTP History , now currently we don't have the customer feedback request , <br>
-			so go to the webapp & fill the customer feedback form
-		- STEP 4.3: in Burp , we'll get the POST request of customer feedback like this . Select that POST request <br>
-			& right click on Request section & click `Send to Repeater` 
-			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-6-M2.jpg" alt="" width="500"/>
-    	- Q : What field do we have to modify in order to submit a zero-star review
-		- STEP 4.4: so now we need to modify the request to give the 0-star review (cuz no 0-star functionality webapp have) 
-    		<br>- in burp -> Repeater , make the `rating` property as `0` & click on `Send` , we'll get response as `201 created` <br>
-			which means we can 0-star can be given but the webapp has functionality from 1 to 5 ✔️ 
-			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-7-M2.jpg" alt="" width="500"/>
-		- we got success message for completing the challenge 
-			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-8-M2.jpg" alt="" width="500"/>
+	then sending to the server then the response will might get different - this is done by u as a attacker ✔️
+- it's most powerful component in BurpSuite
+- Ques
+    - Practical Work : Q : How Juice Shop webapp is vulnerable via SQL injection
+    	- STEP 1: in tryhackme.com , run the machine - then copy the IP address i.e "10.10.234.165"
+    	- STEP 2: in firefox , paste the IP address (Juice Shop webapp) & click on "login" menu btn
+    	- STEP 3: in login page , write credentials - then click "login" btn , <br>
+			output : u'll get error i.e invalid email & password
+    		- STEP 3.1: go in BurpSuite -> proxy -> HTTP history -> click on "time" column to sort it <br>
+				as time & click on the latest request 
+    		- STEP 3.2 : in "Request" section , right click & click "Send to Repeater" like this 
+    			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-3-M2.jpg" alt="" width="500"/>
+    		- STEP 3.3: go to "Repeater" tab , output : this is vulnerable application that's why email & password coming
+    		- STEP 3.4: the GET request already gone to the server , in "Repeater" tab , <br>
+				so modify the GET request let's say change the password - inside double quotes put a single quote<br>
+    			& click on "send" btn , output : u'll get a response as 401 unauthorized & invalid email & password like this 
+    			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-4-M2.jpg" alt="" width="500"/>
+    		- STEP 3.5: now let's say make email as a single quote same as we did for password & click on "send" btn, <br>
+    			output : we'll get "500 internal server error" ✔️
+    			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-5-M2.jpg" alt="" width="500"/>
+        		<br>- in error , even in value of `message` property/key is giving error <br>
+					i.e SQLITE ERROR & even we're getting sqlite file i.e sqlite.js file 
+            	<br>- & SQL command also coming , so this webapp is too much vulnerable that's why we're getting too much information <br>
+					about the GET request cuz this webapp is vulnerable via SQL injection (cuz we got SQLITE ERROR) ✔️ 
+    	- STEP 4: so we got to know this webapp is vulnerable via SQL injection
+    		- STEP 4.1: go to the webapp -> click on "customer feedback"
+    		- Q : now find the POST request in ur HTTP History in Burp & send it to Repeater
+    		- STEP 4.2: in Burp -> Proxy -> HTTP History , output : now currently we don't have the customer feedback request , <br>
+    		- STEP 4.3 : so go to the webapp & fill the customer feedback form including "rating" -> click on "submit" btn
+    		- STEP 4.4 : in Burp -> Proxy -> HTTP History , <br>
+				output : in "Request" section , we got the POST (Request & Response) of "customer feedback" <br>
+				- Select the POST "Request" section -> right click on "Request" section -> click on "Send to Repeater"
+    			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-6-M2.jpg" alt="" width="500"/>
+        	- Q : What field do we have to modify in order to submit a zero-star review
+    		- STEP 4.5: now we need to modify the request to give the 0-star review (cuz no 0-star functionality in the webapp has) 
+        		<br>in burp -> Repeater -> write the "rating" property's value as `0` -> click on "Send" btn , <br>
+				output : we'll get response as `201 created` (which means we can give "0" star but the webapp has functionality from 1 to 5) ✔️
+    			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-7-M2.jpg" alt="" width="500"/>
+        		<br>- we got success message for completing the challenge like this
+    			<br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-8-M2.jpg" alt="" width="500"/>
 
 ---
 ### End of the Lecture (Doubts)
