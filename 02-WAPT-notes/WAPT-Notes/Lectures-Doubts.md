@@ -1,10 +1,16 @@
 #WAPT-notes 
 
 ## Apart from Lectures
-- Q : in WAPT playlist : https://www.utube.com/watch?v=RSyMIy2-iUc&list=PLHOJoqBk02jQWQ7UMwRkAoznEzRtKI1zk&index=2&ab_channel=EthicalSharmaji <br>
-    - Hacking playlist not working
+1. How do u remember/retain & process of thinking <br>
+    what's ur mindset whenever u learn new things & u can't able to remember
+2. sir do u listen to music while learning a new concept or implement a new concept <br>
+    tell reason in both cases i.e Yes or No
+
 
 ## related to Course
+- Q : in WAPT playlist , Hacking playlist not working <br>
+    https://www.youtube.com/watch?v=RSyMIy2-iUc&list=PLHOJoqBk02jQWQ7UMwRkAoznEzRtKI1zk&index=2&ab_channel=EthicalSharmaji
+
 ```
 Q : couldn't able to open this room because this room is private
     Even i open the BurpSuite room in tryhackme , BurpSuite Room section is divided into individual rooms based on topics 
@@ -35,7 +41,6 @@ Ans : u can buy tryhackme subscription for 1 month and do these paid rooms.It wi
        Which one should I buy for 1month subscription? Let me know.
     Ans : monthly subscription of tryhackme will give u the access to all the paid rooms.So, u can access anyone.
 
-    
 ```
 
 ## Lectures Doubts
@@ -134,4 +139,20 @@ mine general doubts
 
 ### Practical Work : working of proxy in BurpSuite
     Q : whenever sir say we'll start the machine of tryhackme & to set a VPN , then how to set a VPN before
+```
+
+- Lecture 9
+```
+mine general doubts
+    ### Ques
+        4) Which poisoning issue arises when an application behind a cache process input that is not included in the cache key
+        Ans : Web Cache Poisoning
+        Doubt : 
+            "Web cache Poisoning vulnerabilities arise when an application behind a cache processes input 
+            that is not included in the cache key"
+            1st) explain what have u understand after reading this statement
+            2nd) ask from sir i.e "whenever u read a sentence & after reading it 
+                - then couldn't able to understand then what he do"
+                give ur example here that u read the above sentence but u couldn't able to understand
+        AI Ans : https://www.perplexity.ai/search/sentence-Web-cache-W.Ovt8LGT_S6OoA9N7uriA
 ```
