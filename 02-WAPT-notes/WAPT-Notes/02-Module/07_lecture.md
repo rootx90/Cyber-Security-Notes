@@ -3,8 +3,18 @@
 ---
 ### what we'll learn
 > Lecture Name : Burp Suite #2 Features | Proxy | Repeater | Intruder | Extender
-> 1) features of BurpSuite
-> 2) proxy , Repeater , Intruder , Extender
+> 1) proxy
+> 2) Target
+> 3) Intruder
+> 4) Repeater
+> 5) Sequencer
+> 6) Decoder
+> 7) Comparer
+> 8) Extender
+> 9) Scanner
+> 10) Extender
+> 11) Scanner
+> - Ques
 
 ### Upcoming lectures
 - in upcoming lectures , we'll see these features in depth
@@ -18,7 +28,7 @@
 
 - Reference : [TryHackMe | Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)
 
-### Proxy
+### 1. Proxy
 - Definition 
 	- means the Burp Proxy allows us to intercept & modify requests/responses when interacting with web applications.
 	- means used for funnel traffic analysis 
@@ -34,7 +44,7 @@
 	Q : if u turn "Intercept" btn OFF - then how packets capturing happen ✔️<br>
 	Ans : then packets capturing goes inside HTTP history
 
-### Target
+### 2. Target
 - Definition
     - how we set the scope of our project. We can also use this to effectively create a site map of the application we're testing.
 - importance of it
@@ -48,12 +58,12 @@
     	<br>- & those websites/webapps come inside `site map` tab , u can right click on them to put them in `scope` tab ✔️
         <br>- so `Target` tab is good to manage different reports
 
-### Intruder `imp ✅`
+### 3. Intruder `imp ✅`
 - usecase 
 	- powerful tool for everything from field fuzzing to credential stuffing & etc
 	- mostly it's used for Brute Forcing - Eg : SQL Injection ✔️
 
-### Repeater `imp ✅`
+### 4. Repeater `imp ✅`
 - definition
 	- Allows us to `repeat` requests that have previously been made with or without modification. <br>
   		Often used in a precursor step to fuzzing with the aforementioned intruder
@@ -64,13 +74,13 @@
 	& do the `POST` request & if that banking webapp or website is vulnerable then the money comes into ur account <br>
 	& `reponse` status code will become `200 ok` ✔️
 
-### Sequencer
+### 5. Sequencer
 - Definition
 	- Analyzes the 'randomness' present in parts of the web app which are intended to be unpredictable.
 	- used to find out how much 'randomness' of that session Cookie ✔️
 - usecase : generally , used for testing session cookies ✔️
 
-### Decoder
+### 6. Decoder
 - definition
 	- it allows us to perform various transforms on pieces of data. These transforms vary <br>
 		from decoding/encoding to various bases or URL encoding
@@ -80,7 +90,7 @@
 		so for encoding , we also have decoding or decrypting stuff ✔️
 	- so whatever the request u capture , so if u send that request to decoder , so that request will get decode ✔️
 
-### Comparer `v imp ✅`
+### 7. Comparer `v imp ✅`
 - usercase : 
     - used to compare different responses or other pieces of data <br>
 		such as site maps or proxy histories (awesome for access control issue testing). <br>
@@ -88,7 +98,7 @@
     - when u see the request on the BurpSuite , then that request contain many parameters , <br>
     	so if u want to see/find the difference b/w those 2 requests/responses then use it ✔️
 
-### Extender
+### 8. Extender
 - Similar to adding mods to a game like minecraft , it allows to add components <br>
 	such as tool integrations, additional scan definitions & more.
 - in BurpSuite -> "Extender" tab -> "BApp Store" tab -> u'll see all the extensions & see rating , popularity , <br>
@@ -96,7 +106,7 @@
 	so those extensions u can install which are not BurpSuite Professional) 
 - use case : u want to add mods/tool/extension with Burp Suite ✔️
 
-### Scanner
+### 9. Scanner
 - this feature only in BurpSuite Professional Version
 - usecase
     - it automatically gives all the web vulnerability , shows the payload that the payload was used like this , <br>

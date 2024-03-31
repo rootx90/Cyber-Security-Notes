@@ -5,13 +5,12 @@
 > Lecture Name : Burp Suite #4 Sql Injection on OWASP Juice Shop | Repeater | Target
 > 1) Target Definition - Process of doing WAPT : Target , Scope , Site Map & issues definitions - tabs `most imp ⭐`
 > 2) Q : Practical Work of Target Definition/tab
-> 3) Ques
-> 4) Repeater + Practical Work of it
-> 5) Juice Shop webapp - SQL Injection via Repeater
+> - Ques
+> 3) Repeater + Practical Work of it
 
 ---
 
-### Target Definition `most imp ⭐`
+### 1. Target Definition `most imp ⭐`
 - contains some of the most imp. parts of a webapp penetration test
 - `Imp Note ⭐` : while doing penetration test , u must know on which thing u're testing (means what is in the `Scope` tab) , <br>
 	so whatever comes in the `Scope` tab , only those test will be tested , not something else ✔️
@@ -67,7 +66,7 @@
 			then it would lead to damaging & crash the webapp
     	- so these are things u need to keep in mind while doing as WAPT
 
-### Q : Practical Work of Target Definition/tab ✔️
+### 2. Q : Practical Work of Target Definition/tab ✔️
 - STEP 1 : in tryhackme.com , turn ON the Machine & copy the IP address
 - STEP 2 : in firefox -> FoxyProxy -> set the Burp Proxy - just click on "Burp" & automatically IP address will be updated , <br>
 		in new firefox tab , run that copied IP address i.e `10.10.234.165` & hit enter 
@@ -115,11 +114,11 @@
 	- STEP 1 : in Target -> Issue Definitions
 	- STEP 2 : see web cache poisoning , u'll get the answer
 
-### Repeater + Practical Work of it
+### 3. Repeater + Practical Work of it
 - used to modify the GET Request before sending to the server cuz once we modify the GET request <br>
 	then sending to the server then the response will might get different - this is done by u as a attacker ✔️
 - it's most powerful component in BurpSuite
-- Ques
+- Ques (Juice Shop webapp - SQL Injection via Repeater)
     - Practical Work : Q : How Juice Shop webapp is vulnerable via SQL injection
     	- STEP 1: in tryhackme.com , run the machine - then copy the IP address i.e "10.10.234.165"
     	- STEP 2: in firefox , paste the IP address (Juice Shop webapp) & click on "login" menu btn

@@ -7,13 +7,14 @@
 > 2) role/working of it
 > 3) Practical Work : working of proxy in BurpSuite
 > 4) Enable Dark Mode (not important topic)
+> - Ques
 
 ---
-### what's Proxy
+### 1. what's Proxy
 - Eg of Proxies : in classroom , u said proxy attendance to a friend <br>
 	which mean that friend will do that work for u , if u're not going to college ✔️
 
-### role/working of proxy
+### 2. role/working of proxy
 - `1st work of proxy` : To Filter websites
     - in college/office , some websites won't open like facebook , tiktok , etc.. so they blocked those websites , <br>
 		so "how they block these websites" ✔️
@@ -63,7 +64,7 @@
     	<br>- let's say 1st friend was appreciating (about his 3rd friend) with 2nd friend but 2nd friend modified it & <br>
 			said to 3rd friend that 1st friend was saying wrong things about u
 
-### Practical Work : working of proxy in BurpSuite
+### 3. Practical Work : working of proxy in BurpSuite
 - STEP 0 : setup VPN [Connect to TryHackMe labs using VPN ( OpenVPN client ) - Kali Linux](https://www.utube.com/watch?v=IvUsXg8dKds&ab_channel=LearningWithTom)
 - STEP 1 : Now let's ON the proxy - means in kali's terminal , run burpSuite as `burpsuite` command
 - STEP 2 : go tryhackme.com/room/burpsuitebasics -> in "introduction" section, start the machine
