@@ -39,8 +39,8 @@
 		within the site JavaScript. Return to our target tab and find the API endpoint highlighted in the following request :
 		- STEP 1: go to tryhackme.com proxy module & connect with a VPN & start the machine <br>
 			& copy the IP address i.e `10.10.191.203`
-		- STEP 2: in burpSuite > Target > Site Map , <br>
-			in `http://10.10.191.203` IP address folder > api > challenges > `score%20Board` file , <br>
+		- STEP 2: in burpSuite -> Target -> Site Map , <br>
+			in `http://10.10.191.203` IP address folder -> api -> challenges -> `score%20Board` file , <br>
 			so right click on that file & click `send to repeater`
 		- STEP 3: in repeater tab , in request section , right click & `send to Decoder`
 	2) Copy the first line of that request & paste it into decoder. Next, select 'Decode as ...' URL
@@ -64,7 +64,7 @@
 		- so we can see this in `comparer`  
 	6) Comparer can perform a diff against two different metrics, which one allows us to examine the data loaded <br>
 		in as-is rather than breaking it down into bytes? 
-		- STEP 1: in burpSuite > repeater , let's say click on `send` button
+		- STEP 1: in burpSuite -> repeater , let's say click on `send` button
 		- STEP 2: right click on Response section (which we got) & `send to comparer` & in Request section , <br>
 			change the Host as `google.com` & then again click on `send` btn & again right click on Response section <br>
 			& click `send to comparer`
@@ -76,7 +76,7 @@
 ### 2. Extender
 - means to increase the functionality , we have mods - means in burpSuite, <br>
 	we have specific extension that we can install (which as for community version)
-- in Extender tab > BApp Store - contains tons of extensions/mods & <br>
+- in Extender tab -> BApp Store - contains tons of extensions/mods & <br>
 	those are professional (we can't use them cuz we're in community version)
 - Ques (do it by urself)
 	1) Scroll down until u reach the 'Python Environment' section. Note, Burp requires the standalone edition of python. 

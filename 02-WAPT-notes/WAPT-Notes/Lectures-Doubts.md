@@ -105,7 +105,7 @@ general doubts
 - lecture 5 : 
 ```
 ### Intruder
-    Q : what "field fuzzing" means
+    Q : what "field fuzzing" means or "fuzzing" means
 
 ### Sequencer
     definition
@@ -156,3 +156,18 @@ mine general doubts
                 give ur example here that u read the above sentence but u couldn't able to understand
         AI Ans : https://www.perplexity.ai/search/sentence-Web-cache-W.Ovt8LGT_S6OoA9N7uriA
 ```
+
+- Lecture 10
+```
+### 1. Intruder
+    - intruder has 4 different attack types
+        Q : statement "multiple payload sets" , here what "sets" means
+        Q : in sniper , we need to put one by one the same payload on different positions
+            & that payload will run one by one 
+            & in "Battering Ram" , same payload can run on every selected positions simultaneously at the same time
+            & in Pitchfork , running different payloads for different positions simultaneously at a time 
+                (like username column have a different payload & password column have a different payload)
+            - am i correct or not
+```
+
+

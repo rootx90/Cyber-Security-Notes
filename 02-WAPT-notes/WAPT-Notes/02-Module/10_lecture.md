@@ -11,38 +11,41 @@
 ---
 
 ### 1. Intruder
-- a most powerful tool in Burp Suite cuz attacks like fuzzing , Bruteforce , etc💪
-- when to use Intruder
-	- `Repeater` handles experimentation like u took a one request & modify it then  hit it to the server 
+- a most powerful tool in Burp Suite cuz many attacks can be done via it like fuzzing , Bruteforce , etc
+- Q : when to use Intruder ✔️
+	- Ans : "Repeater" handles experimentation like u took a one request & modify it then  hit it to the server 
 	- but to do repeatedly testing , let's say 1000 of requests or need to test tons of payloads <br>
-		then `repeater` is not good (cuz we can't test each requests one by one) , so we need to automate ✔️
-	- so `Intruder` will be used to automate the task of testing tons of payloads or requests ✔️
-- use case + scenarios of intruder 
+		then "repeater" is not good (cuz we can't test each requests one by one) , so we need to automate
+	- so "Intruder" will be used to automate the task of testing tons of payloads or requests 
+- usecase + scenarios of intruder ✔️
 	1) Enumerating identifies : u want to identify usernames , u have predictable session/password recovery tokens 
-		<br>- u want to cycle them , want to guess simple/default password ✔️
-	2) Harvesting/take out useful data from user profiles ✔️ or other pages of interest via grepping our responses
-	3) Fuzzing for vulnerabilities like SQL injection, XSS & file path traversal ✔️
+		<br>- u want to cycle them , want to guess simple/default password 
+	2) Harvesting/take out useful data from user profiles or other pages of interest via grepping our responses
+	3) Fuzzing for vulnerabilities like SQL injection, XSS & file path traversal
 	- all these used via intruder
-- to achieve these various use cases above , intruder has 4 different attack types `(v imp ⭐)`
+- to achieve these various use cases of it , intruder has 4 different attack types `v imp ⭐`
 	- Note : it's v imp to know cuz these 3 different attack types used according to a situation/need ✔️
 	1) `Sniper` : 
 		- mostly used attack type
 		- used for only if u want one wordlist there ✔️
 		- Eg : in form , there is a username field & a password field , u know username already (let's username is Admin) <br>
 			& u want to know it's password & u're doing bruteForce attack , so in this case we'll use `sniper` <br>
-			cuz we'll want password via bruteForce ✔️
-		- but if u want to know both username & password then u'll use `Cluster Bomb` ✔️
+			cuz we want only password via bruteForce - but if u want to know both (username & password) <br>
+			then u'll use `Cluster Bomb` ✔️
+		- in sniper , cycles through our selected positions - means one payload put on 1st position <br>
+			then another one payload put on 2nd position & so on one by one <br>
+			but in "Battering Ram" , single payloads will be run on every positions (which are selected) ✔️
 	2) `Battering Ram` : 
 		- it's same as `Sniper` , it uses only one set of payloads
-		- but in sniper , cycles through our selected positions - means payload put on 1st position <br>
-			then payload put on 2nd position & so on one by one ✔️
 		- in `Battering Ram` , puts ur every payload will be inside every selected position 
     		<br>- means putting every payload in one go , means just one payload runs on every selected positions ✔️
-		- so it makes contact across a large surface with a single surface ✔️
+		- so it makes contact across a large surface with a single surface that's why called "Battering Ram" ✔️
     3) `Pitchfork` : 
 		- if u want multiple payload sets but one per position selected (means u need one by one)
-		- Eg : u have a list of usernames in 1st column , list of passwords in 2nd column & u want to run one by one ✔️
-		- in it , the iteration/loop goes like both payload sets/put simultaneously , here 1 payload doesn't run simultaneously ✔️
+		- Eg : u have a list of (usernames in 1st column , passwords in 2nd column) <br>
+			& u want to run one by one row-wise (like username - then its password <br>
+			then same with 2nd row's username & password , so on) ✔️
+		- in it , the iteration/loop goes like both payload sets/put run simultaneously , here 1 payload doesn't run simultaneously ✔️
 	4) `Cluster Bomb`  : 
 		- Eg : if u want to know both someone else username & password then u'll use `Cluster Bomb` ✔️
 		- used to use multiple payload sets (one per position selected) & iterate through <br>
@@ -53,18 +56,19 @@
 			the combinations of usernames & password , resulting in a total number of combination equaling usernames x passwords
 		- `Note` : this get pretty long if u're using the community edition of Burp
 - Ques
-	1) Which Attack type allows us to select multiple payload sets (one per position) & iterate via them simultaneously ?
+	- Q 1) Which Attack type allows us to select multiple payload sets (one per position) & iterate via them simultaneously ?
 		- Ans : Pitchfork
-	2) How about the attack type which allows us to use one payload set in every single position we've selected simultaneously ? 
+	- Q 2) How about the attack type which allows us to use one payload set in every single position we've selected simultaneously ? 
 		- Ans : Battering Ram
-	3) which attack type allows us to select multiple payload sets (one per position) and iterate through all possible combinations ?
+	- Q 3) which attack type allows us to select multiple payload sets (one per position) and iterate through all possible combinations ?
 		- Ans : Cluster Bomb
-	4) most commonly used , which attack type allows us to cycle through our payload set , <br>
+	- Q 4) most commonly used , which attack type allows us to cycle through our payload set , <br>
 		putting the next available payload in each position in turn ?
 		- Ans : Sniper
 - we'll be returning to the SQL injection vulnerability we previously discovered through using repeater , <br>
 	in tryhackme.com intruder - burpsuite , download `fuzzdb SQLi platform detection list` file
 - Ques : Practical Work - Intruder
+    - STEP 0 : click on "Download Task Files" btn
 	1) Return to the intruder in Burp. In our previous task, we passed our failed attempt to both repeater <br>
 		& intruder for further examination. Open up the Positions sub-tab in the intruder tab with this request now <br>
 		& verify that 'Sniper' is selected as our attack type
@@ -73,27 +77,27 @@
 			keep the intercept off of burpSuite , open the IP address on firefox 
 		- STEP 3: on the intercept of the burpSuite , go to login page of that IP address ("OWASP Juice Shop") & <br>
 			put any password & press `login` button
-		- STEP 4: in burpSuite > proxy > intercept , u'll get the Request then click on `forward` button <br>
+		- STEP 4: in burpSuite -> proxy -> intercept , u'll get the Request then click on `forward` button <br>
 			& right click & click `send to intruder`
 	2) Burp attempts to automatically highlight possible fields of interest for Intruder, however, <br>
 		it doesn't have it quite right for what we'll be looking at in this instance. <br>
 		Hit 'Clear' on the right-hand side to clear all selected Fields. 
-		- STEP 4.1: in burpSuite > intruder > Positions > click on `clear` button
+		- STEP 4.1: in burpSuite -> intruder -> Positions -> click on `clear` button
 		- STEP 4.2: keep the Attack type as `Sniper` , select the email (which is inside the double quotes) & click on `Add` button
 	3) Next, let's switch to the payloads sub-tab of intruder. Once there, hit 'Load' and select the wordlist <br>
 		you previously downloaded in question five that is attached to this task. 
-		- STEP 4.3: open that payload file & copy all the stuff , in intruder > Payloads , <br>
+		- STEP 4.3: open that payload file & copy all the stuff , in intruder -> Payloads , <br>
 			in `Payload Options [simple list]` section , click on `paste` button
 	4) Almost there! Scroll down and uncheck 'URL-encode these characters'. We don't want to have the characters sent <br>
 		in our payloads to be encoded as the otherwise won't be recognized by SQL. 
-		- STEP 4.4: in intruder > Payloads , "Payload Encoding" section - uncheck the "URL-encode these characters"
+		- STEP 4.4: in intruder -> Payloads , "Payload Encoding" section - uncheck the "URL-encode these characters"
 	5) Finally , click 'Start attack'. what is the first payload that returns a 200 status code , <br>
 		showing that we have successfully bypassed authentication ? 
 		- purpose of using Intruder - means the payload file (which we downloaded) contains too many stuff, <br>
 			so if we check that payloads one by one on that email then it would take too much time via `repeater` ,<br>
 			that's why `intruder` is best ✔️
 		- so `intruder` will try to run those different payloads (from payload file) simultaneously in less time like seconds ✔️
-		- STEP 4.5: in burpsuite > Proxy > turn off the proxy `intercept` then go to intruder > payloads , <br>
+		- STEP 4.5: in burpsuite -> Proxy -> turn off the proxy `intercept` then go to intruder -> payloads , <br>
 			then click on `start attack` button , click "ok" button
 		- STEP 4.6 : requests of different payloads via intruder looks like this <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-0-M2.jpg" alt="" width="500"/>
 		- so GET request going with different payloads , select any request , in `response` tab , <br>
@@ -102,7 +106,8 @@
 			so that's why `intruder` used for sending 1000 or lakhs requests
 		- in `response` tab , select the `200` status request which means server is saying u're credentials are correct <br>
 			& authentication done <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-1-M2.jpg" alt="" width="500"/>
-		- so this way we've done BruteForce attack , so in Request tab , if u use that email only <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-2-M2.jpg" alt="" width="500"/>
+		- so this way we've done BruteForce attack , so in Request tab , if u use that email only 
+			<br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-2-M2.jpg" alt="" width="500"/>
 		- then no need to give anything in password cuz it'll bypass the password cuz here `a' or 1=1--` <br>
 			means if anyone gets true then allow me to login in that webapp , so that `a'` or `1=1--` will break the execution , <br>
 			so `1=1--` , `2=2--` & so on.. will always be same ✔️
@@ -132,11 +137,11 @@
 	3) password reset tokens (sent with password resets that is theory uniquely tie users with their password reset requests)
 - Ques
 	1) Switch over to the HTTP History sub-tab of proxy.
-		- Ans : Proxy > Http History
+		- Ans : Proxy -> Http History
 	2) We're going to dig for a response which issues a cookie. Parse through the various responses <br>
 		we've received from juice shop until u find one that includes a 'Set-Cookie' header. 
 		- means we need a response which contain a cookie
-		- STEP 1: in burpSuite , Proxy > HTTP History , sort the responses according to `Cookies`
+		- STEP 1: in burpSuite , Proxy -> HTTP History , sort the responses according to `Cookies`
 	3) Once u've found a request response that issues a cookie, right-click on the request & select 'send to sequence'
 		- STEP 2: select that response which has a cookie <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-3-M2.jpg" alt="" width="500"/>
 		- STEP 3: in Request section , right click & click `Send to Sequencer` ✔️

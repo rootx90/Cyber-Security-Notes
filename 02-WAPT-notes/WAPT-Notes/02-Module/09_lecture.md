@@ -93,22 +93,22 @@
 	cuz `Api` folder removed from the scope ✔️
 
 ### Ques
-1) Browser around the rest of the application to build out our page structure in the target tab. <br>
+- Q 1) Browser around the rest of the application to build out our page structure in the target tab. <br>
 	Once u've visited most of the page of the site return to Burp Suite and expand the various levels <br>
 	of the application directory. What do we call this representation of the collective web application ? 
 	- Ans : Site map
 	- so in Target -> Site map -> if u open any webapp folder then whatever the stuff inside that webapp aka `page structure` , <br>
 		so a complete map of that webapp aka `site map` eg : "google map - webapp"
-2) What is the term for browsing the application as a normal user prior to examining it further ? 
+- Q 2) What is the term for browsing the application as a normal user prior to examining it further ? 
 	- Ans : happy path
-3) Within the target tab , a sub-tab for issue definitions `vv most imp ⭐`
+- Q 3) Within the target tab , a sub-tab for issue definitions `vv most imp ⭐`
 	- Ans : go Target -> `Issue definitions` tab <br>
 		output : so u'll see this <br><img src="../../notes-pics/02-Module/09_lecture/09_lecture-2-M2.jpg" alt="" width="500"/>
 	- whenever u make a Penetration Testing Report , <br>
 		u must have to give "Description" , "Remediation" , "References" , "Vulnerability classifications" , etc.
     - so `Issue Definitions` tab contains tons of issues (detected by Burp Scanner) , <br>
 		so from here u can give a PT (penetration testing) report like on "SQL Injection" issue ✔️
-4) Which poisoning issue arises when an application behind a cache process input that is not included in the cache key
+- Q 4) Which poisoning issue arises when an application behind a cache process input that is not included in the cache key
 	- Ans : Web Cache Poisoning
 	- STEP 0 : click on Hint button , so check issue definitions & refer items poisoning
 	- STEP 1 : in Target -> Issue Definitions
