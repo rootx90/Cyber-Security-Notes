@@ -128,19 +128,19 @@
 	- Now close the Intruder Popup window & click "ok" btn
 
 ### 2. Sequencer
-- v imp tool in WAPT cuz without session management , test cases , etc. , we can't do Penetration testing, <br>
-	that's why Sequencer important to do testing of session management or session cookies ✔️
+- v imp tool in WAPT - cuz without session management , test cases , etc. , we can't do Penetration testing, <br>
+	that's why "Sequencer" important to do testing of session management or session cookies ✔️
 - used for analyzing/checking the quality of randomness in an application's session tokens
 - randomness - means session tokens always keep changing & <br>
-	Q : why session tokens keep changing ? <br>
-	Ans : cuz let's say a person know about ur one token then he/she could see via changing it <br>
-	in order to know whether that modified session token is valid or not ✔️
-- Eg of the session token : let's say ur session token is xxxsomething.. & at the end there is a `3` , <br>
+	Q : why session tokens keep changing ✔️<br>
+	Ans : cuz let's say a person know about ur one token - then that person could see via changing it <br>
+	in order to know whether that modified session token is valid or not
+    <br>- Eg of the session token : let's say ur session token is xxxsomething.. & at the end there is a `3` , <br>
 	so he/she change that `3` into `4` to know whether that modified token is valid or not ✔️
-- Eg : OTPs which came to ur phone are also random , so that nobody can intercept & modify it <br>
+    <br>- Eg : OTPs which came to ur phone are also random , so that nobody can intercept & modify it <br>
 	that's why OTP doesn't come like `1234` , it always comes in randomness ✔️
 - To check the quality of this randomness - we have `sequencer` ✔️
-- use case of sequencer (where it's use to check randomness) ✔️
+- usecase of sequencer (where it's use to check randomness) ✔️
 	1) session tokens
 	2) Anti-CSRF (Cross Site Request Forgery) tokens
 	3) password reset tokens (sent with password resets that is theory uniquely tie users with their password reset requests)
@@ -150,13 +150,14 @@
 	2) We're going to dig for a response which issues a cookie. Parse through the various responses <br>
 		we've received from juice shop until u find one that includes a 'Set-Cookie' header. 
 		- means we need a response which contain a cookie
-		- STEP 1: in burpSuite , Proxy -> HTTP History , sort the responses according to `Cookies`
+		- STEP 1: in burpSuite , Proxy -> HTTP History , sort the responses according to "Cookies" column
 	3) Once u've found a request response that issues a cookie, right-click on the request & select 'send to sequence'
 		- STEP 2: select that response which has a cookie <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-3-M2.jpg" alt="" width="500"/>
-		- STEP 3: in Request section , right click & click `Send to Sequencer` ✔️
+		- STEP 3: in Request section , right click -> click "Send to Sequencer"
 	4) Change over sequencer & select 'star live capture'
 		- STEP 4: in sequencer tab , in `Token Location within Response` section , <br>
-			cookie automatically gets highlighted/inserted , so click `Start live capture` 
+			cookie automatically gets highlighted/inserted , so click "Start live capture" btn
+		- output : in Sequence popup window , now sequencer will start generating multiple requests
 	5) let sequencer run & collect ~10,000 requests. Once it hits roughly that amount hit 'Pause' and then 'Analyze now'
 		- it's saying we need to collect 10,000 requests but we'll learn 200 only cuz that much is not required
 		- STEP 5: now sequencer will capture the requests , so once either 200 or more than 200 requests goes <br>
@@ -164,15 +165,16 @@
 		- STEP 6: click on `Analyze now` btn , so u'll get this output of randomness of session cookie 
 			<br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-5-M2.jpg" alt="" width="500"/>
 	6) Parse through the results. What is the effective estimated entropy measured/unit in ?
-		- so u can see quality of randomness of that session cookie is : very good & entropy is 70bits (which is good) ✔️
+		- in 5th pic , u can see quality of randomness of that session cookie is : very good & <br>
+			entropy is 70bits (which is good) ✔️
 		- Ans : bits
 	7) In order to find the usable bits of entropy we often have to make some adjustments to have a normalized dataset. <br>
 		What item is converted in this process?
-		- Ans: token
+		- Ans: i.e token - where conversion happen
 	8) Read through the remaining results of the token analysis
 		- Ans: <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-5-M2.jpg" alt="" width="500"/> & 
 			<br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-6-M2.jpg" alt="" width="500"/>
-		- we got sample size & token length
+		- we got sample size & token length (which u can see in the pic)
 
 ### References Resources - Session Token
 - [Using Burp to Test Session Token Generation - PortSwigger](https://portswigger.net/support/using-burp-to-test-session-token-generation) ✔️
@@ -180,5 +182,4 @@
 - [Diff. b/w cookies, session and tokens - YT](https://www.utube.com/watch?v=GhrvZ5nUWNg&ab_channel=ValentinDespa)
 - [Session vs Token Authentication in 100 Seconds - Fireship YT](https://www.utube.com/watch?v=UBUNrFtufWo&ab_channel=Fireship)
 - [Session vs Token Based Authentication - GFG](https://www.geeksforgeeks.org/session-vs-token-based-authentication/)
-
 

@@ -168,6 +168,13 @@ mine general doubts
             & in Pitchfork , running different payloads for different positions simultaneously at a time 
                 (like username column have a different payload & password column have a different payload)
             Ans : check Ques 
+
+### 2. Sequencer
+    - Ques
+        7) In order to find the usable bits of entropy we often have to make some adjustments to have a normalized dataset. <br>
+		    What item is converted in this process?
+        Ans : Token
+        Doubt : couldn't able to understand why Token came & why Token considered as conversion in terms of what
 ```
 
 
