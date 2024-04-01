@@ -167,7 +167,7 @@ mine general doubts
             & in "Battering Ram" , same payload can run on every selected positions simultaneously at the same time
             & in Pitchfork , running different payloads for different positions simultaneously at a time 
                 (like username column have a different payload & password column have a different payload)
-            - am i correct or not
+            Ans : check Ques 
 ```
 
 

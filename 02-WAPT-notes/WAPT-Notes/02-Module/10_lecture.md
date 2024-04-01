@@ -26,7 +26,7 @@
 - to achieve these various use cases of it , intruder has 4 different attack types `v imp ⭐`
 	- Note : it's v imp to know cuz these 3 different attack types used according to a situation/need ✔️
 	1) `Sniper` : 
-		- mostly used attack type
+		- most commonly used attack type
 		- used for only if u want one wordlist there ✔️
 		- Eg : in form , there is a username field & a password field , u know username already (let's username is Admin) <br>
 			& u want to know it's password & u're doing bruteForce attack , so in this case we'll use `sniper` <br>
@@ -65,41 +65,42 @@
 	- Q 4) most commonly used , which attack type allows us to cycle through our payload set , <br>
 		putting the next available payload in each position in turn ?
 		- Ans : Sniper
-- we'll be returning to the SQL injection vulnerability we previously discovered through using repeater , <br>
-	in tryhackme.com intruder - burpsuite , download `fuzzdb SQLi platform detection list` file
+- we'll be returning to the SQL injection vulnerability we previously discovered through using repeater
 - Ques : Practical Work - Intruder
-    - STEP 0 : click on "Download Task Files" btn
+    0) Download the wordlist attached to this room, this is a shortened version of the "fuzzdb SQLI platform detection list".
+       - STEP 0 : in tryhackme , in this lab , click on "Download Task Files" btn
 	1) Return to the intruder in Burp. In our previous task, we passed our failed attempt to both repeater <br>
 		& intruder for further examination. Open up the Positions sub-tab in the intruder tab with this request now <br>
 		& verify that 'Sniper' is selected as our attack type
 		- STEP 1 : in kali linux , run `burpsuite` command & open burp suite website on firefox
-		- STEP 2 : in tryhackme.com - intruder , run the machine & copy IP address which is `10.10.135.237` , <br>
-			keep the intercept off of burpSuite , open the IP address on firefox 
-		- STEP 3: on the intercept of the burpSuite , go to login page of that IP address ("OWASP Juice Shop") & <br>
-			put any password & press `login` button
-		- STEP 4: in burpSuite -> proxy -> intercept , u'll get the Request then click on `forward` button <br>
-			& right click & click `send to intruder`
+		- STEP 2 : in tryhackme.com - intruder , run the machine & copy IP address i.e `10.10.135.237` , <br>
+			keep the "intercept" off of burpSuite , open the IP address on firefox
+		- STEP 3: in BurpSuite -> in "Proxy" -> in "intercept" -> turn ON "intercep" <br>
+			& go to login page of the IP address ("OWASP Juice Shop") -> fill the login page & press `login` btn
+		- STEP 4: in burpSuite -> proxy -> intercept , output : u'll get the Request 
+    		- STEP 4.0 : click on `forward` btn -> in the request -> right click -> click "send to intruder"
 	2) Burp attempts to automatically highlight possible fields of interest for Intruder, however, <br>
 		it doesn't have it quite right for what we'll be looking at in this instance. <br>
 		Hit 'Clear' on the right-hand side to clear all selected Fields. 
-		- STEP 4.1: in burpSuite -> intruder -> Positions -> click on `clear` button
-		- STEP 4.2: keep the Attack type as `Sniper` , select the email (which is inside the double quotes) & click on `Add` button
+		- STEP 4.1: in burpSuite -> intruder -> Positions -> click "clear" btn
+		- STEP 4.2: keep the Attack type as `Sniper` , select the email (which is inside the double quotes) & click on `Add` btn
 	3) Next, let's switch to the payloads sub-tab of intruder. Once there, hit 'Load' and select the wordlist <br>
-		you previously downloaded in question five that is attached to this task. 
-		- STEP 4.3: open that payload file & copy all the stuff , in intruder -> Payloads , <br>
-			in `Payload Options [simple list]` section , click on `paste` button
+		u previously downloaded in question five that is attached to this task. 
+		- STEP 4.3: open that payload file & copy all the stuff in it & in BurpSuite -> in "intruder" tab -> Payloads , <br>
+			in `Payload Options [simple list]` section , click on `paste` btn
 	4) Almost there! Scroll down and uncheck 'URL-encode these characters'. We don't want to have the characters sent <br>
 		in our payloads to be encoded as the otherwise won't be recognized by SQL. 
-		- STEP 4.4: in intruder -> Payloads , "Payload Encoding" section - uncheck the "URL-encode these characters"
+		- STEP 4.4: in intruder -> Payloads , "Payload Encoding" section -> uncheck the "URL-encode these characters"
 	5) Finally , click 'Start attack'. what is the first payload that returns a 200 status code , <br>
 		showing that we have successfully bypassed authentication ? 
 		- purpose of using Intruder - means the payload file (which we downloaded) contains too many stuff, <br>
-			so if we check that payloads one by one on that email then it would take too much time via `repeater` ,<br>
-			that's why `intruder` is best ✔️
+			so if we check each payloads (which is inside that payload file) one by one on that email <br>
+			then it would take too much time via `repeater` that's why `intruder` is best ✔️
 		- so `intruder` will try to run those different payloads (from payload file) simultaneously in less time like seconds ✔️
-		- STEP 4.5: in burpsuite -> Proxy -> turn off the proxy `intercept` then go to intruder -> payloads , <br>
-			then click on `start attack` button , click "ok" button
-		- STEP 4.6 : requests of different payloads via intruder looks like this <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-0-M2.jpg" alt="" width="500"/>
+		- STEP 4.5: in burpsuite -> Proxy -> turn off the proxy `intercept` -> go to "intruder" -> payloads -> <br>
+			click on `start attack` btn , click "ok" btn
+		- STEP 4.6 : requests of different payloads via intruder looks like this 
+			<br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-0-M2.jpg" alt="" width="500"/>
 		- so GET request going with different payloads , select any request , in `response` tab , <br>
 			u'll see mostly unauthorized or internal server error
 		- so in `request` tab , `intruder` is trying to match with that email address & `intruder` did 24 requests in lesser time , <br>
@@ -151,8 +152,8 @@
 	5) let sequencer run & collect ~10,000 requests. Once it hits roughly that amount hit 'Pause' and then 'Analyze now'
 		- it's saying we need to collect 10,000 requests but we'll learn 200 only cuz that much is not required
 		- STEP 5: now sequencer will capture the requests , so once either 200 or more than 200 requests goes <br>
-			then click on `pause` button (cuz 200 is a good spot) like this <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-4-M2.jpg" alt="" width="500"/>
-		- STEP 6: click on `Analyze now` button , so u'll get this output of randomness of session cookie 
+			then click on `pause` btn (cuz 200 is a good spot) like this <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-4-M2.jpg" alt="" width="500"/>
+		- STEP 6: click on `Analyze now` btn , so u'll get this output of randomness of session cookie 
 			<br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-5-M2.jpg" alt="" width="500"/>
 	6) Parse through the results. What is the effective estimated entropy measured/unit in ?
 		- so u can see quality of randomness of that session cookie is : very good & entropy is 70bits (which is good) ✔️
@@ -168,8 +169,8 @@
 ### References Resources - Session Token
 - [Using Burp to Test Session Token Generation - PortSwigger](https://portswigger.net/support/using-burp-to-test-session-token-generation) ✔️
 - [Session-based authentication vs token-based authentication](https://www.educative.io/answers/session-based-authentication-vs-token-based-authentication)
-- [Diff. b/w cookies, session and tokens - YT](https://www.youtube.com/watch?v=GhrvZ5nUWNg&ab_channel=ValentinDespa)
-- [Session vs Token Authentication in 100 Seconds - Fireship YT](https://www.youtube.com/watch?v=UBUNrFtufWo&ab_channel=Fireship)
+- [Diff. b/w cookies, session and tokens - YT](https://www.utube.com/watch?v=GhrvZ5nUWNg&ab_channel=ValentinDespa)
+- [Session vs Token Authentication in 100 Seconds - Fireship YT](https://www.utube.com/watch?v=UBUNrFtufWo&ab_channel=Fireship)
 - [Session vs Token Based Authentication - GFG](https://www.geeksforgeeks.org/session-vs-token-based-authentication/)
 
 
