@@ -1,12 +1,14 @@
 #WAPT-notes
 
-### Overview
-- Lecture name : How to get into Web App security - Port Swigger Academy
 
 ### what we'll learn
-- what's Port Swigger Academy
-- why it's imp
-- Different types of attacks via PortSwigger Academy
+> Lecture Name : How to get into Web Application Security | PortSwigger Academy
+> 1) what's Port Swigger Academy
+> 2) why it's imp
+> 3) Different types of attacks via PortSwigger Academy
+
+### Overview
+- Lecture name : How to get into Web App security - Port Swigger Academy
 
 ### Prerequisite
 - u must know what's BurpSuite before PortSwigger

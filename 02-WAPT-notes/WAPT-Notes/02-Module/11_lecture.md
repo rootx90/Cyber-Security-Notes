@@ -101,6 +101,7 @@
 		- Q 2 : How many 'Certain' low issues did Burp find ?
 			- Ans : 12
 - resource to learn web security : [Web Security Academy: Free Online Training from PortSwigger](https://portswigger.net/web-security) <br>
-	via this u can learn web security & different types of attacks related to web security , so u can join this academy <br>
-	althou sir also learn from this
+	- via this u can learn web security & different types of attacks related to web security , <br>
+		so u can join this academy althou sir also learn from this
+	- in lecture , we'll see about this
 
