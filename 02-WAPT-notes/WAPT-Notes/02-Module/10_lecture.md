@@ -98,26 +98,34 @@
 			then it would take too much time via `repeater` that's why `intruder` is best ✔️
 		- so `intruder` will try to run those different payloads (from payload file) simultaneously in less time like seconds ✔️
 		- STEP 4.5: in burpsuite -> Proxy -> turn off the proxy `intercept` -> go to "intruder" -> payloads -> <br>
-			click on `start attack` btn , click "ok" btn
-		- STEP 4.6 : requests of different payloads via intruder looks like this 
+			click on `start attack` btn , click "ok" btn <br>
+			output : requests of different payloads via intruder looks like this 
 			<br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-0-M2.jpg" alt="" width="500"/>
-		- so GET request going with different payloads , select any request , in `response` tab , <br>
-			u'll see mostly unauthorized or internal server error
-		- so in `request` tab , `intruder` is trying to match with that email address & `intruder` did 24 requests in lesser time , <br>
-			so that's why `intruder` used for sending 1000 or lakhs requests
-		- in `response` tab , select the `200` status request which means server is saying u're credentials are correct <br>
+    		<br>- so GET request going with different payloads , select any request , in `response` tab , <br>
+				u'll see mostly "unauthorized" or "internal server error"
+    		<br>- so in `request` tab , `intruder` is trying to match with that email address & `intruder` did 24 requests in lesser time , <br>
+				so that's why "intruder" used for sending 1000 or lakhs requests at a time
+    	- in `response` tab , select the `200` status request (which means server is saying u're credentials are correct) <br>
 			& authentication done <br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-1-M2.jpg" alt="" width="500"/>
-		- so this way we've done BruteForce attack , so in Request tab , if u use that email only 
+    	- so this way we've done BruteForce attack , so in Request tab , if u use that email only 
 			<br><img src="../../notes-pics/02-Module/10_lecture/10_lecture-2-M2.jpg" alt="" width="500"/>
-		- then no need to give anything in password cuz it'll bypass the password cuz here `a' or 1=1--` <br>
-			means if anyone gets true then allow me to login in that webapp , so that `a'` or `1=1--` will break the execution , <br>
-			so `1=1--` , `2=2--` & so on.. will always be same ✔️
-		- & we don't need to type password cuz after email address , password is commented out 
-    		<br>- means whatever we write/type after the email address will get bypass -> basic example of `SQL Injection` & <br>
-			we have down basic brute force via intruder
-		- u can see one request that's have `' or 0=0` which is also same
-		- u can filter the payload via status code column
-		- Ans : so questions saying : which is first payload who return a 200 status code i.e `a' or 1=1--` 
+        	- then no need to give anything in password - cuz it'll bypass the password <br>
+				cuz here `a' or 1=1--` means "a'" : will break the execution & this statement is OR statement <br>
+				means if anyone gets true then allow me to login in that webapp , so that `a'` or `1=1--` will break the execution , <br>
+				so `1=1--` , `2=2--` & so on.. will always be true - cuz these are True Statement (just like in programming) ✔️
+    		- Q : & why we didn't need to write the password we don't need to type password ✔️ <br>
+				Ans : cuz email address i.e "1=1--" (means after 1=1 , we used "--" hyphens to commented out) <br>
+				due to this , password is commented out 
+    			<br>- means whatever we write/written after the email address will get commented out & if anyone gets True <br>
+				then means bypass
+			- so this is a basic example of `SQL Injection` & we have done basic "brute force" via intruder
+    		- u can see one request that's have `' or 0=0` which is also same
+    		- u can filter the payload via status code column
+	6) which is first payload who return a 200 status code
+        - Ans : Q : why question saying 1st 200 status code - cuz there are many 200 status code & we need to tell 1st one 
+        - STEP 5 : click on "status" column (in order to filter the status) -> scroll down & u'll see 1st one <br>
+          	which is 200 Status code i.e `a' or 1=1--`
+	- Now close the Intruder Popup window & click "ok" btn
 
 ### 2. Sequencer
 - v imp tool in WAPT cuz without session management , test cases , etc. , we can't do Penetration testing, <br>
