@@ -21,14 +21,16 @@
 - it's a resource which contain all the attacks , tons of resources like OWASP Top 10 , authentication/Auth , <br>
 	web sockets & labs , they provide certification in order to become a WAPT
 - Register in it to solve labs
+- they made a learning platform i.e "PortSwigger Academy"
 - website : [Web Security Academy: Free Online Training from PortSwigger](https://portswigger.net/web-security)
-    - Hall of Fame tab - contain competition & interviews
-    - open "Learning Path" tab , `(v imp ⭐)`
-    - latest Topics - contain latest topics which is added
-    - All Labs - contain practical things
-		- easy lab is apprentice -> then practitioner -> & then expert (if u think that u're able to do "practitioner" level easily then try Expert)
-	- interviewer ask about `CSRF` , Insecure deserialization `(v imp ⭐)`. so firstly learn about that topic <br>
+    - Hall of Fame tab : contain competition & interviews
+    - STEP 1 : open "Learning Path" tab , `v imp ⭐`
+    - latest Topics : contain latest topics which is added
+    - All Labs : contain practical things
+    	<br>- easy lab is apprentice -> then practitioner -> & then expert (if u think that u're able to do "practitioner" level easily <br>
+			then try "Expert")
+	- interviewer ask about `CSRF` , Insecure deserialization `v imp ⭐`. so firstly learn about that topic <br>
 		then solve the lab (1st apprentice -> 2nd practitioner -> 3rd expert) & then nothing left to do <br>
 		cuz you'll get remediation/preventing , etc.
-- Best resources for WAPT & API security ✔
+- conclusion : this is the Best resources for WAPT & API security ✔️
 

@@ -1,7 +1,6 @@
 #WAPT-notes  
 
-### Overview
-- Lecture name : XML External Entity (XXE) Injection - types of attacks
+---
 ### what we'll learn
 - what is XXE
 - how XXE vulnerabilities arise
@@ -10,7 +9,10 @@
 - Overview : how SSRF attacks can be done
 - types of XXE attacks
 
+### Overview
+- Lecture name : XML External Entity (XXE) Injection - types of attacks
 ---
+
 ### Topics - Explanation
 
 1) <u>About XXE - (XML External Entity (XXE) Injection)</u>
