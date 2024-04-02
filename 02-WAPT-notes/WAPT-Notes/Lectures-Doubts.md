@@ -6,6 +6,10 @@
 2. sir do u listen to music while learning a new concept or implement a new concept <br>
     tell reason in both cases i.e Yes or No
 
+### life lessons
+1. if someone say bad things about u + this goes on & on in ur mind then
+    Q : how do u handle it like emotionally someone damage u - cuz i am very sensitive person
+2. someone poke u again & again 
 
 ## related to Course
 - Q : in WAPT playlist , Hacking playlist not working <br>
