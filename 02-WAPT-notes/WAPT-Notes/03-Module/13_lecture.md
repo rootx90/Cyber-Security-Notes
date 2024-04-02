@@ -57,7 +57,7 @@
 
 ### 5. What are XML external entities ? 
 - XML external entities looks like `<!DOCTYPE foo [ <!ENTITY ext SYSTEM "http://normal-website.com" > ]>`
-- here `ext` - means it's communicating with your external resource i.e that URL
+- here `ext` - means it's communicating with ur external resource i.e that URL
 - Eg : `<!DOCTYPE foo [ <!ENTITY ext SYSTEM "file:///path/to/file" > ]>`
 - Q : how different attacks can be done in XXE ✔️
 	- so we can define XML custom entities & external entities 
@@ -81,7 +81,7 @@
     <stockCheck><productId>381</productId></stockCheck>
     ```
 - STEP 2: so we changed the above XMl code into this 
-	- The application performs no particular defenses against XXE attacks, so you can exploit the XXE vulnerability <br>
+	- The application performs no particular defenses against XXE attacks, so u can exploit the XXE vulnerability <br>
 		to retrieve the `/etc/passwd` file by submitting the following XXE payload:
 		```xml
 		<?xml version="1.0" encoding="UTF-8"?> 
