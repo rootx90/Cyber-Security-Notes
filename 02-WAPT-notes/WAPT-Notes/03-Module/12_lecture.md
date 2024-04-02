@@ -3,9 +3,8 @@
 ---
 ### what we'll learn
 > Lecture Name : How to get into Web Application Security | PortSwigger Academy
-> 1) what's Port Swigger Academy
-> 2) why it's imp
-> 3) Different types of attacks via PortSwigger Academy
+> 1) what's Port Swigger Academy + why it's imp
+> 2) Different types of attacks via PortSwigger Academy
 
 ### Overview
 - Lecture name : How to get into Web App security - Port Swigger Academy
@@ -15,7 +14,7 @@
 
 ---
 
-### what's PortSwigger
+### 1. what's PortSwigger
 - it's a company & "BurpSuite" is a product
 - widely known tool is `BurpSuite` in penetration testing world
 - it's a resource which contain all the attacks , tons of resources like OWASP Top 10 , authentication/Auth , <br>
@@ -34,3 +33,5 @@
 		cuz you'll get remediation/preventing , etc.
 - conclusion : this is the Best resources for WAPT & API security ✔️
 
+### 2. Different types of attacks via PortSwigger Academy
+- website : [Web Security Academy: Free Online Training from PortSwigger](https://portswigger.net/web-security)
