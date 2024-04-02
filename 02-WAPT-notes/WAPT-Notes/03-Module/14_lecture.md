@@ -1,11 +1,15 @@
 #WAPT-notes  
 
-### Overview
-- Lecture name : XML Injection Labs - Retrieve Files , SSRF attack 
-- This Topic imp for interview ⭐
+--
 ### what we'll learn
 - different types of exploiting attacks of XXE in XML file
 
+### Overview
+- Lecture name : XML Injection Labs - Retrieve Files , SSRF attack 
+- This Topic imp for interview ⭐
+
+### reference 
+- in this module , we're following PortSwigger academy - web security
 ---
 ### Topics - Explanation
 

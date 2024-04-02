@@ -13,13 +13,15 @@
 > 8) Remediation / how to prevent XXE vulnerabilities
 
 ### Overview
-- Lecture name : XML External Entity (XXE) Injection - types of attacks
 - what is XXE
 - how XXE vulnerabilities arise
 - XML entities
 - XML custom entities & external entities
 - Overview : how SSRF attacks can be done
 - types of XXE attacks
+
+### reference 
+- in this module , we're following PortSwigger academy - web security
 ---
 
 ### 1. About XXE (XML External Entity (XXE) Injection)
