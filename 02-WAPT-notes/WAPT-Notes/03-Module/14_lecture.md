@@ -10,6 +10,9 @@
 - doing practical work : different types of exploiting attacks of XXE in XML file
 - This Topic imp for interview ⭐
 
+### prerequisite
+- go through with Theory vid of XXE Injection before doing Practical of it
+
 ### reference 
 - in this module , we're following PortSwigger academy - web security
 ---
@@ -20,13 +23,13 @@
 - Lab : [Lab: Exploiting XXE using external entities to retrieve files | Web Security Academy](https://portswigger.net/web-security/xxe/lab-exploiting-xxe-to-retrieve-files)
 - This lab has a "Check stock" feature that parses XML input and returns any unexpected values in the response.
 - For this vulnerability , XML is very imp ✔️
-- Practical Task - Lab
-	- STEP 1: Copy the link of the lab & in burp Suite , Proxy > intercept , close the `Intercept` & <br>
+- Practical Work : Lab
+	- STEP 1: Copy the link of the lab & in burp Suite , Proxy -> intercept , close the `Intercept` & <br>
 		click on "open browser" button & paste the lab link inside the Burp Suite browser
 	- STEP 2: on the `intercept`
 	- STEP 3: in Burp Suite Browser , click on "Check Stock" button cuz ques is saying <br>
 		that feature of "Check Stock" button which parse XML input
-	- STEP 4: in burpSuite , Proxy > Intercept , we'll get `POST` request & in the bottom , XML code which has productId -> 1
+	- STEP 4: in burpSuite , Proxy -> Intercept , we'll get `POST` request & in the bottom , XML code which has productId -> 1
 	- STEP 5: so we have payload to exploit & retrieve files from the `XML` <br>
 		i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>` , copy it & paste inside the XML code like this <br>
 		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-0-M3.jpg" alt="" width="500"/> <br>
@@ -36,10 +39,10 @@
 			but we'll get error also (in ques : also mention that returns any unexpected values as a response) ✔️
 	- so here `xxe` payload calling system file i.e `"file:///etc/passwd"` i.e `etc/passwd` <br>
 		means it's very important file which has user-information ✔️
-	- STEP 6: in burp Suite , proxy > intercept , click on `forward` button , we'll get output as "this lab solved" <br>
+	- STEP 6: in burp Suite , proxy -> intercept , click on `forward` button , we'll get output as "this lab solved" <br>
 		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-1-M3.jpg" alt="" width="500"/> <br>
     	- STEP 6.1: if u off the intercept & in burpSuite browser , refresh the lab page then we'll get "you solved the lab" message
-- Summary - Practical task - Lab
+- Summary : Practical Work : Lab
 	- we used `DOCTYPE` payload inside which we declared a entity as `XXE` (which is calling system file i.e `etc/passwd`) <br>
 		& inside `productId` tag , we defined `&xxe;` ✔️
 	- why do we use `&xxe;` - cuz via `&xxe;` , we can call entity which we declared just like function calling in programming ✔️
@@ -57,7 +60,7 @@
 - SSRF attack means make a communication from a resource with user that he/she doesn't want , <br>
 	means send the user to that server resource where we as a attacker can control the user's action ✔️
 - so here we gave the URL , just like we gave `etc/passwd` there
-- Practical Task - Lab
+- Practical Work : Lab
 	- Ques
 		- This lab has a "Check stock" feature that parses XML input and returns any unexpected values in the response.
 		- The lab server is running a (simulated) EC2 (Elastic Compute Cloud & might be the website on the AWS) metadata <br>
@@ -76,16 +79,16 @@
 	- STEP 1: close the `Intercept` & click on "open browser" button & paste the lab link inside the Burp Suite browser , <br>
 		u'll get this website <img src="../../notes-pics/03-Module/14_lecture/14_lecture-2-M3.jpg" alt="" width="500"/> <br>
 	- STEP 2: on the `intercept` & then go to this webapp & click on "View Details" button for first product card
-	- STEP 3: in burpSuite , proxy > intercept , "forward" the request (cuz we don't want this request , <br>
+	- STEP 3: in burpSuite , proxy -> intercept , "forward" the request (cuz we don't want this request , <br>
 		we need request of "check Stock") , so in burpSuite browser , click on "Check Stock" button of first product card
-    - STEP 4: in burpSuite , proxy > intercept , click on "forward" button , we'll get xml code , <br>
+    - STEP 4: in burpSuite , proxy -> intercept , click on "forward" button , we'll get xml code , <br>
 		so copy the payload i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>` & <br>
 		change the URL into IP address i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]>` & <br>
 		productId as `&xxe;` , so `xxe` will use system resource of that IP address ✔️
 	- so changes will look like this <img src="../../notes-pics/03-Module/14_lecture/14_lecture-3-M3.jpg" alt="" width="500"/> <br>
-	- STEP 5: click on "forward" button & turn off the intercept , let's see the request of it , so Target > site map , <br>
+	- STEP 5: click on "forward" button & turn off the intercept , let's see the request of it , so Target -> site map , <br>
 		if u're not able to find the request 
-		- STEP 5.1: then go turn on intercept & in burpSuite browser , click on "check stock" , now in Proxy > intercept , <br>
+		- STEP 5.1: then go turn on intercept & in burpSuite browser , click on "check stock" , now in Proxy -> intercept , <br>
 			we'll get response , so right click & `send to repeater` & turn off the intercept
 		- STEP 5.2: inside the XML code , paste the payload `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]>` <br>
 			& in productId , put `&xxe;` like this <img src="../../notes-pics/03-Module/14_lecture/14_lecture-0-M3.jpg" alt="" width="500"/> <br>
@@ -105,7 +108,7 @@
 		- STEP 6.4: u'll get the final output <img src="../../notes-pics/03-Module/14_lecture/14_lecture-6-M3.jpg" alt="" width="500"/> <br>
 		- so we got SecretAccessKey , AccessKeyId , Token , type as AWS HMAC signature
 		- STEP 6.5: in burpSuite browser , refresh the page & lab is solved
-- Summary : Practical Task - Lab
+- Summary : Practical Work : Lab
 	- here we're directly communicating with that IP address (server) instead of `etc/passwd` (which was local file)
 	- & once the communication happen with the server then the server gave a directory as `latest` <br>
 		(cuz productId parameter is vulnerable product id) , so from `latest` directory to <br>

@@ -29,11 +29,11 @@
 - When the data (of an application) process via XML (markup language) - then a attacker interfere/intercept that "processing" <br>
 	& from the web server , attacker could do such things like read the file , attack can be done like SSRF , <br>
 	compromise the backend server , so this web security vulnerability aka XXE injection ✔️
+    - Conclusion : those applications which use XML to transferring data , so mostly XML has those features enabled via which <br>
+    	attacker can define/declare custom entity , we can intercept in the middle of process of transferring data <br>
+    	& we can read the files , types of attacks of XXE like SSRF can be done ✔️
 - Q : in XXE injection , why we're saying "injection" ✔️<br>
 	Ans : cuz payload is inserted/used & due to payload , everything done 
-- define : those applications which use XML to transferring data , so mostly XML has those features via which <br>
-	we can define/declare custom entity , as a attacker , we can intercept in the middle of process of transferring data <br>
-	& we can read the files , types of attacks of XXE like SSRF can be done ✔️
 
 ### 2. How do XXE vulnerabilities arise/happen ? `imp ⭐`
 - Q : When this XXE attack possible ✔️
