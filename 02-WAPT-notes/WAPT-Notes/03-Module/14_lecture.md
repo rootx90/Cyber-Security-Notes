@@ -24,7 +24,7 @@
 	Q : which files to retrieve ✔️<br>
 	Ans : mostly Sensitive Files
 - Practical Work : Lab
-    - Lab Link : [Lab: Exploiting XXE using external entities to retrieve files | Web Security Academy](https://portswigger.net/web-security/xxe/lab-exploiting-xxe-to-retrieve-files)
+    - Apprentice Lab : [Lab: Exploiting XXE using external entities to retrieve files | Web Security Academy](https://portswigger.net/web-security/xxe/lab-exploiting-xxe-to-retrieve-files)
     	<br>- This lab has a "Check stock" feature that parses XML input & returns any unexpected values in the response.
     	<br>- For this vulnerability , an application must be using XML <br>
     		(if an application not using XML - then we can't consider that app has XXE vulnerabilities)
@@ -37,26 +37,30 @@
 		output : we'll get `POST` request & in the bottom , XML code which has "productId" as 1 (cuz we selected 1st product)
 		<br>xml code also showing version + encoding
 		<br><img src="../../notes-pics/03-Module/14_lecture/14_lecture-0-M3.jpg" alt="" width="500"/>
-	- STEP 5: so there's a payload to exploit & retrieve files from the `XML` <br>
-		i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>` , copy it -> paste inside the XML code like this <br>
+	- STEP 5: go to "https://portswigger.net/web-security/xxe#what-is-xml-external-entity-injection" <br>
+		so there's a payload to exploit & retrieve files from the `XML` i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>` , <br>
+		copy it -> paste inside the XML code like this <br>
 		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-1-M3.jpg" alt="" width="500"/> <br>
-    	- STEP 5.1: make that productId `1` as `&xxe;` cuz we declared the entity as `xxe` in that payload , <br>
+    	- STEP 5.1: make that productId `1` as `&xxe;` - cuz we declared the entity as `xxe` in that payload , <br>
 			so `&xxe;` will call the `xxe` entity & from there , `xxe` will call the file i.e `etc/passwd` <br>
 			cuz the parameter of `productId` which accepts only numeric value <br>
 			but we'll get error also (in ques : also mention that returns any unexpected values as a response) ✔️
-	- so here `xxe` payload calling system file i.e `"file:///etc/passwd"` i.e `etc/passwd` <br>
-		means it's very important file which has user-information ✔️
-	- STEP 6: in burp Suite , proxy -> intercept , click on `forward` btn , we'll get output as "this lab solved" <br>
+    	- so here `xxe` payload calling system file `"file:///etc/passwd"` i.e `etc/passwd` <br>
+    		means it's very important file in Linux which has user-info ✔️
+	- STEP 6: in burpSuite , proxy -> intercept tab , click "forward" btn , <br>
+		output : in BurpSuite , we'll get output as "this lab solved" <br>
 		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-2-M3.jpg" alt="" width="500"/> <br>
-    	- STEP 6.1: if u off the intercept & in burpSuite browser , refresh the lab page then we'll get "you solved the lab" message
+    	- STEP 6.1: if u off the "intercept" & in burpSuite browser , refresh the lab page then we'll get "you solved the lab" message
 - Summary : Practical Work : Lab
 	- we used `DOCTYPE` payload inside which we declared a entity as `XXE` (which is calling system file i.e `etc/passwd`) <br>
 		& inside `productId` tag , we defined `&xxe;` ✔️
-	- why do we use `&xxe;` - cuz via `&xxe;` , we can call entity which we declared just like function calling in programming ✔️
-	- & the parameter was vulnerable means it should accept the numeric value instead of accepting any type of value , <br>
-		so it should throw the generic error if any type of value comes. But it is not validated & <br>
-		not programmed the parameter syntax properly that's why it throws unexpected value & <br>
-		it throws unexpected value i.e complete contents of `etc/passwd` file ✔️
+	- Q : why do we use `&xxe;` ✔️<br>
+		Ans : cuz via `&xxe;` , we can call entity which we declared just like function calling in programming
+	- & the parameter was vulnerable - means the parameter should accept the numeric value instead of accepting any type of value , <br>
+		so the parameter should throw the generic error if any type of value comes except numeric value . <br>
+		But the parameter is (not validated & not code syntax properly) - that's why it throws unexpected value & <br>
+		Q : what that parameter return the unexpected value ✔️<br>
+		Ans : it throws unexpected value as complete contents of `etc/passwd` file
 
 ### 2. Exploiting XXE to perform SSRF attacks `v imp ⭐`
 - Lab : [Lab: Exploiting XXE to perform SSRF attacks | Web Security Academy](https://portswigger.net/web-security/xxe/lab-exploiting-xxe-to-perform-ssrf)
@@ -84,7 +88,8 @@
 		- so ultimately , we need to generate a SSRF attack via that URL server & <br>
   			get the the server's IAM secret access key from the EC2 metadata endpoint.
 	- STEP 1: close the `Intercept` & click on "open browser" btn & paste the lab link inside the Burp Suite browser , <br>
-		u'll get this website <img src="../../notes-pics/03-Module/14_lecture/14_lecture-3-M3.jpg" alt="" width="500"/> <br>
+		u'll get this website <br>
+		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-3-M3.jpg" alt="" width="500"/>
 	- STEP 2: on the `intercept` & then go to this webapp & click on "View Details" btn for first product card
 	- STEP 3: in burpSuite , proxy -> intercept , "forward" the request (cuz we don't want this request , <br>
 		we need request of "check Stock") , so in burpSuite browser , click on "Check Stock" btn of first product card
@@ -92,27 +97,32 @@
 		so copy the payload i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>` & <br>
 		change the URL into IP address i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]>` & <br>
 		productId as `&xxe;` , so `xxe` will use system resource of that IP address ✔️
-	- so changes will look like this <img src="../../notes-pics/03-Module/14_lecture/14_lecture-4-M3.jpg" alt="" width="500"/> <br>
+	- so changes will look like this <br>
+		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-4-M3.jpg" alt="" width="500"/>
 	- STEP 5: click on "forward" btn & turn off the intercept , let's see the request of it , so Target -> site map , <br>
 		if u're not able to find the request 
 		- STEP 5.1: then go turn on intercept & in burpSuite browser , click on "check stock" , now in Proxy -> intercept , <br>
 			we'll get response , so right click & `send to repeater` & turn off the intercept
 		- STEP 5.2: inside the XML code , paste the payload `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]>` <br>
-			& in productId , put `&xxe;` like this <img src="../../notes-pics/03-Module/14_lecture/14_lecture-5-M3.jpg" alt="" width="500"/> <br>
+			& in productId , put `&xxe;` like this <br>
+			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-5-M3.jpg" alt="" width="500"/>
 		- STEP 5.3: click on "send" btn , in Response section , 400 bad request & `invalid product id latest` <br>
 			means the product id i.e `&xxe;` is invalid & here `latest` means `xxe` making connection with that IP address server <br>
 			& from there , we're getting `latest` as response , means might be `latest` is a directory ✔️
 	- STEP 6: how we can check is `latest` is a directory or not ? , so copy the `latest` as a word & <br>
 		paste in that payload like this `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/latest"> ]>` <br>
 		& click on `send` btn
-		- STEP 6.1: we're getting this output "Invalid product ID: meta-data" <img src="../../notes-pics/03-Module/14_lecture/14_lecture-6-M3.jpg" alt="" width="500"/> <br>
+		- STEP 6.1: we're getting this output "Invalid product ID: meta-data" <br>
+			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-6-M3.jpg" alt="" width="500"/>
 		- STEP 6.2: so might be meta-data can also be a directory , so follow the same process & click on `send` btn <br>
-			& we'll get a directory as `iam` <img src="../../notes-pics/03-Module/14_lecture/14_lecture-7-M3.jpg" alt="" width="500"/> <br>
+			& we'll get a directory as `iam` <br>
+			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-7-M3.jpg" alt="" width="500"/>
 		- STEP 6.3: same process again & click on "send" , u'll get "security credentials" as a response , <br>
 			so again follow same process & click on "send" , u'll get "admin" as response <br>
 			& (good thing is we're doing in "repeater" which is good otherwise it come long process if u use different tool) <br>
 			click on "send"
-		- STEP 6.4: u'll get the final output <img src="../../notes-pics/03-Module/14_lecture/14_lecture-8-M3.jpg" alt="" width="500"/> <br>
+		- STEP 6.4: u'll get the final output <br>
+			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-8-M3.jpg" alt="" width="500"/>
 		- so we got SecretAccessKey , AccessKeyId , Token , type as AWS HMAC signature
 		- STEP 6.5: in burpSuite browser , refresh the page & lab is solved
 - Summary : Practical Work : Lab
