@@ -175,10 +175,17 @@ mine general doubts
 
 ### 2. Sequencer
     - Ques
-        7) In order to find the usable bits of entropy we often have to make some adjustments to have a normalized dataset. <br>
+        7) In order to find the usable bits of entropy we often have to make some adjustments to have a normalized dataset.
 		    What item is converted in this process?
         Ans : Token
         Doubt : couldn't able to understand why Token came & why Token considered as conversion in terms of what
 ```
 
+- Lecture 14
+```
+### 2. Exploiting XXE to perform SSRF attacks 
+    - Ques : 
+        Q : what's EC2 metadata endpoint
+        or how to generate that SSRF attack request (like we'll be the user here in this)
+```
 

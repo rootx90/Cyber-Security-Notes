@@ -90,15 +90,15 @@
 			access key from the EC2 metadata endpoint.
 			- Conclusion : we need to obtain IAM secret key - this is the goal
   	- Conclusion of Ques / understanding Ques
-		- from "check stack" feature , from this "`http://169.254.169.254/`" server - we need to generate SSRF request <br>
+		- from "check stack" feature , from this "`http://169.254.169.254/`" server - we need to generate a SSRF request <br>
 			Q : what we need to obtain <br>
 			Ans : IAM Secret access key
-		- so `http://169.254.169.254/` - this is a attacker controlled server that we need to communicate with user 
+		- so `http://169.254.169.254/` - this is a "attacker controlled server" that we need to communicate with user 
 		- "This endpoint can be used to retrieve data about the instance, some of which might be sensitive." : means attacker retrieving <br>
 			data from instance i.e EC2 of AWS & we need to find out any sensitive info
 		- So GOAL is to get the server's IAM secret access key 
 		- so ultimately , we need to generate a SSRF attack via that URL server & <br>
-  			get the the server's IAM secret access key from the EC2 metadata endpoint.
+  			get the server's IAM secret access key from the EC2 metadata endpoint.
 	- STEP 1: close the `Intercept` & click on "open browser" btn & paste the lab link inside the Burp Suite browser , <br>
 		u'll get this website <br>
 		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-3-M3.jpg" alt="" width="500"/>
