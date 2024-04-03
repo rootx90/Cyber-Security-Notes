@@ -65,26 +65,38 @@
 ### 2. Exploiting XXE to perform SSRF attacks `v imp ⭐`
 - Lab : [Lab: Exploiting XXE to perform SSRF attacks | Web Security Academy](https://portswigger.net/web-security/xxe/lab-exploiting-xxe-to-perform-ssrf)
 - Q : In the following XXE example, the external entity will cause the server to make a back-end HTTP request to an internal system <br>
-	within the organization's infrastructure: <br>
+	within the organization's infrastructure: ✔️<br>
 	`<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>` - is a payload to perform SSRF attacks <br>
-	in XML file ✔️
-- SSRF attack means make a communication from a resource with user that he/she doesn't want , <br>
-	means send the user to that server resource where we as a attacker can control the user's action ✔️
-- so here we gave the URL , just like we gave `etc/passwd` there
+	in XML file
+    - Q : what's SSRF attack ✔️<br>
+		Ans : SSRF attack means makes a communication from that resource with user that user doesn't want , <br>
+		means send the user to that server resource where we (as a attacker) can control the user's action ✔️
+		- Eg : `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>` 
+			<br>- earlier , we gave "file:///etc/passwd" as a URL , now we'll give a URL (which is controlled by a attacker)
+			<br>- like here eg given as "`http://internal.vulnerable-website.com`"
 - Practical Work : Lab
-	- Ques
-		- This lab has a "Check stock" feature that parses XML input and returns any unexpected values in the response.
-		- The lab server is running a (simulated) EC2 (Elastic Compute Cloud & might be the website on the AWS) metadata <br>
-			endpoint at the default URL, which is `http://169.254.169.254/`. This endpoint can be used to retrieve data about <br>
-			the instance, some of which might be sensitive.
+	- Ques :
+		- as earlier , this lab has same feature a "Check stock" feature that parses XML input <br>
+			and returns any unexpected values in the response.
+		- The lab server is running a (simulated) EC2 metadata endpoint at the default URL , which is `http://169.254.169.254/`. <br>
+			This endpoint can be used to retrieve data about the instance, some of which might be sensitive.
+			- Conclusion : 
+				<br>- might be the website on the AWS that's why EC2 instance (Elastic Compute Cloud) <br>
+				& above IP is the "attacker controlled server" which we need to make the user's communicate connection with this IP
+				<br>- "This endpoint can be used to retrieve data about the instance" : means data will be retrieve by EC2 instance (of AWS)
+				<br>- some of which might be sensitive : means we need to find out sensitive info
 		- To solve the lab, exploit the [XXE](https://portswigger.net/web-security/xxe) vulnerability <br>
 			to perform an [SSRF attack](https://portswigger.net/web-security/ssrf) that obtains the server's IAM secret <br>
 			access key from the EC2 metadata endpoint.
-	- understanding Ques
+			- Conclusion : we need to obtain IAM secret key - this is the goal
+  	- Conclusion of Ques / understanding Ques
+		- from "check stack" feature , from this "`http://169.254.169.254/`" server - we need to generate SSRF request <br>
+			Q : what we need to obtain <br>
+			Ans : IAM Secret access key
 		- so `http://169.254.169.254/` - this is a attacker controlled server that we need to communicate with user 
-		- This endpoint can be used to retrieve data about the instance, some of which might be sensitive. <br>
-			means attacker retrieving data from instance i.e EC2 of AWS & we need to find out any sensitive info
-		- So GOAL is to get the server's IAM (my) secret access key 
+		- "This endpoint can be used to retrieve data about the instance, some of which might be sensitive." : means attacker retrieving <br>
+			data from instance i.e EC2 of AWS & we need to find out any sensitive info
+		- So GOAL is to get the server's IAM secret access key 
 		- so ultimately , we need to generate a SSRF attack via that URL server & <br>
   			get the the server's IAM secret access key from the EC2 metadata endpoint.
 	- STEP 1: close the `Intercept` & click on "open browser" btn & paste the lab link inside the Burp Suite browser , <br>
