@@ -99,44 +99,48 @@
 		- So GOAL is to get the server's IAM secret access key 
 		- so ultimately , we need to generate a SSRF attack via that URL server & <br>
   			get the server's IAM secret access key from the EC2 metadata endpoint.
-	- STEP 1: close the `Intercept` & click on "open browser" btn & paste the lab link inside the Burp Suite browser , <br>
-		u'll get this website <br>
+	- STEP 1: OFF the `Intercept` & click on "open browser" btn & paste the lab link inside the BurpSuite browser , <br>
+		output : u'll get this website <br>
 		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-3-M3.jpg" alt="" width="500"/>
-	- STEP 2: on the `intercept` & then go to this webapp & click on "View Details" btn for first product card
-	- STEP 3: in burpSuite , proxy -> intercept , "forward" the request (cuz we don't want this request , <br>
+	- STEP 2: ON the `intercept` & then go to this webapp & click on "View Details" btn for first product card
+	- STEP 3: in burpSuite , proxy -> intercept , click "forward" btn - to forward the request (cuz we don't want this request , <br>
 		we need request of "check Stock") , so in burpSuite browser , click on "Check Stock" btn of first product card
-    - STEP 4: in burpSuite , proxy -> intercept , click on "forward" btn , we'll get xml code , <br>
-		so copy the payload i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>` & <br>
-		change the URL into IP address i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]>` & <br>
-		productId as `&xxe;` , so `xxe` will use system resource of that IP address ✔️
-	- so changes will look like this <br>
-		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-4-M3.jpg" alt="" width="500"/>
-	- STEP 5: click on "forward" btn & turn off the intercept , let's see the request of it , so Target -> site map , <br>
-		if u're not able to find the request 
-		- STEP 5.1: then go turn on intercept & in burpSuite browser , click on "check stock" , now in Proxy -> intercept , <br>
-			we'll get response , so right click & `send to repeater` & turn off the intercept
-		- STEP 5.2: inside the XML code , paste the payload `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]>` <br>
-			& in productId , put `&xxe;` like this <br>
+    - STEP 4: in burpSuite , proxy -> intercept , click on "forward" btn , output : we'll get xml code <br>
+		- STEP 4.1 : so copy the payload from https://portswigger.net/web-security/xxe#what-is-xml-external-entity-injection <br>
+			i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>` & <br>
+			change the URL into IP address i.e `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]>`
+		- STEP 4.2 : productId as `&xxe;` , so `xxe` will use system resource of that IP address <br>
+			output : so changes will look like this <br>
+    		<img src="../../notes-pics/03-Module/14_lecture/14_lecture-4-M3.jpg" alt="" width="500"/>
+			- Conclusion : "`&xxe;`" will go the xxe - then xxe will use system resources of that IP address (which we defined) ✔️
+	- STEP 5: click on "forward" btn & off the "intercept" , let's see the request of it , so Target -> site map , <br>
+		output : if u're not able to find the request
+		- STEP 5.0 : then turn ON "intercept" & in burpSuite browser -> click on "check stock" , now in Proxy -> intercept , <br>
+			output : we'll get response
+		- STEP 5.1 : right click on the "response" section & `send to repeater` & OFF the "intercept"
+		- STEP 5.2 : inside the XML code , <br>
+			paste the payload again `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]>` <br>
+			& in productId , put `&xxe;` on "1" like this <br>
 			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-5-M3.jpg" alt="" width="500"/>
-		- STEP 5.3: click on "send" btn , in Response section , 400 bad request & `invalid product id latest` <br>
+		- STEP 5.3: click on "send" btn , in Response section , output : 400 bad request & `invalid product id latest` <br>
 			means the product id i.e `&xxe;` is invalid & here `latest` means `xxe` making connection with that IP address server <br>
-			& from there , we're getting `latest` as response , means might be `latest` is a directory ✔️
-	- STEP 6: how we can check is `latest` is a directory or not ? , so copy the `latest` as a word & <br>
-		paste in that payload like this `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/latest"> ]>` <br>
-		& click on `send` btn
-		- STEP 6.1: we're getting this output "Invalid product ID: meta-data" <br>
+			& from there , we're getting `latest` as response - means might be `latest` is a directory ✔️ <br>
 			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-6-M3.jpg" alt="" width="500"/>
-		- STEP 6.2: so might be meta-data can also be a directory , so follow the same process & click on `send` btn <br>
-			& we'll get a directory as `iam` <br>
+	- STEP 6: Q : how we can check whether `latest` is a directory or not ? 
+    	- STEP 6.0 : so copy the `latest` as a word & paste in that payload <br>
+			like this `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/latest"> ]>` & click on `send` btn <br>
+			output : we're getting this output "Invalid product ID: meta-data" <br>
+			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-6-M3.jpg" alt="" width="500"/>
+		- STEP 6.1: so might be meta-data can also be a directory , so follow the same process as STEP 6.0 & click on `send` btn ,<br>
+			output : we'll get a directory as `iam` <br>
 			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-7-M3.jpg" alt="" width="500"/>
-		- STEP 6.3: same process again & click on "send" , u'll get "security credentials" as a response , <br>
-			so again follow same process & click on "send" , u'll get "admin" as response <br>
-			& (good thing is we're doing in "repeater" which is good otherwise it come long process if u use different tool) <br>
-			click on "send"
-		- STEP 6.4: u'll get the final output <br>
+		- STEP 6.2 : same process again as STEP 6.1 & click on "send" , output : u'll get "security credentials" as a response , <br>
+		- STEP 6.3 : so again follow same process as STEP 6.2 & click on "send" , output : u'll get "admin" as response <br>
+			& (good thing is we're doing this in "repeater" otherwise it'll be long process if u use different tool) & click on "send" <br>
+			output : u'll get the final output <br>
 			<img src="../../notes-pics/03-Module/14_lecture/14_lecture-8-M3.jpg" alt="" width="500"/>
 		- so we got SecretAccessKey , AccessKeyId , Token , type as AWS HMAC signature
-		- STEP 6.5: in burpSuite browser , refresh the page & lab is solved
+		- STEP 6.4: in burpSuite browser , refresh the page & lab is solved
 - Summary : Practical Work : Lab
 	- here we're directly communicating with that IP address (server) instead of `etc/passwd` (which was local file)
 	- & once the communication happen with the server then the server gave a directory as `latest` <br>
