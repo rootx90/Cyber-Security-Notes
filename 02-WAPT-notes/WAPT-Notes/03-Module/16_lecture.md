@@ -1,10 +1,13 @@
-#WAPT-notes  
-### Overview
-- [How to Crack ZIP File Password Using Kali Linux? - YouTube](https://www.youtube.com/watch?v=1FfTQaFs6Hw&ab_channel=EthicalSharmaji) - but this lecture contain very simpler solution
-- `fcrackzip` - is a utility for crack password protected zip files with brute force or dictionary based attacks ✔
+#WAPT-notes
+
+---
 ### what we'll learn
 - how to crack the zip file password via `fcrackzip` using BruteForce , directory methods
 - how to recover the zip file password
+
+### Overview
+- [How to Crack ZIP File Password Using Kali Linux? - YouTube](https://www.youtube.com/watch?v=1FfTQaFs6Hw&ab_channel=EthicalSharmaji) - but this lecture contain very simpler solution
+- `fcrackzip` - is a utility for crack password protected zip files with brute force or dictionary based attacks ✔
 
 ---
 ### Topics - Explanation
