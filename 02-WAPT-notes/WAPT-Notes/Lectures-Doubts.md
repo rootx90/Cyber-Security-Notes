@@ -189,3 +189,16 @@ mine general doubts
         or how to generate that SSRF attack request (like we'll be the user here in this)
 ```
 
+- Lecture 16
+```
+mine doubt 
+    Q : what's BruteForce attack
+
+    Q : what's the major diff happened 
+        b/w fcrackzip using dictionary method vs fcrackzip using bruteForce method/mode
+    Ans : mine thought : 
+        in dictionary method : we used a wordlist based on password (cuz we did I.G on victim's password)
+        in bruteForce method : we used bruteforce way
+        - before cracking victim's device password , 
+            u must do I.G (which is a 1st step) on it otherwise u can't crack the password
+```
