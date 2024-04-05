@@ -44,7 +44,21 @@ Ans : u can buy tryhackme subscription for 1 month and do these paid rooms.It wi
 
        Which one should I buy for 1month subscription? Let me know.
     Ans : monthly subscription of tryhackme will give u the access to all the paid rooms.So, u can access anyone.
+```
+```
+Q : Sir currently i am at this lecture XSS Challenges that's 
+    https://www.youtube.com/watch?v=SVVSSBEU4OI&list=PLHOJoqBk02jQWQ7UMwRkAoznEzRtKI1zk&index=20&ab_channel=EthicalSharmaji
 
+    i actually go through the lecture but the website is not working that is 
+    http://leettime.net/xsslab1/chalg1.php#
+
+    so i need to your suggestions 
+    Q 1) is there any alternative of it in order to practice the XSS
+    Q 2) or should i skip the practice part (because that practice website not working) & just go through the lecture
+
+    What should I do? let me know
+
+Ans : 
 ```
 
 ## Lectures Doubts

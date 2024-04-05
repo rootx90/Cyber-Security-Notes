@@ -1,5 +1,5 @@
 ## Journey Info
 
 - STEP 1 : CEH - by wscubetech
-- STEP 2 : WAPT - by Anuj Sir (9:06)
+- STEP 2 : WAPT - by Anuj Sir (xss challenge 1 - STEP 3 - 3:54)
     - Conclusion after completing this course : we're the user & attacker itself = in order to understand hacker's mindset

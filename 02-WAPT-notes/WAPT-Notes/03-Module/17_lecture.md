@@ -15,12 +15,12 @@
 
 ### Overview
 - most imp topic ⭐
-- we'll over XSS - reflected type & 8 challenges of XSS
+- we'll do XSS - reflected type & 8 challenges of XSS
 - XSS reflected - generally , u can exploit this vulnerability in bug bounty but if u're doing WAPT <br>
 	then u have to focus on XSS especially `XSS reflected` cuz this vulnerability comes in "OWASP TOP 10" <br>
-	but this vulnerability is easy to exploit & still many applications have this vulnerability ✔️
+	but this vulnerability is easy to exploit & still many applications have this vulnerability
 - how to exploit this vulnerability
-- if some part is already sanitized or if they put encoding on their application to secure it , so how to break/crack it ✔️
+- if some part is already sanitized or if they put encoding on their application to secure it , so how to break/crack it
 
 ### Others 
 - in bug bounty , people earn good amount of money for doing this XSS & finding these sort of issues
@@ -31,27 +31,29 @@
 
 ---
 
-- link for XSS challenges : http://leettime.net/xsslab1/chalg1.php# (but it's not opening)
+- link for all XSS challenges : http://leettime.net/xsslab1/chalg1.php# (but it's not opening)
 
 ### 1. XSS Challenge 1
 - website looks like <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-0-M3.jpg" alt="" width="500"/>
 - usecase of XSS reflected / where we can use it ✔️
 	1) it can be applied on a input field
-	2) it can be applied on any parameter of a URL
-- STEP 1 : this input field is for searching , so let's search anything to know search input field is working or <br>
-	not like `ironman` & click on search , u'll get this <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-1-M3.jpg" alt="" width="500"/>
-- now u can see that the way we wrote the `ironman` , this webapp shows same thing
-- so first thing to remember that is input reflecting as a output or not ✔️
-- STEP 2 : to check more clearly , then do inspect , so right click & click "view source"
-	- Note : we're testing in internet explorer cuz chrome , firefox , edge , etc browsers don't allow to run XSS ✔️
-	- check out the tag of that output like this <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-2-M3.jpg" alt="" width="500"/>
-	- so we're getting `ironman` word as it is the way we wrote in search input field
-- STEP 3 : to exploit , in "search input field" write the payload `<script>alert(1)</script>` <br>
-	& click on search , u'll get this <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-3-M3.jpg" alt="" width="500"/>
-- so we got the `1` which means we did XSS <br>
-	& we'll get a alert message "Nice Try..... But use alert(document.URL) to pass this challenge!!"
-    <br>- so it's giving us a hint that we try well but when we do `document.URL` then we can pass the challenge ✔️
-- so click ok
+	2) or it can be applied on any parameter of a URL
+- STEP 1 : this input field is for searching , so search `ironman` or anything as ur wish - to know search input field is working or not <br>
+	click on search , output : <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-1-M3.jpg" alt="" width="500"/>
+    - now u can see that the way we wrote the `ironman` , this webapp shows same thing
+    - so first thing to remember i.e input reflecting as a output or not , <br>
+		so currently , input field is showing output
+- STEP 2 : to check more clearly -> right click & click "view source" OR do inspect
+	- `Note ✅` : we're testing in internet explorer cuz modern browsers (like chrome) don't allow to execute XSS
+	- STEP 2.1 : in output , find the tag (which contain "ironman") of the like this 
+		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-2-M3.jpg" alt="" width="500"/>
+    	<br>- so there's no encoding used - means we're getting `ironman` word as it is - the way we wrote in search input field
+- STEP 3 : to exploit , in "search input field" , write the payload `<script>alert(1)</script>` <br>
+	& click "search" btn , output : <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-3-M3.jpg" alt="" width="500"/>
+    - so we got the `1` which means we did XSS & we'll get a alert message <br>
+		i.e "Nice Try..... But use alert(document.URL) to pass this challenge!!"
+    	<br>- so it's giving us a hint that we try well but when we do `document.URL` then we can pass the challenge ✔️
+    - so click ok
 - STEP 4 : in search input field , write this payload `<script>alert(document.URL)</script>` <br>
 	& click on search , u'll get alert message box "Good Work!! You are welcome to next round" & click ok ✔️
 
@@ -195,3 +197,7 @@
 - Challenge 6 : `';</script><script>alert(document.URL)</script>`
 - Challenge 7 : `'>onmouseover='alert(document.URL)`
 - Challenge 8 : on browser URL address bar , apply the payload after "submit" parameter i.e `ironman"onmouseover="alert(document.URL)` 
+
+---
+### End of the lecture (Doubts)
+- Types of XSS attack : https://www.perplexity.ai/search/Types-of-XSS-SUP6Le2DQueKOTgPhUqrlQ
