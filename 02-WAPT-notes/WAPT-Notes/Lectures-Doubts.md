@@ -5,6 +5,7 @@
     what's ur mindset whenever u learn new things & u can't able to remember
 2. sir do u listen to music while learning a new concept or implement a new concept <br>
     tell reason in both cases i.e Yes or No
+3. why sir u used different kali OS like in CSRF attack , u used parrot OS 
 
 ### life lessons
 1. if someone say bad things about u + this goes on & on in ur mind then
@@ -215,4 +216,14 @@ mine doubt
         in bruteForce method : we used bruteforce way
         - before cracking victim's device password , 
             u must do I.G (which is a 1st step) on it otherwise u can't crack the password
+```
+
+- Lecture 17
+```
+### 7. XSS challenge 7
+    Q : why made the payload '>onmouseover='alert(document.URL) for inspect tool output : ''onmouseover='alert(document.URL)'>
+        why not like this '>onmouseover=alert'(document.URL)
+
+### 8. XSS challenge 8
+    Q : couldn't able to understand the solution from star to end
 ```
