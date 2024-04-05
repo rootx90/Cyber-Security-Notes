@@ -220,6 +220,8 @@ mine doubt
 
 - Lecture 17
 ```
+mine doubt : couldn't able to understand "balance" in terms of code
+
 ### 7. XSS challenge 7
     Q : why made the payload '>onmouseover='alert(document.URL) for inspect tool output : ''onmouseover='alert(document.URL)'>
         why not like this '>onmouseover=alert'(document.URL)

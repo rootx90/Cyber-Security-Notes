@@ -131,11 +131,12 @@
 	- output : "cannot find your query" message showing <br>
 		& "ironman" word coming inside single quotes value of "value` attribute of input field
 	- STEP 1.1 : in order to make sure , we'll check via our base line payload i.e <br>
-		`<script>alert(alert.(document.URL)</script>` , so put it inside the input field -> click "search" btn , <br>
-		we'll get the payload inside single quotes like this <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-10-M3.jpg" alt="" width="500"/>
+		`<script>alert(alert.(document.URL)</script>` , so put it inside the input field -> click "search" btn , 
+		<br>output : the payload inside single quotes 
+		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-10-M3.jpg" alt="" width="500"/>
 	- here to balance the payload , we're getting 2 things extra at the end i.e <br>
 		a single quote is coming before a closing angle bracket of the ending script tag & <br>
-		a close angle bracket of a starting `script` tag is missing✔️
+		a close angle bracket of a starting `script` tag is missing ✔️
 	- so here sanitized done like this 
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-11-M3.jpg" alt="" width="500"/>
 	- STEP 1.2 : for a 2nd test , let's put the double closing arrow bracket like this <br>
@@ -158,6 +159,19 @@
 - STEP 4 : ultimately the payload is `'>onmouseover='alert(document.URL)` -> click "search" btn -> now hover on "search" btn <br>
 	output : challenge is completed
 - `Tip💡` : that's why we're running base line payload to check what's happening ✔️
+```
+Conclusion : STEPS 
+
+STEP 1 : <script>alert(alert.(document.URL)</script> -> output : '<scriptalert(alert.(document.URL)</script>'>
+
+STEP 2 : <script>>alert(document.URL)</script> -> output : '<scriptalert(alert.(document.URL)</script>'>
+
+STEP 3 : onmouseover=alert(document.URL) -> output : 'onmouseover=alert(document.URL)'>
+
+STEP 4 : '>onmouseover=alert(document.URL) -> output : ''onmouseover=alert(document.URL)'>
+
+STEP 5 : '>onmouseover='alert(document.URL) -> output : done
+```
 
 ### 8. XSS Challenge 8 `imp ⭐`
 - STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
@@ -180,7 +194,7 @@
 - STEP 3 : 2nd way to do XSS
 	- STEP 3.1 : on URL address bar , u'll see `submit=search` & search button also has search text , <br>
 		so on address bar , remove `search` word & write "ironman" & press enter , <br>
-		u'll get "ironman" text on the search button also like this 
+		output : u'll get "ironman" text on the search button also like this 
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-17-M3.jpg" alt="" width="500"/>
 	- which means that's reflecting means , whatever u write on that address bar , it'll reflect on the `search` button also
 	- STEP 3.2 : "ironman" word of button is coming inside `value` attribute with double quotes i.e
@@ -194,6 +208,17 @@
 	- but the moment , we run a query on `submit=` (aka submit parameter) URL address bar & it gets executed <br>
 		but the browser prevented that ✔️
 - so challenge is completed but the browser is stopping
+```
+Conclusion : STEPS 
+
+STEP 1 : <script>alert(alert.(document.URL)</script> -> output : '&alt;script&gt;alert(document.URL)&alt;/script&gt;'>
+
+STEP 2 : onmouseover=alert(document.URL) -> output : 'onmouseover=alert(document.URL)'>
+
+STEP 3 : '>onmouseover='alert(document.URL) -> output : '&gt;onmouseover=alert(document.URL)&gt;'>
+
+STEP 4 : <input type="submit" name="submit" value="ironman" onmouseover="alert(document.URL)"> -> output : done
+```
 
 ### summary / Payloads of challenges
 - Challenge 1 : `<script>alert(alert.(document.URL)</script>`
