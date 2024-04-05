@@ -38,62 +38,68 @@
 - usecase of XSS reflected / where we can use it ✔️
 	1) it can be applied on a input field
 	2) or it can be applied on any parameter of a URL
-- STEP 1 : this input field is for searching , so search `ironman` or anything as ur wish - to know search input field is working or not <br>
+- STEP 1 : this input field is for searching , so search "ironman" or anything as ur wish - to know search input field is working or not <br>
 	click on search , output : <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-1-M3.jpg" alt="" width="500"/>
-    - now u can see that the way we wrote the `ironman` , this webapp shows same thing
+    - now u can see that the way we wrote the "ironman" , this webapp shows same thing
     - so first thing to remember i.e input reflecting as a output or not , <br>
 		so currently , input field is showing output
 - STEP 2 : to check more clearly -> right click & click "view source" OR do inspect
 	- `Note ✅` : we're testing in internet explorer cuz modern browsers (like chrome) don't allow to execute XSS
 	- STEP 2.1 : in output , find the tag (which contain "ironman") of the like this 
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-2-M3.jpg" alt="" width="500"/>
-    	<br>- so there's no encoding used - means we're getting `ironman` word as it is - the way we wrote in search input field
+    	<br>- so there's no encoding used - means we're getting "ironman" word as it is - the way we wrote in search input field
 - STEP 3 : to exploit , in "search input field" , write the payload `<script>alert(1)</script>` <br>
 	& click "search" btn , output : <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-3-M3.jpg" alt="" width="500"/>
-    - so we got the `1` which means we did XSS & we'll get a alert message <br>
+        <br>- so we got the `1` which means we did XSS & we'll get a alert message <br>
 		i.e "Nice Try..... But use alert(document.URL) to pass this challenge!!"
-    	<br>- so it's giving us a hint that we try well but when we do `document.URL` then we can pass the challenge ✔️
-    - so click ok
-- STEP 4 : in search input field , write this payload `<script>alert(document.URL)</script>` <br>
-	& click on search , u'll get alert message box "Good Work!! You are welcome to next round" & click ok ✔️
+    	<br>- so it's giving a hint that we try well but when we need to do `document.URL` then we can pass the challenge
+    - STEP 3.1 : click "ok" btn
+- STEP 4 : in "search input field" , write this payload `<script>alert(document.URL)</script>` -> & click "search" , <br>
+	output : get got a "alert message" box (which has "Good Work!! You are welcome to next round") & click "ok" btn ✔️
 
 ### 2. XSS Challenge 2
-- STEP 1 : write again `ironman` inside the search input field & click search
-	- Now check whether any encoding or sanitize ✔️
-	- so it's showing `cannot find your query` & now `ironman` word coming inside `value` attribute of text `input` field 
+- STEP 1 : the search input field , write again "ironman" -> click "search" btn
+	- Now check whether any encoding or sanitize
+	- output : in website , "cannot find your query" message coming <br>
+		& in inspect tool , now "ironman" word coming inside "value" attribute of text "input" field 
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-4-M3.jpg" alt="" width="500"/>
-	- `ironman` word is getting close via `close angle bracket` 
-	- STEP 1.1 : now put that previous payload <br>
-		i.e `<script>alert(alert.(document.URL)</script>` just to check it's working or not & click on search
-	- so it's not working cuz that complete payload stored inside `value` attribute `text input field` <br>
-		like this <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-5-M3.jpg" alt="" width="500"/>
-	- & we're getting extra `close angle bracket` at the end
-- `v imp Note ⭐` : in XSS , the rule is here `<script>alert(alert.(document.URL)</script>>` 
-    <br>- we need to "balance" i.e whatever thing is ending with like here extra `close angle bracket` , <br>
-		put that thing at the starting also like this `><script>alert(alert.(document.URL)</script>>` <br>
-		but we're getting `close angle bracket`  at the end so remove it cuz it's automatically comes
+    	<br>- after "ironman" word , a close angle bracket i.e ">"
+	- STEP 1.1 : put the "challenge 1" payload i.e `<script>alert(alert.(document.URL)</script>` <br>
+		& just to check it's working or not & click "search" btn
+    	- so it's not working - cuz that complete payload stored inside "value" attribute "text input field" <br>
+			output : <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-5-M3.jpg" alt="" width="500"/>
+      	- in output , a close angle bracket coming at the end i.e ">" 
+- `v imp Note ⭐` : 
+    - in XSS , the thumb rule is here `<script>alert(alert.(document.URL)</script>>` 
+    - we need to "balance" i.e whatever thing is ending with like here extra "close angle bracket" , <br>
+		put that same thing at the starting also like this `><script>alert(alert.(document.URL)</script>>` <br>
+		but we're getting "close angle bracket" at the end - so remove it cuz it'll automatically comes (we don't need to add manually)
 - STEP 2 : so payload will be `><script>alert(alert.(document.URL)</script>`
-	- so paste it & click on search , u'll come to next round
+	- inside "search input field" -> paste it -> click "search" btn , output : u came to next round
 
 ### 3. XSS Challenge 3
-- STEP 1 : write again `ironman` inside the search input field & click search
-	- so it's showing `cannot find your query` & now `ironman` word coming inside double quotes <br>
-		(in `value` attribute of text `input` field) with closing angle bracket 
+- STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
+	- output : in website , "cannot find your query" message coming & <br>
+		in inspect window , now "ironman" word coming inside double quotes <br>
+		(in "value" attribute of "text input field") with a closing angle bracket i.e ">"
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-6-M3.jpg" alt="" width="500"/>
-	- for checking purpose , put that same challenge 1 - payload to check which thing get sanitize & what's the input coming 
-	- STEP 1.1 : `<script>alert(alert.(document.URL)</script>` put it & click on search, <br>
-  		so we'll get the payload as it is inside double quotes 
+	- for checking purpose , <br>
+		put that same "challenge 1" payload to check which thing is getting sanitize & what's the output coming <br>
+		& this payload will be our based line payload
+	- STEP 1.1 : in "search input field" -> `<script>alert(alert.(document.URL)</script>` put it -> click on search, <br>
+  		so we'll get the payload as it is inside double quotes
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-7-M3.jpg" alt="" width="500"/>
 - so we need to balance the thing 
-- STEP 2 : so payload will be `"><script>alert(alert.(document.URL)</script>">` but at the end , <br>
-	we're getting 2 things extra i.e the ending double quotes & `close angle bracket` extra , <br>
-	so remove them cuz those will come automatically at the end, so ultimately `"><script>alert(alert.(document.URL)</script>` ✔️
-- STEP 3 : put this payload & click on search
+- STEP 2 : so payload will be `"><script>alert(alert.(document.URL)</script>">` <br>
+	but at the end , we're getting 2 things extra <br>
+	i.e a double quotes & "close angle bracket" - so remove them cuz those will come automatically at the end, <br>
+	so ultimately `"><script>alert(alert.(document.URL)</script>`
+- STEP 3 : inside "search input field" -> put this payload -> click "search" btn
 
 ### 4. XSS Challenge 4
-- STEP 1 : write again `ironman` inside the search input field & click search
-	- so it's showing `cannot find your query` & now `ironman` word coming inside single quotes <br>
-		(in `value` attribute of text `input` field) with closing angle bracket
+- STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
+	- output : "cannot find your query" message showing & "ironman" word coming inside single quotes <br>
+		(in "value" attribute of text "input" field) with closing angle bracket
 	- STEP 1.1 : so for testing purpose in order to know what's happening behind the scene, <br>
 		use that base line payload of Challenge 1 i.e `<script>alert(alert.(document.URL)</script>` & click on search ✔️
 	- we're getting output inside value attribute with single quotes & a close angle bracket
@@ -101,8 +107,8 @@
 - STEP 2 : so payload will be `'><script>alert(alert.(document.URL)</script>`
 
 ### 5. XSS Challenge 5
-- STEP 1 : write again `ironman` inside the search input field & click search
-	- so it's showing `cannot find your query` & now `ironman` word coming inside double quotes of a variable i.e
+- STEP 1 : write "ironman" inside the search input field & click search
+	- "cannot find your query" message showing & "ironman" word coming inside double quotes of a variable i.e
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-8-M3.jpg" alt="" width="500"/>
 	- STEP 1.1 : so in order to understand & testing purpose , we'll use that base line payload of Challenge 1 i.e <br>
 		`<script>alert(alert.(document.URL)</script>` & click on search ✔️
@@ -112,8 +118,8 @@
 - STEP 2 : so payload will be `";</script><script>alert(alert.(document.URL)</script>`
 
 ### 6. XSS Challenge 6
-- STEP 1 : write again `ironman` inside the search input field & click search
-	- so it's showing `cannot find your query` & now `ironman` word coming inside single quotes of a variable same as Challenge 5
+- STEP 1 : write "ironman" inside the search input field & click search
+	- "cannot find your query" message showing & "ironman" word coming inside single quotes of a variable same as Challenge 5
 	- STEP 1.1 : in order to make sure , we'll check via our base line payload i.e <br>
 		`<script>alert(alert.(document.URL)</script>` , so put it inside the input field & click on search , <br>
 		we'll get same output as in Challenge 5 but in single quotes
@@ -122,8 +128,8 @@
 - STEP 3 : paste the payload & click on search
 
 ### 7. XSS Challenge 7
-- STEP 1 : write again `ironman` inside the search input field & click search
-	- so it's showing `cannot find your query` & now `ironman` word coming inside single quotes value <br>
+- STEP 1 : write "ironman" inside the search input field & click search
+	- "cannot find your query" message showing & "ironman" word coming inside single quotes value <br>
 		of `value` attribute of input field
 	- STEP 1.1 : in order to make sure , we'll check via our base line payload i.e <br>
 		`<script>alert(alert.(document.URL)</script>` , so put it inside the input field & click on search , <br>
@@ -153,8 +159,8 @@
 - `Tip💡` : that's why we're running base line payload to check what's happening ✔️
 
 ### 8. XSS Challenge 8
-- STEP 1 : write again `ironman` inside the search input field & click search
-	- so it's showing `cannot find your query` & now `ironman` word coming inside single quotes value <br>
+- STEP 1 : write "ironman" inside the search input field & click search
+	- "cannot find your query" message showing & "ironman" word coming inside single quotes value <br>
 		of `value` attribute of input field
 	- STEP 1.1 : in order to make sure , we'll check via our base line payload i.e <br>
 		`<script>alert(alert.(document.URL)</script>` , so put it inside the input field & click on search , <br>
@@ -172,14 +178,14 @@
 	- so we have 2nd way also to do XSS
 - STEP 3 : 2nd way to do XSS
 	- STEP 3.1 : on URL address bar , u'll see `submit=search` & search button also has search text , <br>
-		so on address bar , remove `search` word & write `ironman` & press enter , <br>
-		u'll get `ironman` text on the search button also like this 
+		so on address bar , remove `search` word & write "ironman" & press enter , <br>
+		u'll get "ironman" text on the search button also like this 
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-17-M3.jpg" alt="" width="500"/>
 	- which means that's reflecting means , whatever u write on that address bar , it'll reflect on the `search` button also
-	- STEP 3.2 : `ironman` word of button is coming inside `value` attribute with double quotes i.e
+	- STEP 3.2 : "ironman" word of button is coming inside `value` attribute with double quotes i.e
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-18-M3.jpg" alt="" width="500"/>
 	- so payload will be `ironman"onmouseover="alert(document.URL)` , to balance the payload , <br>
-		we put a double quote before `alert` & we want `ironman` as a text on button , so behind the scene <br>
+		we put a double quote before `alert` & we want "ironman" as a text on button , so behind the scene <br>
 		that payload will look like `<input type="submit" name="submit" value="ironman" onmouseover="alert(document.URL)">` ✔️
 - STEP 4 : so paste this payload on URL address bar after `submit=` i.e `ironman"onmouseover="alert(document.URL)` & <br>
 	hit enter & now we'll get a pop i.e "Internet Explorer has modified this page to help prevent XSS" cuz 
