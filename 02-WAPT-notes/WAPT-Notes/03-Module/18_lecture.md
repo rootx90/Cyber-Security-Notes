@@ -11,6 +11,7 @@
 ### Prerequisite
 - How To Setup Damn Vulnerable Web Application (DVWA) In Ubuntu Using Docker? <br>
 	https://www.youtube.com/watch?v=Miv3GGaXWF8&ab_channel=EthicalSharmaji
+- For Notes Check Lecture 19
 
 ### Overview
 - Cross-Site Request Forgery aka CSRF
