@@ -223,9 +223,27 @@ mine doubt
 mine doubt : couldn't able to understand "balance" in terms of code
 
 ### 7. XSS challenge 7
-    Q : why made the payload '>onmouseover='alert(document.URL) for inspect tool output : ''onmouseover='alert(document.URL)'>
-        why not like this '>onmouseover=alert'(document.URL)
+    Q : why not like this '>onmouseover=alert'(document.URL) instead of '>onmouseover='alert(document.URL)
+    Ans : '>onmouseover='alert(document.URL)
+        we put a single quote after = (equals to) cuz we also want to execute the payload 
+        otherwise making payload doesn't make sense
+    Q : 1) but why not like this '>onmouseover=alert'(document.URL)
+        2) why do we even putting a single quote after = (equals to sign)
+            means for balancing , we already put the single quote & "greater than sign"
+            for this output (which we got in inspect tool) i.e '>onmouseover=alert(document.URL)'>
+
 
 ### 8. XSS challenge 8
-    Q : couldn't able to understand the solution from star to end
+    Q : couldn't able to understand the solution from star to end , please explain it once again
+    
+    Q : when we're getting issue of escaped character in input field , then we use the URL to implement XSS
+        but is there any other way to implement XSS except using input field , URL address bar of browser
+
+    Q : <input type="submit" name="submit" value="ironman"onmouseover="alert(document.URL)">
+        in this , why we put double quotes 2 times i.e after ironman & after = (equals to sign)
+        can't we do this way value="ironman"onmouseover=alert"(document.URL)">
+        Ans : cuz we're defining the onmouseover as a attribute of "input" tag
+            so inside input tag it'll be this way onmouseover="alert(document.URL)"
+            & we define a double quote before onmouseover - cuz ironman is a value of value attribute that's why
+            so overall looks like <input type="submit" name="submit" value="ironman" onmouseover="alert(document.URL)">
 ```
