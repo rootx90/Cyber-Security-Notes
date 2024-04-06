@@ -8,17 +8,21 @@
 > 3) Prevention/Remediation of it
 > 4) Summary - CSRF Practical Demo
 
+### Prerequisite
+- How To Setup Damn Vulnerable Web Application (DVWA) In Ubuntu Using Docker? <br>
+	https://www.youtube.com/watch?v=Miv3GGaXWF8&ab_channel=EthicalSharmaji
+
 ### Overview
 - Cross-Site Request Forgery aka CSRF
 
 ---
 
 ### 1. What's CSRF attack
-- u can understand any attack , just look at it's name
+- Advice : u can understand any attack , just look at it's name
 - it comes under "OWASP Top 10" attacks 
 - reference : [Cross Site Request Forgery (CSRF) | OWASP Foundation](https://owasp.org/www-community/attacks/csrf)
 - understanding CSRF
-	- in CSRF , the `cross-site` word - means the end user & he/she is using an application <br>
+	- in CSRF , the `cross-site` word means the end user & he/she is using an application <br>
 		& the request is not coming from that application (which he/she is using)<br>
 		means that request (is coming from an attacker) wants the user to make/follow unexpected behavior/actions
 	- Eg : Let's say u're in xyz website (it's social media webapp) & u're already authenticated/logged-in <br>

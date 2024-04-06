@@ -15,7 +15,7 @@
 
 ### Overview
 - most imp topic ⭐
-- we'll do XSS - reflected type & 8 challenges of XSS
+- we'll do reflected XSS type & 8 challenges of it
 - XSS reflected - generally , u can exploit this vulnerability in bug bounty but if u're doing WAPT <br>
 	then u have to focus on XSS especially `XSS reflected` cuz this vulnerability comes in "OWASP TOP 10" <br>
 	but this vulnerability is easy to exploit & still many applications have this vulnerability
@@ -233,3 +233,4 @@ STEP 4 : <input type="submit" name="submit" value="ironman" onmouseover="alert(d
 ---
 ### End of the lecture (Doubts)
 - Types of XSS attack : https://www.perplexity.ai/search/Types-of-XSS-SUP6Le2DQueKOTgPhUqrlQ
+- for more [What is Reflected XSS attack in Hindi? Practical Demo](https://www.youtube.com/watch?v=nXxj6JgFxzw&ab_channel=EthicalSharmaji)
