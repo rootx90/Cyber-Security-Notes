@@ -1,5 +1,7 @@
 #WAPT
-## Resources - by Anuj Sir
+
+---
+### Resources - by Anuj Sir
 
 1) Youtube playlist which can help you : [Web Application Penetration Testing(WAPT) - Ethical Sharmaji - YT](https://www.youtube.com/playlist?list=PLHOJoqBk02jQWQ7UMwRkAoznEzRtKI1zk&ab_channel=EthicalSharmaji)
 2) **Note** : Pre-requisites: You should know about the burp suite and its other sub tools. If you don't know about it, you can refer to this video : [[HINDI] Burp Suite Complete Course | Ethical Sharmaji - YT](https://www.youtube.com/watch?v=mK3Hr6ktgNg&ab_channel=EthicalSharmaji)
