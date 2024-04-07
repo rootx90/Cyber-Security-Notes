@@ -22,9 +22,9 @@
 	- STEP 5.1: install docker `apt-get install docker.io` 
 	- Q : Define Docker ✔️<br>
 		Ans : Docker is used to make the task easy so that application can be deploy , create , configure , etc <br>
-			becomes easier for developers . So it's a tool & inside of it , there are containers. <br>
-			Containers are like packages where all the important configurations are made in order <br>
-			to run an application like webservers , etc. So an application is published as a container on Docker
+    	becomes easier for developers . So it's a tool & inside of it , there are containers. <br>
+    	Containers are like packages where all the important configurations are made in order <br>
+    	to run an application like webservers , etc. So an application is published as a container on Docker
 	- STEP 5.2: run `systemctl enable docker` <br>
 		don't run `sudo systemctl enable docker` cuz we don't need `sudo` command - mean we're already in root directory<br>
     	- so this command used to enable the docker & `systemctl` used to enable the services ✔️
@@ -34,8 +34,8 @@
 		& name of the container is `vulnerables/web-dvwa`
 	- Q : Why Docker is useful ✔️<br>
 		Ans : cuz it makes the process easier otherwise to host an application take too much time <br>
-			cuz firstly "damn vulnerable application" needs to setup/configure in apache , etc.. <br>
-			configuration requires & we can follow the same steps to setup an application
+    	cuz firstly "damn vulnerable application" needs to setup/configure in apache , etc.. configuration requires <br>
+		& we can follow the same steps to setup an application
 - STEP 6: in firefox , write `localhost/setup.php` & dvwa webpage comes , so scroll down & click on `create / reset databases`
 - STEP 7: now login page will come , so it's a Damn Vulnerable WebApp , 
 	- so username is `admin` & password is `password` & click `login` , output : 

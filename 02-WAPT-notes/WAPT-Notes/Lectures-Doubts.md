@@ -202,6 +202,7 @@ mine general doubts
     - Ques : 
         Q : what's EC2 metadata endpoint
         or how to generate that SSRF attack request (like we'll be the user here in this)
+
 ```
 
 - Lecture 16
@@ -246,4 +247,26 @@ mine doubt : couldn't able to understand "balance" in terms of code
             so inside input tag it'll be this way onmouseover="alert(document.URL)"
             & we define a double quote before onmouseover - cuz ironman is a value of value attribute that's why
             so overall looks like <input type="submit" name="submit" value="ironman" onmouseover="alert(document.URL)">
+```
+
+- Lecture 21
+```
+### 1. how to get information from the application's database via SQL injection
+    - STEP 2 : 
+        Q : sir u said whenever we got the vulnerable parameter (on which we can perform SQL injection)
+	        then try to find out the "how many columns have in the application"  
+            Doubt 1 : what does parameter means
+            Doubt 2 : how do u know that vulnerable parameter is on URL address bar
+                what if there's a different vulnerable parameter which is not on URL address bar
+            Doubt 3 : are there common corners of a webapp where most of the time vulnerabilities occurs 
+                if that webapp is vulnerable
+                - means eg : in home , there are common spots where issues comes generally 
+                    so is that same thing happen with webapp
+            Doubt 4 : when SQL injection occurs in an webapp 
+                or how to know whether that webapp is vulnerable by SQL injection
+            Doubt 5 : how to prevent SQL injection
+    
+    - STEP 5.2 : 
+        Doubt : "http://testphp.vulnweb.com/artists.php?artist=-1 union select 1, table_name,3 from information_schema.tables where table_schema=database() limit 0,1"
+            couldn't able to understand the command
 ```
