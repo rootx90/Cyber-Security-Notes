@@ -12,7 +12,7 @@
     Q : how do u handle it like emotionally someone damage u - cuz i am very sensitive person
 2. someone poke u again & again 
 
-## related to Course
+## related to Course / Email Stuff
 - Q : in WAPT playlist , Hacking playlist not working <br>
     https://www.youtube.com/watch?v=RSyMIy2-iUc&list=PLHOJoqBk02jQWQ7UMwRkAoznEzRtKI1zk&index=2&ab_channel=EthicalSharmaji
 
@@ -277,4 +277,15 @@ mine general doubts : Stored XSS
     Q : real life example of it
     Q : How Stored XSS can be dangerous 
     Q : How to prevent it
+```
+
+- Lecture 23
+```
+mine general doubts 
+    Q : whatever attacks we did on a vulnerable webapp like SQL injection , bruteForce , XSS , CSRF , etc
+        are all those experiment based or are there any common ways that if let's say 
+        a webapp has SQL injection vulnerability - then these are ways to prevent/sanitize the webapp from SQL injection
+
+    Q : how to know which kindof vulnerabilities a vulnerable webapp/website has
+        means do we use a particular tool to find the vulnerabilities or like what ?
 ```
