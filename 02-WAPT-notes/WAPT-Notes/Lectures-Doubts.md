@@ -270,3 +270,11 @@ mine doubt : couldn't able to understand "balance" in terms of code
         Doubt : "http://testphp.vulnweb.com/artists.php?artist=-1 union select 1, table_name,3 from information_schema.tables where table_schema=database() limit 0,1"
             couldn't able to understand the command
 ```
+
+- Lecture 22
+```
+mine general doubts : Stored XSS
+    Q : real life example of it
+    Q : How Stored XSS can be dangerous 
+    Q : How to prevent it
+```
