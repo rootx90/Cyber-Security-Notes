@@ -37,7 +37,7 @@
 		output now u'll see that site will not get loaded cuz BurpSuite captured the packets ✔️
 	- `intercept is ON` : means it becomes man-in-the-middle , so all those requests intercepted which are going to the server & <br>
 		all those requests packets will be taken away in the middle by a attacker ✔️
-	- STEP 4.2 : in burpSuite , proxy -> intercept -> click on `forward` button again & again till "Raw" tab gets blanked -> <br>
+	- STEP 4.2 : in burpSuite , proxy -> intercept -> click on `forward` btn again & again till "Raw" tab gets blanked -> <br>
 		click OFF the intercept
 	- STEP 4.3 : in burpSuite -> in proxy -> HTTP history , <br>
 		output : burpSuite captured the packets of that website 
@@ -48,26 +48,24 @@
 	- STEP 4.6 : in proxy tab -> intercept -> ON the intercept -> write anything in username & password input field -> click login , <br>
 		output : now in BurpSuite , in proxy tab -> intercept tab -> in Raw tab -> burpSuite captured the username & password
 	- STEP 4.7 : in Raw tab -> right click -> click on "send to intruder" , in intruder tab -> position tab -> click clear & <br>
-		we'll keep `uid=admin` cuz to capture the admin's (username & password) <br>
-		& we'll add payload symbol on password - so that whatever the password we'll use while login - those passwords <br>
-		will be added in a list ✔️
-	- STEEP 4.8 : let's create a list , in intruder -> payloads tab, in payload options section, in `add` input field , <br>
-		write these words `admin`, `administrator`, `test123`, `hack123`, `admin123` , <br>
-		so add them one by one like this 
+		we'll keep `uid=admin` cuz to capture the admin's (username & password)
+		- & we'll add payload symbol on password - so that whatever the password we'll use while login - those passwords <br>
+			will be added in a list ✔️
+	- STEEP 4.8 : let's create a list of password , in intruder -> payloads tab -> in payload options section -> <br>
+		in `add` input field , write these words `admin` `administrator` `test123` `hack123` `admin123` , so add them one by one like this 
 		<br><img src="../../notes-pics/03-Module/24_lecture/24_lecture-2-M3.jpg" alt="" width="300"/>
-	- STEP 4.9 : in Positions tab , select only password value & click on `add` btn for payload symbol like this 
+	- STEP 4.9 : in Positions tab -> select only password value -> click "add" btn for payload symbol like this 
 		<br><img src="../../notes-pics/03-Module/24_lecture/24_lecture-3-M3.jpg" alt="" width="300"/>
-	- STEP 4.10 : click on `start attack` button & if any unknown popup comes then click on ok , <br>
-		now mostly password payloads will get `200` status but `admin` has `302` i.e 
+	- STEP 4.10 : click "start attack" btn (& if any unknown popup comes then click on ok) ,<br>
+		output : now mostly password payloads will get `200` status but `admin` has `302` i.e 
 		<br><img src="../../notes-pics/03-Module/24_lecture/24_lecture-4-M3.jpg" alt="" width="300"/>
-	- here length of `admin` (which has 302 status) is 576 but others have same length
-	- Note : if that payload password has different length (than others payload password in a list) <br.
-		then means we crack the password ✔️
-	- so password of the website , so admin account has `admin` password (i.e default password)
-- STEP 5 : in burpSuite -> Proxy -> intercept tab , click on drop till the end <br>
-	so that all the packets will get dropped & off the intercept
-- STEP 6 : check `demo.testfire.net` & click "sign off" & now "sign in" & write username `admin` & password `admin` <br>
-	& click login , now we logged-in & we got the info of admin account logins
-- so we successfully did via brute force attack & we compromised the website <br>
-	& now we can manipulate users details which are under admin account
+    	- here length of `admin` (which has 302 status) is 576 but others have same length
+    	- `Note` : if that payload password has different length (than others payload password in a list) <br.
+			then means we crack the password ✔️
+    	- so password of the website , so admin account has `admin` password (i.e default password)
+- STEP 5 : in burpSuite -> Proxy -> intercept tab -> click "drop" till all the packets will get dropped -> OFF the intercept
+- STEP 6 : in chrome browser -> search `demo.testfire.net` -> click "sign off" -> click "sign in" -> <br>
+	write username `admin` & password `admin` -> click login , output : now we logged-in & we got the info of admin account logins
+    - so we successfully did via brute force attack & we compromised the website <br>
+		& now we can manipulate users details which are under admin account
 
