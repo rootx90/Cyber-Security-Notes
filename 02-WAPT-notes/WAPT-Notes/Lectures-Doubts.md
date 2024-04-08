@@ -289,3 +289,11 @@ mine general doubts
     Q : how to know which kindof vulnerabilities a vulnerable webapp/website has
         means do we use a particular tool to find the vulnerabilities or like what ?
 ```
+
+- Lecture 24
+```
+mine general doubts
+    Q : are there many different types of Brute Force attack like "Dictionary attack"
+    Q : how to prevent BruteForce attack or what're the sanitization methods to protect 
+        (like login page or signup page or contact page)
+```
