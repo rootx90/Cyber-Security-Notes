@@ -4,7 +4,7 @@
 ### what we'll learn
 > Lecture Name : What is a Brute Force Attack? Practical Demo
 > 1) what's Brute Force 
-> 2) practical Demo
+> 2) Practical Work : Brute Force attack
 
 ---
 
@@ -18,7 +18,7 @@
 	i.e dictionary attack (type of brute force attack) , so within 1min , that automated software do trial-and-error <br>
 	& then it shows which is passed & which are failed ✔️
 
-### 2. Practical Demo - Brute Force attack
+### 2. Practical Work : Brute Force attack
 - STEP 1: setting up in burp Suite 
 	- STEP 1.1: in burp Suite -> proxy tab -> off the intercept
 	- STEP 1.2: now configure the proxy , so proxy tab -> options , uncheck the localhost URL then click on `edit` -> <br>

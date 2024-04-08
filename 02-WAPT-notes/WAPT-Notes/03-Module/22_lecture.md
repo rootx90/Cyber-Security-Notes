@@ -29,7 +29,7 @@
 - means in stored XSS , WebApps which gather/store input data from user for later use , <br>
     those data can be vulnerable in later stage for this attack & then stores data in a data store & for later use too
 
-### 3. Practical - Stored XSS
+### 3. Practical Work : Stored XSS
 - STEP 1 : open internet explorer (cuz in it, we can execute types of XSS attacks) -> open "http://demo.testfire.net"
 - STEP 2 : inside the webapp -> click feedback menu tab -> "your name" input field is vulnerable
 	- STEP 2.1 : inside "your name:" input field -> write `<script>alert("ethical")</script>` <br>

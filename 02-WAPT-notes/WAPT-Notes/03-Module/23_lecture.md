@@ -5,7 +5,7 @@
 > Lecture Name : Sql injection attack in hindi? Practical Demo
 > 1) about SQLi
 > 2) How auth page (i.e login page) works for (a new user & existing user)
-> 3) Practical Demo
+> 3) Practical Work : SQL injection attack
 
 ---
 
@@ -37,7 +37,7 @@
 		so as a hacker , if we do something like database always return true value like 1=1 (1 always equal to 1) , 2=2 & so on. <br>
 		so if we use these in the SQL statement then we'll able to login ✔️
 
-### 3. Practical Demo - SQL injection attack
+### 3. Practical Work : SQL injection attack
 - STEP 1: in `http://demo.testfire.net` -> click "sign in" menu tab , <br>
 	output : login page opened (which contain 2 fields i.e username & password)
 - STEP 2: so in "username" input field , so we'll choose/write a username or a SQL statement which always go to the database <br>

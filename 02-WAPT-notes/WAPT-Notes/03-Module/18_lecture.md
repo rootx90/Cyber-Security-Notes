@@ -46,7 +46,7 @@
 		then that request must go as a POST request so that those login credentials must be checked via that webapp's server
 - XSS & CRSF are both different attacks 
 
-### 2. CSRF Practical Demo on DVWA application (vulnerable app)
+### 2. Practical Work : CSRF Practical Demo on DVWA application (vulnerable app)
 - OSBoxses - is a virtual machine
 - STEP 1 : open Ubuntu OS -> `ctrl + alt + T` to open terminal
 - STEP 2 : run `sudo -i` : means to come in root user directory

@@ -5,7 +5,7 @@
 > Lecture Name : [HINDI] THM Agent T | Remote Code Execution
 > 0) Overview
 > 1) Define - Remote code Execution
-> 2) Process from the little issue/vulnerability to "Remote Code Execution"
+> 2) Practical Work : Process from the little issue/vulnerability to "Remote Code Execution"
 > 3) Summary - of process of RemoteCodeExecution
 ---
 
@@ -22,7 +22,7 @@
 	by sending the `User-Agentt header` means kinda we can open sudo shell ✔️
 - so due to this issue , attacker can create impact/penetrate in large amount ✔️
 
-### 2. Process from the little issue/vulnerability to "Remote Code Execution"
+### 2. Practical Work : Process from the little issue/vulnerability to "Remote Code Execution"
 - STEP 1 : go to this room https://tryhackme.com/room/agentt & start the machine & copy the IP address as `10.10.49.29` 
 - STEP 2 : in Kali Linux , already built-in VPN i.e openVPN , so start the VPN like this<br>
 	so in terminal - `cd downloads` command then `openvpn EthicalSharmaji.ovpn`

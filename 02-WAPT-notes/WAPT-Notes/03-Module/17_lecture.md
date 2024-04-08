@@ -3,14 +3,14 @@
 ---
 ### what we'll learn
 > Lecture Name : Cross Site Scripting Complete Tutorial | XSS Challenges
-> 1) XSS Challenge 1
-> 2) XSS Challenge 2
-> 3) XSS Challenge 3
-> 4) XSS Challenge 4
-> 5) XSS Challenge 5
-> 6) XSS Challenge 6
-> 7) XSS Challenge 7
-> 8) XSS Challenge 8
+> 1) Practical Work : XSS Challenge 1
+> 2) Practical Work : XSS Challenge 2
+> 3) Practical Work : XSS Challenge 3
+> 4) Practical Work : XSS Challenge 4
+> 5) Practical Work : XSS Challenge 5
+> 6) Practical Work : XSS Challenge 6
+> 7) Practical Work : XSS Challenge 7
+> 8) Practical Work : XSS Challenge 8
 > - Summary / Payloads of Challenges
 
 ### Overview
@@ -33,7 +33,7 @@
 
 - link for all XSS challenges : http://leettime.net/xsslab1/chalg1.php# (but it's not opening)
 
-### 1. XSS Challenge 1
+### 1. Practical Work : XSS Challenge 1
 - website looks like <br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-0-M3.jpg" alt="" width="500"/>
 - usecase of XSS reflected / where we can use it ✔️
 	1) it can be applied on a input field
@@ -56,7 +56,7 @@
 - STEP 4 : in "search input field" , write this payload `<script>alert(document.URL)</script>` -> & click "search" , <br>
 	output : get got a "alert message" box (which has "Good Work!! You are welcome to next round") & click "ok" btn ✔️
 
-### 2. XSS Challenge 2
+### 2. Practical Work : XSS Challenge 2
 - STEP 1 : the search input field , write again "ironman" -> click "search" btn
 	- Now check whether any encoding or sanitize
 	- output : in website , "cannot find your query" message coming <br>
@@ -76,7 +76,7 @@
 - STEP 2 : so payload will be `><script>alert(alert.(document.URL)</script>`
 	- inside "search input field" -> paste it -> click "search" btn , output : u came to next round
 
-### 3. XSS Challenge 3
+### 3. Practical Work : XSS Challenge 3
 - STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
 	- output : in website , "cannot find your query" message coming & <br>
 		in inspect window , now "ironman" word coming inside double quotes <br>
@@ -95,7 +95,7 @@
 	so ultimately `"><script>alert(alert.(document.URL)</script>`
 - STEP 3 : inside "search input field" -> put this payload -> click "search" btn
 
-### 4. XSS Challenge 4
+### 4. Practical Work : XSS Challenge 4
 - STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
 	- output : "cannot find your query" message showing & "ironman" word coming inside single quotes <br>
 		(in "value" attribute of text "input" field) with closing angle bracket
@@ -105,7 +105,7 @@
 - STEP 2 : so to balance the payload , remove the 2 things from the end i.e single quote & close angle bracket
 - STEP 3 : so payload will be `'><script>alert(alert.(document.URL)</script>`
 
-### 5. XSS Challenge 5
+### 5. Practical Work : XSS Challenge 5
 - STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
 	- output : "cannot find your query" message showing & "ironman" word coming inside double quotes of a variable i.e
 		<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-8-M3.jpg" alt="" width="500"/>
@@ -116,7 +116,7 @@
 	<br><img src="../../notes-pics/03-Module/17_lecture/17_lecture-9-M3.jpg" alt="" width="500"/>
 - STEP 2 : so payload will be `";</script><script>alert(alert.(document.URL)</script>`
 
-### 6. XSS Challenge 6
+### 6. Practical Work : XSS Challenge 6
 - STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
 	- output : "cannot find your query" message showing <br>
 		& "ironman" word coming inside single quotes of a variable same as Challenge 5
@@ -126,7 +126,7 @@
 	remove these 3 things from the end i.e `';</script>`
 - STEP 3 : paste the payload -> click "search" btn
 
-### 7. XSS Challenge 7 `imp ⭐`
+### 7. Practical Work : XSS Challenge 7 `imp ⭐`
 - STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
 	- output : "cannot find your query" message showing <br>
 		& "ironman" word coming inside single quotes value of "value` attribute of input field
@@ -173,7 +173,7 @@ STEP 4 : '>onmouseover=alert(document.URL) -> output : ''onmouseover=alert(docum
 STEP 5 : '>onmouseover='alert(document.URL) -> output : done
 ```
 
-### 8. XSS Challenge 8 `imp ⭐`
+### 8. Practical Work : XSS Challenge 8 `imp ⭐`
 - STEP 1 : inside "search input field" -> write "ironman" -> click "search" btn
 	- output : "cannot find your query" message showing <br>
 		& "ironman" word coming inside single quotes value of "value" attribute of input field

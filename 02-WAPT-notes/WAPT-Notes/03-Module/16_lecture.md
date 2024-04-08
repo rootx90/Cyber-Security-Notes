@@ -3,8 +3,8 @@
 ---
 ### what we'll learn
 > Lecture Name : Crack Zip File Password in Kali Linux | Fcrackzip
-> 1) how to crack the zip file password via "fcrackzip" using directory methods
-> 2) how to recover the zip file password via "fcrackzip" using bruteForce method/mode
+> 1) Practical Work : how to crack the zip file password via "fcrackzip" using directory methods
+> 2) Practical Work : how to recover the zip file password via "fcrackzip" using bruteForce method/mode
 
 ### Overview
 - we'll see "how to recover lost password of zip file" + "How to crack the password of zip file via BruteForce & Dictionary methods" <br>
@@ -18,7 +18,7 @@
 - Q : Problem statement : is that happen with u , where u put very important documents , files , images , etc <br>
 	& u want that those stuff must be password protected & u put the password via Zip feature & u forgot that password ✔️
 
-### 1. Cracking Zip file password via fcrackzip using dictionary method
+### 1. Practical Work : Cracking Zip file password via fcrackzip using dictionary method
 - STEP 1: make a txt file -> inside of it , write "MYSQL password is ethicalsharmaji" -> save it as secret.txt
 - STEP 2: right click on the file -> click 7-zip -> click add to archive , <br>
 	keep the password as `admin` & select `ZipCrypto` encryption method
@@ -45,7 +45,7 @@
 			`-v` : verbose mode , `-D` : dictionary & `-p` : means which word lists we're giving i.e rockyou.txt ✔️
     	- output : now we'll got the password <br><img src="../../notes-pics/03-Module/16_lecture/16_lecture-0-M3.jpg" alt="" width="500"/>
 
-### 2. Cracking Zip file password via fcrackzip using bruteForce method/mode
+### 2. Practical Work : Cracking Zip file password via fcrackzip using bruteForce method/mode
 - STEP 1: run `man fcrackzip` command & now check which commands u're gonna use
     - general commands used in bruteForce mode via frackzip
     	- `-b` : for brute force mode

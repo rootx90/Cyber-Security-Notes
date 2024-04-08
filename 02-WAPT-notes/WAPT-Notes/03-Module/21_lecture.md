@@ -3,10 +3,11 @@
 ---
 ### what we'll learn
 > Lecture Name : SQL Injection Exploitation Step By Step | Practical Demo?
-> 1) how to get information from the application's database via SQL injection
+> 1) Practical Work : how to get information from the application's database via SQL injection
 
 ### Overview
-- exploiting via SQL injection , how we can change the name of database , which database using , table name , column name , sensitive details like username & password ✔️ 
+- exploiting via SQL injection , how we can change the name of database , which database using , <br>
+	table name , column name , sensitive details like username & password ✔️ 
 
 ### Extra Resources - SQL injection - Penetration Testing
 - [Basics of SQL Injection - Penetration Testing for Ethical Hackers - YouTube](https://www.youtube.com/watch?v=2nXOxLpeu80&ab_channel=freeCodeCamp.org)
@@ -14,7 +15,7 @@
 
 ---
 
-### 1. how to get information from the application's database via SQL injection
+### 1. Practical Work : how to get information from the application's database via SQL injection
 - http://testphp.vulnweb.com/artists.php : is a website where we're gonna use to apply SQL injection
 - STEP 0 : vulnerable parameter of the website i.e `http://testphp.vulnweb.com/artists.php?artist=1` 
 - STEP 1 : Q : how do Anuj sir got to know that's the vulnerable parameter ? ✔️️

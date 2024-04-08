@@ -8,7 +8,7 @@
 
 ---
 
-### 1. Steps - to setup Damn vulnerable Web App in Ubuntu
+### 1. Practical Work : to setup Damn vulnerable Web App in Ubuntu
 - we'll setup in Ubuntu & u can also setup it on kali Linux also but we want to setup in Ubuntu <br>
 	cuz to separate the attacker machine & victim machine
 - STEP 1: on google -> search `ubuntu ova` -> click `osboxes.org` url to download Ubuntu Virtual Machine

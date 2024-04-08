@@ -3,7 +3,7 @@
 ---
 ### what we'll learn
 > Lecture Name : How to Crack ZIP File Password Using Kali Linux?
-> 1) how to crack password of ZIP file via "john the ripper" password cracker tool
+> 1) Practical Work : how to crack password of ZIP file via "john the ripper" password cracker tool
 
 ### Overview
 - `zip2John` is a utility of "John the ripper" tool
@@ -16,7 +16,7 @@
 
 ---
 
-### 1. Steps to crack zip file password in kali Linux
+### 1. Practical Work : Steps to crack zip file password in kali Linux via "john the ripper"
 - STEP 1: in WinOS -> open "oracle VM" -> right click on kali linux 2019 vbox -> start -> normal start
 - in Kali Linux , there are tons of tools like wireshark (for network monitoring) , <br>
 	pre-installed burp Suite Community Edition , all important tools <br>
