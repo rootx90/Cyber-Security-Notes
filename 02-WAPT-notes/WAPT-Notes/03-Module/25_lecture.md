@@ -10,11 +10,10 @@
 
 ### Overview
 
-### reference
+### Reference
 - Task 20 [Severity 7] | https://tryhackme.com/r/room/owasptop10
 
 ---
-
 
 ### 1. what's XSS
 - in Cross Site Scripting (XSS) , "Scripting" word is coming - means in a webapp , anywhere "input" field is coming <br>
@@ -80,6 +79,18 @@
 ### 4. Practical Work : How to deface a website via XSS
 - STEP 1 : connect to openvpn , run `openvpn EthicalSharmaji.ovpn`
 - STEP 2 : in tryhackme -> Task 20 -> click "Star machine" -> copy the IP-address i.e 10.10.97.236
-- STEP 3 : in firefox -> paste & open the IP-address
-- STEP 4 : 
-- STEP 5 : 
+- STEP 3 : in firefox -> paste & open the IP-address , output : login page & Register page <br>
+    <img src="../../notes-pics/03-Module/25_lecture/25_lecture-0-M3.jpg" alt="" width="500"/>
+- STEP 4 : click "Reflected XSS" menu , we'll get 2 Ques
+    - Ques 
+        <br>1) Craft a reflected XSS payload that will cause a popup saying "Hello"
+        <br>2) Craft a reflected XSS payload that will cause a popup with your machines IP address
+    - STEP 4.0 : in search bar -> write xyz , output : we'll get `xyz` as it is
+    - STEP 4.1 : in search bar -> write batman , output : u'll get `batman` as it is
+    - so in search input bar , no validation implemented cuz we're getting results as same as we searched <br>
+        so to test whether there's validation applied or not - we'll make a JS payload
+    - STEP 4.2 : in search bar -> write `<script>alert("Hello")</script>` -> hit enter <br>
+        output : alert popup shown with "Hello" message
+        - STEP 4.2.1 : in popup -> click ok , output : ThereIsMoreToXssThanYouThink - this is the answer of 1st ques
+        - STEP 4.2.2 : in tryhackme -> paste `ThereIsMoreToXssThanYouThink` answer in 2nd ques
+    - STEP 5 : 
