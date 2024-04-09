@@ -6,6 +6,7 @@
 2. sir do u listen to music while learning a new concept or implement a new concept <br>
     tell reason in both cases i.e Yes or No
 3. why sir u used different kali OS like in CSRF attack , u used parrot OS 
+4. in Tech news , people say data breach happened of this company - what does exactly mean "data breach"
 
 ### life lessons
 1. if someone say bad things about u + this goes on & on in ur mind then
