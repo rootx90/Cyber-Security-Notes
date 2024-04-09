@@ -64,11 +64,22 @@
 
 ### 3. XSS Payloads
 - some common payloads based on types of XSS
-1. 
-2. asd
+1. Popup's (`<script>alert(“Hello World”)</script>`) - Creates a Hello World message popup on a users browser.
+2. Writing HTML (`document.write`) - Override the website's HTML to add ur own (essentially defacing the entire page).
+3. XSS Keylogger (http://www.xss-payloads.com/payloads/scripts/simplekeylogger.js.html)
+   - u can log all keystrokes of a user, capturing their password & other sensitive information they type into the webpage.
+   - Q : via XSS , u can make keylogger ✔️<br>
+        Ans : if that input field is not sanitize properly & no protection mechanism - then we can use "simplekeylogger.js.html" payload <br>
+        due to this payload , we can log all keystrokes of a user
+    - log : means what are they keys clicked by a user
+4. Port scanning (http://www.xss-payloads.com/payloads/scripts/portscanapi.js.html) 
+    - A mini local port scanner (more information on this is covered in the TryHackMe XSS room).
+    - on this link , we'll get port scanner
+- Extra Resource : http://www.xss-payloads.com/ - is a best websites that has XSS related payloads ✔️
 
 ### 4. Practical Work : How to deface a website via XSS
 - STEP 1 : connect to openvpn , run `openvpn EthicalSharmaji.ovpn`
-- STEP 2 : in tryhackme -> Task 20 -> click "Star machine"
-- STEP 3 : 
-- step 4 : 
+- STEP 2 : in tryhackme -> Task 20 -> click "Star machine" -> copy the IP-address i.e 10.10.97.236
+- STEP 3 : in firefox -> paste & open the IP-address
+- STEP 4 : 
+- STEP 5 : 
