@@ -89,8 +89,23 @@
     - STEP 4.1 : in search bar -> write batman , output : u'll get `batman` as it is
     - so in search input bar , no validation implemented cuz we're getting results as same as we searched <br>
         so to test whether there's validation applied or not - we'll make a JS payload
-    - STEP 4.2 : in search bar -> write `<script>alert("Hello")</script>` -> hit enter <br>
-        output : alert popup shown with "Hello" message
-        - STEP 4.2.1 : in popup -> click ok , output : ThereIsMoreToXssThanYouThink - this is the answer of 1st ques
+    - STEP 4.2 : finding answer of 1st ques of Reflected XSS
+        - STEP 4.2.0 : in search bar -> write `<script>alert("Hello")</script>` -> hit enter <br>
+            output : alert popup shown with "Hello" message
+        - STEP 4.2.1 : in popup -> click ok , output : ThereIsMoreToXssThanYouThink - answer of 1st ques of Reflected XSS
         - STEP 4.2.2 : in tryhackme -> paste `ThereIsMoreToXssThanYouThink` answer in 2nd ques
-    - STEP 5 : 
+    - STEP 4.3 : finding answer of 2nd ques of Reflected XSS
+        - 2nd ques of Reflected XSS - means show the name of the IP-Address in alert popup
+        - STEP 4.3.0 : in search bar -> write `<script>alert(window.location.hostname)</script>` -> click "search" btn or hit enter <br>
+            output : IP-address i.e 10.10.97.236 in alert popup
+        - STEP 4.3.1 : in alert popup -> click ok , output : ReflectiveXss4TheWin - answer of 2nd ques of Reflected XSS
+    - STEP 4.4 : click "Why does this work?" toggle <br>
+        Ans : in reflected Xss ur payload - once u giving ur input as same we're getting output & no sanitization/encoding happening
+        <br>- `<h6>You Searched for: [Your input will be input directly in here]</h6>` : means whatever u give input <br>
+            that input will come as it is as a output
+    - STEP 4.5 : click "Disable your browsers XSS protection" toggle <br>
+        Ans : some browsers have in-built XSS protection
+        <br>- if these XSS payloads are not working in ur browser , then u can disable the XSS protection from that browser
+- STEP 5 : click "Stored XSS" menu , we'll get 3 Ques
+    - Ques
+        <br>1) Add a comment
