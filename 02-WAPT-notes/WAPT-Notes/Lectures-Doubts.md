@@ -298,3 +298,13 @@ mine general doubts
     Q : how to prevent BruteForce attack or what're the sanitization methods to protect 
         (like login page or signup page or contact page)
 ```
+
+- Lecture 25
+```
+### 2. Types of it
+    Q : diff b/w Stored Vs reflected XSS , give a real life example
+        Note : after asking from sir - even if u don't understand - then use ai tool
+    Q : DOM-based XSS
+```
+
+

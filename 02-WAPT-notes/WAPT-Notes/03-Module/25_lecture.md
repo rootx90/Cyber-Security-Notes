@@ -5,14 +5,16 @@
 > Lecture Name : [Hindi] Cross-Site Scripting(XSS) | Deface website | Owasp Top 10
 > 1) what's XSS
 > 2) Types of it
-> 3) Practical Work : How to deface a website via XSS
+> 3) XSS Payloads
+> 4) Practical Work : How to deface a website via XSS
 
 ### Overview
 
+### reference
+- Task 20 [Severity 7] | https://tryhackme.com/r/room/owasptop10
 
 ---
 
-- reference : Task 20 [Severity 7] | https://tryhackme.com/r/room/owasptop10
 
 ### 1. what's XSS
 - in Cross Site Scripting (XSS) , "Scripting" word is coming - means in a webapp , anywhere "input" field is coming <br>
@@ -45,9 +47,27 @@
     - so once this JS payload executed - then this payload will execute again & again (whenever the user - login & comes on that page)
     - so this attack is vv dangerous
 - in Reflected XSS : 
-    - as
+    - Eg : a searchBox input , so whenever u search something - then u'll get results related to that searched stuff
+    - Now u're a attacker , so u'll put a JS payload on that search input field - let's say `<script>alert(1)</script>` <br>
+        Q : Now in this is situation , what'll happen ✔️<br>
+        Ans : if that "search input field" is not sanitize properly + no protection mechanism , due to this , that JS payload will be executed
+- in DOM-Based XSS : 
+    - Eg : at home , we have a water sink , so we open the tap-water & water goes directly inside sink <br>
+        so tap-water is a source (means from where water is running) & sink is a sink (means where water is going) ✔️
+    - these 2 stuff sometimes vulnerable (like eval() function in js , <br>
+        document.location is not sanitize - due to this as it is any input can be given) - due to this , <br>
+        that stuff becomes attacker controlled - means whenever we (as a attacker) send a payload to the sink - then it could be XSS
+    - Q : why we say this attack as DOM-based ✔️<br>
+        Ans : cuz it's Document Object Model - means it's a representation of HTML elements of HTML page <br>
+        means HTML page is like tree-structure (eg : 1st root i.e html tag & so on..) <br>
+        so a attacker manipulate that structure aka DOM-based XSS
 
-### 3. Practical Work : How to deface a website via XSS
+### 3. XSS Payloads
+- some common payloads based on types of XSS
+1. 
+2. asd
+
+### 4. Practical Work : How to deface a website via XSS
 - STEP 1 : connect to openvpn , run `openvpn EthicalSharmaji.ovpn`
 - STEP 2 : in tryhackme -> Task 20 -> click "Star machine"
 - STEP 3 : 
