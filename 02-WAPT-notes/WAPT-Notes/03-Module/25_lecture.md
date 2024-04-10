@@ -9,6 +9,7 @@
 > 4) Practical Work : How to deface a website via XSS
 
 ### Overview
+- we'll see how to deface the website/webapp via XSS (if that webapp/website has XSS vulnerabilities)
 
 ### Reference
 - Task 20 [Severity 7] | https://tryhackme.com/r/room/owasptop10
@@ -89,16 +90,16 @@
     - STEP 4.1 : in search bar -> write batman , output : u'll get `batman` as it is
     - so in search input bar , no validation implemented cuz we're getting results as same as we searched <br>
         so to test whether there's validation applied or not - we'll make a JS payload
-    - STEP 4.2 : finding answer of 1st ques of Reflected XSS
+    - STEP 4.2 : finding answer of Q1 of Reflected XSS
         - STEP 4.2.0 : in search bar -> write `<script>alert("Hello")</script>` -> hit enter <br>
             output : alert popup shown with "Hello" message
-        - STEP 4.2.1 : in popup -> click ok , output : ThereIsMoreToXssThanYouThink - answer of 1st ques of Reflected XSS
-        - STEP 4.2.2 : in tryhackme -> paste `ThereIsMoreToXssThanYouThink` answer in 2nd ques
-    - STEP 4.3 : finding answer of 2nd ques of Reflected XSS
-        - 2nd ques of Reflected XSS - means show the name of the IP-Address in alert popup
+        - STEP 4.2.1 : in popup -> click ok , output : ThereIsMoreToXssThanYouThink - answer of Q1 of Reflected XSS
+        - STEP 4.2.2 : in tryhackme -> paste `ThereIsMoreToXssThanYouThink` answer in Q2
+    - STEP 4.3 : finding answer of Q2 of Reflected XSS
+        - Q2 of Reflected XSS - means show the name of the IP-Address in alert popup
         - STEP 4.3.0 : in search bar -> write `<script>alert(window.location.hostname)</script>` -> click "search" btn or hit enter <br>
             output : IP-address i.e 10.10.97.236 in alert popup
-        - STEP 4.3.1 : in alert popup -> click ok , output : ReflectiveXss4TheWin - answer of 2nd ques of Reflected XSS
+        - STEP 4.3.1 : in alert popup -> click ok , output : ReflectiveXss4TheWin - answer of Q2 of Reflected XSS
     - STEP 4.4 : click "Why does this work?" toggle <br>
         Ans : in reflected Xss ur payload - once u giving ur input as same we're getting output & no sanitization/encoding happening
         <br>- `<h6>You Searched for: [Your input will be input directly in here]</h6>` : means whatever u give input <br>
@@ -108,4 +109,36 @@
         <br>- if these XSS payloads are not working in ur browser , then u can disable the XSS protection from that browser
 - STEP 5 : click "Stored XSS" menu , we'll get 3 Ques
     - Ques
-        <br>1) Add a comment
+        <br>1) Add a comment and see if you can insert some of your own HTML.
+        <br>2) Create an alert popup box appear on the page with your document cookies.
+        <br>3) Change "XS Playground to "I am a hacker” by adding a comment and using Javascript.
+    - STEP 5.1 : in "register" form -> fill username & password as "test" -> click "don't save"
+    - STEP 5.2 : finding answer of Q1 of Stored XSS
+        - STEP 5.2.1 : in comment box -> write `<h1><b>Ethical Sharmaji</b></h1>` , output : it's coming as heading + in bold
+            - which means the html is working , if the html wasn't working - then we'll get the html code in string form
+            - answer is HTML_T4gs
+        - STEP 5.2.2 : in tryhackme -> in Task 20 module -> paste the answer in Q3
+    - STEP 5.3 : finding answer of Q2 of Stored XSS
+        - Q : what we need to do <br>
+            Ans : in firefox -> in 10.10.97.236/stored website -> press "ctrl + shift + i" -> storage tab -> <br>
+                Cookies section -> click http://10.10.97.236 -> we need to show connect.sid cookie as a alert popup
+        - STEP 5.3.1 : in comment box -> write `<script>alert(document.cookie)</script>` -> hit enter , <br>
+            output : sessionId cookie got printed in alert popup
+        - STEP 5.3.2 : click ok -> W3LL_DON3_LVL2 (is a flag) -> click ok
+        - STEP 5.3.3 : in tryhackme -> in Task 20 module -> paste the answer in Q4 -> paste the flag
+    - STEP 5.4 : finding answer of Q2 of Stored XSS
+        - Q : what we need to do <br>
+            Ans : the website name coming as "XSS playground" , so change it to "I am a hacker" <br>
+            - means deface this webapp , Eg : change "XSS playground" to "I am a hacker" <br>
+                same way we can deface this webapp completely via XSS ✔️
+        - STEP 5.4.1 : open inspect tool -> select that element , output : `<span id="thm-title">XSS Playground</span>`
+        - STEP 5.4.2 : close inspect tool -> in comment box -> <br>
+            write a JS payload `<script>document.querySelector("#thm-title").textContent = "I am a hacker"</script>` , <br>
+            output : got the answer i.e websites_can_be_easily_defaced_with_XSS
+        - STEP 5.4.3 : in tryhackme -> in Task 20 module -> paste the answer in Q4 -> paste the answer
+
+### Conclusion
+- we'll see how to deface the website/webapp via XSS by using HTML (if that webapp/website has XSS vulnerabilities)
+- we saw reflected XSS , stored XSS (means how to store a payload completely in the database of the website)
+- Done the Ques of TASK 20 module of TryHackMe
+

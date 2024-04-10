@@ -301,6 +301,12 @@ mine general doubts
 
 - Lecture 25
 ```
+mine general questions
+    Q : what does deface means 
+    Ans : https://www.perplexity.ai/search/what-does-deface-OQF5NiYGRiCIYJKGi4bM2g
+
+    Q : textContent vs innerText vs innerHTML in html
+
 ### 2. Types of it
     Q : diff b/w Stored Vs reflected XSS , give a real life example
         Note : after asking from sir - even if u don't understand - then use ai tool
