@@ -14,7 +14,7 @@
 4. [04_lecture](./WAPT-Notes/01-Module/04_lecture.md) : Web Fundamentals #2 What are cookies? Explained in detail | Practical Demo | HTTPOnly, Secure Flag
 5. [05_lecture](./WAPT-Notes/01-Module/05_lecture.md) : Web Fundamentals #3 Mini CTF | Tryhackme
 
-### 02 Module - Burp Suite
+### 02 Module - BurpSuite
 1. [06_lecture](./WAPT-Notes/02-Module/06_lecture.md) : Burp Suite #1 Introduction | Installation | Configuration | Proxy
 2. [07_lecture](./WAPT-Notes/02-Module/07_lecture.md) : Burp Suite #2 Features | Proxy | Repeater | Intruder | Extender
 3. [08_lecture](./WAPT-Notes/02-Module/08_lecture.md) : Burp Suite #3 How Burp Suite Proxy Works? MITM Attack?
@@ -42,7 +42,7 @@
 17. [28_lecture](./WAPT-Notes/03-Module/28_lecture.md) : [Hindi] How | Secured a Bank using Astra Pentest
 
 ---
-> Lectures Doubts + Summary
+#### Lectures Doubts + Summary
 
 - [Lectures Doubts](./WAPT-Notes/Lectures-Doubts.md) : Lectures Doubts
 - [Lectures Summary](./WAPT-Notes/Lectures-summary.md) : Lectures Summary
