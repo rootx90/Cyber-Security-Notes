@@ -12,6 +12,8 @@
 > 7) what's De(Serialization)
 > 8) Ques
 > 9) Cookies
+> 10) Ques
+> 11) Cookies Practical
 > Practical Work : how to do remote code execution & take shell via Insecure Deserialization
 
 ### Overview
@@ -137,9 +139,22 @@
 
 ### 10. Ques
 - Q 1 : If a cookie had the path of webapp.com/login , what would the URL that the user has to visit be? <br>
-    Ans : 
+    Ans : webapp.com/login
+    - u have to set the same URL - only then cookie will be sent
 - Q 2 : What is the acronym for the web technology that Secure cookies work over? <br>
-    Ans : 
+    Ans : https
+
+### 11. Cookies Practical
+- STEP 1 : connect to openvpn , run `openvpn EthicalSharmaji.ovpn`
+- STEP 2 : in tryhackme -> Task 21 module -> click "Star machine" -> copy the IP-address i.e 10.10.60.47
+- STEP 3 : in tryhackme -> Task 25 module , output : we already connected to the VPN
+- STEP 4 : in tryhackme -> in Task 25 module
+    - Q 1) 1st Flag (cookie value) ✔️
+        - means we need to find out 1st flag & to find it out - we need to do changes in "userType"
+        - STEP 4.1 : in firefox -> open 10.10.60.47 -> click "Exchange today" , output : SignUp will get open
+        - STEP 4.2 : write username & password as "test" -> click "don't save" , output : <br>
+            <img src="../../notes-pics/03-Module/26_lecture/26_lecture-2-M3.jpg" alt="" width="500"/>
+        - STEP 4.3 : in this webapp -> open inspect tool -> storage tab -> Cookies section -> select the URL
 
 ### 2. Practical Work : how to do remote code execution & take shell via Insecure Deserialization
 
