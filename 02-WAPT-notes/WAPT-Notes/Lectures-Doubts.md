@@ -313,4 +313,16 @@ mine general questions
     Q : DOM-based XSS
 ```
 
+- Lecture 26
+```
+mine general doubts
+    Q : define Severity 
+    Ans : https://www.perplexity.ai/search/Severity-means-in-UQwa4Gn_SUaenJ2OxyrqMg
 
+### 1. what's Insecure Deserialization
+    Q : when Deserialization becomes Insecure
+        Ans : when converting/going from one data form (like JSON) to object
+            so if u're validating this process via insecure way aka insecure Deserialization
+        Doubt : here validating - u mean "during the process of converting" - this u mean
+            cuz Me couldn't able to understand "validating" here
+```
