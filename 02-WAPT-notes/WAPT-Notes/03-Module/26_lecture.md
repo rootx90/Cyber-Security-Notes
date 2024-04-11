@@ -7,8 +7,11 @@
 > 2) reasons why this vulnerability comes 8 out of 10 in OWASP
 > 3) what's Vulnerable
 > 4) Ques
-> 5) Objects
-> 6) 
+> 5) what's Objects
+> 6) Ques
+> 7) what's De(Serialization)
+> 8) Ques
+> 9) Cookies
 > Practical Work : how to do remote code execution & take shell via Insecure Deserialization
 
 ### Overview
@@ -64,12 +67,84 @@
     Ans : Denial of Service <br>
     - "service crash" : means those services won't be available after they got crashes
 
-### 5. Objects
+### 5. What's Objects
 - in Programming , in OOP , Objects are made of 2 things 
     <br>1) State
     <br>2) Behaviour
-- Eg : a lamp is a object. 
+- Eg : a lamp is a object.
+    <br>Lamps can have of different types of bulbs = their state
+    <br>either their're ON/OFF = their behaviour
 
-### 2.Practical Work : how to do remote code execution & take shell via Insecure Deserialization
+### 6. Ques
+- Q 1 : if a dog was sleeping , would this be :
+    <br>A) A state
+    <br>B) A Behaviour
+    <br>Ans : A Behaviour
+    - Conclusion : 
+        <br>- types of dogs = state
+        <br>- actions = Behaviour
 
+### 7. what's De(Serialization)
+- Eg of Serialization vs De(Serialization) :
+    - A Tourist approaches you & he's street asking for street directions cuz he got lost & he's looking for a local landmark & <br>
+        he didn't understand English + nor u can't understand his language (let's say Spanish) <br>
+        Q : what do u do ? <br>
+        Ans : u'll draw a map of the route to the landmark (i.e he wants to go) cuz Pictures cross language barriers <br>
+        then he'll be able to find the landmark <br>
+    - Q : from this situation , what did u understood ? <br>
+        Ans : when u serialized some info 
+        - means u don't understand his language + he don't know ur language <br>
+            so u converted the language from one form to another to make him understand <br>
+            via gestures + pictures (cuz it's also another form of language)
+        - then that tourist try to understand the drawing (i.e made by u) reach the landmark - means <br>
+            he did De(Serialization) it to find the landmarks
+- Serialization : is the process of converting objects into simpler & compatible formatting (like JSON , etc)
+- Eg of Serialization vs De(Serialization) :
+    - pic :<br><img src="../../notes-pics/03-Module/26_lecture/26_lecture-0-M3.jpg" alt="" width="500"/>
+    - password is password123 (which going to be store in a database) <br>
+        so travel across a network this string/output needs to be converted to binary notation
+    - once the password reaches to the database <br>
+        then the password is converted/deserialized back into "password123" - so it can be stored
+- Q : how can we leverage this ? OR how we can take advantage of it ✔️
+    - Ans : insecure deserialization happens when data comes/taken from an untrusted party (i.e a hacker) then we execute it
+    - Eg : u have a data & u converted into base64 (cuz assume that data accept Base64 only) <br>
+        then hacker got to know that (we're using Base64 & whatever data in Base64 will get execute) <br>
+        Q : what hacker will do <br>
+        Ans : the hacker will put a payload during the process & when the app do deserialize - then the hacker will get Shell
+    - we'll see in Practical
+
+### 8. Ques
+- Q 1 : What is the name of the base-2 formatting that data is sent across a network as ? <br>
+    Ans : binary <br>
+    Q : base-2 means <br>
+    Ans : here 2 means binary = 0 or 1
+
+### 9. Cookies
+- purpose of Cookies in browser : 
+    - used to maintain the state of sessionID
+    - Tiny pieces of data, these are created by a website and stored on the user's computer.
+    - Eg : if u're login again & again in a webapp - then cookies maintain the login state until u don't logout
+- Cookies additional attributes/Flags
+    - Pic : <br><img src="../../notes-pics/03-Module/26_lecture/26_lecture-1-M3.jpg" alt="" width="500"/>
+    - "Cookie Name" & "Cookie Value" is a imp attribute which is required in Cookie
+    - Q : purpose of "Secure Only" attribute ✔️ <br>
+        Ans : it'll set only for HTTPS connections - otherwise it'll not set for other protocols (like HTTP , etc)
+    - Q : define "Expiry" attribute ✔️<br>
+        Ans : it tells when (means time) the cookie will be removed from the browser
+    - Q: purpose of "Path" attribute ✔️<br>
+        Ans : the cookie will only be sent to the server - if when the specified URL is mentioned
+- Cookies can be set via different website programming lang
+
+### 10. Ques
+- Q 1 : If a cookie had the path of webapp.com/login , what would the URL that the user has to visit be? <br>
+    Ans : 
+- Q 2 : What is the acronym for the web technology that Secure cookies work over? <br>
+    Ans : 
+
+### 2. Practical Work : how to do remote code execution & take shell via Insecure Deserialization
+
+
+---
+### End of the Lecture (Doubts)
+- Advice for learning : Learning is the best done through analogies ✔️
 
