@@ -14,7 +14,7 @@
 > 9) Cookies
 > 10) Ques
 > 11) Cookies Practical
-> Practical Work : how to do remote code execution & take shell via Insecure Deserialization
+> 12) Practical Work : Code Execution or remote code execution & take shell via Insecure Deserialization
 
 ### Overview
 
@@ -155,9 +155,57 @@
         - STEP 4.2 : write username & password as "test" -> click "don't save" , output : <br>
             <img src="../../notes-pics/03-Module/26_lecture/26_lecture-2-M3.jpg" alt="" width="500"/>
         - STEP 4.3 : in this webapp -> open inspect tool -> storage tab -> Cookies section -> select the URL
+        - u will see that there are cookies are both plaintext encoded and base64 encoded. <br>
+            The first flag will be found in one of these cookies.
+        - STEP 4.4 : copy the value of sessionId -> in new tab of firefox -> open https://www.base64decode.org <br>
+            -> paste the value -> click "decode" , output : got the flag <br>
+            <img src="../../notes-pics/03-Module/26_lecture/26_lecture-3-M3.jpg" alt="" width="500"/>
+        - Ans : so 1st Flag = THM{good_old_base64_huh}
+    - Q 2) 2nd Flag (admin dashboard)
+        - Q : what we need to do to find 2nd Flag <br>
+            Ans : Double left-click the "value" column of "userType" to modify the contents. <br>
+            let's change our userType to "admin" and navigate to **http://MACHINE_IP/admin** to answer the second flag
+        - STEP 4.5 : same as STEP 4.3 -> change "userType" into "admin" -> then in firefox URL address bar -> <br>
+            change 10.10.60.47/myprofile into 10.10.60.47/admin -> hit enter -> scroll down , output : got the flag <br>
+            <img src="../../notes-pics/03-Module/26_lecture/26_lecture-4-M3.jpg" alt="" width="500"/>
+        - Ans : THM{heres_the_admin_flag}
 
-### 2. Practical Work : how to do remote code execution & take shell via Insecure Deserialization
-
+### 12. Practical Work : Code Execution or remote code execution & take shell via Insecure Deserialization
+- STEP 0 : connect to openvpn , run `openvpn EthicalSharmaji.ovpn`
+- STEP 1 : in tryhackme -> open "Task 26 [Severity 8] Insecure Deserialization - Code Execution"
+- STEP 2 : in firefox -> go to 10.10.60.47 -> open inspect tool -> storage -> cookies -> click IP
+    - output : there's a encoded payload i.e value of encoded & that payload is base64
+    - if we put a different type of payload (which can spawn ur system's shell) = eg of Insecure Deserialization <br>
+        due to this , we can do RCS
+- STEP 3 : in "Task 26 [Severity 8] Insecure Deserialization - Code Execution" -> click to download "pickleme.py" file
+- STEP 4 : run `leafpad pickleme.py` to open -> paste the VPN IP-address over the place where IP-address mentioned
+    - Q : how to check the IP-address got after turning ON VPN ✔️<br>
+        Ans : run `ifconfig tun0` , output : u got the tryhackme IP after connecting to the VPN
+- understanding code / what we're gonna do
+    - Pic : <br><img src="../../notes-pics/03-Module/26_lecture/26_lecture-5-M3.jpg" alt="" width="500"/>
+    - importing libraries i.e pickle , sys , base64 & once all these libraries got imported <br>
+        then that command : means it'll open the shell on 4444 portno. on that IP-address (i.e of our system) <br>
+        & that complete process will be encoded via base64
+    - & once we got that encoded value <br>
+        then we'll store that value inside "encoded" payload cookie then hit enter then refresh the page
+- STEP 5 : save the file -> run `python3 pickleme.py` , output : got the payload
+- STEP 6 : copy the payload that much <br>
+    <img src="../../notes-pics/03-Module/26_lecture/26_lecture-6-M3.jpg" alt="" width="500"/>
+    - STEP 6.1 : in firefox -> go to 10.10.60.47 -> open inspect tool -> storage -> cookies -> click IP <br>
+        -> remove the value of "encoded" & paste the payload as value of "encoded" -> hit enter
+    - STEP 6.2 : before executing that payload , open the shell - means listener , run `nc -lvnp 4444` <br>
+        Q : why we're running listener ✔️<br>
+        Ans : cuz when we execute the payload - then we need to have a listener - so that shell can be spawn <br>
+        if we don't open the listener on that portno. (which we mentioned in the file) then listener won't work
+    - STEP 6.3 : reload the page of that website , <br>
+        output : in terminal , shell got spawn. Now RCS can be done <br>
+        <img src="../../notes-pics/03-Module/26_lecture/26_lecture-7-M3.jpg" alt="" width="500"/>
+- Ques
+    - STEP 7 : in "Task 26 [Severity 8] Insecure Deserialization - Code Execution" module , we need to find "flag.txt"
+    - STEP 8 : in terminal , run `cd ..` -> `ls` , output : got the flag.txt
+    - STEP 9 : run `cat flag.txt` , output : got the flag <br>
+        <img src="../../notes-pics/03-Module/26_lecture/26_lecture-8-M3.jpg" alt="" width="300"/>
+    - STEP 10 : past the flag in Q
 
 ---
 ### End of the Lecture (Doubts)
