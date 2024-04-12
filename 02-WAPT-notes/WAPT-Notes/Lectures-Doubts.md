@@ -319,10 +319,24 @@ mine general doubts
     Q : define Severity 
     Ans : https://www.perplexity.ai/search/Severity-means-in-UQwa4Gn_SUaenJ2OxyrqMg
 
+    Q : ways to find out the RCS vulnerability have in a webapp or not
+
+    Q : after getting the Shell of a victim/server's system via RCS - then files & folders can be deleted
+
 ### 1. what's Insecure Deserialization
     Q : when Deserialization becomes Insecure
         Ans : when converting/going from one data form (like JSON) to object
             so if u're validating this process via insecure way aka insecure Deserialization
         Doubt : here validating - u mean "during the process of converting" - this u mean
             cuz Me couldn't able to understand "validating" here
+```
+
+- Lecture 27
+```
+### 1. understanding the vulnerability
+    Q : what's security advisory
+
+    Q : what's CVSS score
+
+
 ```
