@@ -4,7 +4,9 @@
 ### what we'll learn
 > Lecture Name : [hindi] Do not miss this CRITICAL vulnerability!
 > 1) Intro of the vulnerability
-> 2) 
+> 2) understanding the vulnerability
+> 3) Practical Work : "Broken Access Control" vulnerability
+> 4) 
 
 ### Overview
 - ATLASSIAN is a product-based company & it's some softwares are popular like Jira , Confluence <br>
@@ -16,6 +18,11 @@
 
 ### Reference
 - https://tryhackme.com/r/room/confluence
+    - Task 1 Intro
+    - Task 2 Understanding the Vulnerability
+    - Task 3 Automating Exploitation
+    - Task 4 Detection and Patching
+    - Task 5 Conclusion
 
 ---
 
@@ -55,11 +62,48 @@
         Ans : we'll craft/create a URL
     - Q : how we'll craft a URL ✔️<br>
         Ans : like this http://10.10.57.42:8090/server-info.action?bootstrapStatusProvider.applicationConfig.setupComplete=false
-        <br>- means 
+        - means Q : what action we need ✔️<br>
+            Ans : we need action from the server
+        - bootstrapStatusProvider.applicationConfig.setupComplete : means the variable which set as true <br>
+            due to which we're able to find whether that account already setup/created or not - we set it as false
+        - means like "Apache Struts framework" redirect to login.action same way actions get called <br>
+            Eg : the moment u called this page i.e http://10.10.57.42:8090/setup/setupadministrator-start.action <br>
+            then it checks whether this account already setup or not , so this account already setup that's why <br>
+            we got the page i.e "your Confluence instance is already completely setup"
+        - Q : how it's able to check whether the account is already setup or not ✔️<br>
+            Ans : cuz earlier it was set as true i.e server-info.action?bootstrapStatusProvider.applicationConfig.setupComplete=true
+        - now understand the attacker's mindset
+            <br>- attacker tries to understand the logic like "1stly the attacker understand how logic is running"
+            <br>Q : how the attacker able to know whether the admin account is setup or not ✔️<br>
+                Ans : so the attacker set it as false - then the attacker start watching "what's gonna happen"
+        - so if u're able to understand the attacker's mindset then u can become the better
 
-
-### Practical Work 
+### 3. Practical Work : "Broken Access Control" vulnerability
 - STEP 1 : in https://tryhackme.com/r/room/confluence -> in Task 1 intro -> click "start machine" -> copy the IP address i.e 10.10.57.42
 - STEP 2 : in terminal -> run `openvpn EthicalSharmaji.ovpn`
+- STEP 3 : in firefox -> in new tab -> paste the URL of admin account & set it as false i.e <br>
+    http://10.10.57.42:8090/server-info.action?bootstrapStatusProvider.applicationConfig.setupComplete=false , <br>
+    output : Success page - which means it's set as false
+- STEP 4 : in firefox -> in new tab -> paste the URL of admin account i.e http://10.10.57.42:8090/setup/setupadministrator-start.action <br>
+    output : got the Configure account of system administrator <br>
+    Q : why we got page of Configure system admin account ✔️<br>
+    Ans : cuz it was set as false that's why we (as a attacker) can create a "system admin account" again
+    - i.e aka Broken Access Control
+    - Q : why it's considered as Broken Access Control ✔️ <br>
+        Ans : cuz they already setup the Access Control , How ✔️ <br>
+        Ans : just setting as true i.e bootstrapStatusProvider.applicationConfig.setupComplete=true <br>
+        but any user can set it as false - which means it's broken , so it's not working properly
+- STEP 5 : fill the form completely -> click Next , output : <br><img src="../../notes-pics/03-Module/27_lecture/27_lecture-2-M3.jpg" alt="" width="500"/>
+    - STEP 5.1 : click start , <br>
+        output : got the URL as `http://10.10.57.42:8090/dashboard.action#all-updates` 
+        <br>- so it's showing dashboard.action & admin acc. is created
+        <br>- now we're a part of admin & we can also see posts <br>
+        <br>- got the flag i.e THM(who_needs_keys_anyway)
+- Ques
+    - Q 1 : Log into Confluence with ur new credentials. What is the value of the flag posted by admin? <br>
+        Ans : THM(who_needs_keys_anyway)
 
-
+### 4. Automating Exploitation
+- Q : can we automate those above steps of Practical Work
+- there's a script to make the process automate i.e Chocapikk i.e https://github.com/Chocapikk/CVE-2023-22515
+- STEP 1 : go to https://github.com/Chocapikk/CVE-2023-22515 -> open exploit.py
