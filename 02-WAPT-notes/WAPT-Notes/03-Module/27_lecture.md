@@ -6,7 +6,8 @@
 > 1) Intro of the vulnerability
 > 2) understanding the vulnerability
 > 3) Practical Work : "Broken Access Control" vulnerability
-> 4) 
+> 4) Automating Exploitation
+> 5) Detection & Patching
 
 ### Overview
 - ATLASSIAN is a product-based company & it's some softwares are popular like Jira , Confluence <br>
@@ -106,4 +107,56 @@
 ### 4. Automating Exploitation
 - Q : can we automate those above steps of Practical Work
 - there's a script to make the process automate i.e Chocapikk i.e https://github.com/Chocapikk/CVE-2023-22515
-- STEP 1 : go to https://github.com/Chocapikk/CVE-2023-22515 -> open exploit.py
+- STEP 0 : in terminal -> run `sudo su`
+- STEP 1 : go to https://github.com/Chocapikk/CVE-2023-22515 -> open exploit.py , <br>
+    output : after trigging this vulnerability , username & password are set
+- STEP 2 : copy https://github.com/Chocapikk/CVE-2023-22515 -> in terminal , <br>
+    run `git clone https://github.com/Chocapikk/CVE-2023-22515` -> hit enter
+- STEP 3 : run `cd CVE-2023-22515`
+- STEP 4 : in firefox -> go to https://github.com/Chocapikk/CVE-2023-22515 to check how to run this vulnerability
+    - STEP 4.1 : copy `pip install -r requirements.txt` -> in terminal , paste it -> hit enter
+    - STEP 4.2 : go to that github URL -> usage section -> in Normal Mode -> in terminal , write `python3 exploit.py normal` <br>
+        Q : what's Normal mode ✔️<br>
+        Ans : go to that URL github , u'll find i.e in normal mode , u can exploit the Confluence vulnerability <br>
+        using a single target URL <br>
+        Q : why we're using Normal Mode <br>
+        Ans : so currently , we want to exploit only one target URL , not multiple that's why we're using Normal mode <br>
+        Q : what's the target URL <br>
+        Ans : go to https://tryhackme.com/r/room/confluence -> open Task 2 , output : u'll see "http://10.10.57.42:8090"
+    - STEP 4.3 : copy the targeted URL -> paste in STEP 4.2 command i.e `python3 exploit.py normal http://10.10.57.42:8090/`
+    - STEP 4.4 : go to that github URL -> usage section -> in Normal Mode -> check syntax i.e "--output-file=[OUTPUT_FILE]" <br>
+        so in terminal -> write `python3 exploit.py normal http://10.10.57.42:8090/ --output-file=out.txt` , <br>
+        output : got the Username & Password <br>
+        <img src="../../notes-pics/03-Module/27_lecture/27_lecture-3-M3.jpg" alt="" width="500"/>
+- STEP 5 : go to Confluence account -> click profileIcon -> click Logout -> , output : got the Login Page
+    - STEP 5.1 : write username "pleasepatch" & password "Password2" -> click login , output : we're able to login as admin
+    - conclusion : it automate the process 
+- Ques 
+    - Q 1 : Read Chocapikk's script. What is the name of the Confluence user it creates? <br>
+        Ans : pleasepatch
+
+### 5. Detection & Patching
+- how to detect & patch it
+- 1st way : Detection 
+    - if u're using a vulnerable version of confluence , be sure - u can check these things 
+        1) check Network access logs `/setup/*.action` : means is there any thing in `*.action` <br>
+            (like whether a normal user able to access or not - cuz that login admin page must be only for a admin user)
+        2) Network access logs `server-info.action?bootstrapStatusProvider.applicationConfig.setupComplete=false` <br>
+            which this URL is reachable/accessible by normal user or not <br>
+            if it's reachable - then make it unreachable
+        3) review ur Confluence users & look for suspicious (accounts & members) in the `confluence-administrators` group <br>
+- 2nd way : Patching
+    - Q : how to patch it <br>
+        Ans : update the software to that version which there's no vulnerability of it
+- 3rd way : if u can't upgrade - then disallow/blocked (as a temporary measure) this directory `/setup/*`
+    - means restrict the users from accessing `/setup/*`
+    - means if no user able to go to that path - then he/she can't set it as false
+    - STEP 1 : for the code , go to https://tryhackme.com/r/room/confluence -> go to "Task 3 Automation Exploitation"
+- Ques 
+    - Q 1 : Is Confluence Server version 8.2.0 vulnerable to CVE-2023-22515? (yea/nay) <br>
+        Ans : yea
+    - Q 2 : Does applying mitigation actions replace the need to upgrade Confluence? (yea/nay) <br>
+        Ans : nay
+
+### 6. Conclusion
+- check Task 5 of https://tryhackme.com/r/room/confluence
